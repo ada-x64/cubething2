@@ -1,0 +1,2 @@
+This website is designed to be as simple as possible and to last as long as possible while still being easy to modify in the future. So, I'm using stable web technologies, and avoiding any frameworks. Although I want to avoid over-engineering this website, I also want to make it _look_ pretty. So, I have used a custom [WebComponents](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)-based 'framework' to develop this site.
+That being said, I am using Typescript for my own sanity.

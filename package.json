@@ -1,0 +1,26 @@
+{
+  "name": "cubething2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "module": "esnext",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx esbuild ./src/server/index.ts --target=esnext --platform=node --outdir=dist",
+    "start": "npm run build; node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.3.0",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@types/mathjax": "^0.0.40",
+    "fastify": "^4.28.1",
+    "mathjax": "^3.2.2"
+  }
+}
