@@ -6,11 +6,11 @@ const outdir = "dist";
 let app;
 async function run() {
   let clientCtx = await context({
-    entryPoints: ["./src/client/**/*", "./src/common/**/*"],
+    entryPoints: ["src/client/app.ts"],
     outdir: `${outdir}/client`,
     bundle: true,
     platform: "browser",
-    minify: false,
+    minify: true,
     sourcemap: "inline",
     loader: {
       ".ts": "ts",
@@ -39,7 +39,6 @@ async function run() {
     bundle: false,
     platform: "node",
     loader: {
-      ".js": "tsx",
       ".ts": "ts",
       ".html": "file",
       ".md": "file",
