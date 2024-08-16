@@ -10,9 +10,11 @@ async function run() {
     outdir: `${outdir}/client`,
     bundle: true,
     platform: "browser",
-    minify: true,
+    minify: false,
     sourcemap: "inline",
-    loader: { ".ts": "ts" },
+    loader: {
+      ".ts": "ts",
+    },
     tsconfig: "tsconfig.json",
     plugins: [
       {
@@ -32,13 +34,17 @@ async function run() {
   await clientCtx.watch();
 
   let serverCtx = await context({
-    entryPoints: ["./src/server/**/*", "./www/**/*", "./src/common/**/*"],
+    entryPoints: ["./src/server/**/*", "./src/common/**/*"],
     outdir: `${outdir}/server`,
     bundle: false,
     platform: "node",
-    minify: false,
-    sourcemap: false,
-    loader: { ".ts": "ts", ".html": "file", ".md": "file", ".tex": "file" },
+    loader: {
+      ".js": "tsx",
+      ".ts": "ts",
+      ".html": "file",
+      ".md": "file",
+      ".tex": "file",
+    },
     assetNames: "[name]",
     tsconfig: "tsconfig.json",
     plugins: [
@@ -59,7 +65,7 @@ async function run() {
               );
             }
             app?.kill();
-            const apppath = `${outdir}/server/src/server/${main}`;
+            const apppath = `${outdir}/server/${main}`;
             console.log(`> node ${apppath}`);
             app = spawn("node", [apppath], { stdio: "inherit" });
           });

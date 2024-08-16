@@ -1,13 +1,13 @@
 // Import the framework and instantiate it
 import Fastify from 'fastify'
+import Static from '@fastify/static'
+import path from 'path'
 const fastify = Fastify({
   logger: true
 })
 
-// Declare a route
-fastify.get('/', async function handler (request, reply) {
-  return { hello: 'world' }
-})
+fastify.register(Static, {root: path.join(import.meta.dirname, '../../www')})
+fastify.register(Static, {root: path.join(import.meta.dirname, '../../dist/client'), prefix: '/js', decorateReply: false})
 
 // Run the server!
 try {
