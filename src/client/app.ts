@@ -8,8 +8,8 @@ import("./views/article.js");
 
 @customElement("the-app")
 class App extends LitElement {
-	async firstUpdated(_changedProperties: PropertyValues): Promise<void> {
-		super.firstUpdated(_changedProperties);
+	async firstUpdated(props: PropertyValues): Promise<void> {
+		super.firstUpdated(props);
 		const router = new Router(this.shadowRoot?.querySelector("#outlet"));
 		await router.setRoutes([
 			{ path: "/", component: "view-home" },
