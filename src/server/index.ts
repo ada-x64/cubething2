@@ -16,7 +16,6 @@ const fastify = Fastify({
 
 const root = path.join(import.meta.dirname, "../../");
 const index = fs.readFileSync(path.join(root, "www/index.html")).toString();
-const notFound = fs.readFileSync(path.join(root, "www/404.html")).toString();
 
 fastify.register(Static, { root: path.join(root, "www/") });
 fastify.register(Static, {
@@ -28,7 +27,7 @@ fastify.get(`/`, (req, reply) => {
 	reply.header("content-type", " text/html; charset=utf-8").send(index);
 });
 fastify.setNotFoundHandler((req, reply) => {
-	reply.header("content-type", " text/html; charset=utf-8").send(notFound);
+	reply.header("content-type", " text/html; charset=utf-8").send(index);
 });
 
 // Run the server!

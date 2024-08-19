@@ -14,7 +14,7 @@ class App extends LitElement {
 		await router.setRoutes([
 			{ path: "/", component: "view-home" },
 			{
-				path: "/:fileName",
+				path: "/articles/:fileName",
 				component: "view-article",
 				action: async (ctx) => {
 					const module = await import("./views/article.js");
@@ -28,7 +28,9 @@ class App extends LitElement {
 
 	render() {
 		return html`<main id="outlet">
-			<a href="/articles/creating-this-site">link</a>
+			<button @click=${() => {
+				console.log(Router.go("/articles/creating-this-site"));
+			}}>go</button
 		</main>`;
 	}
 }
