@@ -5,33 +5,33 @@ import { customElement, property, state } from "lit/decorators.js";
 
 @customElement("view-article")
 export default class ViewArticle extends LitElement {
-	@property({ type: String })
-	route: string;
+  @property({ type: String })
+  route: string;
 
-	@state()
-	private loading = true;
-	@state()
-	private text = "";
+  @state()
+  private loading = true;
+  @state()
+  private text = "";
 
-	constructor(route: string) {
-		super();
-		this.route = route;
-		fetch(`${this.route}.md`).then((res) =>
-			res.text().then((text) =>
-				marked(text, { async: true }).then((text) => {
-					this.text = text;
-					this.loading = false;
-				}),
-			),
-		);
-	}
+  constructor(route: string) {
+    super();
+    this.route = route;
+    fetch(`${this.route}.md`).then((res) =>
+      res.text().then((text) =>
+        marked(text, { async: true }).then((text) => {
+          this.text = text;
+          this.loading = false;
+        }),
+      ),
+    );
+  }
 
-	render() {
-		return html`<article id="article"></article>`;
-	}
+  render() {
+    return html`<article id="article"></article>`;
+  }
 }
 declare global {
-	interface HTMLElementTagNameMap {
-		"view-article": ViewArticle;
-	}
+  interface HTMLElementTagNameMap {
+    "view-article": ViewArticle;
+  }
 }
