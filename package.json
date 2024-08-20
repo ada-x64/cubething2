@@ -10,7 +10,7 @@
     "build": "node build.js",
     "lint": "npx eslint .",
     "format": "npx prettier -c .",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "keywords": [],
   "author": "",

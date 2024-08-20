@@ -71,10 +71,19 @@ async function doit() {
               app?.kill();
               const apppath = `./${outdir}/server/${main}`;
               console.log(`> node ${apppath}`);
-              app = spawn("node", [apppath], {
-                stdio: "inherit",
-                env: { prod },
-              });
+              const launch = () => {
+                try {
+                  app = spawn("node", [apppath], {
+                    cwd: "./",
+                    stdio: "inherit",
+                    env: { prod },
+                  });
+                } catch {
+                  console.error("failed to launch, trying again");
+                  setTimeout(launch, 10);
+                }
+              };
+              launch();
             }
           });
         },

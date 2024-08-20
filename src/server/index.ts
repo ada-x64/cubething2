@@ -4,7 +4,6 @@ import Static from "@fastify/static";
 import path from "path";
 import Api from "./api.js";
 import Routes from "./routes.js";
-import "dotenv/config.js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
