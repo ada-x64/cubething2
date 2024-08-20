@@ -1,0 +1,3 @@
+[submodule "cubething-static"]
+	path = www
+	url = https://github.com/ada-x64/cubething-static
