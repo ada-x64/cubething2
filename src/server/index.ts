@@ -7,22 +7,34 @@ import Routes from "./routes.js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
+const prod = process.env.PROD === "true";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const fastify = Fastify({
   logger: {
+    level: "debug",
     transport: {
-      target: "pino-pretty",
-      options: {
-        colorize: true,
-      },
+      targets: [
+        {
+          target: "pino-pretty",
+          options: {
+            colorize: true,
+          },
+          level: prod ? "warn" : "debug",
+        },
+        {
+          target: "pino/file",
+          options: {
+            destination: "server.log",
+          },
+        },
+      ],
     },
   },
 });
-
-const prod = process.env.prod === "true";
 if (prod) {
   fastify.log.info("Running in production mode!");
 }
+
 const root = path.join(__dirname, "../../");
 const staticRoot = path.join(root, "www/");
 

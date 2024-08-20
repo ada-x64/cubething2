@@ -3,7 +3,7 @@ import { context } from "esbuild";
 
 const watch = process.argv.includes("--watch");
 const run = process.argv.includes("--watch") || process.argv.includes("--run");
-const prod = process.argv.includes("--prod");
+const PROD = process.argv.includes("--prod");
 const main = "index.js";
 const outdir = "dist";
 let app;
@@ -76,7 +76,7 @@ async function doit() {
                   app = spawn("node", [apppath], {
                     cwd: "./",
                     stdio: "inherit",
-                    env: { prod },
+                    env: { PROD },
                   });
                 } catch {
                   console.error("failed to launch, trying again");
