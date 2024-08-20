@@ -16,7 +16,6 @@ export default class ViewArticle extends LitElement {
 	constructor(route: string) {
 		super();
 		this.route = route;
-		// TODO: Use @lit/task
 		fetch(`${this.route}.md`).then((res) =>
 			res.text().then((text) =>
 				marked(text, { async: true }).then((text) => {

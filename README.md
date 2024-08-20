@@ -1,0 +1,4 @@
+# requirements
+
+Node.JS
+pandoc
