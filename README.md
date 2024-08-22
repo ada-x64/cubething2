@@ -10,7 +10,7 @@ This is the source code for Phoenix Ada Rose Mandala's personal website. Feel fr
 
 ```
 docker build -t ${USERNAME}/${CONTAINER} .
-docker run -it --init --network host ${USERNAME}/${CONTAINER}
+docker run -it --network host ${USERNAME}/${CONTAINER}
 ```
 
 By default the server runs in production mode.
