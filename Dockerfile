@@ -14,4 +14,4 @@ RUN node build.js
 
 ENV NODE_ENV=production
 ENV PROD=true
-CMD ["node", "dist/server/index.js"]
+CMD ["sh", "-c", "node dist/server/index.js"]
