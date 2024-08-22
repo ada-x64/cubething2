@@ -42,7 +42,7 @@ async function doit() {
   }
 
   let serverCtx = await context({
-    entryPoints: ["./src/server/**/*", "./src/common/**/*"],
+    entryPoints: ["./src/server/**/*"],
     outdir: `${outdir}/server`,
     bundle: false,
     platform: "node",
