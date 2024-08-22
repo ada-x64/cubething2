@@ -19,7 +19,7 @@ const fastify = Fastify({
           options: {
             colorize: true,
           },
-          level: prod ? "warn" : "debug",
+          level: "debug",
         },
         {
           target: "pino/file",
@@ -32,7 +32,7 @@ const fastify = Fastify({
   },
 });
 if (prod) {
-  fastify.log.info("Running in production mode!");
+  console.info("Running in production mode!");
 }
 
 const root = path.join(__dirname, "../../");
