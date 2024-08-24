@@ -8,7 +8,7 @@ const main = "index.js";
 const outdir = "dist";
 let app;
 async function doit() {
-  let clientCtx = await context({
+  const clientCtx = await context({
     entryPoints: ["src/client/app.ts"],
     outdir: `${outdir}/client`,
     bundle: true,
@@ -41,7 +41,7 @@ async function doit() {
     await clientCtx.dispose();
   }
 
-  let serverCtx = await context({
+  const serverCtx = await context({
     entryPoints: ["./src/server/**/*"],
     outdir: `${outdir}/server`,
     bundle: false,
@@ -76,6 +76,7 @@ async function doit() {
                   app = spawn("node", [apppath], {
                     cwd: "./",
                     stdio: "inherit",
+                    // @ts-expect-error don't worry about it
                     env: { PROD },
                   });
                 } catch {
