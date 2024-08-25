@@ -8,6 +8,7 @@
     "start": "bun scripts/build.ts --prod --run",
     "dev": "bun scripts/build.ts --watch",
     "build": "bun scripts/build.ts",
+    "host": "bun dist/server/index.js",
     "lint": "bunx eslint .",
     "format": "bunx prettier -c .",
     "headers": "bun scripts/headers.ts",

@@ -1,5 +1,9 @@
-*
-!src/
-!www/
-!./*.json
-!./build.js
+dist/
+node_modules/
+.github/
+.husky/
+*.log
+.*
+README.md
+Dockerfile
+.dockerignore
