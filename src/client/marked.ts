@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 import { marked } from "marked";
 import markedCodePreview from "marked-code-preview";
 import markedFootnote from "marked-footnote";

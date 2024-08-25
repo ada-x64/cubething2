@@ -5,11 +5,12 @@
   "type": "module",
   "module": "esnext",
   "scripts": {
-    "start": "node build.js --prod --run",
-    "dev": "node build.js --watch",
-    "build": "node build.js",
-    "lint": "npx eslint .",
-    "format": "npx prettier -c .",
+    "start": "bun scripts/build.ts --prod --run",
+    "dev": "bun scripts/build.ts --watch",
+    "build": "bun scripts/build.ts",
+    "lint": "bunx eslint .",
+    "format": "bunx prettier -c .",
+    "headers": "bun scripts/headers.ts",
     "prepare": "husky || true"
   },
   "keywords": [],
@@ -29,6 +30,7 @@
   },
   "dependencies": {
     "@fastify/static": "^7.0.4",
+    "@types/bun": "^1.1.8",
     "@vaadin/router": "^1.7.5",
     "fastify": "^4.28.1",
     "glob": "^11.0.0",

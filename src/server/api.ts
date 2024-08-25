@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 import path from "path";
 import { lstatSync, readdirSync } from "fs";
 import { FastifyPluginCallback } from "fastify";

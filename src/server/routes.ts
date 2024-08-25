@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 import { spawnSync } from "child_process";
 import { FastifyPluginCallback, FastifyReply } from "fastify";
 import { readdirSync, readFileSync } from "fs";

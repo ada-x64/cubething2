@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 import { execSync, spawn } from "child_process";
 import { context } from "esbuild";
 

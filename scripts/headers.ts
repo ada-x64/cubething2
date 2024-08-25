@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 import fs from "fs";
 import { globSync } from "glob";
 
@@ -21,17 +23,19 @@ const filetypes = {
   ".ts": ["/"],
   ".js": ["/"],
   ".css": ["#"],
-  ".md": ["#"],
   ".tex": ["#"],
-  ".html": ["-", "<", ">"],
+  ".html": ["-", "<!--", "-->"],
+  ".md": ["-", "<!--", "-->"],
 };
 const check = (write: boolean) => {
+  let failed = false;
   for (const [ext, [c, prefix, postfix]] of Object.entries(filetypes)) {
     globSync(`./**/*${ext}`, { nodir: true, ignore: IGNORE_PATHS }).forEach(
       (filename) => {
         let content = fs.readFileSync(filename).toString();
         const theheader = header(c, prefix, postfix);
         if (!content.startsWith(theheader)) {
+          failed = true;
           if (write) {
             content = theheader + content;
             fs.writeFile(filename, content, () => {
@@ -44,9 +48,14 @@ const check = (write: boolean) => {
       },
     );
   }
+  if (!failed) {
+    console.log("No missing headers!");
+  } else if (!write && failed) {
+    console.log("Run with --write to fix.");
+  }
 };
 
-if (require.main === module || (Bun && import.meta.filename === Bun.main)) {
+if (import.meta.filename === Bun.main) {
   const write = process.argv.includes("--write");
   check(write);
 }

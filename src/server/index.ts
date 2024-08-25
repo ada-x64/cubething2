@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 // Import the framework and instantiate it
 import Fastify from "fastify";
 import Static from "@fastify/static";
