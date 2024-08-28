@@ -8,7 +8,9 @@ import Api from "./api.js";
 import Routes from "./routes.js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import qs from "qs";
 
+const PORT = Number(process.env.PORT ?? 3000);
 const prod = process.env.PROD === "true";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const fastify = Fastify({
@@ -32,6 +34,7 @@ const fastify = Fastify({
       ],
     },
   },
+  querystringParser: (str) => qs.parse(str),
 });
 if (prod) {
   console.info("Running in production mode!");
@@ -46,12 +49,17 @@ fastify.register(Static, {
   prefix: "/js",
   decorateReply: false,
 });
+fastify.register(Static, {
+  root: path.join(root, "node_modules"),
+  prefix: "/node_modules",
+  decorateReply: false,
+});
 fastify.register(Api, { prefix: "/api/v1", root: staticRoot });
 fastify.register(Routes, { root: staticRoot, prod });
 
 // Run the server!
 try {
-  await fastify.listen({ host: "0.0.0.0", port: 3000 });
+  await fastify.listen({ host: "0.0.0.0", port: PORT });
 } catch (err) {
   fastify.log.error(err);
   process.exit(1);

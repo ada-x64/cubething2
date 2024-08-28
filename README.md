@@ -3,18 +3,18 @@
 This is the source code for Phoenix Ada Rose Mandala's personal website. Feel
 free to use it.
 
+## system requirements
+
+This software is build for POSIX compatible operating systems. I am using Debian
+on WSL2. It requires the following packages:
+
+- [bun](https://bun.sh)
+- [pandoc](https://pandoc.org)
+- [docker](https://docker.com) (for development)
+
 ## static files
 
-- ...are hosted in a submodule, so I can be messy about it in the future. You'll
-  need to create your own -- it doesn't have to be a submodule, you can just
-  populate the folder. Your index.html should be at root level and have at least
-  the following:
-
-<!-- prettier-ignore -->
-```html
-<script src="/js/app.js" type="module"></script>
-<the-app></the-app>
-```
+- ... are located at www/
 
 - ... are rendered using a system-installed pandoc instance. (WASM pandoc isn't
   ready for long-term usage yet.) Anything pandoc can render is fair game.
@@ -25,7 +25,11 @@ free to use it.
 
 - ... are bundled with the application. This is inconvenient for publishing - it
   would be preferable for the author to just publish to a separate cdn - but
-  this allows us to do server-side rendering without relying on a second server.
+  bundling allows us to do server-side rendering without relying on a second
+  server. Overall, this solution is cheaper and faster than running two
+  microservices - rebuilding the server and hosting the package is free with
+  GitHub Actions, and hosting is less expensive for a single server than for
+  two.
 
 ## deployment
 
@@ -34,10 +38,16 @@ docker build -t ${USERNAME}/${CONTAINER} .
 docker run -it --network host ${USERNAME}/${CONTAINER}
 ```
 
-## system requirements
+## license
 
-This app is expected to be run on a POSIX machine. I am using Debian on WSL2.
+This software is licensed under MIT.
 
-- [bun](https://bun.sh)
-- [pandoc](https://pandoc.org)
-- (opt) [docker](https://docker.com)
+```text
+Copyright 2024 Phoenix Ada Rose Mandala
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```

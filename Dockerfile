@@ -5,7 +5,13 @@ WORKDIR /usr/src/app
 
 ENV HUSKY=0
 RUN apt-get update
-RUN apt-get install pandoc -y
+RUN apt-get install -y \
+    pandoc \
+    texlive \
+    texlive-humanities \
+    texlive-science
+    
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # install dependencies into temp directory
 # this will cache them and speed up future builds

@@ -3,5 +3,6 @@
   "tabWidth": 2,
   "semi": true,
   "proseWrap": "always",
-  "singleAttributePerLine": true
+  "singleAttributePerLine": true,
+  "plugins": ["prettier-plugin-latex"]
 }

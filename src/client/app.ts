@@ -1,39 +1,41 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
-import { LitElement, PropertyValues, html } from "lit";
-import { customElement } from "lit/decorators.js";
-import { Router } from "@vaadin/router";
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 
-// this is required so esbuild doesn't ignore the 'unused' dependency
-import("./views/home.js");
-import("./views/article.js");
+import { customElement } from "lit/decorators.js";
+import { LitElement, PropertyValues, css, html } from "lit";
+import { Match, default as Navigo } from "navigo";
 
 @customElement("the-app")
 class App extends LitElement {
+  static styles = css`
+    the-app:not:defined {
+      display: none;
+    }
+  `;
+
   async firstUpdated(props: PropertyValues): Promise<void> {
     super.firstUpdated(props);
-    const router = new Router(this.shadowRoot?.querySelector("#outlet"));
-    await router.setRoutes([
-      { path: "/", component: "view-home" },
-      {
-        path: "/articles/:fileName",
-        component: "view-article",
-        action: async (ctx) => {
-          const module = await import("./views/article.js");
-          const el = new module.default(ctx.params["fileName"] as string);
-          return el;
-        },
-      },
-      { path: "(.*)", redirect: "/" },
-    ]);
+    // @ts-expect-error Fsr the navigo import fails to resolve correctly in the ide.
+    const router: Navigo.default = new Navigo("/");
+    router.on("*", async (match?: Match) => {
+      const res = await fetch(match!.url + "?no-index");
+      const text = await res.text();
+      const container = document.createElement("div");
+      container.innerHTML = text;
+      this.appendChild(container.firstElementChild!);
+    });
+
+    router.resolve();
   }
 
   render() {
-    return html`<main id="outlet">
-			<button @click=${() => {
-        console.log(Router.go("/articles/creating-this-site"));
-      }}>go</button
-		</main>`;
+    return html`<!---->
+      <!-- <ct-sidebars></ct-sidebars> -->
+      <main id="outlet">
+        <slot name="content"></slot>
+      </main>
+      <!---->`;
   }
 }
 
