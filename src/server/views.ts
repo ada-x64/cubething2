@@ -35,13 +35,13 @@ export const send = (
 };
 
 const notFound = `
-          <view-error slot="content">
+          <view-error>
             <div slot="header">
               404 Not Found
             </div>
             <div slot="message">
               <p>Could not find that page.<p>
-              <a href="/home">Go home.</a>
+              <a href="/">Go home.</a>
             </div>
           </view>
           `;
@@ -63,7 +63,7 @@ export const sendServerError = <T>(
   return send(req, reply, serverError(error)).code(500);
 };
 
-const home = `<home></home>`;
+const home = `<view-home></view-home>`;
 export const sendHome = (req: FastifyRequest, reply: FastifyReply) => {
   return send(req, reply, home);
 };

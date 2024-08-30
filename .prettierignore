@@ -1,2 +1,4 @@
 dist
 node_modules
+www/articles/**/*.css
+www/articles/**/*.html

@@ -49,11 +49,11 @@ fastify.register(Static, {
   prefix: "/js",
   decorateReply: false,
 });
-fastify.register(Static, {
-  root: path.join(root, "node_modules"),
-  prefix: "/node_modules",
-  decorateReply: false,
-});
+// fastify.register(Static, {
+//   root: path.join(root, "node_modules"),
+//   prefix: "/node_modules",
+//   decorateReply: false,
+// });
 fastify.register(Api, { prefix: "/api/v1", root: staticRoot });
 fastify.register(Routes, { root: staticRoot, prod });
 

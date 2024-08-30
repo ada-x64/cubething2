@@ -8,7 +8,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { spawnSync } from "child_process";
 
 const article = (content: string) => `
-          <view-article slot="content">
+          <view-article>
             <div slot='article'>
               ${content}
             </div>
@@ -51,26 +51,41 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
       return res;
     });
     if (!main) {
+      reply.log.warn(name, "Could not find the requested article");
       return sendNotFound(req, reply);
     }
 
     // ... then try to render it
+    let res = "";
     const mainPath = path.join(main);
-    const res = spawnSync("pandoc", [mainPath]);
-    const stderr = res.stderr.toString();
-    const stdout = res.stdout.toString();
-    if (stderr) {
-      fastify.log.warn(stderr);
+    reply.log.info("Trying to serve (re)rendered file " + mainPath);
+    if (main.endsWith(".tex")) {
+      const out = spawnSync("make4ht", [mainPath], {});
+      const stderr = out.stderr.toString();
+      if (stderr) {
+        fastify.log.warn(stderr);
+      }
+      if (out.error) {
+        fastify.log.error(out.error);
+        return sendServerError(req, reply, out.error);
+      }
+      res = readFileSync(mainPath.replace(".tex", ".html")).toString();
+    } else {
+      const out = spawnSync("pandoc", [mainPath]);
+      const stderr = out.stderr.toString();
+      res = out.stdout.toString();
+      if (stderr) {
+        fastify.log.warn(stderr);
+      }
+      if (out.error) {
+        fastify.log.error(out.error);
+        return sendServerError(req, reply, out.error);
+      }
+      if (opts.prod) {
+        writeFileSync(path.join(dirPath, "index.html"), res);
+      }
     }
-    if (res.error) {
-      fastify.log.error(res.error);
-      return sendServerError(req, reply, res.error);
-    }
-    if (opts.prod) {
-      writeFileSync(path.join(dirPath, "index.html"), stdout);
-    }
-    reply.log.info("Serving (re)rendered file " + mainPath);
-    return sendArticle(req, reply, stdout);
+    return sendArticle(req, reply, res);
   });
 
   next();

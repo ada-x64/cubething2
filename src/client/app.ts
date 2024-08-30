@@ -6,34 +6,65 @@ import { customElement } from "lit/decorators.js";
 import { LitElement, PropertyValues, css, html } from "lit";
 import { Match, default as Navigo } from "navigo";
 
+import("./views/article.js");
+import("./views/home.js");
+import("./views/error.js");
+
 @customElement("the-app")
 class App extends LitElement {
+  static shadowRootOptions: ShadowRootInit = {
+    ...super.shadowRootOptions,
+    mode: "open",
+  };
+
   static styles = css`
-    the-app:not:defined {
+    *:not:defined {
       display: none;
     }
   `;
 
-  async firstUpdated(props: PropertyValues): Promise<void> {
-    super.firstUpdated(props);
-    // @ts-expect-error Fsr the navigo import fails to resolve correctly in the ide.
-    const router: Navigo.default = new Navigo("/");
-    router.on("*", async (match?: Match) => {
-      const res = await fetch(match!.url + "?no-index");
-      const text = await res.text();
-      const container = document.createElement("div");
-      container.innerHTML = text;
-      this.appendChild(container.firstElementChild!);
+  shouldRoute: boolean = false;
+
+  constructor() {
+    super();
+    // @ts-expect-error Fsr the navigo impogrt fails to resolve correctly in the ide.
+    const router: Navigo.default = new Navigo("/", {
+      linksSelector: "a[href^='/']",
     });
+    router.on(
+      "*",
+      async (match?: Match) => {
+        if (!this.shouldRoute) {
+          return;
+        }
+        for (const child of this.children) {
+          console.log(child);
+          child.remove();
+        }
+        const res = await fetch("/" + match!.url + "?no-index");
+        const text = await res.text();
+        const container = document.createElement("div");
+        container.innerHTML = text;
+        this.appendChild(container.firstElementChild!);
+      },
+      {
+        already: () => {},
+      },
+    );
 
     router.resolve();
+  }
+
+  async firstUpdated(props: PropertyValues): Promise<void> {
+    super.firstUpdated(props);
+    this.shouldRoute = true;
   }
 
   render() {
     return html`<!---->
       <!-- <ct-sidebars></ct-sidebars> -->
       <main id="outlet">
-        <slot name="content"></slot>
+        <slot></slot>
       </main>
       <!---->`;
   }
