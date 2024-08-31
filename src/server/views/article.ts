@@ -7,6 +7,8 @@ import path from "path";
 import { readFileSync, writeFileSync } from "fs";
 import { spawnSync } from "child_process";
 
+const TEX_ROOT = process.env.TEX_ROOT ?? "/usr/bin";
+
 const article = (content: string) => `
           <view-article>
             <div slot='article'>
@@ -22,7 +24,7 @@ export const sendArticle = (
   return send(req, reply, article(content));
 };
 
-const acceptedFiletypes = ["tex", "md", "html"];
+const acceptedFiletypes = ["tex", "md"];
 
 const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
   fastify,
@@ -31,14 +33,14 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
 ) => {
   fastify.get("/articles/:name", (req, reply) => {
     const { name } = req.params as { name: string };
-    const dirPath = path.join(opts.root, "articles", name);
-    const dir = globbySync(dirPath);
+    const mainDir = path.join(opts.root, "articles", name);
+    const dir = globbySync(mainDir);
 
     // if there is a cached html file, prefer the html file
     if (opts.prod) {
       const index = dir.find((name) => name === "index.html");
       if (index) {
-        const thepath = path.join(dirPath, index);
+        const thepath = path.join(mainDir, index);
         const file = readFileSync(thepath).toString("utf8");
         reply.log.info("Serving cached file " + thepath);
         return sendArticle(req, reply, file);
@@ -63,26 +65,31 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
     reply.log.info("Trying to serve (re)rendered file " + mainPath);
     if (main.endsWith(".tex")) {
       const out = spawnSync(
-        "make4ht",
+        `sh`,
         [
-          "-j",
-          "index",
-          "-f",
-          "html5",
-          "-d",
-          path.dirname(mainPath),
-          "-s",
-          mainPath,
+          "-c",
+          `
+          ${TEX_ROOT}/make4ht -j index -d ${mainDir} -f html5 ${mainPath};
+          `,
         ],
-        { cwd: "/usr/bin" }, // would really prefer not to dump all the temp files here but OH WELL
+        { cwd: path.dirname(mainPath) },
       );
-      const stderr = out.stderr.toString();
-      fastify.log.debug({ stdout: out.stdout });
-      if (stderr) {
-        fastify.log.error(stderr);
-        return sendServerError(req, reply, stderr);
+      if (out.stdout) {
+        reply.log.debug({ stdout: out.stdout.toString() });
       }
-      res = readFileSync(path.dirname(mainPath) + "/index.html").toString();
+      if (out.stderr) {
+        reply.log.warn({ stderr: out.stderr.toString() });
+      }
+      if (out.error) {
+        reply.log.error({ error: out.error });
+      }
+      try {
+        let html = readFileSync(mainDir + "/index.html").toString();
+        html = /<body>((.|\n)*)<\/body>/gi.exec(html)?.[1] ?? html; //trim to inner content
+        res = `<link href="./${name}/index.css" rel="stylesheet">` + html;
+      } catch {
+        return sendServerError(req, reply, out.output.toString());
+      }
     } else {
       const out = spawnSync("pandoc", [mainPath]);
       const stderr = out.stderr.toString();
@@ -95,7 +102,7 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
         return sendServerError(req, reply, out.error);
       }
       if (opts.prod) {
-        writeFileSync(path.join(dirPath, "index.html"), res);
+        writeFileSync(path.join(mainDir, "index.html"), res);
       }
     }
     return sendArticle(req, reply, res);
