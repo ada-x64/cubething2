@@ -6,8 +6,10 @@ import { globbySync } from "globby";
 import path from "path";
 import { readFileSync, writeFileSync } from "fs";
 import { spawnSync } from "child_process";
+import { AnsiUp } from "ansi-up";
 
-const TEX_ROOT = process.env.TEX_ROOT ?? "/usr/bin";
+const ansi_up = new AnsiUp();
+const TEX_ROOT = process.env.TEX_ROOT ?? "";
 
 const article = (content: string) => `
           <view-article>
@@ -65,11 +67,12 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
     reply.log.info("Trying to serve (re)rendered file " + mainPath);
     if (main.endsWith(".tex")) {
       const out = spawnSync(
-        `sh`,
+        "sh",
         [
           "-c",
           `
-          ${TEX_ROOT}/make4ht -j index -d ${mainDir} -f html5 ${mainPath};
+            ${path.join(TEX_ROOT, "make4ht")} -j index -d ${path.join(mainDir, "out")} -f html5+latexmk_build ${mainPath} "fn-in,TocLink,css-in";
+            ${path.join(TEX_ROOT, "make4ht")} -j index -m clean ${mainPath}
           `,
         ],
         { cwd: path.dirname(mainPath) },
@@ -84,11 +87,20 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
         reply.log.error({ error: out.error });
       }
       try {
-        let html = readFileSync(mainDir + "/index.html").toString();
-        html = /<body>((.|\n)*)<\/body>/gi.exec(html)?.[1] ?? html; //trim to inner content
-        res = `<link href="./${name}/index.css" rel="stylesheet">` + html;
+        // trim to inner content and properly link css
+        let html = readFileSync(
+          path.join(mainDir, "out/index.html"),
+        ).toString();
+        html = /<body>((.|\n)*)<\/body>/gi.exec(html)?.[1] ?? html;
+        res = `<link href="./${name}/out/index.css" rel="stylesheet">` + html;
       } catch {
-        return sendServerError(req, reply, out.output.toString());
+        return sendServerError(
+          req,
+          reply,
+          ansi_up
+            .ansi_to_html(out.output.toString())
+            .replaceAll("\n", "\n<br>\n"),
+        );
       }
     } else {
       const out = spawnSync("pandoc", [mainPath]);

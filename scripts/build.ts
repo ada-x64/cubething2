@@ -72,14 +72,14 @@ async function doit() {
             if (run) {
               app?.kill();
               const apppath = `./${outdir}/server/${main}`;
-              console.log(`> node ${apppath}`);
+              console.log(`> bun ${apppath}`);
               const launch = () => {
                 try {
-                  app = spawn("node", [apppath], {
+                  app = spawn("bun", [apppath], {
                     cwd: "./",
                     stdio: "inherit",
-                    // @ts-expect-error don't worry about it
-                    env: { PROD },
+                    // @ts-expect-error dw abt it bb...
+                    env: { PROD, ...process.env },
                   });
                 } catch {
                   console.error("failed to launch, trying again");
