@@ -50,7 +50,7 @@ export const sendNotFound = (req: FastifyRequest, reply: FastifyReply) => {
 };
 
 const serverError = <T>(error: T) => `
-          <view-error slot="content">
+          <view-error>
             <div slot="header">500 Server Error</div>
             <div slot="message">${error}</div>
           </view-error>

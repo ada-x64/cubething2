@@ -22,6 +22,8 @@ export const sendArticle = (
   return send(req, reply, article(content));
 };
 
+const acceptedFiletypes = ["tex", "md", "html"];
+
 const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
   fastify,
   opts,
@@ -30,7 +32,7 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
   fastify.get("/articles/:name", (req, reply) => {
     const { name } = req.params as { name: string };
     const dirPath = path.join(opts.root, "articles", name);
-    const dir = globbySync(dirPath, { gitignore: true });
+    const dir = globbySync(dirPath);
 
     // if there is a cached html file, prefer the html file
     if (opts.prod) {
@@ -45,13 +47,13 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
 
     // if not, try to get the source file
     const main = dir.find((filename) => {
-      const split = filename.split("/");
-      const regexp = new RegExp(`^(${name}|main)\\.`);
-      const res = regexp.test(split[split.length - 1]);
+      const basename = path.basename(filename);
+      const regexp = new RegExp(`^main\\.(${acceptedFiletypes.join("|")})`);
+      const res = regexp.test(basename);
       return res;
     });
     if (!main) {
-      reply.log.warn(name, "Could not find the requested article");
+      reply.log.warn({ message: "Could not find the requested article", name });
       return sendNotFound(req, reply);
     }
 
@@ -60,16 +62,27 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
     const mainPath = path.join(main);
     reply.log.info("Trying to serve (re)rendered file " + mainPath);
     if (main.endsWith(".tex")) {
-      const out = spawnSync("make4ht", [mainPath], {});
+      const out = spawnSync(
+        "make4ht",
+        [
+          "-j",
+          "index",
+          "-f",
+          "html5",
+          "-d",
+          path.dirname(mainPath),
+          "-s",
+          mainPath,
+        ],
+        { cwd: "/usr/bin" }, // would really prefer not to dump all the temp files here but OH WELL
+      );
       const stderr = out.stderr.toString();
+      fastify.log.debug({ stdout: out.stdout });
       if (stderr) {
-        fastify.log.warn(stderr);
+        fastify.log.error(stderr);
+        return sendServerError(req, reply, stderr);
       }
-      if (out.error) {
-        fastify.log.error(out.error);
-        return sendServerError(req, reply, out.error);
-      }
-      res = readFileSync(mainPath.replace(".tex", ".html")).toString();
+      res = readFileSync(path.dirname(mainPath) + "/index.html").toString();
     } else {
       const out = spawnSync("pandoc", [mainPath]);
       const stderr = out.stderr.toString();

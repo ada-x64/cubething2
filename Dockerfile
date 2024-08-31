@@ -1,21 +1,11 @@
 # use the official Bun image
 # see all versions at https://hub.docker.com/r/oven/bun/tags
 FROM oven/bun:debian AS base
-WORKDIR /usr/src/app
-
-ENV HUSKY=0
-RUN apt-get update
-RUN apt-get install -y \
-    pandoc \
-    texlive \
-    texlive-humanities \
-    texlive-science
-    
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # install dependencies into temp directory
 # this will cache them and speed up future builds
 FROM base AS install
+ENV HUSKY=0
 RUN mkdir -p /temp/dev
 COPY package.json bun.lockb /temp/dev/
 RUN cd /temp/dev && bun install --frozen-lockfile
@@ -25,9 +15,18 @@ RUN mkdir -p /temp/prod
 COPY package.json bun.lockb /temp/prod/
 RUN cd /temp/prod && bun install --frozen-lockfile --production
 
-# copy node_modules from temp directory
-# then copy all (non-ignored) project files into the image
-FROM base AS prerelease
+# copy production dependencies and source code into final image
+FROM registry.gitlab.com/islandoftex/images/texlive:latest-full as release
+WORKDIR /usr/src/app
+
+# Bring bun into the tex image and do stuff from the bun image
+COPY --from=base /usr/local/bin/bun /usr/local/bin/bun
+ARG BUN_RUNTIME_TRANSPILER_CACHE_PATH=0
+ENV BUN_RUNTIME_TRANSPILER_CACHE_PATH=${BUN_RUNTIME_TRANSPILER_CACHE_PATH}
+ARG BUN_INSTALL_BIN=/usr/local/bin
+ENV BUN_INSTALL_BIN=${BUN_INSTALL_BIN}
+
+# Build and test. (This would go into a prerelease image but w/e)
 COPY --from=install /temp/dev/node_modules node_modules
 COPY ./ ./
 
@@ -36,16 +35,28 @@ ENV NODE_ENV=production
 RUN bun test
 RUN bun run build
 
-# copy production dependencies and source code into final image
-FROM base AS release
-COPY --from=install /temp/prod/node_modules node_modules
-COPY --from=prerelease /usr/src/app/www/ ./www
-COPY --from=prerelease /usr/src/app/dist/ ./dist
-COPY --from=prerelease /usr/src/app/package.json ./
+# RUN groupadd bun \
+#       --gid 1000 \
+#     && useradd bun \
+#       --uid 1000 \
+#       --gid bun \
+#       --shell /bin/sh \
+#       --create-home \
+#     && ln -s /usr/local/bin/bun /usr/local/bin/bunx \
+#     && which bun \
+#     && which bunx \
+#     && bun --version
+# USER bun
+# ENV PATH="/usr/local/texlive/2024/:$PATH"
+# NOTE: Using --chmod=444 --chown=bun:bun seems to corrupt child file permissions,
+# so we have to do this as root. Boo.
+
+# Install pandoc.
+RUN apt-get update
+RUN apt-get install -y pandoc 
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # run the app
-RUN chown -R bun ./
-RUN chmod -R o+rw ./
-USER bun
 EXPOSE 3000/tcp
 ENTRYPOINT [ "bun", "dist/server/index.js" ]
+# ENTRYPOINT [ "bash" ]
