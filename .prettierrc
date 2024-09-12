@@ -1,0 +1,9 @@
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "semi": true,
+  "proseWrap": "always",
+  "singleAttributePerLine": true,
+  "bracketSpacing": true,
+  "plugins": ["prettier-plugin-latex"]
+}

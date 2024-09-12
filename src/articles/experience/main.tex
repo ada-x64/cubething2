@@ -1,0 +1,632 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% cubething.dev %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%preamble
+\documentclass[leqno]{article}
+
+%biblio
+\usepackage[authordate, backend=biber, natbib]{biblatex-chicago}
+\addbibresource{../../library.bib}
+
+% formatting
+% the font of all time (no special math formatting tho)
+% \usepackage{CormorantGaramond}
+\usepackage{csquotes} % smart quotes
+\usepackage{enumerate} % enumeration tools
+\renewcommand{\thesection}{\S\arabic{section}} % fancy subsections
+
+% comments and review
+
+\@ifpackageloaded{tex4ht}{
+
+}{ \usepackage{xcolor} \usepackage[normalem]{ulem} \usepackage{easyReview} \usepackage[many]{tcolorbox} \usepackage{marginnote} \setlength{\marginparwidth}{4cm}
+
+\definecolor{deepyellow}{HTML}{FFA62F} \definecolor{paleyellow}{HTML}{FFC96F} \definecolor{pageyellow}{HTML}{FFE8C8} \definecolor{deepblue}{HTML}{5AB2FF} \definecolor{paleblue}{HTML}{A0DEFF} \definecolor{pageblue}{HTML}{CAF4FF}
+
+\newtcolorbox{notebox}{ colback = pageblue, colframe = deepblue, boxrule = 0pt, leftrule = 1pt % left rule weight
+} \newtcolorbox{commentbox}{ colback = pageyellow, colframe = deepyellow, boxrule = 0pt, leftrule = 1pt % left rule weight
+}
+
+\renewcommand{\comment}[2]{ \uwave{#1}%
+\marginpar{ \begin{commentbox}\raggedright{#2}\end{commentbox} } } \newcommand{\note}[1]{ $\dagger$%
+\marginpar{ \begin{notebox}\raggedright{#1}\end{notebox} } } }
+
+% Maths
+
+% american mathematical society
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools} % extra symbols
+\usepackage{xparse}
+\newcounter{lemma}
+\newcounter{oldval}
+\DeclareDocumentEnvironment{lemmalist}{O {$\lambda$.} O {lemma}}{%
+\setcounter{oldval}{\value{equation}}%
+\setcounter{equation}{\value{#2}}%
+\renewcommand{\theequation}{#1\roman{equation}}%
+\align%
+}{ \endalign%
+\renewcommand{\theequation}{equation}%
+\setcounter{#2}{\value{equation}}%
+\setcounter{equation}{\value{oldval}}%
+}
+
+\newcommand{\temporaleval}[2]{ I_{\mathcal{M}#1}(#2) }
+
+\newenvironment{subproof}[1][\proofname]{%
+\renewcommand{\qedsymbol}{$\blacksquare$}%
+\begin{proof}[#1]%
+}{%
+\end{proof}%
+}
+
+%opening
+\title{%
+\Large The Logical Structure of Experience \\ \large \emph{Preliminary
+Explorations} }
+\author{Phoenix Mandala}
+\date{}
+
+\begin{document}
+	\maketitle
+
+	\comment{}{Motivations.} \alert{The first section will focus on outlining a logic of subjects and objects as motivated by first-person phenomenal experience. I will take care to make no assumptions about whether these experiences are conscious, subconscious, or unconscious in nature. In section 2 I will turn to the notion of consciousness where I will examine the ramifications of our logic for the layers of conscious experience, in addition to defending a notion of witness-awareness similar to Albahari as phenomenal basis for experience. Finally, in section 3 I will turn to notions of selfhood and for-me-ness as discussed by Zahavi and Kriegel.}
+
+	\setcounter{section}{-1}
+	\section{A Note on Methodology and Scope}
+
+	By proposing a logical system for the investigation of subjectivity I do not wish
+	to make any assumptions about what actually \emph{obtains} within the system. My
+	goal is to set down a few, hopefully uncontroversial axioms by which to
+	continue the examination of subjectivity. The system should be compatible with,
+	for example, the British empiricist notion of atomic sense-objects, Buddhist
+	notions of no-self, the Kantian intuitions, Jamesonian pragmatism, etc.
+
+	It is also necessary to defend the methodology. The logical system I propose
+	is an axiomatic system based on first-order predicate logic. Formal logic in this
+	style is typically considered the gold standard of logical thinking in the Analytic
+	world, but it is not often used in phenomenological investigations. This may be
+	at least partially due to the influence of hermeneutical theorists like Heidegger
+	and Ricouer, who would claim (e.g. in "What is Metaphysics?" \autocite{heidegger2008})
+	that a proper understanding of logic - and thus of metaphysics - would require
+	a hermeneutic that can account for the fullness of language. My thought in
+	axiomatizing the logical rules of consciousness is only to formalize the rules
+	of the language game we play when we speak of consciousness, and in particular
+	to formalize the notion of the subject/object distinction. In order to get
+	there we must first proceed from phenomenological grounds. I do not wish by any
+	means for the logical system outlined here to undermine the deeper methods of phenomenology,
+	only to clarify them in rigorous manner, so that we can proceed more scientifically
+	from the principles that we have uncovered.
+
+	\section{Subjects and Objects}
+
+	\subsection{Ontology}
+
+	Within the system I am about to describe, we are ontologically committed to at
+	least one object: experience. A discussion of the larger metaphysical
+	ramifications and material properties of experience, what I would consider \enquote{external}
+	features of experience, are not of concern here. Instead we will be focusing
+	on \enquote{internal} features of experience; its constitutive nature. As it is
+	typically expressed, the guts of an experience are split between the subject
+	which experiences and the object(s) which form the content of the experience.
+	Continuously across time, discretely from moment to moment, consciously, subconsciously,
+	or otherwise, the contents of experiences are directed towards subjects. We
+	can consider an experience, in its most basic form, to be a single moment of
+	phenomenal realization. Whether these moments are discrete, as in a flash
+	theory of consciousness, or ephemera on a diachronically continuous field of experience
+	- an infinitesimal on an analytic function - is to be bracketed. In any case
+	it is clear that the existence of subject and object are mutually conditioned
+	within the field of experience. But what is the nature of this conditioning?
+	Our discussion will begin by dissecting a single experience. We will see that in
+	order to defend a number of commonplace notions we will need to consider a few
+	mutations on a basic set of axioms, including a possible diachronic extension.
+	Later, we will analyze the consequences of these axioms and their place within
+	wider discourse on the nature of mind.
+
+	Within our lived conscious experience there is a pervasive sense of
+	subjecthood. This sense of subjectivity can be expressed as the sense of being
+	the \enquote{I-who-experiences.} There is much debate as to the exact
+	character and metaphysical status of this sense of subjectivity. For now, let's
+	assume that the subject is a coherent entity, regardless of the subject's internal
+	or external metaphysical features. For the purposes of our discussion I will
+	consider a subject as \emph{the minimal experiencing entity}. Whether this
+	entity attains consciousness, selfhood, or any sensation at all is
+	intentionally left vague. The goal is merely to understand its place within a logical
+	system of experience.
+
+	I will call an \emph{experience-object} (or \emph{object} for short) the content
+	of any experience. This includes sense perceptions, physical objects, thoughts,
+	imaginings, etc. It remains to be seen whether subjects can themselves be objects,
+	but for the purposes of our discussion we will assume that they are separate
+	entities unless otherwise constrained by the system at large. Similar to subjects,
+	we will not consider any internal or external features of experience-objects
+	unless it is required.
+
+	\subsection{Preliminary definitions}
+
+	Let's begin with a few statements which I hope will prove uncontroversial.
+	Since we cannot but experience the world through our own eyes, I will begin with
+	the subject as the root of our exploration. We will see how the structure of
+	experience arises. In the below, let $Ss$ be read as \enquote{$s$ is a subject},
+	$Oo$ as \enquote{$o$ is an object}, and $Xso$ as \enquote{$s$ experiences $o$.}%
+	%
+	\begin{align}
+		\label{prop:experience}\forall s \forall o (Xso & \rightarrow Oo \land Ss)    \\
+		\label{prop:object-dependence}\exists o (Oo)    & \rightarrow \exists s (Xso)
+	\end{align}%
+	%
+	\eqref{prop:experience} expresses the form of a subjective experience $X$. \eqref{prop:object-dependence}
+	expresses a limit on the existence of objects, namely that the existence of an
+	experience-object entails the existence of a subjective experience.
+	Considering \eqref{prop:experience} and \eqref{prop:object-dependence}
+	together, we can formalize this non-dangling property in a lemma:%
+	%
+	\begin{lemmalist}
+		\label{lemma:object-dependence} \exists o (Oo) \rightarrow \exists s (Ss)
+	\end{lemmalist}%
+	%
+	As James puts it, experiences do not \enquote{dangle about freely,} they are
+	always attached to a subject \comment{\autocite{james1983}}{TODO: Page numbers}.
+
+	Let $W_{s}\coloneq \{ o \mid Xso \}$ be the subject's \emph{object-world}.
+	This set arises naturally from the definition of an experience: it is simply the
+	set of all the objects which $s$ experiences. Note that this does not place
+	any restrictions on the quantity of objects and subjects in a given universe. The
+	most common-sense interpretation would hold the existence of multiple subjects
+	and objects; solipsists would claim only a single subject; theories which expound
+	a unified field of experience could state that there is only one object per subject;
+	and theories which deny conscious experience would claim that
+	$W_{s}= \emptyset$.
+
+	The manner in which the object-world presents to us is largely dependent on
+	modality. Mood and intention color the objects we perceive. The notion of a
+	set of experience-objects should not be misconstrued as a way of presenting
+	the world as present-at-hand entities, distinct from the subject's sense of self
+	and thus viewed from a purely scientific lens, though it can accommodate this.
+	The object-world and its contents, for the purposes of our discussion, are neutral
+	on the question of presentation and should be construed in a way that accommodates
+	any activity, whether working with tools, deep meditation, or dreamless sleep.
+	Again, we are not considering any properties of objects outside of their place
+	within the logical system to be outlined.
+
+	The propositions given so far derive from an examination of the consequences
+	of the existence of an object, but what we can say given the existence of a subject?
+	Does the existence of a subject entail the existence of experience-objects? If
+	so, this opens the possibility that a subject is merely a set of experience
+	objects, a sort of bundle theory of subjective experience. Let's call this
+	\emph{strong objective entailment} (SOE). If we wish to deny SOE, we will need
+	to propose an alternative - but how can we express this in the same terms?
+	\emph{Weak objective entailment} (WOE) proposes that the structure of the formal
+	world in which we are examining our subject-object relation must be organized in
+	such a way that the existence of a subject entails the \emph{logical
+	possibility} ($\mathrm{P}$) of experience, even if that possibility does not obtain.
+	I wish to keep the precise semantics of $\mathrm{P}$ vague at this point so
+	that we can discover its nature without undue influence from an existing
+	logical system, whether modal, temporal, probabilistic or otherwise. Expressed
+	in this way, we can write the following:
+	\begin{align}
+		\label{def:soe}\tag{SOE}\exists s (Ss) & \rightarrow \exists o (Xso)            \\
+		\label{def:woe}\tag{WOE}\exists s (Ss) & \rightarrow \mathrm{P}(\exists o(Xso))
+	\end{align}
+
+	First, let's look at some consequences for SOE. Recall the lemma \eqref{lemma:object-dependence}.
+	Under SOE, this quickly resolves into a biconditional. Further, because the
+	existence of subjects and objects are tightly coupled, we can claim that that the
+	cardinality of any experience-world is non-zero. These two statements can
+	easily be proved equivalent.
+	\newcounter{soe}
+	\begin{lemmalist}
+		[SOE.][soe] \label{lemma:soe1} \exists s(Ss) \leftrightarrow \exists o(Oo) \\
+		\label{lemma:soe2} \forall s (|W_s| \not= 0)
+	\end{lemmalist}
+
+	Turning to WOE, it's clear that our formulation is in need of a concrete implementation.
+	What we wish to express is the possibility of a phenomenal experience of \emph{nothing}.
+	We can express this in two ways, outlined below. The first tells us that a
+	subject can exist without entailing the existence of an object. The second expresses
+	this in terms of the object-world - a concrete expression, although a flatly
+	unsatisfying one.
+	\newcounter{woe}
+	\begin{lemmalist}
+		[WOE.][woe] \label{lemma:woe1} \mathrm{P}(\exists s(Ss \land \neg \exists o(Xso)))
+		\\ \label{lemma:woe2} \forall s(|W_s| \geq 0)
+	\end{lemmalist}
+
+	Although we can conceive of a subject experiencing no object, it is hard to imagine.
+	The best metaphor I can use is the (non-)experience of anesthesia or deep
+	sleep, where all objective subjectivity breaks down, and we are left with an
+	objectless void. In the state of anesthesia, there is no conception of space
+	or time. Yet, upon arising from anesthesia, we are aware of the fact that we were
+	just in an anesthetic state: it is as if a chunk of our diachronic experience-world
+	had been emptied of content. There is an awareness that time has passed; we
+	are unsure how much time, and we are unsure of our location, but we are aware
+	of the gap in our experience.
+
+	Gappy experience has some interesting consequences for the SOE theorist. Under
+	SOE, deep sleep extinguishes the subject. But this does not seem to be an issue
+	for the SOE theorist, who can claim that the nature of a subject qua
+	metaphysical object is not particularly relevant to memory or a continued
+	sense of self. Locke writes in such a manner, and Galen Strawson has recently
+	defended a similar view \autocite[ch. 12]{strawson2017}.
+
+	\blockquote[{\cite[2.27.10]{locke2000}}]{ For it is by the consciousness [that the self] has of its present Thoughts and Actions, that it is \emph{self} to it \emph{self} now, and so will be the same \emph{self} as far as the same consciousness can extend to Actions past or to come; and would be by distance of Time, or change of Substance, no more two \emph{Persons} than a Man be two Men, by wearing other Cloaths to Day than he did Yesterday, with a long or short sleep between: The same consciousness uniting those distant Actions into the same \emph{Person}, whatever Substances contributed to their Production. }
+
+	\note{Prediction: WOE will be equivalent to the notion of a self under SOE.} Naturally
+	during our talk about experience we reach for memory; we chunk our experiences
+	into instants and moments; there is a pervasive sense of the passage of time.
+	In order to understand what being a subject entails at all, we must consider a
+	subject over time. If the SOE theorist does not wish for the subject to
+	extinguish itself over time, and if the WOE theorist is going to have a coherent
+	view at all, we need to quantify over time.
+
+	\subsection{Time}
+
+	Let $\mathcal{M}$ be a semantic model with a time set $T$ and evaluation function
+	$\temporaleval{t}{\phi}$ which determines the truth-value of the model at time
+	$t\in T$. From here on, consider any unqualified proposition to be occurent. I
+	will be adopting Prior's model, in which the time relations $G$, $H$, $F$, and
+	$P$ will hold. Whenever I write a time $t$, it is to be considered as a moment
+	in $T$.
+
+	What character does time hold in this system? Should instants in $T$ map to the
+	interval of physical time, however short or long, which constitute the perceived
+	present moment? Should they map to physical time? Since we are not currently committed
+	to the notion of our minimal experiencing subject \emph{perceiving} time one
+	way or another, the question has yet to be decided. When considering ourselves
+	or other animals on our plant as subjects, it seems clear that times should map
+	to what James calls the \enquote{specious present,} but when considering an
+	elementary experiencing thing - say, a Russellian monad - it is not clear that
+	time is perceived at all. For now, let's set the question aside, and proceed
+	with our usual focus on structure.
+
+	Let's define $W_{s,t}$ and $X_{t}so$ to extend our definitions over time $t$. Where
+	the $t$ is omitted, the experience is to be considered occurrent. With this we
+	can define our restriction. First, let $\phi_{st}\coloneq Ss \rightarrow \exists
+	o(X_{t}so)$. This condition states that, for some subject $s$ and $t$, $s$ has
+	an experience at time $t$. When evaluating $\phi$, I will omit the $t$. That is,
+	$\phi_{st}$ will be evaluated as $\temporaleval{t}{\phi_s}$ Now, for all subjects
+	$s$,
+	\newcounter{d}
+	\begin{lemmalist}
+		[WOE.][woe] \label{woe:t1} (\exists t \in T)(\temporaleval{t}{\phi_{s}} = 1)
+	\end{lemmalist}
+	We can express this restriction with more familiar temporal semantics as well.
+	\begin{lemmalist}
+		[WOE.][woe] \label{woe:t2} \phi_{st} \lor F\phi_{st} \lor P\phi_{st}
+	\end{lemmalist}
+	Translating this to evaluation statements, let $t$ represent the current
+	moment, and let $p, f \in T (p \prec t \prec f)$.
+	\begin{lemmalist}
+		[WOE.][woe] \label{woe:t3} \temporaleval{t}{\phi_s} = 1 \lor \temporaleval{f}{\phi_s}
+		= 1 \lor \temporaleval{p}{\phi_s} = 1
+	\end{lemmalist}
+	\noindent
+	This reads, \enquote{Either $s$ is currently experiencing something, or $s$ will experience something, or $s$ has already experienced something.}
+	These two statements can be proven equivalent. First, assume linearity: $(\forall
+	x, y \in T)(x = y \lor x \prec y \lor y \prec x)$. A reductio follows quickly.
+	\begin{proof}
+		\item \eqref{woe:t1} $\rightarrow$ \eqref{woe:t2}
+		\newcounter{p}
+		\begin{lemmalist}
+			[][p] (\exists t \in T)(\temporaleval{t}{\phi_s} = 1)& &&
+			\text{assume \eqref{woe:t1}}&\\%
+			%
+			\neg(\phi_{st} \lor F\phi_{st} \lor P\phi_{st})& &&
+			\text{assume $\neg$\eqref{woe:t2}}&\\%
+			%
+			\neg(\exists t,f,p \in T)[ (p \prec t \prec f) \land (\temporaleval{t}{\phi_s}
+			= 1 & \\\notag \lor \temporaleval{f}{\phi_s} = 1 \lor \temporaleval{p}{\phi_s}
+			= 1)& ] && \text{\eqref{woe:t3}=\eqref{woe:t2}}&\\%
+			%
+			(\exists t \in T)(\temporaleval{t}{\phi_s} = 1)& && \text{(ii, linearity)}.
+			\perp.&\\%
+			%
+			\phi_{st} \lor F\phi_{st} \lor P\phi_{st}& && \blacksquare&
+		\end{lemmalist}
+		\item \eqref{woe:t2} $\rightarrow$ \eqref{woe:t1}
+		\setcounter{p}{0}
+		\begin{lemmalist}
+			[][p] \phi_{st} \lor F\phi_{st} \lor P\phi_{st}& &&\text{assume \eqref{woe:t2}}&\\%
+			%
+			\neg(\exists t \in T)(\temporaleval{t}{\phi_s} = 1)& &&\text{assume $\neg$\eqref{woe:t1}}&\\%
+			%
+			\forall t \in T(\temporaleval{t}{\phi_s} = 0)& &&\text{(ii)}&\\%
+			%
+			\neg(\phi_{st} \lor F\phi_{st} \lor P\phi_{st})& &&\text{(iii)}. \perp.&\\
+			(\exists t\in T)(\temporaleval{t}{\phi_s} = 1)& && \blacksquare &%
+		\end{lemmalist}
+		$\therefore$ \eqref{woe:t1} $\leftrightarrow$ \eqref{woe:t2}.
+	\end{proof}
+
+	\subsection{Multiple subjects}
+
+	Our definitions so far do not rule out the possibility that two subjects could
+	have the same experience. This is intuitively impossible; try as we might we cannot
+	get into our friend's heads. Let's write a statement which follows this claim. %
+	%
+	\begin{align}
+		\label{prop:subject-identity}                                    %
+		\forall x \forall y \forall o ( Xxo \land Xyo \rightarrow x = y)
+	\end{align}%
+	%
+	\noindent
+	This quickly resolves into a few lemmas.%
+	%
+	\begin{lemmalist}
+		\label{prop:world-exclusion} %
+		x \not= y &\rightarrow (o \in W_x \rightarrow o \not\in W_y) \\ \label{prop:experience-exclusion} %
+		x \not= y &\rightarrow \neg(Xxo \land Xyo)
+	\end{lemmalist}%
+	%
+	Note again that these propositions take no stance on whether the objects
+	experienced by any two subjects are representations of the same underlying
+	reality, whatever shape that may take. These propositions do not affirm nor
+	deny the existence of any subject-independent reality, and so do not say anything
+	about objectivity or intersubjectivity.
+
+	Still, caution should be exercised here.\note{Should we discuss parapsychism, i.e. ant colonies as superorganisms?}Believers
+	in shared experiences may argue that the peyote trip they had with their
+	partner resulted in a deep, although brief, unification of their
+	consciousnesses. In such an experience, awareness of the body drops away
+	entirely while a psychedelic experience occurs. On recollection, the partners
+	realize that they shared a hallucination to an exacting degree. I use psychedelics
+	to ease the point, but is not logically absurd to consider such a scenario in
+	sober minds. Consider a shared experience between subjects A and B. In order
+	for an experience to be shared, it must either have the same objective contents
+	or occur for the same subject. When subjects A and B share a hallucination, there
+	may be a subject C to which the experience is actually directed. Suppose that
+	at time $t$, A and B can recall the experiences of C which occurred at time $t-
+	1$. In order to explore this question we will need to lay down some rules
+	about how subjects extend over time.
+
+	\section{Consciousness}
+
+	So far we have discussed an expression of the synchronic and diachronic nature
+	of subjective experience. Now we need to talk about what this theory
+	represents. So far I have avoided discussion of topics such as consciousness and
+	the self. Let us first turn our attention to consciousness before detailing
+	consequences for common conceptions of the self.
+
+	As we have been explaining subjective experience, I want to make clear that what
+	we have been discussion may not necessarily be \emph{conscious} experience. Any
+	theory of conscious subjectivity will need to account for subconscious and unconscious
+	experiences.
+
+	Earlier we dog-eared a discussion, whether or not its possible for a subject
+	to itself be an object. There is a classic argument from Bretano which argues this
+	is impossible. On this view, if a subject were to objectify itself it would collapse
+	the subject/object distinction, resulting in an infinite regress of
+	objectification of the subject. \comment{[...]}{Kriegel on intransitive self-consciousness, expansion of this argument to talk about occurent mental states etc.}
+
+	\comment{Kriegel argues that self-awareness is essential to consciousness (his construal: consciousness is essentially self-illuminating) \autocite{kriegel2003}. Albahari argues that witness-consciousness is a pre-reflective, mode-neutral sort of awareness which occurs prior to self-awareness \autocite{albahari2009}. Higher-order monitoring theories propose that self-awareness occurs through non-conscious mental states, though Kriegel argues for the absurdity of this position by the nature of experience: we are inherently aware of the fact that we are aware of our experiences; unconscious mental states are essentially things we are \emph{not} aware of. For the sake of this paper, I will be making as few assumptions about the nature of the self as possible. The focus of this paper is on the bare structural nature of subjective experience, and will proceed on as few assumptions about the self as possible.}{Expand, rewrite}
+
+	\remove{ It is certainly possible to objectify the field of experience – everything we are experiencing - but it does not seem possible to objectify in any meaningful way the very act of awareness which makes objectification possible. Trying to turn our focus to our own perceptive abilities results in a slippery sort of evasion, like an eye trying to see itself. What would it mean for a subject to experience its own condition? However,}\note{This needs to be replaced. Instead guide the reader into questioning how occurent mental states can fit into the picture so painted. Define mental states as bundles of objects, and occurance as a property of these sets, defined as a matter of awareness of these mental states. How to define awareness? }
+	there is definitely a sense in which we are aware of our subjective capacities.
+	Even when there are no objects to experience – say, while in deep sleep or
+	under anesthesia, there is still a vague awareness of our conscious abilities.
+	This sort of awareness takes on a witnessing quality, a distance from the action,
+	so to speak, as if dissociating oneself from the act of objectification.
+	Alongside \textcites{albahari2006}{albahari2009} I will call this witness-consciousness.
+
+	\section{Selfhood}
+
+	So far, we have defined subjective experience separate from the sense of self
+	which permeates it. Let us turn now to this sense of self.
+
+	***
+
+	\textcite{kriegel2003} discusses several key arguments in relation to the self.
+	In particular, his eyes are set on notions of self-consciousness. He discusses
+	intransitive self-consciousness, a term which he introduces. This kind of
+	consciousness is contrasted in the following \autocite[p. 103]{kriegel2003}:
+
+	\begin{enumerate}[(a)]
+		\item $x$ is self-conscious of her thought that $p$
+
+		\item $x$ is self-consciously thinking that $p$
+	\end{enumerate}
+
+	The second form is intransitive self-consciousness; it is a feature of phenomenal
+	experience which describes the self-conscious quality of an experience. This
+	is similar to the concept of "for-me-ness" commonly defended by Zahavi.\footnote{See
+	e.g. \autocites{zahavi2015, zahavi2020}.} In order to defend this notion, Kriegel
+	[...]
+
+	\textcites{zahavi2015, zahavi2020} propose that there is an essential characteristic
+	of phenomenal experience whereby the experiences are inherently directed towards
+	a subject. An experience is always \emph{for me}, that is, directed towards myself
+	as subject. The phenomenal character of for-me-ness is essentially pre-reflective
+	self-consciousness. But what sense of selfhood do Zahavi and Kriegel wish to Does
+	Zahavi propose that in order for a synchronous experience to occur, there must
+	be a self which experiences it? If so, then this synchronic-phenomenal sense
+	of self must be distinguished from social and diachronous senses of self. Here
+	it is instructive quote Albahari: \blockquote[\cite{albahari2009}]{something somethingblah blah blah}
+
+	***
+
+	dSOE can be construed as a bundle theory, famously proposed by Hume. dWOE is a
+	gappy-consciousness theory, most commonly espoused by folk psychology and supported
+	by Kriegel and Albahari. dONE can be best understood as fitting into a
+	panpsychist framework which admits of consciousness by degrees. dONE can accommodate
+	the psychic experiences of a rock, i.e., its total lack thereof.
+
+	***
+
+	I want to make some distinctions about the sense of self as it pertains to subjective
+	experience. I will follow \autocite{wozniak2018} in distinguishing between the
+	phenomenal “me” and the metaphysical “I.” The idea is as follows: All
+	conceptions of owned experience-objects, including thoughts, feelings, interoception,
+	delusions, owned items, social belonging, etc. are part of the external, phenomenal
+	“me.” Woźniak’s conception is inspired by \autocite{james1983}, who distinguishes
+	between the “I” as the self-who-experiences / self-as-subject, and the “me” as
+	the perceived self / self-as-object. Woźniak argues that the problems of the self
+	which correlate to phenomenological investigation are well within the realms of
+	naturalistic investigation, insofar as we can directly map our phenomenal
+	experiences to physical occurrences. Problems of the self within the realm of metaphysics
+	are not so easily mapped, though they may be restricted by the results of
+	naturalistic investigation, so long as we are not dedicated to the idea of metaphysics
+	as entirely methodologically distinct from the natural sciences. For Woźniak, problems
+	of phenomenal selfhood are “easy” problems of mind, while problems of
+	metaphysical selfhood are “hard” problems of mind. This corresponds to my distinction
+	between problems of the cognition as “easy” problems and problems of consciousness
+	as “hard.” Under these terms, the subject is the “I” at the root of conscious
+	experience. The metaphysical self as separate from the phenomenal self explains
+	the slippery nature of our attempts to objectify our subjective experience.
+	The metaphysical subject lies outside the realm of phenomenal objectification.
+
+	I would like to argue that the self has an entirely phenomenal character. It is
+	a misnomer to claim selfhood in the metaphysical “I”. (TODO: Zahavi and
+	Kriegel 2016. Compare Albahari 2006 on four aspects of the self.)
+
+	It is naturally felt that the subject of experience is the self. However, the self
+	is clearly more than the mere possibility or realization of conscious experience.
+	The self predicates a notion of a me. I will use Mead’s I/Me distinction to separate
+	between the I as the subject of experience and the me as the reflective image of
+	the self (Mead, 1967). The self comprises both of these elements and stands over
+	and above them. Within the self there is a sense of ownership, for example my body,
+	my computer, my thoughts, my actions. To which aspect of self do these senses belong?
+	If they belong to the subject as such, then they must be inexperiencable in principle.
+	However, the sense of ownedness clearly has an experiential quality, and so
+	must belong to the me. What about my sense of self? Again, this clearly is an experienced
+	sense, so it cannot belong to the subject. The subject of experience, taken
+	solely on its own nature, has no innate sense of self.
+
+	How can it be that the subject is separate from the self? Surely there is a
+	sense of ownedness within subjective experience? We intuitively perceive of our
+	experiences as ours, as belong to us. But again, this sense of ownership
+	belongs to the me. We could alternatively say that I experience some phenomena
+	P. A subject experiences, and in that sense the experience belongs to the subject.
+	All this proves is that the subject has a sense of ownership, specifically ownership
+	over the objects of its experiences qua its ability to experience them.
+	However, the sense of self implies a distinction between the self and the other.
+
+	I hold that what we call the mind is the subject of experience taken as an object.
+	The subject of experience can be no other than the self. In order to substantiate
+	this claim I will start with the developmental psychology of the self.
+
+	The notion of a self first arises through our interaction with others. We are
+	born being able to distinguish between our own bodies and the bodies of others.
+	The infant’s rooting response only occurs when stimulated by another person,
+	not by their own body. This sense of difference between mother and child is the
+	psychological origin of the concept of difference. As we grow, we develop further
+	independence from our caretakers parallel to our ability to rationalize about our
+	environment and about our own behavior. A young child develops a sense of self
+	or ownedness in response to their caretakers behavior. The young child,
+	perhaps two years old, may, for instance, pull on a cat’s tail, which incites
+	the caretaker to say, “No, stop, that’s bad.” The child internalizes this, and
+	the next time they pull the cat’s tail, they stop themselves by repeating the phrase,
+	“No, stop, that’s bad.” The child is exhibiting self-aware behavior, and is able
+	to exert some executive control because of it. All this is to say that our
+	sense of self arises in parallel through our cognitive development and our
+	interactions with other people. There is an essential interplay between the cognitive
+	and social aspects of the development of the sense of self.
+
+	Where do the classic questions in philosophy of mind first arise in developmental
+	psychology? Although I am not an expert in developmental psychology, I can track
+	my own experience of these questions, as a parent and a former child. I was around
+	five years old when I realized the problem of other minds through the development
+	of empathy – what is it like to be somebody else? To put it in its classic
+	formulation, how can I tell what another person is thinking and feeling – and skeptically,
+	how do I know that they are thinking and feeling anything at all? When that question
+	is reversed, we come to question our own mind. If I can see certain tells of consciousness
+	or emotional disposition then, because I can see the signs of another person
+	reading my subconscious signaling, I must exhibit these features. It is worth
+	noting that the young child needs to be reminded that she is, in fact, a
+	person among others. The young child must be reminded of her selfhood, not as
+	a phenomenal subject or as a conscious agent, but as a social self. It is only
+	through the perception of others – and the mirroring of that perception in
+	others – that we become conscious of ourselves as a self. This is most clearly
+	expressed in Sartre’s conception of “the look” and is generally considered a hallmark
+	explanation of the self/other distinction.
+
+	I have shown that the self develops alongside the growth of cognitive and social
+	abilities. Both are essential to the development of a self. Conscious experiencing,
+	or subjectivity, develops prior to cognitive and social abilities, and is
+	essential for their development. However, consciousness should be
+	distinguished from the self. It is important here to disambiguate between the self
+	as a metaphysical object and the sense of self as an object of experience.
+	There is a sense of ownership inherent to all phenomenal experience. I will follow
+
+	-
+
+	This [skeptical look at the existence of the self] is the essence of Descartes’
+	meditations and has formed the basic attitude of Western theory of mind. The
+	Cartesian theory of mind is heterophenomenological, and cannot, in principle, account
+	for the experiential aspect of conscious being. It is precisely because they
+	miss the ontic origin of the question of mind that they miss the essence of it.
+	The objectification of the subject, and thus the creation of the self, comes through
+	intellection or reflection in an essentially social manner. Without a social
+	basis, there is no self, and without the self there is no mind.
+
+	Initially we are convinced of our existence within the world, but on further reflection
+	we become skeptical. Descartes’ project was to counter this skepticism, although
+	most agree he was unsuccessful in doing so. He attempts to explain the mind-body
+	problem through a form of substance dualism. This postulates res cogitans - mental
+	substance, which takes no space - and res extensa - physical substance, which takes
+	up space. This form of substance dualism contends that mental objects are
+	fundamentally indiscernible through empirical means, and therefore are most likely
+	causally inert. (fn: David Chalmers has postulated a non-substance dualism, where
+	mental phenomena arise through property dualism. Physical substances have both
+	physical and mental properties. What exactly it would mean to extend the physical
+	realm - fundamentally the study of space and time - with a non-causal,
+	phenomenally potent particle is unclear. If it smells like a monad and acts like
+	a monad - is it not a monad?)
+
+	Throughout Descartes’ meditations, he refers to the self. He makes believe he
+	is deceived by an evil demon, that nothing external to himself can be trusted.
+	But what is the self? To Descartes, the self is the rational being, it is the ability
+	to perceive and think, the famous cogito, ergo sum. To a Buddhist thinker, Descartes
+	is a step away from the truth: there is no self. Albahari Miri in her book Analytic
+	Buddhism (Miri 2006) argues for the non-existence of the self. To put things
+	in her terms, the Cartesian project is an attempt to make an object out of conscious
+	awareness. This is, to Miri, an absurdity. On her view, the subject is the
+	psycho-physical instantiation of a form of consciousness characterized by
+	phenomenal experience. She calls this form of consciousness witness-consciousness.
+	It is the “realized capacity to observe, know, witness, and be consciously aware”
+	(Miri 2006, 7). An object is defined as anything a subject can, in principle, bear
+	witness to. In this way, objects include empirical, phenomenal, and a priori or
+	purely mental experiences. Witness-consciousness as that which does the
+	witnessing cannot itself be witnessed, just as an eye cannot see itself. Thus
+	objectifying witness-consciousness is inconceivable. That is to say, because
+	Descartes’ project is essentially a justification of the external world
+	through a conceptualization of the self as a thinking thing - still with the
+	sense of object in mind - it cannot be the case that Descartes’ skeptical
+	method reveals the nature of consciousness. And yet, the Cartesian project has
+	continued to dominate the philosophy of mind.
+
+	But the res cogitans is surely a useful concept. What does it reveal? The res
+	cogitans cannot reveal the nature of witness-consciousness, but it can reveal to
+	us our khandic consciousness. In Buddhism, khanda is often translated as “clinging;”
+	the six khandas correspond to our five senses and our rational capacity.
+	Witness-consciousness can reveal the nature of the six khandas but it cannot
+	reveal its own nature. The res cogitans, being the reduction of the self to
+	its bare essentials, thus can reveal only the nature of the khandic consciousness.
+	In particular, Descartes’ meditations proceed by doubting all sense phenomena.
+
+	If there is no self, there is no mind. Then why and how does khanda arise? Is
+	no-mind the same as no-phenomena? Nibbana is the state of pure witnessing,
+	where the witness-consciousness is cleared of content. The question arises:
+	where does the content come from? The Buddhist answer is to say that this is a
+	wrong question. Nibbana is unconditioned by space, time, quality, and difference,
+	so there is no concept of other within a nibbanic consciousness. If pure witness-consciousness
+	(nibannic consciousness) is unconditioned by space, time, quality and difference,
+	then it must not be physical in nature. There must be something outside of these
+	things which provides us with the ability to witness. But what lies outside of
+	what can possibly be witnessed? It is precisely nothing that lies outside the possibility
+	of witnessing. It is from the nothing that witness-consciousness arises. But should
+	we believe in the existence of nibbanic consciousness? The question seems to
+	be: What is a mind anyways? How does it relate to the sense of self? Is the mind
+	identical to the self? If not, what relationship do they hold? If mind is not
+	the self, and the self is an illusion, then is mind witness-consciousness
+	itself? If so, nibbanic consciousness would be a matter of experiencing the
+	foundations for the possibility of phenomenal experience. If the self and the mind
+	are the same, then the Buddhist conception of no-self would entail no-mind. But
+	what would it mean to have no mind? And in any case, where does the content of
+	phenomenal experience spring from? Quantum field theorists believe that
+	fundamental particles spontaneously come into existence, annihilating themselves
+	within angstrom units of time. Does consciousness then arise in a similar
+	manner, as a witnessing of this spontaneity, or as Chalmer’s mind-particle? We
+	are no closer to solving the hard problem of mind.
+
+	\printbibliography
+\end{document}

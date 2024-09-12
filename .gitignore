@@ -1,0 +1,29 @@
+node_modules/
+*.log
+.env.local
+
+# LaTeX build files
+# Would use the 'git-include' pattern but globby doesn't seem to support it.
+*.bbl
+*.bcf*
+*.blg
+*.fdb_latexmk
+*.fls
+*.xml
+*.4ct
+*.4tc
+*.aux
+*.dvi
+*.idv
+*.lg
+*.log
+*.tmp
+*.xref
+*.synctex.gz
+*.out
+*preprocess_input
+# markdown files emit a .html at root level. Want to ignore it.
+src/articles/**/index.*
+src/**/error.json
+
+www

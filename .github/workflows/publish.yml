@@ -1,0 +1,34 @@
+name: cubething
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: "${{secrets.GHCR_ACCESS}}"
+      - name: "Login to GitHub Container Registry"
+        run: |
+          docker login \
+            --username ${{github.actor}} \
+            --password ${{secrets.GHCR_ACCESS}} \
+            ghcr.io;
+      - name: "Build Image"
+        run: |
+          docker build . \
+            --tag ghcr.io/${{github.repository}}:latest \
+            --tag ghcr.io/${{github.repository}}:${{github.sha}}\
+            --label "org.opencontainers.image.source=${{github.server_url}}/${{github.repository}}"
+      - name: "Push Image"
+        run: |
+          docker push ghcr.io/${{github.repository}}:latest
+          docker push ghcr.io/${{github.repository}}:${{github.sha}}

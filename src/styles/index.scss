@@ -1,0 +1,48 @@
+/****************************** cubething.dev ********************************/
+
+@use "../../node_modules/katex/src/styles/katex.scss" with (
+  $font-folder: "/static/font/KaTeX",
+  $use-woff2: true,
+  $use-woff: true,
+  $use-ttf: false
+);
+
+@import url("sty.css");
+@import url("font.css");
+@import url("libertinus.css");
+
+body {
+  font-family: "Libertinus Serif";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: "EB Garamond SC";
+  font-variant: small-caps;
+  font-weight: normal;
+}
+div.footnotes {
+  font-style: normal;
+  font-size: 1em;
+}
+* {
+  line-height: 1.2;
+}
+.ec-lmtt-10::before,
+.ec-lmtt-10::after {
+  content: "`";
+  font-family: "libertinus mono", monospace;
+}
+
+a {
+  color: green;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: goldenrod;
+  }
+}
