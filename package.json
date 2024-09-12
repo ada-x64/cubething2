@@ -12,7 +12,8 @@
     "format": "bunx prettier -c .",
     "headers": "bun scripts/headers.ts",
     "prepare": "husky || true",
-    "styles": "bunx sass --source-map --embed-source-map --quiet-deps -s compressed src/styles/:www/styles"
+    "styles": "bunx sass --source-map --embed-source-map --quiet-deps -s compressed src/styles/:www/styles",
+    "dist": "./scripts/dist.sh"
   },
   "keywords": [],
   "author": "",

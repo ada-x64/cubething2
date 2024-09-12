@@ -14,8 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true
           token: "${{secrets.GHCR_ACCESS}}"
+      - uses: oven-sh/setup-bun@v2
+      - uses: xu-cheng/texlive-action@v2
+        with:
+          scheme: full # kinda wasteful but it's fine
+      - name: dist
+        run: |
+          bun i --frozen-lockfile --production
+          bun dist
       - name: "Login to GitHub Container Registry"
         run: |
           docker login \

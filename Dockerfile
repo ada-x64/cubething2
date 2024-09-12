@@ -21,12 +21,8 @@ WORKDIR /usr/src/app
 ENV NODE_ENV=production
 
 COPY --from=install /temp/dev/node_modules node_modules
-COPY ./src/server ./src/server
-COPY ./src/client ./src/client
-COPY ./www ./www
-COPY ./src/static ./www/static
-COPY ./package.json ./package.json
-RUN bun bundle
+COPY ./ ./
+RUN bun dist
 
 EXPOSE 3000/tcp
 ENTRYPOINT [ "bun", "start" ]
