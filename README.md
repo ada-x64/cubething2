@@ -6,29 +6,44 @@ free to use it.
 ## system requirements
 
 This software is build for POSIX compatible operating systems. I am using Debian
-on WSL2. It requires the following packages:
+on WSL2. It requires the following development tools:
 
 - [bun](https://bun.sh)
 - [pandoc](https://pandoc.org)
-- [docker](https://docker.com) (for development)
+- [make4ht](https://github.com/michal-h21/make4ht), preferably distributed with
+  [TeXLive](https://tug.org/texlive/)
+- [latexmk](https://ctan.org/pkg/latexmk/)
+- [docker](https://docker.com)
 
-## static files
+## quick start
 
-- ... are located at www/
+```sh
+bun i
+# for production builds
+bun dist
+bun start
+# for dev builds
+# watches files for changes and hot-reloads
+bun dev
+```
 
-- ... are rendered using a system-installed latex + pandoc instance. Anything
-  tex4html and pandoc can render is fair game. Articles should be stored as
-  such: `www/articles/my-article/main.*`. Essentially they're modules, which
-  allows us to render more complex things like $\LaTeX{}$. I like to store a
-  global bibliography in my static folder as well.
+## structure
 
-- ... are bundled with the application. This is inconvenient for publishing - it
-  would be preferable for the author to just publish to a separate cdn - but
-  bundling allows us to do server-side rendering without relying on a second
-  server. Overall, this solution is cheaper and faster than running two
-  microservices - rebuilding the server and hosting the package is free with
-  GitHub Actions, and hosting is less expensive for a single server than for
-  two.
+Articles are rendered using a system-installed latex + pandoc instance. Articles
+should follow this structure: `src/articles/my-article/main.{tex,md}`. This
+would compile to `www/articles/my-article/index.html`, which would then be
+served at the route `articles/my-article`. Essentially they're modules, which
+allows us to render more complex things like $\LaTeX{}$. Use the config file to
+configure make4ht to make use of custom commands and to customize the HTML
+output to your needs.
+
+Static files, when distributed, are bundled with the application. This is
+inconvenient for publishing - it would be preferable for the author to just
+publish to a separate cdn - but bundling allows us to do server-side rendering
+without relying on a second server. Overall, this solution is cheaper and faster
+than running two microservices - rebuilding the server and hosting the package
+is free with GitHub Actions, and hosting is less expensive for a single server
+than for two.
 
 ## deployment
 
@@ -38,15 +53,6 @@ docker run -it --network host ${USERNAME}/${CONTAINER}
 ```
 
 ## development
-
-Get started with the usual `bun i`. Make sure you have `pandoc` and `tex4html`
-installed. I highly recommended installing TexLive using the manual instructions
-found [here](https://tug.org/texlive/quickinstall.html). This will match what is
-happening in the Dockerfile.
-
-A local development server is run with `bun dev`. This includes hot-reloading
-for the application and rendered articles. To run in production mode run
-`PROD=true bun dev`.
 
 Linting, formatting, and header placement are required before commits. Make sure
 Husky is up and ready to roll before you commit anything.

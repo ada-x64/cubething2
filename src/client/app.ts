@@ -60,6 +60,7 @@ class App extends LitElement {
     this.shouldRoute = true;
     //@ts-expect-error Defined at bundle time
     if (BUILD_INFO.HOT) {
+      console.log(BUILD_INFO);
       this.tryWebsocket();
     }
   }

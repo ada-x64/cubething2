@@ -2,10 +2,11 @@
 
 const TEX_ROOT = process.env["TEX_ROOT"] ?? "";
 import path from "path";
-import { lstatSync, readFileSync, writeFileSync } from "fs";
+import { lstat, lstatSync, readFileSync, writeFileSync } from "fs";
 import { spawnSync } from "child_process";
 import parseMath from "./katex.js";
 import { globSync } from "glob";
+import { program } from "commander";
 
 const acceptedFiletypes = ["tex", "md"];
 const render = (
@@ -94,10 +95,32 @@ export default render;
 if (import.meta.main) {
   const src = path.join(process.cwd(), "src/articles");
   const out = path.join(process.cwd(), "www/articles");
-  const log =
-    process.argv.includes("-v") || process.argv.includes("--verbose")
-      ? console
-      : undefined;
+  program.option("-v").argument("[string]").parse();
+  const log = program.opts()["v"] ? console : undefined;
+  const inputFile = program.args[0];
+  if (inputFile) {
+    try {
+      const lstat = lstatSync(inputFile, { throwIfNoEntry: false });
+      if (!lstat) {
+        console.error(`No such file or directory "${inputFile}"`);
+        process.exit(1);
+      } else if (lstat?.isDirectory()) {
+        console.error("Please specifiy a file, not a directory.");
+        process.exit(1);
+      }
+      const res = render(inputFile, out, path.join(src, "MyConfig.cfg"), log);
+      if (res === true) {
+        console.log(`No changes in ${inputFile}`);
+      } else {
+        console.log(`(Re)rendered ${inputFile}`);
+      }
+      process.exit(0);
+    } catch (e) {
+      console.error("Failed to render", inputFile, e);
+      process.exit(1);
+    }
+  }
+
   const failedFiles = [];
   const renderedFiles = [];
   const cachedFiles = [];

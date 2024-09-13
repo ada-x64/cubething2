@@ -25,5 +25,6 @@ node_modules/
 # markdown files emit a .html at root level. Want to ignore it.
 src/articles/**/index.*
 src/**/error.json
+src/**/out/
 
 www

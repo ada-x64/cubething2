@@ -7,7 +7,7 @@
   "scripts": {
     "start": "bun ./src/server/index.ts",
     "dev": "./scripts/dev.sh",
-    "bundle": "bun build src/client/app.ts --outdir www/js --sourcemap=inline --minify --define 'BUILD_INFO={\"PROD\": \"$NODE_ENV\"}'",
+    "bundle": "sh -c \"bun build src/client/app.ts --outdir www/js --sourcemap=inline --minify --define 'BUILD_INFO={\"PROD\": \"$NODE_ENV\", \"HOT\": \"$HOT\"}'\"",
     "lint": "bunx eslint .; bunx tsc --noEmit",
     "format": "bunx prettier -c .",
     "headers": "bun scripts/headers.ts",
@@ -40,6 +40,7 @@
     "@types/content-disposition": "^0.5.8",
     "@types/qs": "^6.9.15",
     "ansi-up": "^1.0.0",
+    "commander": "^12.1.0",
     "content-disposition": "^0.5.4",
     "fastify": "^4.28.1",
     "globby": "^14.0.2",

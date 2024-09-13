@@ -46,14 +46,17 @@ const check = (write: boolean) => {
   }
   if (!failed) {
     console.log("No missing headers!");
+    return true;
   } else if (!write && failed) {
     console.log("Run with --write to fix.");
+    return false;
   }
 };
 
 if (import.meta.filename === Bun.main) {
   const write = process.argv.includes("--write");
-  check(write);
+  const ok = check(write);
+  process.exit(Number(!ok));
 }
 
 export default check;

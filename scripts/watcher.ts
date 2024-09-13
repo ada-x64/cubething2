@@ -1,34 +1,64 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
-import { $ } from "bun";
 import { globbySync } from "globby";
 import Watcher from "watcher";
-import fs from "fs";
+import { lstatSync } from "fs";
+import cp from "child_process";
+import path from "path";
 
 const log = (kind: "info" | "warn" | "error", ...args: unknown[]) => {
   const color =
     kind === "info" ? "\x1b[34m" : kind === "warn" ? "\x1b[93m" : "\x1b[91m";
-  console.log(`${color}\udb85\ude16 ${args}\x1b[0m`);
+  console.log(`${color}\udb85\ude16 ${args.join(" ")}\x1b[0m`);
 };
 const info = (...args: unknown[]) => log("info", args);
-// const error = (...args: unknown[]) => log("error", args);
+const error = (...args: unknown[]) => log("error", args);
 const warn = (...args: unknown[]) => log("warn", args);
 
+const sayAndDo = async (script: string) => {
+  info("> " + script);
+  return cp.spawnSync("sh", ["-c", script], {
+    cwd: process.cwd(),
+    stdio: "inherit",
+  });
+};
+
 let refresh = () => {};
-const rerender = async (event?: string, path?: string) => {
-  if (event && path) {
-    info(`Detected ${event} at ${path}`);
-  }
-  let out;
-  if (path?.includes("articles")) {
-    await $`bun scripts/render/render.ts | ${out}`;
+const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
+  info(event, oldpath, newpath);
+  if (oldpath?.includes("articles")) {
+    await sayAndDo(`bun scripts/render/render.ts ${oldpath}`);
+  } else if (oldpath?.includes("static")) {
+    // TODO: This is kinda buggy.
+    // Folder actions can get missed.
+    const wwwpath = (newpath ?? oldpath).replace("src", "www");
+    if (event === "unlink") {
+      const isdir = lstatSync(wwwpath, {
+        throwIfNoEntry: false,
+      })?.isDirectory();
+      await sayAndDo(`rm ${isdir ? "-r" : ""} ${wwwpath}`);
+    } else if (event === "unlinkDir") {
+      await sayAndDo(`rm -r ${wwwpath}`);
+    } else {
+      const inpath = newpath ?? oldpath;
+      const isdir = lstatSync(inpath, { throwIfNoEntry: false })?.isDirectory();
+      if (isdir) {
+        await sayAndDo(`mkdir -p ${wwwpath}`);
+      } else {
+        await sayAndDo(`cp ${newpath ?? oldpath} ${wwwpath}`);
+      }
+    }
+  } else if (oldpath?.includes("styles")) {
+    sayAndDo(`bun sass`);
+  } else if (oldpath?.includes("client")) {
+    sayAndDo(`HOT=true bun bundle`);
   }
   refresh();
 };
 
 const PORT = Number(process.env["PORT"] ?? 4444);
 
-info(`Hot reloading server at ws://127.0.0.1:${PORT}`);
+info(`Booting hot reload server at ws://127.0.0.1:${PORT}...`);
 Bun.serve({
   port: PORT,
   hostname: "127.0.0.1",
@@ -60,18 +90,26 @@ Bun.serve({
 });
 const watcher = new Watcher("src/", {
   recursive: true,
-  renameDetection: true,
   persistent: true,
   ignoreInitial: true,
   ignore: (filepath) => {
-    if (fs.lstatSync(filepath, { throwIfNoEntry: false })?.isDirectory()) {
-      return false;
-    }
-    const out = globbySync(filepath, {
-      ignore: ["**/error.json"],
+    // const lstat = fs.lstatSync(filepath, { throwIfNoEntry: false });
+    // if (!lstat || lstat.isDirectory()) {
+    //   // console.log(filepath, "not ignored");
+    //   return false;
+    // }
+    const src = path.join(process.cwd(), "src");
+    const folders = globbySync(src, { onlyDirectories: true });
+    const files = globbySync(filepath, {
       gitignore: true,
+      globstar: true,
     });
-    return !out.includes(filepath);
+    const out = folders.concat(files, src);
+    const ignored = !out.includes(filepath);
+    return ignored;
   },
 });
 watcher.on("all", rerender);
+watcher.on("error", (e) => error(e));
+watcher.on("ready", () => info("Watcher ready!"));
+watcher.on("close", () => warn("Watcher closed!"));
