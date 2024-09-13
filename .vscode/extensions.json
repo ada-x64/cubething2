@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "timonwong.shellcheck",
+    "oven.bun-vscode",
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "james-yu.latex-workshop",
+    "valentjn.vscode-ltex",
+    "davidanson.vscode-markdownlint",
+    "esbenp.prettier-vscode"
+  ]
+}

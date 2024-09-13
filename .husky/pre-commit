@@ -1,11 +1,9 @@
-set -e
-if ! command -v bun &> /dev/null
-then
-    npm run lint
-    npm run format 
-    npm run headers
-else
+#!/bin/sh
+bash -e <<EOF
+    set -e
+    shopt -s globstar
     bun run lint
     bun run format
     bun run headers
-fi
+    shellcheck scripts/**/*.sh
+EOF
