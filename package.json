@@ -7,7 +7,7 @@
   "scripts": {
     "start": "bun ./src/server/index.ts",
     "dev": "./scripts/dev.sh",
-    "bundle": "sh -c \"bun build src/client/app.ts --outdir www/js --sourcemap=inline --minify --define 'BUILD_INFO={\"PROD\": \"$NODE_ENV\", \"HOT\": \"$HOT\"}'\"",
+    "bundle": "./scripts/bundle.sh",
     "lint": "bunx eslint .; bunx tsc --noEmit",
     "format": "bunx prettier -c .",
     "headers": "bun scripts/headers.ts",

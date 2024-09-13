@@ -2,7 +2,7 @@
 
 const TEX_ROOT = process.env["TEX_ROOT"] ?? "";
 import path from "path";
-import { lstat, lstatSync, readFileSync, writeFileSync } from "fs";
+import { lstatSync, readFileSync, writeFileSync } from "fs";
 import { spawnSync } from "child_process";
 import parseMath from "./katex.js";
 import { globSync } from "glob";
