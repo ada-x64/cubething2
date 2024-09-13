@@ -5,7 +5,8 @@ import type {
   FastifyReply,
   FastifyRequest,
 } from "fastify";
-import { send, sendNotFound, sendServerError } from "./index.js";
+import { send } from "./index.js";
+import { sendNotFound, sendServerError } from "./error.js";
 import { AnsiUp } from "ansi-up";
 import { readFileSync } from "fs";
 import path from "path";
@@ -43,9 +44,12 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
   opts,
   next,
 ) => {
-  fastify.get("/articles/:name", async (req, reply) => {
+  fastify.get("/articles", async (req, reply) => {
+    send(req, reply, "<view-article-index />");
+  });
+  fastify.get("/:name", async (req, reply) => {
     const { name } = req.params as { name: string };
-    const filepath = path.join(opts.root, "articles", name, "index.html");
+    const filepath = path.join(opts.root, name, "index.html");
     try {
       const res = readFileSync(filepath).toString();
       sendArticle(req, reply, res);
@@ -53,7 +57,7 @@ const plugin: FastifyPluginCallback<{ root: string; prod: boolean }> = (
       try {
         const res = JSON.parse(
           readFileSync(
-            path.join(opts.root, "articles", name, "/error.json"),
+            path.join("build", name ?? "markup", "error.json"),
           ).toString(),
         );
         sendError(req, reply, res);

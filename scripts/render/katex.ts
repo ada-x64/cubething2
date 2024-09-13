@@ -1,6 +1,5 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
-import { readFileSync } from "fs";
 import katex from "katex";
 import type { KatexOptions } from "katex";
 
@@ -13,9 +12,8 @@ const katexOptions: KatexOptions = {
   },
 };
 // This should probably be replaced with a custom build script for make4ht
-export default (htmlPath: string) => {
-  // trim to inner content and properly link css
-  let html = readFileSync(htmlPath).toString().replaceAll("&amp;", "&");
+export default (html: string) => {
+  html = html.replaceAll("&amp;", "&");
 
   // custom commands - todo : make this configurable
   const videxp = /\\video(?:\{(.+)\}){3}/gi;

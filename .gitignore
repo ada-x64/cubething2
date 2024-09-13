@@ -28,3 +28,4 @@ src/**/error.json
 src/**/out/
 
 www
+build

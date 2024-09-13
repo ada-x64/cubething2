@@ -4,7 +4,6 @@
 import Fastify from "fastify";
 import Static from "@fastify/static";
 import path from "path";
-import Routes from "./routes.js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import qs from "qs";
@@ -42,11 +41,9 @@ if (prod) {
 const root = path.join(__dirname, "../../");
 const staticRoot = path.join(root, "www/");
 
-fastify.register(Routes, { root: staticRoot, prod });
+// fastify.register(ArticlePlugin, { root: staticRoot, prod });
 fastify.register(Static, {
   root: staticRoot,
-  list: true,
-  index: false,
 });
 
 // Run the server!

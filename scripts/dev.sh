@@ -5,6 +5,7 @@ function say_and_do {
     echo -e "$GREY>$1$RESET"
     sh -c "$1"
 }
+say_and_do 'HOT="true" bun dist'
 say_and_do "$(
 cat <<EOF
     bun --hot ./src/server/index.ts \

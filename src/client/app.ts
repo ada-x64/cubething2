@@ -7,7 +7,6 @@ import { LitElement, type PropertyValues, css, html } from "lit";
 import { type Match, default as Navigo } from "navigo";
 
 import("./views/article.js");
-import("./views/home.js");
 import("./views/error.js");
 
 @customElement("the-app")

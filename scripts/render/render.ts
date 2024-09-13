@@ -1,25 +1,22 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
-const TEX_ROOT = process.env["TEX_ROOT"] ?? "";
 import path from "path";
-import { lstatSync, readFileSync, writeFileSync } from "fs";
+import { lstatSync, mkdirSync, readFileSync, writeFileSync } from "fs";
 import { spawnSync } from "child_process";
 import parseMath from "./katex.js";
 import { globSync } from "glob";
 import { program } from "commander";
 
 const acceptedFiletypes = ["tex", "md"];
-const render = (
-  filepath: string,
-  outroot: string,
-  configpath: string,
-  log?: typeof console,
-) => {
+const configpath = path.join(process.cwd(), "src/markup/MyConfig.cfg");
+const outroot = path.join(process.cwd(), "www");
+// This assumes the file exists and is of the accepted filetypes.
+const render = (filepath: string) => {
   const dirname = path.dirname(filepath);
-  const outdir = path.join(outroot, path.basename(path.dirname(filepath)));
+  const relpath = dirname.replace(/.*\/markup/, "");
+  const builddir = path.join("build", relpath);
+  const outdir = path.join(outroot, relpath);
   const outpath = path.join(outdir, "index.html");
-  // check the file exists
-  lstatSync(filepath);
   // if there is a cached html file, prefer the html file
   try {
     const debounce = 10;
@@ -29,7 +26,6 @@ const render = (
       lstatSync(outpath).ctimeMs / (1000 * debounce),
     );
     if (lastEdit <= lastRender) {
-      log?.info("Serving cached file " + outpath);
       try {
         if (import.meta.main) {
           return true;
@@ -40,51 +36,40 @@ const render = (
         throw { type: "error", error };
       }
     }
-  } catch {
-    // rerender it
-  }
-  log?.info("(Re)rendering" + filepath);
-  const tex = path.extname(filepath) === ".tex";
-  const out = spawnSync(
-    "sh",
-    [
-      "-c",
-      `
-            ${path.join(TEX_ROOT, "make4ht")} \
-            -x \
-              -j index\
-              -d ${outdir}\
-              -f html5+latexmk_build${tex ? "" : "+preprocess_input"} \
-              ${filepath} \
-              "fn-in,TocLink,-css,no-DOCTYPE,mathjax" \
-              --config ${configpath};
-
-           # ${path.join(TEX_ROOT, "make4ht")}\
-              -j index \
-              -m clean \
-              ${dirname}
-          `,
-    ],
-    { cwd: dirname },
-  );
-  if (out.stdout) {
-    log?.debug({ stdout: out.stdout.toString() });
-  }
-  if (out.stderr) {
-    log?.warn({ stderr: out.stderr.toString() });
-  }
-  if (out.error) {
-    log?.error({ error: out.error });
+  } catch (error) {
+    if ((error as { type: string })?.type === "error") {
+      throw error;
+    }
   }
   try {
-    const out = parseMath(outpath);
+    mkdirSync(builddir, { recursive: true });
+  } catch {
+    /* empty */
+  }
+  const tex = path.extname(filepath) === ".tex";
+  const mdflags = tex ? "" : "+preprocess_input";
+  const cmd = `
+        make4ht
+        -x
+        -j index
+        -d ${outdir}
+        -f html5+latexmk_build${mdflags}
+        --config ${configpath}
+        ${filepath}
+        "fn-in,TocLink,-css,mathjax"
+      `;
+  const out = spawnSync("sh", ["-c", cmd.replaceAll("\n", "")], {
+    cwd: builddir,
+  });
+  try {
+    const file = readFileSync(outpath).toString();
+    const out = parseMath(file);
     writeFileSync(outpath, out);
     return out;
-    // return sendArticle(req, reply, out);
   } catch (error) {
     throw {
       type: "error",
-      error,
+      command: error,
       stdout: out.stdout.toString(),
       stderr: out.stderr.toString(),
     };
@@ -92,11 +77,38 @@ const render = (
 };
 export default render;
 
+export const renderAll = () => {
+  const failedFiles = [];
+  const renderedFiles = [];
+  const cachedFiles = [];
+  for (const file of globSync(
+    path.join(
+      process.cwd(),
+      `src/markup/**/main.{${acceptedFiletypes.join(",")}}`,
+    ),
+  )) {
+    try {
+      const res = render(file);
+      if (res === true) {
+        cachedFiles.push(file);
+      } else {
+        renderedFiles.push(file);
+      }
+    } catch (error) {
+      const relpath = path.dirname(file).replace(/.*\/markup/, "");
+      const builddir = path.join("build", relpath);
+      failedFiles.push({ file, error });
+      writeFileSync(
+        path.join(builddir, "error.json"),
+        JSON.stringify(error, null, 2),
+      );
+    }
+  }
+  console.log({ failedFiles, renderedFiles, cachedFiles });
+};
+
 if (import.meta.main) {
-  const src = path.join(process.cwd(), "src/articles");
-  const out = path.join(process.cwd(), "www/articles");
-  program.option("-v").argument("[string]").parse();
-  const log = program.opts()["v"] ? console : undefined;
+  program.argument("[string]").parse();
   const inputFile = program.args[0];
   if (inputFile) {
     try {
@@ -108,7 +120,8 @@ if (import.meta.main) {
         console.error("Please specifiy a file, not a directory.");
         process.exit(1);
       }
-      const res = render(inputFile, out, path.join(src, "MyConfig.cfg"), log);
+      const res = render(inputFile);
+
       if (res === true) {
         console.log(`No changes in ${inputFile}`);
       } else {
@@ -119,31 +132,7 @@ if (import.meta.main) {
       console.error("Failed to render", inputFile, e);
       process.exit(1);
     }
+  } else {
+    renderAll();
   }
-
-  const failedFiles = [];
-  const renderedFiles = [];
-  const cachedFiles = [];
-  for (const file of globSync(
-    path.join(
-      process.cwd(),
-      `src/articles/**/main.{${acceptedFiletypes.join(",")}}`,
-    ),
-  )) {
-    try {
-      const res = render(file, out, path.join(src, "MyConfig.cfg"), log);
-      if (res === true) {
-        cachedFiles.push(file);
-      } else {
-        renderedFiles.push(file);
-      }
-    } catch (error) {
-      failedFiles.push({ file, error });
-      writeFileSync(
-        path.join(path.dirname(file), "error.json"),
-        JSON.stringify(error),
-      );
-    }
-  }
-  console.log({ failedFiles, renderedFiles, cachedFiles });
 }

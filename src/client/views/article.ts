@@ -6,14 +6,7 @@ import { customElement } from "lit/decorators.js";
 @customElement("view-article")
 export default class ViewArticle extends LitElement {
   render() {
-    return html`
-      <article
-        id="article"
-        class="latex-dark-auto"
-      >
-        <slot name="article"></slot>
-      </article>
-    `;
+    return html` <slot name="article"></slot> `;
   }
 }
 declare global {
