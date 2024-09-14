@@ -7,6 +7,7 @@ import path from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import qs from "qs";
+import { sendNotFound, sendServerError } from "./views/error";
 
 const PORT = Number(process.env["PORT"] ?? 3000);
 const prod = process.env["PROD"] === "true";
@@ -44,6 +45,12 @@ const staticRoot = path.join(root, "www/");
 // fastify.register(ArticlePlugin, { root: staticRoot, prod });
 fastify.register(Static, {
   root: staticRoot,
+});
+fastify.setNotFoundHandler((req, reply) => {
+  sendNotFound(req, reply);
+});
+fastify.setErrorHandler((err, req, reply) => {
+  sendServerError(req, reply, err);
 });
 
 // Run the server!

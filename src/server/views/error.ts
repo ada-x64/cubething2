@@ -4,7 +4,7 @@ import type { FastifyRequest, FastifyReply } from "fastify";
 import { send } from "./index.js";
 
 const notFound = (msg?: string) => `
-          <view-error>
+          <article>
             <div slot="header">
               404 Not Found
             </div>
@@ -13,7 +13,7 @@ const notFound = (msg?: string) => `
               <a href="/">Go home.</a>
               ${msg ? `<pre><code>${msg}</pre></code>` : ``}
             </div>
-          </view-error>
+          </article>
           `;
 export const sendNotFound = (
   req: FastifyRequest,
@@ -24,10 +24,10 @@ export const sendNotFound = (
 };
 
 const serverError = <T>(error: T) => `
-          <view-error>
+          <article>
             <div slot="header">500 Server Error</div>
             <div slot="message">${error}</div>
-          </view-error>
+          </article>
           `;
 export const sendServerError = <T>(
   req: FastifyRequest,

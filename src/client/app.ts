@@ -6,9 +6,6 @@ import { customElement } from "lit/decorators.js";
 import { LitElement, type PropertyValues, css, html } from "lit";
 import { type Match, default as Navigo } from "navigo";
 
-import("./views/article.js");
-import("./views/error.js");
-
 @customElement("the-app")
 class App extends LitElement {
   static shadowRootOptions: ShadowRootInit = {
@@ -37,14 +34,15 @@ class App extends LitElement {
           return;
         }
         for (const child of this.children) {
-          console.log(child);
           child.remove();
         }
-        const res = await fetch("/" + match!.url + "?no-index");
+        const res = await fetch("/" + match!.url);
         const text = await res.text();
+        console.log("fetched", text);
         const container = document.createElement("div");
         container.innerHTML = text;
-        this.appendChild(container.firstElementChild!);
+        const article = container.querySelector("the-app article");
+        this.appendChild(article as Node);
       },
       {
         already: () => {},
@@ -80,12 +78,12 @@ class App extends LitElement {
   };
 
   render() {
-    return html`<!---->
+    return html`
       <!-- <ct-sidebars></ct-sidebars> -->
       <main id="outlet">
         <slot></slot>
       </main>
-      <!---->`;
+    `;
   }
 }
 

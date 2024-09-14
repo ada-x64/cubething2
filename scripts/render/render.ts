@@ -1,15 +1,7 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import path from "path";
-import {
-  lstatSync,
-  mkdirSync,
-  readFileSync,
-  rm,
-  rmdirSync,
-  rmSync,
-  writeFileSync,
-} from "fs";
+import { lstatSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "fs";
 import { spawnSync } from "child_process";
 import parseMath from "./katex.js";
 import { globSync } from "glob";
