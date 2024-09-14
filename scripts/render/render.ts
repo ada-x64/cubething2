@@ -1,7 +1,15 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import path from "path";
-import { lstatSync, mkdirSync, readFileSync, writeFileSync } from "fs";
+import {
+  lstatSync,
+  mkdirSync,
+  readFileSync,
+  rm,
+  rmdirSync,
+  rmSync,
+  writeFileSync,
+} from "fs";
 import { spawnSync } from "child_process";
 import parseMath from "./katex.js";
 import { globSync } from "glob";
@@ -11,12 +19,26 @@ const acceptedFiletypes = ["tex", "md"];
 const configpath = path.join(process.cwd(), "src/markup/MyConfig.cfg");
 const outroot = path.join(process.cwd(), "www");
 // This assumes the file exists and is of the accepted filetypes.
-const render = (filepath: string) => {
+const render = (filepath: string, opts: { clean: boolean }) => {
   const dirname = path.dirname(filepath);
   const relpath = dirname.replace(/.*\/markup/, "");
   const builddir = path.join("build", relpath);
   const outdir = path.join(outroot, relpath);
   const outpath = path.join(outdir, "index.html");
+  if (opts.clean) {
+    try {
+      console.log("cleaning", builddir);
+      rmSync(builddir, { recursive: true, force: true });
+    } catch (e) {
+      console.warn(e);
+    }
+    try {
+      console.log("cleaning", outpath);
+      rmSync(outpath);
+    } catch (e) {
+      console.warn(e);
+    }
+  }
   // if there is a cached html file, prefer the html file
   try {
     const debounce = 10;
@@ -77,7 +99,7 @@ const render = (filepath: string) => {
 };
 export default render;
 
-export const renderAll = () => {
+export const renderAll = (opts: { clean: boolean }) => {
   const failedFiles = [];
   const renderedFiles = [];
   const cachedFiles = [];
@@ -88,7 +110,7 @@ export const renderAll = () => {
     ),
   )) {
     try {
-      const res = render(file);
+      const res = render(file, opts);
       if (res === true) {
         cachedFiles.push(file);
       } else {
@@ -108,8 +130,9 @@ export const renderAll = () => {
 };
 
 if (import.meta.main) {
-  program.argument("[string]").parse();
+  program.argument("[string]").option("--clean").parse();
   const inputFile = program.args[0];
+  const clean = program.opts()["clean"];
   if (inputFile) {
     try {
       const lstat = lstatSync(inputFile, { throwIfNoEntry: false });
@@ -120,7 +143,8 @@ if (import.meta.main) {
         console.error("Please specifiy a file, not a directory.");
         process.exit(1);
       }
-      const res = render(inputFile);
+
+      const res = render(inputFile, { clean });
 
       if (res === true) {
         console.log(`No changes in ${inputFile}`);
@@ -133,6 +157,6 @@ if (import.meta.main) {
       process.exit(1);
     }
   } else {
-    renderAll();
+    renderAll({ clean });
   }
 }
