@@ -1,0 +1,59 @@
+/****************************** cubething.dev ********************************/
+
+:root {
+  /*Light theme*/
+  /* stone-900 */
+  --text: #1c1917;
+  /* stone-400 */
+  --link: #a8a29e;
+  /* stone-50 */
+  --bg: #fafaf9;
+  /* orange-500 */
+  --accent: #f97316;
+
+  /*Dark Theme*/
+  /* zinc-100 */
+  --dark-text: #f4f4f5;
+  /* zinc-400 */
+  --dark-link: #a1a1aa;
+  /* zinc-900 */
+  --dark-bg: #18181b;
+  /* amber-500 */
+  --dark-accent: #f59e0b;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--text);
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  :is(svg:hover, button:focus svg) * {
+    stroke: var(--dark-accent);
+  }
+  svg * {
+    fill: var(--dark-bg);
+    stroke: var(--dark-text);
+  }
+}
+
+#sundile-canvas-wrapper canvas {
+  border-radius: 0.5em;
+}
+
+:is(svg:hover, button:focus svg) * {
+  transition: all linear 0.125s;
+  stroke: var(--accent);
+}
+
+svg * {
+  stroke-width: 3;
+  stroke-linejoin: round;
+  transition: all linear 0.125s;
+  fill: var(--bg);
+  stroke: var(--text);
+}

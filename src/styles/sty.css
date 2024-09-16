@@ -118,11 +118,6 @@ h5 {
     filter: invert(1);
   }
 }
-body {
-  background-color: Canvas;
-  color: CanvasText;
-  color-scheme: light dark;
-}
 li p.indent {
   text-indent: 0em;
 }

@@ -8,8 +8,10 @@
 );
 
 @import url("sty.css");
-@import url("font.css");
 @import url("libertinus.css");
+@import url("code.css");
+@import url("global.css");
+@import url("toc.css");
 
 body {
   font-family: "Libertinus Serif";
@@ -37,12 +39,17 @@ div.footnotes {
   font-family: "libertinus mono", monospace;
 }
 
-a {
-  color: green;
+.footer {
+  text-align: center;
+  margin-top: 1em;
 }
 
-@media (prefers-color-scheme: dark) {
-  a {
-    color: goldenrod;
-  }
-}
+// a {
+//   color: green;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   a {
+//     color: goldenrod;
+//   }
+// }
