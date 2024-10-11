@@ -7,11 +7,16 @@ import parseMath from "./katex.js";
 import { globSync } from "glob";
 import { program } from "commander";
 
+type Opts = {
+  clean: boolean;
+  force: boolean;
+};
+
 const acceptedFiletypes = ["tex", "md"];
 const configpath = path.join(process.cwd(), "src/markup/MyConfig.cfg");
 const outroot = path.join(process.cwd(), "www");
 // This assumes the file exists and is of the accepted filetypes.
-const render = (filepath: string, opts: { clean: boolean }) => {
+const render = (filepath: string, opts: Opts) => {
   const dirname = path.dirname(filepath);
   const relpath = dirname.replace(/.*\/markup/, "");
   const builddir = path.join("build", relpath);
@@ -32,27 +37,29 @@ const render = (filepath: string, opts: { clean: boolean }) => {
     }
   }
   // if there is a cached html file, prefer the html file
-  try {
-    const debounce = 10;
-    const mainLstat = lstatSync(filepath);
-    const lastEdit = Math.floor(mainLstat.ctimeMs / (1000 * debounce));
-    const lastRender = Math.floor(
-      lstatSync(outpath).ctimeMs / (1000 * debounce),
-    );
-    if (lastEdit <= lastRender) {
-      try {
-        if (import.meta.main) {
-          return true;
-        } else {
-          return readFileSync(outpath).toString();
+  if (!opts.force) {
+    try {
+      const debounce = 10;
+      const mainLstat = lstatSync(filepath);
+      const lastEdit = Math.floor(mainLstat.ctimeMs / (1000 * debounce));
+      const lastRender = Math.floor(
+        lstatSync(outpath).ctimeMs / (1000 * debounce),
+      );
+      if (lastEdit <= lastRender) {
+        try {
+          if (import.meta.main) {
+            return true;
+          } else {
+            return readFileSync(outpath).toString();
+          }
+        } catch (error) {
+          throw { type: "error", error };
         }
-      } catch (error) {
-        throw { type: "error", error };
       }
-    }
-  } catch (error) {
-    if ((error as { type: string })?.type === "error") {
-      throw error;
+    } catch (error) {
+      if ((error as { type: string })?.type === "error") {
+        throw error;
+      }
     }
   }
   try {
@@ -91,7 +98,7 @@ const render = (filepath: string, opts: { clean: boolean }) => {
 };
 export default render;
 
-export const renderAll = (opts: { clean: boolean }) => {
+export const renderAll = (opts: Opts) => {
   const failedFiles = [];
   const renderedFiles = [];
   const cachedFiles = [];
@@ -122,9 +129,10 @@ export const renderAll = (opts: { clean: boolean }) => {
 };
 
 if (import.meta.main) {
-  program.argument("[string]").option("--clean").parse();
+  program.argument("[string]").option("--clean").option("--force").parse();
   const inputFile = program.args[0];
   const clean = program.opts()["clean"];
+  const force = program.opts()["force"];
   if (inputFile) {
     try {
       const lstat = lstatSync(inputFile, { throwIfNoEntry: false });
@@ -136,7 +144,7 @@ if (import.meta.main) {
         process.exit(1);
       }
 
-      const res = render(inputFile, { clean });
+      const res = render(inputFile, { clean, force });
 
       if (res === true) {
         console.log(`No changes in ${inputFile}`);
@@ -149,6 +157,6 @@ if (import.meta.main) {
       process.exit(1);
     }
   } else {
-    renderAll({ clean });
+    renderAll({ clean, force });
   }
 }
