@@ -2,21 +2,20 @@
 
 import type { FastifyReply, FastifyRequest } from "fastify";
 import type { ParsedQs } from "qs";
+// This is not what you want to edit if you want to change the normal article layout.
+// Change markup/MyConfig.cfg
 export const index = (content: string = "") => `
 <!doctype html>
 <html>
   <head>
-    <script
-      src="/js/app.js"
-      type="module"
-    ></script>
-    <link rel="stylesheet" type="text/css" href="/styles/index.css" />
+    <script src="/static/js/app.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="/static/styles/index.css" />
   </head>
 
   <body>
-    <the-app>
+    <ct-app>
         ${content}
-    </the-app>
+    </ct-app>
   </body>
 </html>
 `;

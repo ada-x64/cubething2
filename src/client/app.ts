@@ -2,63 +2,25 @@
 
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 
-import { customElement } from "lit/decorators.js";
-import { LitElement, type PropertyValues, css, html } from "lit";
-import { type Match, default as Navigo } from "navigo";
+import { html } from "htm/preact/index.js";
 
-@customElement("the-app")
-class App extends LitElement {
-  static shadowRootOptions: ShadowRootInit = {
-    ...super.shadowRootOptions,
-    mode: "open",
-  };
+import { render } from "preact";
+import { Router, Route, LocationProvider, ErrorBoundary } from "preact-iso";
+import Home from "./pages/home";
+import ArticleList from "./pages/articleList";
+import Article from "./pages/article";
+import NotFound from "./pages/notFound";
 
-  static styles = css`
-    *:not:defined {
-      display: none;
-    }
-  `;
-
-  shouldRoute: boolean = false;
-
-  constructor() {
-    super();
-    // @ts-expect-error Fsr the navigo impogrt fails to resolve correctly in the ide.
-    const router: Navigo.default = new Navigo("/", {
-      linksSelector: "a[href^='/']",
-    });
-    router.on(
-      "*",
-      async (match?: Match) => {
-        if (!this.shouldRoute) {
-          return;
-        }
-        for (const child of this.children) {
-          child.remove();
-        }
-        const res = await fetch("/" + match!.url);
-        const text = await res.text();
-        console.log("fetched", text);
-        const container = document.createElement("div");
-        container.innerHTML = text;
-        const article = container.querySelector("the-app article");
-        this.appendChild(article as Node);
-      },
-      {
-        already: () => {},
-      },
-    );
-
-    router.resolve();
-  }
-
-  async firstUpdated(props: PropertyValues): Promise<void> {
-    super.firstUpdated(props);
-    this.shouldRoute = true;
+class App extends HTMLElement {
+  connectedCallback() {
     //@ts-expect-error Defined at bundle time
     if (BUILD_INFO.HOT) {
       this.tryWebsocket();
     }
+    render(
+      html`<${AppComponent}></${AppComponent}>`,
+      document.querySelector("ct-app")!,
+    );
   }
 
   tryWebsocket = () => {
@@ -76,19 +38,40 @@ class App extends LitElement {
       setTimeout(this.tryWebsocket, 5000);
     };
   };
-
-  render() {
-    return html`
-      <!-- <ct-sidebars></ct-sidebars> -->
-      <main id="outlet">
-        <slot></slot>
-      </main>
-    `;
-  }
 }
 
-declare global {
-  interface HTMLElementTagNameMap {
-    "the-app": App;
-  }
+customElements.define("ct-app", App);
+
+// n.b. I would like to use preact-iso's lazy loading to delay routing until the article has loaded,
+// but i don't seem to be able to do that. I am getting obscure errors.
+// Until and unless I figure it out, I'm using signals instead.
+function AppComponent() {
+  return html`
+    <${LocationProvider}>
+      <${ErrorBoundary}>
+        <${Router}
+          onRouteChange=${(url: string) => console.log("Route changed to", url)}
+          onLoadStart=${(url: string) => console.log("Starting to load", url)}
+          onLoadEnd=${(url: string) => console.log("Finished loading", url)}
+        >
+          <${Route}
+            path="/"
+            component=${Home}
+          />
+          <${Route}
+            path="/articles"
+            component=${ArticleList}
+          />
+          <${Route}
+            path="/articles/:id"
+            component="${Article}"
+          />
+          <${Route}
+            default
+            component=${NotFound}
+          />
+        <//>
+      <//>
+    <//>
+  `;
 }

@@ -8,5 +8,5 @@ function say_and_do {
 
 say_and_do "bun bundle"
 say_and_do "bun scripts/render/render.ts"
-say_and_do "bun styles"
-say_and_do "cp -r src/static www/static"
+say_and_do "bun sass"
+say_and_do "cp -r src/static/* www/"

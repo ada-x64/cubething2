@@ -531,3 +531,95 @@ are vices! Later Carnap would soften and allow _tolerance_ as long as no
 cognitive claim was made. Essential to the mp task I claim he has. But the
 critique of H. remains! They are anti-rational and so incomprehensible. (Carnap
 1967).
+
+## (x) Late night thoughts in maddi's dms
+
+i think i found my topic. The incommensurability of facts and explanations.
+
+Weber
+
+the character of rigor in the sciences and humanities would also be good. they
+are deeply related. also the manner of speaking. there is a gap between fact and
+meaning, and so between formal and poetic language
+
+I'm always more articulate in my head -\_-
+
+the question of the hc debate is how to deal with this incommensurability
+
+origins from Weber, husserl, wittgenstein (for carnap)
+
+largely ignores the political environment, maybe include as a footnote
+
+and of course what they mean by metaphysics. for carnap it's false use of
+language ie an attempt to capture meaning by using the jargon of fact. for
+hiedegger it's this too, though his overcoming is closer to an acceptance of
+this fruitful misuse than an avoidance of it. after all, ignoring it is not
+going to remove one from the problematic right i guess hiedeggers overcoming is
+more to do with an existential hermeneutic; he tries to avoid a realm of
+supersensible ideal entities like what husserl reimposed. explanation happens
+through an analysis of our lived experiences as Dasien (as the abstract human
+being, understanding its Being ie the fundamental conditions and structure of
+its existence) in any case he engages, and considers it right for philosophy to
+take over for religion in this aspect. pretty explicitly so. the later
+hiedeggers talk of gods is directly reminiscint of Weber's discussion of gods in
+"science as a vocation."
+
+the nature of science as the collection of fact, but this activity presupposes
+its own worth; it is outside the scope of science to explain itself. in the end
+the significance of science and of facts has to do with the individual and is
+subjective in nature. Hiedegger makes this explicit in existential analysis
+(especially the French existentialists whom he loathed). Carnap makes room for
+freedom by allowing a free comportment toward whatever system is relevant, so
+long as it is logical and complies to empirical verification. This is more
+freedom than one may see on the surface; it allows for freedom to decide on a
+proper logic, a subjective choice of meaning which amounts to a worldview. this
+is, to wittgenstein and to Carnap, tantamount to ethics, to religion. meaning
+beyond this is given in the arts. he is especially fond of Nietzsche - as is
+Hiedegger
+
+the subjective basis of science is phenomenology. this is the connection to
+husserl. both thinkers agree that his system is flawed, and both take a kantian
+approach to overcoming his reinstantiation of traditional (ancient) metaphysics
+
+the motivation for this overcoming is largely political: the german youth
+movement and general political climate of the early 20th century
+
+how is this related to metaphysics? the German youth movement was dedicated to
+freeing itself from the restrictions of scientific thought. It originates in the
+Romantic ideal, and prides itself in its ability to know the irrational. This
+leads us to the incommensurability of fact (science) and meaning (metaphysics?)
+
+metaphysics advanced itself as the secularization of the systematized mystical
+worldview.
+
+Through its dissociation from religion it took on the character of science and
+lost its grasp on meaning. this was happening as far back as aristotle, and
+followed by the scholastics.
+
+probably want to say more about the nature of metaphysics and its relation to
+meaning, and the overcoming of metaphysics through use of poetic language in
+hiedegger; the acknowledgement of showing rather than telling at the key to
+meaningful language (as meaning is essentially subjective; but perhaps, as Kant
+would say, universally subjective)
+
+telling is the scientific characteristic. it tells the truth, it tells fact.
+showing is the poetic characteristic. it shows the truth, it shows meaning.
+Meaning can only be gestured at. Fact can be articulated.
+
+both can have formal characteristics. logic is the formal character of the
+sciences. hiedegger describes a form of showing with formal characteristics, i
+forget the name of it
+
+this is perhaps what he hints at when he refers to the "particular rigor of the
+humanities"
+
+what remains, i suppose, is to investigate where this gap comes from. probably
+it is due to the subjective/objective distinction - though this discussion may
+not be absolute. it would be fruitful to refer to the third critique here, on
+universal subjectivity.
+
+and to perhaps dig more into wittgensteins thought on this, if he had any
+
+and definitely to recall being and time and husserls eidetic system
+
+but all of that is like... masters thesis level work if not higher

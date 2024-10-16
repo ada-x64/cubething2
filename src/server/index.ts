@@ -7,7 +7,8 @@ import path from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import qs from "qs";
-import { sendNotFound, sendServerError } from "./views/error";
+import { sendServerError } from "./views/error";
+import { send } from "./views";
 
 const PORT = Number(process.env["PORT"] ?? 3000);
 const prod = process.env["PROD"] === "true";
@@ -22,7 +23,7 @@ const fastify = Fastify({
           options: {
             colorize: true,
           },
-          level: "debug",
+          level: "warn",
         },
         {
           target: "pino/file",
@@ -45,12 +46,20 @@ const staticRoot = path.join(root, "www/");
 // fastify.register(ArticlePlugin, { root: staticRoot, prod });
 fastify.register(Static, {
   root: staticRoot,
+  prefix: "/static",
 });
-fastify.setNotFoundHandler((req, reply) => {
-  sendNotFound(req, reply);
+fastify.register(Static, {
+  root: staticRoot,
+  decorateReply: false,
+  prefix: "/list",
+  list: true,
+  index: false,
 });
 fastify.setErrorHandler((err, req, reply) => {
   sendServerError(req, reply, err);
+});
+fastify.get("*", (req, reply) => {
+  send(req, reply, "", 200);
 });
 
 // Run the server!

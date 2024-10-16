@@ -17,4 +17,4 @@
 - [x] Cimino - Metaphysics, Science, and Literature
 - [x] Damb:ok - Carnap and Heidegger
 - [x] Perelman et al - First Philosophies and Regressive Philosophy
-- [ ] Weber - Science as a Vocation
+- [x] Weber - Science as a Vocation
