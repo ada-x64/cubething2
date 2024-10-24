@@ -1,0 +1,35 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% cubething.dev %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ProvidesPackage{cubething}
+
+%biblio
+\usepackage[authordate, natbib]{biblatex-chicago}
+
+% american mathematical society
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools} % extra symbols
+
+% formatting
+\usepackage{csquotes} % smart quotes
+\usepackage{enumerate} % enumeration tools
+
+
+\makeatletter
+%% See pp. 26f. of 'The LaTeX Companion,' 2nd. ed.
+\def\@seccntformat#1{\@ifundefined{#1@cntformat}%
+	{\csname the#1\endcsname\quad}%      default
+	{\csname #1@cntformat\endcsname}}%   individual control
+\newcommand{\section@cntformat}{\S\thesection\quad}
+\newcommand{\subsection@cntformat}{\S\thesubsection\quad}
+%\newcommand{\subsubsection@cntformat}{\S\thesubsubsection\quad}
+%\newcommand{\paragraph@cntformat}{\S\theparagraph\quad}
+%\newcommand{\subparagraph@cntformat}{\S\thesubparagraph\quad}
+\makeatother % changes @ back to a special character
+
+\usepackage{setspace}
+\doublespacing
+
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{mathpazo}

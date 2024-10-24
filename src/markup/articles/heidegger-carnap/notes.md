@@ -623,3 +623,107 @@ and to perhaps dig more into wittgensteins thought on this, if he had any
 and definitely to recall being and time and husserls eidetic system
 
 but all of that is like... masters thesis level work if not higher
+
+## (x) CJ The X - How Jordan Peterson's Suits Taught Me Fashion
+
+https://www.youtube.com/watch?v=LpHFcylNGqg
+
+he makes a really good point about knowing yourself, actually, he talks about
+how fashion and identity are wrapped up in each other and how aesthetic
+practices in the postmodern era are arbitrary. his historical framework around
+beauty as an objective value (from the enlightenment onwards) to an elite value
+(cultural experts ie romantics into early modernity) to a postmodern
+free-for-all (post-60s fashion subculture boom) is i think reflective of a
+bigger cultural movement. the crisis of modernity is the realization that
+cultural norms are essentially subjective; post-kantian philosophy
+(phenomenology and positivism) attempt to deal with this by finding a universal
+subjectivity, or removing the cultural aspect of subjectivity altogether. so
+really the problem is, how do we deal with the death of our gods? heidegger
+says, we worship by cultural norms; we are determined by our societies and fall
+into line. this has become harder in postmodernism, when those cultural lines
+have begun to disintegrate.. carnaps says we should worship nothing, that
+subjective matters are to be discarded as meaningless, and that any serious
+scholarly work should be done in the scientific realm. not that carnap thinks
+these things are culturally meaningless, but that they are arbitrary. i think
+that it's unfair for him to make this claim, and i think our current cultural
+crises of extreme individualism is at least partially due to this attitude.
+
+will i cite a video essay in my writing sample? yes.
+
+maddi — Today at 4:33 PM
+
+citing a video essay is fine i think
+
+im going to watch that video when i get home
+
+cubething — Today at 4:34 PM
+
+it is a very good video essay. it gets a bit focused on the author's life story
+towrads the middle-end and a bit confessional, but i think that's part of the
+genre.
+
+maddi — Today at 4:34 PM
+
+that sort of thing is kind of hit or miss for me
+
+i guess it depends on whether i personally like the video essay person or not
+
+cubething — Today at 4:35 PM
+
+i agree, but i understand why people do it. again the search for authenticity.
+and yeah, the search for personal meaning through parasocial ties. it's
+parasocial for the author, too.
+
+maddi — Today at 4:35 PM
+
+yes definitely
+
+cubething — Today at 4:36 PM
+
+and i think it's important to understand at least part of the author's backstory
+to understand the context of the essay. this is something i'm increasingly doing
+in philosophy generally, and it's resulted in a far more nuanced understanding
+of the works as a whole. they are not separate from the culture that created
+them, nor the authors.
+
+## (x) Munchausen trilemma
+
+How do we justify knowledge? There seems to be a three-progned problem.
+
+1. Foundationalism / dogmatism. There are certain propositions which we must
+   take for granted. They are indubitable and so can serve as a starting point
+   of knowledge.
+   - Note the similarity to the metaphysical standpoint as discussed in
+     Perelman.
+   - This could include logical dogmatism viz Carnap
+2. Coherentism / circular arguments. Certainty occurs just when a loop is
+   discovered.
+3. Infinitism / infinite regress. Justification continues ad inifnitum, whether
+   causal or logical.
+
+The clearing as the epistemological foundation of knowledge, as the dogmatic
+origin of human knowledge? This does not seem to change throughout Heidegger.
+
+Empirical logic as foundation of knowledge, with phenomenological foundation?
+Dogmatism of axiom. Though later Carnap would reject this. His epistemological
+project then is unclear; it becomes pragmatic in the later years, though the
+choice of a coherent system is always required. Compare the protocol sentence
+struggle.
+
+## (x) Beyond the Limits of Knowledge
+
+Three limits. Expression, iteration, cognition.
+
+Limits of expression: We cannot express, for example, that all things are in
+flux, because the very nature of flux means that at this instant a thing has
+none of the same properties as it had in the previous instant. Yet we _can_
+express this; it would be impossible for me to tell you so otherwise; and even
+if I were to remain silent, I could still think this thought by my internal
+language. (Even if said internal language was not properly linguistic in the
+vocal and formal sense of the term.) Another example: Prime matter in Aristotle
+is 'pure possibility,' but this possibility cannot be expressed, because it is
+the bearer of all properties. These paradoxes of expressibility are transcendent
+(they go beyond what can be expressed) yet exhibit closure (they are nonetheless
+expressed).
+
+Limits of iteration.

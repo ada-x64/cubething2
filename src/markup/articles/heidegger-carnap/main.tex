@@ -1,34 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% cubething.dev %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%preamble
-\documentclass[leqno]{article}
-
-%biblio
-\usepackage[authordate, backend=biber, natbib]{biblatex-chicago}
-\addbibresource{../../../library.bib}
-
-% american mathematical society
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{mathtools} % extra symbols
-
-% formatting
-% \usepackage{CormorantGaramond}
-\usepackage{csquotes} % smart quotes
-\usepackage{enumerate} % enumeration tools
-% \renewcommand{\thesection}{\S section} % fancy subsections
-\makeatletter
-%% See pp. 26f. of 'The LaTeX Companion,' 2nd. ed.
-\def\@seccntformat#1{\@ifundefined{#1@cntformat}%
-{\csname the#1\endcsname\quad}%      default
-{\csname #1@cntformat\endcsname}}%   individual control
-\newcommand{\section@cntformat}{\S\thesection\quad}
-\newcommand{\subsection@cntformat}{\S\thesubsection\quad}
-%\newcommand{\subsubsection@cntformat}{\S\thesubsubsection\quad}
-%\newcommand{\paragraph@cntformat}{\S\theparagraph\quad}
-%\newcommand{\subparagraph@cntformat}{\S\thesubparagraph\quad}
-\makeatother % changes @ back to a special character
+%\documentclass[leqno, 12pt]{article}
+\documentclass[]{turabian-researchpaper}
+\usepackage{../../cubething}
 
 %opening
 \title{Heidegger, Carnap, Husserl, and the Foundations of Rationality}
