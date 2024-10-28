@@ -1,7 +1,6 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import { html } from "htm/preact/index.js";
-import Template from "./template";
 import { useSignal, useSignalEffect } from "@preact/signals";
 import type { VNode } from "preact";
 
@@ -16,9 +15,9 @@ export default function ArticleList() {
       });
     });
   });
-  return html`<${Template}>
+  return html`
     <ul>
       ${list.value.length > 0 ? list.value : html`...`}
     </ul>
-  <//>`;
+  `;
 }

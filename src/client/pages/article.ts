@@ -1,7 +1,6 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import { html } from "htm/preact/index.js";
-import Template from "./template";
 import { useRoute } from "preact-iso";
 import { useSignal, useSignalEffect } from "@preact/signals";
 
@@ -11,15 +10,13 @@ const Article = () => {
   const signal = useSignal("loading...");
   useSignalEffect(() => {
     fetch(`/static/articles/${id}`).then((resp) => {
-      resp.text().then((text) => (signal.value = text.replaceAll("\n", "")));
+      resp.text().then((text) => (signal.value = text));
     });
   });
 
-  const res = html` <${Template}>
-    <article dangerouslySetInnerHTML=${{ __html: signal.value }}></article>
-  <//>`;
-  console.log({ id, signal, res });
-  return res;
+  return html`<article
+    dangerouslySetInnerHTML=${{ __html: signal.value }}
+  ></article>`;
 };
 
 export default Article;

@@ -10,6 +10,7 @@ import Home from "./pages/home";
 import ArticleList from "./pages/articleList";
 import Article from "./pages/article";
 import NotFound from "./pages/notFound";
+import Template from "./pages/template";
 
 class App extends HTMLElement {
   connectedCallback() {
@@ -49,27 +50,30 @@ function AppComponent() {
   return html`
     <${LocationProvider}>
       <${ErrorBoundary}>
-        <${Router}
-          onRouteChange=${(url: string) => console.log("Route changed to", url)}
-          onLoadStart=${(url: string) => console.log("Starting to load", url)}
-          onLoadEnd=${(url: string) => console.log("Finished loading", url)}
-        >
-          <${Route}
-            path="/"
-            component=${Home}
-          />
-          <${Route}
-            path="/articles"
-            component=${ArticleList}
-          />
-          <${Route}
-            path="/articles/:id"
-            component="${Article}"
-          />
-          <${Route}
-            default
-            component=${NotFound}
-          />
+        <${Template}>
+          <${Router}
+            onRouteChange=${(url: string) =>
+              console.log("Route changed to", url)}
+            onLoadStart=${(url: string) => console.log("Starting to load", url)}
+            onLoadEnd=${(url: string) => console.log("Finished loading", url)}
+          >
+            <${Route}
+              path="/"
+              component=${Home}
+            />
+            <${Route}
+              path="/articles"
+              component=${ArticleList}
+            />
+            <${Route}
+              path="/articles/:id"
+              component="${Article}"
+            />
+            <${Route}
+              default
+              component=${NotFound}
+            />
+          <//>
         <//>
       <//>
     <//>

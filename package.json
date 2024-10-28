@@ -13,6 +13,7 @@
     "headers": "bun scripts/headers.ts",
     "prepare": "husky || true",
     "sass": "bunx sass --source-map --embed-source-map --quiet-deps -s compressed src/styles/:www/styles",
+    "tailwind": "bunx tailwindcss -i ./src/styles/tailwind.css -o ./www/styles/tailwind.css",
     "dist": "./scripts/dist.sh",
     "render": "bun ./scripts/render/render.ts"
   },
@@ -30,6 +31,7 @@
     "husky": "^9.1.4",
     "prettier": "^3.3.3",
     "prettier-plugin-latex": "^2.0.1",
+    "tailwindcss": "^3.4.14",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.1.0",
     "watcher": "^2.3.1"
