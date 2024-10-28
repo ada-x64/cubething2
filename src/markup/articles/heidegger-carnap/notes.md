@@ -727,3 +727,17 @@ the bearer of all properties. These paradoxes of expressibility are transcendent
 expressed).
 
 Limits of iteration.
+
+## (x) What's left of positivism
+
+Political suspicion of the nothing from Carnap's notes: There are predictable
+psychosociological effects of phrases like "the Nothing nothings:" it is a kind
+of authority fallacy, which creates a cowering before the authority. It is, in
+short, propoganda. Given Hiedegger's association with Nazism and that movements
+political rhetoric, it makes sense why this critique would be levied against
+him.
+
+"There are political stakes when we're doing philosophy, even when we're not
+talking about politics at all." ~25:00
+
+On the aufbau - start from gestalt, construct from there.
