@@ -741,3 +741,51 @@ him.
 talking about politics at all." ~25:00
 
 On the aufbau - start from gestalt, construct from there.
+
+## (x) Some thoughts on Chapter 5 of Society of the Spectacle (Guy Debord)
+
+Marx's thought as primarily flawed - even in his own time - by his theoretical
+commitment to Hegelianism, the essence of which is the closed loop of the
+philopsophical system. The Hegelian can only analyze history, when, as Marx
+admits, the point is to change it. Debord says that Hegel's philosophy remains
+essentially a philosophy of bourgeouise revolution, one which cannot emancipate
+the proletariat. From these movements the Marxist theorists were born. Debord
+has a biting critique of anarchism as being too eclectic, and yet too commited
+to a single principle, that of freedom at all costs. His analysis of Fascism
+amounts to a simple restatement of its principles: it is an "injection of
+rationalization" into the irrational project of bourgeious revolution, except
+that its methods are in themselves absurd. Its methods are mythologization (a
+favorite of Heidegger), the myths of state, blood, and leader. Nationality in a
+nutshell. Then the Bolsheveks and the Russian revolutionaries. They are all
+themselves too committed by method to the creation of a beaurocratic capitalist
+system. Lenin bbecame too dedicated to the ideals of his predecessors,
+eventually claiming in a speech that revolutionaries are either "with us or
+against us;" Stalin would take this to an extreme, and split the world in two.
+But even the beaurocratic class which emerged with Russian socialism was
+catatonically self-defeating. It was not itself allowed to exist: the official
+line was that the beaurocracy did not exist; and yet it is the beaurocracy in
+the USSR and in the PRC which rules. To this end, then, the beaurocracy made the
+proletariat revolution _spectacular_, in that it is only through false
+consciousness which the state can uphold its power. And indeed, the state
+upholds its power within bourgeouis society through false consciousness as well.
+It is perfectly clear to everyone what capitalism does to the proletariat. Yet
+it continues! And why? Even collectivist movements and union strikes serve to
+reinforce their own commodification. The product of the proletariat movements
+are in fact themselves: they are a _spectacular_ movement, insofar as they are
+not in any way able to achieve their goals. It is through the mere process of
+proposing solutions that the proletariat embeds itself within bourgeouis
+society. It is its own mythology, its own spectacle.
+
+Today you see this everywhere. Class consciousness is now used to sell you on
+new products, new ways of selling your labor. Today at the airport I saw an
+advertisement for an online service work platform whose tagline was "The way
+we're working just isn't working." And their solution? An innovate tech startup
+to sell your labor from your own home, wherever you are, whenever you can. We
+are not only alienated from the products of our labor, in terms of mere goods,
+but with the Internet we become alienated from acts of service as well. We are
+providing virtual services for virtual people whom we will never see.
+
+Theory becomes the enemy of proletariat revolution precisely when it takes this
+form: when it ceases to be practical. Theory should predate praxis, and should
+learn from its history. We are still stuck in the time of Marx - but history
+proves him wrong.
