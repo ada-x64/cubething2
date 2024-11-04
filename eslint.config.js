@@ -11,6 +11,8 @@ export default tseslint.config(
   {
     rules: {
       "no-console": "off",
+      "@typescript-eslint/no-non-null-assertion": "warn",
+      "@typescript-eslint/no-unused-expressions": "warn",
     },
     languageOptions: {
       globals: { ...globals.node, ...globals.browser },

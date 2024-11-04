@@ -13,7 +13,7 @@
     "headers": "bun scripts/headers.ts",
     "prepare": "husky || true",
     "sass": "bunx sass --source-map --embed-source-map --quiet-deps -s compressed src/styles/:www/styles",
-    "tailwind": "bunx tailwindcss -i ./src/styles/tailwind.css -o ./www/styles/tailwind.css",
+    "tailwind": "bunx tailwindcss -i ./src/styles/index.css -o ./www/styles/index.css",
     "dist": "./scripts/dist.sh",
     "render": "bun ./scripts/render/render.ts"
   },

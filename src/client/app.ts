@@ -10,7 +10,12 @@ import Home from "./pages/home";
 import ArticleList from "./pages/articleList";
 import Article from "./pages/article";
 import NotFound from "./pages/notFound";
-import Template from "./pages/template";
+// import Template from "./pages/template";
+import Layout from "./layout/Layout";
+
+import "./scripts/onScroll";
+import "./scripts/onmousemove";
+import "./scripts/detectTheme";
 
 class App extends HTMLElement {
   connectedCallback() {
@@ -50,7 +55,10 @@ function AppComponent() {
   return html`
     <${LocationProvider}>
       <${ErrorBoundary}>
-        <${Template}>
+        <${Layout}
+          route="hi"
+          title="hi"
+        >
           <${Router}
             onRouteChange=${(url: string) =>
               console.log("Route changed to", url)}
