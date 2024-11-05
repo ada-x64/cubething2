@@ -2,18 +2,14 @@
 
 import { html } from "htm/preact/index.js";
 import { AccentText, BorderColor, OutboundIndicator, TwClass } from "../styles";
+import { useLocation } from "preact-iso";
 
-export default function Title({
-  title,
-  route,
-}: {
-  title: string;
-  route: string;
-}) {
+export default function Title({ title }: { title: string }) {
+  const location = useLocation();
   const anchorTitle =
-    route === "/"
+    location.path === "/"
       ? "home page"
-      : route.includes("article")
+      : location.path.includes("article")
         ? `article: ${title} - click to go home`
         : `${title} - click to go home`;
   return html`

@@ -5,13 +5,14 @@ import Sidebar from "./Sidebar";
 import { ArticleNavItems } from "./ArticleNavItems";
 import { articleNav, type tNav } from "../nav";
 import { html } from "htm/preact/index.js";
+import { useLocation } from "preact-iso";
 
 export const allNav: tNav = [];
 
-export default function ArticleNav({ route }: { route: string }) {
-  console.log("articlenav");
+export default function ArticleNav() {
+  const location = useLocation();
   let navigation = allNav;
-  if (route.includes("articles")) {
+  if (location.path.includes("articles")) {
     navigation = navigation.concat(articleNav);
   }
 

@@ -27,6 +27,13 @@ html {
   background-color: var(--bg);
   color: var(--text);
 }
+svg * {
+  stroke-width: 3;
+  stroke-linejoin: round;
+  transition: all linear 0.125s;
+  fill: var(--bg);
+  stroke: var(--text);
+}
 @media (prefers-color-scheme: dark) {
   html {
     background-color: var(--dark-bg);
@@ -48,12 +55,4 @@ html {
 :is(svg:hover, button:focus svg) * {
   transition: all linear 0.125s;
   stroke: var(--accent);
-}
-
-svg * {
-  stroke-width: 3;
-  stroke-linejoin: round;
-  transition: all linear 0.125s;
-  fill: var(--bg);
-  stroke: var(--text);
 }

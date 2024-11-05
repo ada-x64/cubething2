@@ -17,14 +17,12 @@ documents as both HTML and PDF 🙂
 This website is designed to be as simple as possible and to last as long as
 possible while still being robust and easy to modify in the future, so I'm
 trying to use only strongly stable technologies. Although I want to avoid
-over-engineering this website, I also want to make it _look_ pretty. So I went
-with [lit](https://lit.dev) and
-[navigo router](https://github.com/krasimir/navigo) to build a simple SPA-style
-front-end. Lit uses
-[Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
-with a lightweight reactive system on top. I figure that if lit goes out of
-fashion then I can reuse the web components with minimal overhead. I am also of
-course using TypeScript for my own sanity.
+over-engineering this website, I also want to make it _look_ pretty. I spent a
+lot of time making the previous iteration of this site look good, so I went
+ahead and copied the front-end code over. Instead of using JSX I decided to use
+[htm](https://github.com/developit/htm), keeping [preact](https://preactjs.com)
+as my framework of choice. Converting from JSX to htm was very easy. It was only
+a little annoying to switch from the Deno conventions to the Bun conventions.
 
 ## Back-End - SSR with make4ht, aka Latex Hell
 

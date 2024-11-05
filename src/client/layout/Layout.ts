@@ -16,17 +16,16 @@ import MainNav from "../nav/MainNav";
 import ArticleNav from "../nav/ArticleNav";
 import MainContent from "./MainContent";
 import Title from "./Title";
+import { useRoute } from "preact-iso";
 
 export default function Layout({
-  route,
   title,
   children,
 }: {
-  route: string;
   title: string;
   children: ComponentChildren;
 }) {
-  console.log({ route, title, children, component: "Layout" });
+  const route = useRoute().path;
   return html`
     <${HeadComponent} />
     <head>

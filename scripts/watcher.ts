@@ -50,6 +50,7 @@ const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
     }
   } else if (oldpath?.includes("styles")) {
     sayAndDo(`bun sass`);
+    sayAndDo(`bun tailwind`);
   } else if (oldpath?.includes("client")) {
     sayAndDo(`HOT=true bun bundle`);
   }

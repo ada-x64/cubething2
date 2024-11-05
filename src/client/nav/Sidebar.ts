@@ -1,6 +1,6 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
-import type { ComponentChild, ComponentChildren } from "preact";
+import type { ComponentChildren } from "preact";
 import { TwClass } from "../styles";
 import { ItemContainerStyle } from "../styles";
 import { html } from "htm/preact/index.js";
@@ -45,7 +45,7 @@ export default function Sidebar({
       id=${id}
     >
       <div class="w-24">
-        <div class=${ItemContainerStyle.concat(" mb-4")}><${icon} /></div>
+        <div class=${ItemContainerStyle.concat(" mb-4")}>${icon}</div>
         ${children}
       </div>
     </nav>

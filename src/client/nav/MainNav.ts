@@ -6,8 +6,7 @@ import { MainNavItems } from "./MainNavItems";
 import { mainNav } from "../nav";
 import { html } from "htm/preact/index.js";
 
-export default function MainNav({ route }: { route: string }) {
-  console.log("mainnav");
+export default function MainNav() {
   return html`
     <${Sidebar}
       order=${"order-1"}
@@ -16,10 +15,7 @@ export default function MainNav({ route }: { route: string }) {
       icon=${HomeBtn}
       justify="justify-right"
     >
-      <${MainNavItems}
-        navigation=${mainNav}
-        route=${route}
-      />
+      <${MainNavItems} navigation=${mainNav} />
     <//>
   `;
 }

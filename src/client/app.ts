@@ -55,10 +55,7 @@ function AppComponent() {
   return html`
     <${LocationProvider}>
       <${ErrorBoundary}>
-        <${Layout}
-          route="hi"
-          title="hi"
-        >
+        <${Layout} title="cubething">
           <${Router}
             onRouteChange=${(url: string) =>
               console.log("Route changed to", url)}

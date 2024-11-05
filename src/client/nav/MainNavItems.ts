@@ -10,16 +10,12 @@ import {
 } from "../styles";
 import { closeMobileNav } from "../layout/MobileNav";
 import { html } from "htm/preact/index.js";
+import { useLocation } from "preact-iso";
 
-export function MainNavItems({
-  navigation,
-  route,
-}: {
-  navigation: tNav;
-  route: string;
-}) {
+export function MainNavItems({ navigation }: { navigation: tNav }) {
+  const location = useLocation();
   const items = navigation.map((item) => {
-    const current = item.href === route;
+    const current = item.href === location.path;
     if (current) {
       return html`
         <div class=${[ItemStyle, ItemSelectedStyle].join(" ")}>

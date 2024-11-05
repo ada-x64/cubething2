@@ -19,8 +19,7 @@ const ButtonStyle = TwClass([
 
 export const navSignal = signal(false);
 
-export default function NavBtn({ route }: { route: string }) {
-  console.log({ route, component: "NavBtn" });
+export default function NavBtn() {
   return html`
     <nav class=${TwClass(["flex", "justify-end", "lg:hidden"])}>
       <button
@@ -31,7 +30,7 @@ export default function NavBtn({ route }: { route: string }) {
       >
         <${Cube} />
       </button>
-      <${MobileNav} route=${route} />
+      <${MobileNav} />
     </nav>
   `;
 }
