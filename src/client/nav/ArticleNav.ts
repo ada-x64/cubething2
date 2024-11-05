@@ -1,6 +1,6 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
-import DarkModeToggle from "../svg/DarkTheme.svg";
+import DarkModeToggle from "../layout/DarkModeToggle";
 import Sidebar from "./Sidebar";
 import { ArticleNavItems } from "./ArticleNavItems";
 import { articleNav, type tNav } from "../nav";

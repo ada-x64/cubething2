@@ -10,18 +10,24 @@ a {
   color: var(--text);
 }
 
-@media (prefers-color-scheme: dark) {
+html.dark {
   article,
   a {
     color: var(--dark-text);
   }
-}
-
-@media (prefers-color-scheme: dark) {
   .prose :is(h1, h2, h3, h4, h5, h6) a {
     color: var(--dark-text);
   }
   .prose :is(h1, h2, h3, h4, h5, h6) a:hover {
+    color: var(--dark-link);
+  }
+  a:hover {
+    color: var(--dark-accent);
+  }
+  ol a {
+    color: var(--dark-accent);
+  }
+  ol a:hover {
     color: var(--dark-link);
   }
 }
@@ -34,12 +40,6 @@ a {
 a:hover {
   color: var(--accent);
   transition: 100ms;
-}
-
-@media (prefers-color-scheme: dark) {
-  a:hover {
-    color: var(--dark-accent);
-  }
 }
 
 code {
@@ -58,14 +58,6 @@ ol a {
 }
 ol a:hover {
   color: var(--link);
-}
-@media (prefers-color-scheme: dark) {
-  ol a {
-    color: var(--dark-accent);
-  }
-  ol a:hover {
-    color: var(--dark-link);
-  }
 }
 
 li {

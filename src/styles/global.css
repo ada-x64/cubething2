@@ -34,18 +34,16 @@ svg * {
   fill: var(--bg);
   stroke: var(--text);
 }
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: var(--dark-bg);
-    color: var(--dark-text);
-  }
-  :is(svg:hover, button:focus svg) * {
-    stroke: var(--dark-accent);
-  }
-  svg * {
-    fill: var(--dark-bg);
-    stroke: var(--dark-text);
-  }
+html.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+html.dark :is(svg:hover, button:focus svg) * {
+  stroke: var(--dark-accent);
+}
+html.dark svg * {
+  fill: var(--dark-bg);
+  stroke: var(--dark-text);
 }
 
 #sundile-canvas-wrapper canvas {

@@ -113,7 +113,7 @@ h5 {
 .likesubsubsectionHead {
   font-size: 1.1487em;
 }
-@media (prefers-color-scheme: dark) {
+html.dark {
   img[src^="index"] {
     filter: invert(1);
   }

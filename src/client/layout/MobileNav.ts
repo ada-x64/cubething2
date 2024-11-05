@@ -18,7 +18,7 @@ export const getMobileNav = () => {
 
 export const focusMobileNav = () => {
   setTimeout(() => {
-    getMobileNav().nav!.focus();
+    getMobileNav().nav?.focus();
   }, 100);
 };
 
@@ -80,7 +80,7 @@ const NavStyle = TwClass([
   "rounded-md",
 ]);
 
-export default function MobileNav({ route }: { route: string }) {
+export default function MobileNav() {
   return !navSignal.value
     ? null
     : html`
@@ -96,12 +96,9 @@ export default function MobileNav({ route }: { route: string }) {
             onBlur=${onBlur}
             tabIndex=${-1}
           >
-            <div class=${ItemContainerStyle}>${DarkModeToggle}</div>
+            <div class=${ItemContainerStyle}><${DarkModeToggle} /></div>
             <div class=${ItemContainerStyle}>
-              <${MainNavItems}
-                navigation=${mainNav}
-                route=${route}
-              />
+              <${MainNavItems} navigation=${mainNav} />
             </div>
             <div class=${ItemContainerStyle}>
               <${ArticleNavItems} navigation=${articleNav} />

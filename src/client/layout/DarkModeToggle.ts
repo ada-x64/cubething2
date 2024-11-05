@@ -25,6 +25,7 @@ function getTheme() {
 const ThemeSignal = signal(getTheme());
 
 export function setTheme() {
+  console.log("setTheme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   let theme = getTheme();
 
@@ -68,7 +69,7 @@ export default function DarkModeToggle() {
       title=${`toggle theme - current: ${themeText}`}
       onClick=${setTheme}
     >
-      ${ThemeIcons[theme]}
+      <${ThemeIcons[theme]} />
     </button>
   `;
 }
