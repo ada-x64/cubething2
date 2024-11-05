@@ -26,7 +26,6 @@ export default function Title({ title }: { title: string }) {
           "text-3xl",
           "font-bold",
           "font-header",
-          "text-orange-500",
           "lowercase",
           "border-b",
           BorderColor,

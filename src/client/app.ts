@@ -55,6 +55,7 @@ function AppComponent() {
   return html`
     <${LocationProvider}>
       <${ErrorBoundary}>
+        <!-- TODO: Get metadata for currently rendered file. -->
         <${Layout} title="cubething">
           <${Router}
             onRouteChange=${(url: string) =>

@@ -32,14 +32,24 @@ export default function Layout({
       <title>${`cubething.dev → ${title.toLowerCase()}`}</title>
     </head>
     <${NavBtn} route=${route} />
-    <main class=${TwClass(["flex", "justify-center"])}>
-      <${MainNav} route=${route} />
-      <${ArticleNav} route=${route} />
-      <${MainContent}>
-        <${Title}
-          route=${route}
-          title=${title}
-        />
+    <main
+      class=${TwClass(["flex", "justify-center", "max-w-screen-lg", "mx-auto"])}
+    >
+      <${MainNav} />
+      <${ArticleNav} />
+      <${MainContent}
+        twClass=${TwClass([
+          "px-4",
+          "lg:px-16",
+          "flex-auto",
+          "flex",
+          "flex-col",
+          "scroll-smooth",
+          "w-full",
+          "md:max-w-screen-md",
+        ])}
+      >
+        <${Title} title=${title} />
         ${children}
       <//>
     </main>

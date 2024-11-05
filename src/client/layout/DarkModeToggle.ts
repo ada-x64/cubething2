@@ -25,7 +25,6 @@ function getTheme() {
 const ThemeSignal = signal(getTheme());
 
 export function setTheme() {
-  console.log("setTheme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   let theme = getTheme();
 
