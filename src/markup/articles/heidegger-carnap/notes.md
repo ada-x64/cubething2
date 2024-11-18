@@ -554,15 +554,16 @@ and of course what they mean by metaphysics. for carnap it's false use of
 language ie an attempt to capture meaning by using the jargon of fact. for
 hiedegger it's this too, though his overcoming is closer to an acceptance of
 this fruitful misuse than an avoidance of it. after all, ignoring it is not
-going to remove one from the problematic right i guess hiedeggers overcoming is
-more to do with an existential hermeneutic; he tries to avoid a realm of
-supersensible ideal entities like what husserl reimposed. explanation happens
-through an analysis of our lived experiences as Dasien (as the abstract human
-being, understanding its Being ie the fundamental conditions and structure of
-its existence) in any case he engages, and considers it right for philosophy to
-take over for religion in this aspect. pretty explicitly so. the later
-hiedeggers talk of gods is directly reminiscint of Weber's discussion of gods in
-"science as a vocation."
+going to remove one from the problematic
+
+right i guess hiedeggers overcoming is more to do with an existential
+hermeneutic; he tries to avoid a realm of supersensible ideal entities like what
+husserl reimposed. explanation happens through an analysis of our lived
+experiences as Dasien (as the abstract human being, understanding its Being ie
+the fundamental conditions and structure of its existence) in any case he
+engages, and considers it right for philosophy to take over for religion in this
+aspect. pretty explicitly so. the later hiedeggers talk of gods is directly
+reminiscint of Weber's discussion of gods in "science as a vocation."
 
 the nature of science as the collection of fact, but this activity presupposes
 its own worth; it is outside the scope of science to explain itself. in the end
