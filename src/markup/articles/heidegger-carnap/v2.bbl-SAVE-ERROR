@@ -1,0 +1,761 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global/global}
+    \entry{carnap1929}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6ac7e21451c80f04ca26894d84279358}{%
+           family={Carnap},
+           familyi={C\bibinitperiod},
+           given={Rudolf},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=cc191fcd6ae7e234ca85f79feea15fc2}{%
+           family={{Christian Damboeck}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{fullhash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{fullhashraw}{6ac7e21451c80f04ca26894d84279358}
+      \strng{bibnamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorbibnamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authornamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorfullhash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorfullhashraw}{6ac7e21451c80f04ca26894d84279358}
+      \strng{translatorbibnamehash}{cc191fcd6ae7e234ca85f79feea15fc2}
+      \strng{translatornamehash}{cc191fcd6ae7e234ca85f79feea15fc2}
+      \strng{translatorfullhash}{cc191fcd6ae7e234ca85f79feea15fc2}
+      \strng{translatorfullhashraw}{cc191fcd6ae7e234ca85f79feea15fc2}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{"Institute Vienna Circle"}
+      \field{pubstate}{prepublished}
+      \field{title}{Carnap, {{Wissenschaft}} Und {{Leben}}, 1929-10-15 ({{M}}/{{S}})}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{1929}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48666/807581
+      \endverb
+      \verb{urlraw}
+      \verb https://valep.vc.univie.ac.at/virtualarchive/public/Carnap_Wissenschaft_und_Leben_1929-10-15_M-S/d:807581
+      \endverb
+      \verb{url}
+      \verb https://valep.vc.univie.ac.at/virtualarchive/public/Carnap_Wissenschaft_und_Leben_1929-10-15_M-S/d:807581
+      \endverb
+    \endentry
+    \entry{carnap1966}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6ac7e21451c80f04ca26894d84279358}{%
+           family={Carnap},
+           familyi={C\bibinitperiod},
+           given={Rudolf},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=23aceb3b55020f40d12957eb0f75522b}{%
+           family={Ayer},
+           familyi={A\bibinitperiod},
+           given={Alfred\bibnamedelima Jules},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Greenwood Press}%
+      }
+      \strng{namehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{fullhash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{fullhashraw}{6ac7e21451c80f04ca26894d84279358}
+      \strng{bibnamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorbibnamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authornamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorfullhash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorfullhashraw}{6ac7e21451c80f04ca26894d84279358}
+      \strng{editorbibnamehash}{23aceb3b55020f40d12957eb0f75522b}
+      \strng{editornamehash}{23aceb3b55020f40d12957eb0f75522b}
+      \strng{editorfullhash}{23aceb3b55020f40d12957eb0f75522b}
+      \strng{editorfullhashraw}{23aceb3b55020f40d12957eb0f75522b}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Logical Positivism}
+      \field{shorttitle}{Uberwindung}
+      \field{title}{The {{Elimination}} of {{Metaphysics Through Logical Analysis}} of {{Language}}}
+      \field{year}{1966}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{60\bibrangedash 81}
+      \range{pages}{22}
+      \verb{file}
+      \verb C:\Users\adama\Zotero\storage\XM3CCQYV\TEO.html
+      \endverb
+      \keyw{classical}
+    \endentry
+    \entry{carnap2000}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6ac7e21451c80f04ca26894d84279358}{%
+           family={Carnap},
+           familyi={C\bibinitperiod},
+           given={Rudolf},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{fullhash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{fullhashraw}{6ac7e21451c80f04ca26894d84279358}
+      \strng{bibnamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorbibnamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authornamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorfullhash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorfullhashraw}{6ac7e21451c80f04ca26894d84279358}
+      \field{extraname}{3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{Reprint}
+      \field{isbn}{978-0-415-22553-3}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{pagetotal}{352}
+      \field{series}{Philosophy of Mind and Language}
+      \field{shorttitle}{Syntax}
+      \field{title}{The Logical Syntax of Language}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\adama\Zotero\storage\MMZGL8EP\Carnap - 2000 - The logical syntax of language.pdf
+      \endverb
+    \endentry
+    \entry{carnap2003}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6ac7e21451c80f04ca26894d84279358}{%
+           family={Carnap},
+           familyi={C\bibinitperiod},
+           given={Rudolf},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Chicago, Ill}%
+      }
+      \list{publisher}{1}{%
+        {Open Court}%
+      }
+      \strng{namehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{fullhash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{fullhashraw}{6ac7e21451c80f04ca26894d84279358}
+      \strng{bibnamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorbibnamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authornamehash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorfullhash}{6ac7e21451c80f04ca26894d84279358}
+      \strng{authorfullhashraw}{6ac7e21451c80f04ca26894d84279358}
+      \field{extraname}{4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-0-8126-9523-6}
+      \field{langid}{english}
+      \field{series}{Open {{Court}} Classics}
+      \field{shorttitle}{Aufbau}
+      \field{title}{The Logical Structure of the World and {{Pseudoproblems}} in Philosophy}
+      \field{year}{2003}
+      \field{dateera}{ce}
+    \endentry
+    \entry{dambock2022}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e9b787932beafc42dadf10f78c7c6033}{%
+           family={Damböck},
+           familyi={D\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9b787932beafc42dadf10f78c7c6033}
+      \strng{fullhash}{e9b787932beafc42dadf10f78c7c6033}
+      \strng{fullhashraw}{e9b787932beafc42dadf10f78c7c6033}
+      \strng{bibnamehash}{e9b787932beafc42dadf10f78c7c6033}
+      \strng{authorbibnamehash}{e9b787932beafc42dadf10f78c7c6033}
+      \strng{authornamehash}{e9b787932beafc42dadf10f78c7c6033}
+      \strng{authorfullhash}{e9b787932beafc42dadf10f78c7c6033}
+      \strng{authorfullhashraw}{e9b787932beafc42dadf10f78c7c6033}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{abstract}{Rudolf Carnap and Martin Heidegger shared with Max Weber the decisionist understanding of values as something that cannot be justified by scientists or philosophers. Although both accepted the challenge of modernity in this respect, they reacted in opposite ways. Carnap, along with the Vienna Circle, defended a scientific conception of the world in which science and instrumental rationality were to permeate all of life; Heidegger embarked on an understanding of metaphysics in which rationality and science were to be eliminated. Both strategies were deeply political, and both resulted from the split in the German youth and life reform movement that took place during and immediately after World War I. I discuss this image here in the context of dialectical theology, the Vienna Circle, and the Davos Disputation, with a sideways glance at Ernst Cassirer, and with a view to earlier interpretations by Michael Friedman and Gottfried Gabriel.}
+      \field{issn}{2764-0892}
+      \field{issue}{2}
+      \field{journaltitle}{Geltung, revista de estudos das origens da filosofia contemporânea}
+      \field{langid}{english}
+      \field{number}{2}
+      \field{shorttitle}{Carnap and {{Heidegger}}}
+      \field{title}{Carnap and {{Heidegger}}: {{Political}} Antimetaphysics versus Metaphysics as Metapolitics}
+      \field{urlday}{21}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{2}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e67407\bibrangedash e67407}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.23925/2764-0892.2024.v2.n2.e67407
+      \endverb
+      \verb{file}
+      \verb C:\Users\adama\Zotero\storage\4CX9E8SY\Damböck - 2022 - Carnap and Heidegger Political antimetaphysics ve.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://revistas.pucsp.br/index.php/geltung/article/view/67407
+      \endverb
+      \verb{url}
+      \verb https://revistas.pucsp.br/index.php/geltung/article/view/67407
+      \endverb
+      \keyw{Decisionismo}
+    \endentry
+    \entry{friedman2000}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f1d3f37756c0c44c598929e728a13f39}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Chicago, IL}%
+      }
+      \list{publisher}{1}{%
+        {Open Court}%
+      }
+      \strng{namehash}{f1d3f37756c0c44c598929e728a13f39}
+      \strng{fullhash}{f1d3f37756c0c44c598929e728a13f39}
+      \strng{fullhashraw}{f1d3f37756c0c44c598929e728a13f39}
+      \strng{bibnamehash}{f1d3f37756c0c44c598929e728a13f39}
+      \strng{authorbibnamehash}{f1d3f37756c0c44c598929e728a13f39}
+      \strng{authornamehash}{f1d3f37756c0c44c598929e728a13f39}
+      \strng{authorfullhash}{f1d3f37756c0c44c598929e728a13f39}
+      \strng{authorfullhashraw}{f1d3f37756c0c44c598929e728a13f39}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-0-8126-9425-3 978-0-8126-9755-1}
+      \field{langid}{english}
+      \field{pagetotal}{1}
+      \field{shorttitle}{A {{Parting}} of the {{Ways}}}
+      \field{title}{A {{Parting}} of the {{Ways}}: {{Carnap}}, {{Cassirer}}, and {{Heidegger}}}
+      \field{year}{2000}
+      \field{dateera}{ce}
+    \endentry
+    \entry{hahn1973}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f2c0af019e26761a46330146a79387c4}{%
+           family={Hahn},
+           familyi={H\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d9f1b396401dfa4e96fe839605278f5}{%
+           family={Neurath},
+           familyi={N\bibinitperiod},
+           given={Otto},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ac7e21451c80f04ca26894d84279358}{%
+           family={Carnap},
+           familyi={C\bibinitperiod},
+           given={Rudolf},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{87ba841702a593872b9028faeb16c77e}
+      \strng{fullhash}{ba55e0aee05dc97616cd2d98a2856ebd}
+      \strng{fullhashraw}{ba55e0aee05dc97616cd2d98a2856ebd}
+      \strng{bibnamehash}{ba55e0aee05dc97616cd2d98a2856ebd}
+      \strng{authorbibnamehash}{ba55e0aee05dc97616cd2d98a2856ebd}
+      \strng{authornamehash}{87ba841702a593872b9028faeb16c77e}
+      \strng{authorfullhash}{ba55e0aee05dc97616cd2d98a2856ebd}
+      \strng{authorfullhashraw}{ba55e0aee05dc97616cd2d98a2856ebd}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{langid}{english}
+      \field{title}{The {{Scientific Conception}} of the {{World}}: {{The Vienna Circle}}}
+      \field{urlday}{31}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{1973}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\adama\Zotero\storage\RHEYXTZ8\Hahn et al. - 1. The Vienna Circle of the Scienti c Conception o.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://rreece.github.io/philosophy-reading-list/docs/the-scientific-conception-of-the-world-the-vienna-circle.pdf
+      \endverb
+      \verb{url}
+      \verb https://rreece.github.io/philosophy-reading-list/docs/the-scientific-conception-of-the-world-the-vienna-circle.pdf
+      \endverb
+    \endentry
+    \entry{heidegger1981}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=79b1e6f4199aeb3f853ca7cba607bfdc}{%
+           family={Heidegger},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=9496220ac58b921d9003e5891aed1486}{%
+           family={Sheehan},
+           familyi={S\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=2a96c90a7e4eab8d7ffdf991243ad466}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{fullhash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{fullhashraw}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{bibnamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorbibnamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authornamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorfullhash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorfullhashraw}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{editorbibnamehash}{9496220ac58b921d9003e5891aed1486}
+      \strng{editornamehash}{9496220ac58b921d9003e5891aed1486}
+      \strng{editorfullhash}{9496220ac58b921d9003e5891aed1486}
+      \strng{editorfullhashraw}{9496220ac58b921d9003e5891aed1486}
+      \strng{translatorbibnamehash}{2a96c90a7e4eab8d7ffdf991243ad466}
+      \strng{translatornamehash}{2a96c90a7e4eab8d7ffdf991243ad466}
+      \strng{translatorfullhash}{2a96c90a7e4eab8d7ffdf991243ad466}
+      \strng{translatorfullhashraw}{2a96c90a7e4eab8d7ffdf991243ad466}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Heidegger: The Man and the Thinker}
+      \field{title}{Only a {{God Can Save Us}}}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{1981}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{45\bibrangedash 67}
+      \range{pages}{23}
+      \verb{file}
+      \verb C:\Users\adama\Zotero\storage\F69QJMG6\interview.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ditext.com/heidegger/interview.html
+      \endverb
+      \verb{url}
+      \verb https://www.ditext.com/heidegger/interview.html
+      \endverb
+    \endentry
+    \entry{heidegger2008a}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=79b1e6f4199aeb3f853ca7cba607bfdc}{%
+           family={Heidegger},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=de7d09aa9e4bbe3bea5329edeae4cf69}{%
+           family={Krell},
+           familyi={K\bibinitperiod},
+           given={David\bibnamedelima Farrell},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Harper Perennial Modern Thought}%
+      }
+      \strng{namehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{fullhash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{fullhashraw}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{bibnamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorbibnamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authornamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorfullhash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorfullhashraw}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{editorbibnamehash}{de7d09aa9e4bbe3bea5329edeae4cf69}
+      \strng{editornamehash}{de7d09aa9e4bbe3bea5329edeae4cf69}
+      \strng{editorfullhash}{de7d09aa9e4bbe3bea5329edeae4cf69}
+      \strng{editorfullhashraw}{de7d09aa9e4bbe3bea5329edeae4cf69}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{annotation}{OCLC: ocn191930203}
+      \field{edition}{Rev. and expanded ed}
+      \field{isbn}{978-0-06-162701-9}
+      \field{langid}{english}
+      \field{pagetotal}{452}
+      \field{shorttitle}{Basic Writings}
+      \field{title}{Basic Writings: From {{Being}} and Time (1927) to {{The}} Task of Thinking (1964)}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \keyw{20th century,Philosophy German}
+    \endentry
+    \entry{heidegger2008b}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=79b1e6f4199aeb3f853ca7cba607bfdc}{%
+           family={Heidegger},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=c049344fee49846c5dfae43516b5bdec}{%
+           family={Macquarrie},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7a1caaf864e166ecf4c92c68b5c78469}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Edward\bibnamedelima S.},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {HarperPerennial/Modern Thought}%
+      }
+      \strng{namehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{fullhash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{fullhashraw}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{bibnamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorbibnamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authornamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorfullhash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorfullhashraw}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{editorbibnamehash}{b964c0d17a92060e7798078e0bcc5c45}
+      \strng{editornamehash}{b964c0d17a92060e7798078e0bcc5c45}
+      \strng{editorfullhash}{b964c0d17a92060e7798078e0bcc5c45}
+      \strng{editorfullhashraw}{b964c0d17a92060e7798078e0bcc5c45}
+      \field{extraname}{3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{OCLC: ocn243467373}
+      \field{isbn}{978-0-06-157559-4}
+      \field{langid}{english}
+      \field{pagetotal}{589}
+      \field{title}{Being and Time}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\adama\OneDrive\Documents\books\Being and time -- Heidegger, Martin, 1889-1976; Macquarrie, John; Robinson, -- 2008 -- New York_ HarperPerennial_Modern Thought -- 9780061575594 -- 8ff3e11243dfd2f85f0e81051d134fe3 -- Anna’s Archive.pdf
+      \endverb
+      \keyw{Ontology,Space and time}
+    \endentry
+    \entry{heidegger2008c}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=79b1e6f4199aeb3f853ca7cba607bfdc}{%
+           family={Heidegger},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=de7d09aa9e4bbe3bea5329edeae4cf69}{%
+           family={Krell},
+           familyi={K\bibinitperiod},
+           given={David\bibnamedelima Farrell},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Harper Perennial Modern Thought}%
+      }
+      \strng{namehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{fullhash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{fullhashraw}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{bibnamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorbibnamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authornamehash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorfullhash}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{authorfullhashraw}{79b1e6f4199aeb3f853ca7cba607bfdc}
+      \strng{editorbibnamehash}{de7d09aa9e4bbe3bea5329edeae4cf69}
+      \strng{editornamehash}{de7d09aa9e4bbe3bea5329edeae4cf69}
+      \strng{editorfullhash}{de7d09aa9e4bbe3bea5329edeae4cf69}
+      \strng{editorfullhashraw}{de7d09aa9e4bbe3bea5329edeae4cf69}
+      \field{extraname}{4}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{OCLC: ocn191930203}
+      \field{booktitle}{Basic Writings: From {{Being}} and Time (1927) to {{The}} Task of Thinking (1964)}
+      \field{edition}{Rev. and expanded ed}
+      \field{isbn}{978-0-06-162701-9}
+      \field{langid}{english}
+      \field{title}{The {{Question Concerning Technology}}}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{307\bibrangedash 341}
+      \range{pages}{35}
+      \keyw{20th century,Philosophy German}
+    \endentry
+    \entry{husserl2005}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bc4e518ab332880cc4d6b85ccc3c4e03}{%
+           family={Husserl},
+           familyi={H\bibinitperiod},
+           given={Edmund},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=51124da7b1e6dfd7e4109d46b9b2c78b}{%
+           family={Moran},
+           familyi={M\bibinitperiod},
+           given={Dermot},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=07bb33cb0a6fafa02583202728fe8b94}{%
+           family={Findlay},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Routledge \& Kegan Paul [u.a.]}%
+      }
+      \strng{namehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{fullhash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{fullhashraw}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{bibnamehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authorbibnamehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authornamehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authorfullhash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authorfullhashraw}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{editorbibnamehash}{51124da7b1e6dfd7e4109d46b9b2c78b}
+      \strng{editornamehash}{51124da7b1e6dfd7e4109d46b9b2c78b}
+      \strng{editorfullhash}{51124da7b1e6dfd7e4109d46b9b2c78b}
+      \strng{editorfullhashraw}{51124da7b1e6dfd7e4109d46b9b2c78b}
+      \strng{translatorbibnamehash}{07bb33cb0a6fafa02583202728fe8b94}
+      \strng{translatornamehash}{07bb33cb0a6fafa02583202728fe8b94}
+      \strng{translatorfullhash}{07bb33cb0a6fafa02583202728fe8b94}
+      \strng{translatorfullhashraw}{07bb33cb0a6fafa02583202728fe8b94}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{Reprinted}
+      \field{isbn}{978-0-415-24189-2}
+      \field{langid}{english}
+      \field{pagetotal}{331}
+      \field{series}{International Library of Philosophy}
+      \field{shorttitle}{Logical Investigations. {{Vol}}. 1}
+      \field{title}{Logical Investigations. {{Vol}}. 1: {{Prolegomena}} to Pure Logic: (Volume {{I}} of the {{German}} Editions) / with ... and Ed. with a New Introd. by {{Dermot Moran}}}
+      \field{volume}{1}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb C:\Users\adama\Zotero\storage\VD8NFD4K\Husserl et al. - 2005 - Logical investigations. Vol. 1 Prolegomena to pur.pdf
+      \endverb
+    \endentry
+    \entry{husserl2012}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bc4e518ab332880cc4d6b85ccc3c4e03}{%
+           family={Husserl},
+           familyi={H\bibinitperiod},
+           given={Edmund},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London ; New York}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{fullhash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{fullhashraw}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{bibnamehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authorbibnamehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authornamehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authorfullhash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authorfullhashraw}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-0-415-51903-8 978-0-203-12033-0}
+      \field{langid}{english}
+      \field{pagetotal}{376}
+      \field{series}{Routledge Classics}
+      \field{shorttitle}{Ideas}
+      \field{title}{Ideas: General Introduction to Pure Phenomenology}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \true{nocite}
+      \keyw{Phenomenology}
+    \endentry
+    \entry{weber2014}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5c5b680247c92b67e657f8faab60250e}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=1a6855431f7449d905ef396537b4cefa}{%
+           family={Gerth},
+           familyi={G\bibinitperiod},
+           given={H.H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a15b649444b81b2240110f97e1148db5}{%
+           family={Wright\bibnamedelima Mills},
+           familyi={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{fullhash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{fullhashraw}{5c5b680247c92b67e657f8faab60250e}
+      \strng{bibnamehash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{authorbibnamehash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{authornamehash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{authorfullhash}{5c5b680247c92b67e657f8faab60250e}
+      \strng{authorfullhashraw}{5c5b680247c92b67e657f8faab60250e}
+      \strng{editorbibnamehash}{3e45276d25e22e00cd0b40d7c1e04c54}
+      \strng{editornamehash}{3e45276d25e22e00cd0b40d7c1e04c54}
+      \strng{editorfullhash}{3e45276d25e22e00cd0b40d7c1e04c54}
+      \strng{editorfullhashraw}{3e45276d25e22e00cd0b40d7c1e04c54}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{From {{Max Weber}}: {{Essays}} in {{Sociology}}}
+      \field{day}{1}
+      \field{edition}{0}
+      \field{isbn}{978-1-134-68894-4}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Science as a {{Vocation}}}
+      \field{urlday}{2}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{129\bibrangedash 156}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.4324/9780203759240
+      \endverb
+      \verb{urlraw}
+      \verb https://www.taylorfrancis.com/books/9781134688944
+      \endverb
+      \verb{url}
+      \verb https://www.taylorfrancis.com/books/9781134688944
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

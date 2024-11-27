@@ -1,0 +1,1 @@
+{"rule":"NON3PRS_VERB","sentence":"^\\QLanguage I constructs definite statements akin to those in the classical logics, including the Aufbau.\\E$"}
