@@ -1,3 +1,5 @@
+<!----------------------------- cubething.dev -------------------------------->
+
 Facts and Values - The Problematic
 
 On the Kantian view, there are two worlds, the inner (prior) and the outer
