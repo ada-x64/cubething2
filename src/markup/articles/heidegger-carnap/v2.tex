@@ -4,6 +4,8 @@
 \usepackage{../../cubething}
 \addbibresource{../../library.bib}
 
+\usepackage{pifont}
+
 \renewcommand*{\bibfont}{\small}
 
 %opening
@@ -27,8 +29,8 @@ in the Early \nth{20} Century}
 	projects. The philosophers' positions will then be discussed against the then-dominant
 	Neokantian school and the influence of Edmund Husserl's phenomenology. I will then
 	discuss the matters on which they agree and find themselves in contrast. The
-	discussion will proceed through an analysis of the author's conceptions of
-	fundamental epistemology, metaethics, and their relation to language.
+	discussion will proceed through an analysis of the authors' conceptions of fundamental
+	epistemology, metaethics, and their relation to language.
 
 	%=========================================================================%
 	\section{Historical Background, Political Origins}
@@ -36,13 +38,12 @@ in the Early \nth{20} Century}
 	% TODO: https://www.youtube.com/watch?v=RqESHNvmP20
 	% The petit-borgeousie; material analysis
 
-	Carnap and Heidegger were young men in 1914, when the world went to war:. The horror
+	Carnap and Heidegger were young men in 1914, when the world went to war. The horror
 	of industrial warfare and the decline of Western religious practices scarred a
 	generation, prompting a radical political split. The classic dilemma of is and
 	ought had come to engross the age: What are we to do about the
 	incommensurability of (empirical-scientific) facts and (theological-existential)
-	meaning? In the midst of the great war, the sociologist Max Weber wrote the
-	following.
+	meaning? In 1917, the sociologist Max Weber wrote the following.
 
 	\begin{displayquote}
 		[{\cite[139]{weber2014}}] \dots what is the meaning of science as a vocation,
@@ -54,25 +55,29 @@ in the Early \nth{20} Century}
 		that remains is the sense in which science gives \enquote{no} answer, and whether
 		or not science might yet be of some use to the one who puts the question correctly.
 	\end{displayquote}
-	This essay aims to clarify why science gives no answer.
+	% This essay aims to clarify why science gives no answer.
 
-	For Carnap and his Vienna Circle, the limitations of science are themselves the
-	limitations of knowledge. Anything which can be said about material things (including
-	individuals and their societies) can be stated clearly, in scientific language.
-	The rise of psychology and sociology as disciplines, with figures like Weber,
-	Durkheim, James, and Wundt empiricizing questions typically reserved for
-	philosophy, alongside theories of linguistic logic by Russell and Wittgenstein,
-	provided further fuel for their attitude. Metaphysical pronouncements outside the
-	scope of logical analysis -- about abstract essences or universal ethics -- were
-	considered \enquote{nonsense.} This term is not to be taken as a complete
-	dismissal, however; the scientific worldview is meant to \enquote{serve life},
-	not the other way around. Ethics, and politics, is to proceed from empirical grounds,
-	as a sociopsychological science. Of course, they were not without their bias.
+	% rough
+	For Carnap and his Vienna Circle, the limitations of science are themselves
+	the limitations of knowledge. Anything which can be said about material things
+	(including individuals and their societies) can be stated clearly, in
+	scientific language. The rise of psychology and sociology as disciplines, with
+	figures like Weber, Durkheim, James, and Wundt empiricizing questions typically
+	reserved for philosophy, alongside theories of linguistic logic by Russell and
+	Wittgenstein, provided further fuel for their attitude. Metaphysical
+	pronouncements outside the scope of logical analysis -- about abstract essences
+	or universal ethics -- were considered \enquote{nonsense.} This term is not to
+	be taken as a complete dismissal, however; the scientific worldview is meant to
+	\enquote{serve life}, not the other way around. Ethics, and politics, is to
+	proceed from empirical grounds, as a sociopsychological science. Of course, they
+	were not without their bias.
 
-	In \enquote{The Scientific Conception of the World,} \nocite{hahn1973} they
-	explicitly link their worldview with the socialist movements of the early \nth{20}
-	century. They acknowledge a widespread disenchantment among Weberian lines, connected
-	with the industrial mode of production. The European public \blockquote[{\cite[21f]{hahn1973}}]{with their socialist attitudes tend to lean towards a down-to-earth empricist view. In previous times \emph{materialism} was the expression of this view; meanwhile, however, modern empiricism has ... taken a strong shape in the \emph{scientific world-conception}}.
+	In \enquote{The Scientific Conception of the World,} \nocite{hahn1973} they explicitly
+	link their worldview with the socialist movements of the early \nth{20}
+	century. They acknowledge a widespread disenchantment among Weberian lines,
+	connected with the industrial mode of production. The European public \blockquote[{\cite[21f]{hahn1973}}]{with their socialist attitudes tend to lean towards a down-to-earth empricist view. In previous times \emph{materialism} was the expression of this view; meanwhile, however, modern empiricism has ... taken a strong shape in the \emph{scientific world-conception}}.
+	Their solution to the disenchantment can be found in the hope they place in
+	science and collectivist movements taking shape throughout the continent.
 
 	While strict empiricism takes the priority for the positivists, Heidegger focuses
 	on the lost sense of meaning. For him, the Western philosophical project is extremely
@@ -94,94 +99,152 @@ in the Early \nth{20} Century}
 	It is well-known that Heidegger took the rectorate at Freiburg under Nazi
 	reign, and delivered several lectures expounding on the \enquote{inner greatness}
 	of the Nazi party. Throughout his life, he was taciturn about his involvements
-	in the party. In a late interview, published only posthumously, Heidegger claims
-	his involvement with the Nazi party was taken out of a sense of obligation, in
-	order to keep the university intact, and to secure his position as rector.
-	Regardless of the nature of his involvement with fascism, it is clear that Heidegger
-	was against communism in any form, especially the technocratic version which
-	the Vienna Circle would undoubtedly espouse. He argues that communism and \enquote{Americanism}
-	(what I assume to be technocratic free-market capitalism) are forms of global
-	technicity, that is, a movement away from viewing human beings in their full
-	nature towards the total organization and technologization of human behavior
-	in cybernetics. In his language, all beings, even Dasein itself, becomes
-	uprooted from the earth and becomes ready-to-hand, no longer capable of being seen
-	in its true essence. Although he does not make his political end-goal explicit,
-	it is against this technicity, and towards a \textit{Volkish} ideal that Heidegger
-	strives \autocite{heidegger1981}.
+	in the party. In a late interview with \textit{der Spiegel}, published only posthumously,
+	Heidegger claims his involvement with the Nazi party was at least partially
+	out of a sense of obligation, in order to keep the university intact, and to
+	secure his position as rector. Regardless of the nature of his involvement with
+	fascism, it is clear that Heidegger was against communism in any form, especially
+	the technocratic version which the Vienna Circle would undoubtedly espouse. He
+	argues that communism and \enquote{Americanism} (what I assume to be
+	technocratic free-market capitalism) are forms of global technicity, that is, a
+	movement away from viewing human beings in their full nature towards the total
+	organization and technologization of human behavior in cybernetics. In his
+	language, all beings, even Dasein itself, becomes uprooted from the earth and becomes
+	ready-to-hand, no longer capable of being seen in its true essence. Although he
+	does not make his political end-goal explicit, it is against this technicity, and
+	towards a \textit{Volkish} ideal that Heidegger strives \autocites{heidegger1981,heidegger2008c}.
 
-	Heidegger and Carnap are both seated within the Western philosophical
-	tradition, and both are attempting to overcome it. Their methods differ quite
-	dramatically, however, as do their end goals. Carnap wishes to clear away the cruft
-	of the past few millennia in order to see rightly; fundamentally, he believed the
-	Western canon was on the right track. Heidegger, however, wants to destruct
-	the method and the worldview which evolved from Plato through Kant. Both do so
-	in order to found a worldview which is capable of overcoming the existential conditions
-	which underlie false metaphysical inquiry. These conditions are immediately
-	tied up in both material analysis and practical philosophy, in questions concerning
-	both empirical facts and lived meaning. In the next section we will take a
-	look at how they each went about this destruction.
+	Heidegger and Carnap are both seated within the Western philosophical tradition,
+	and both are attempting to overcome it. Their methods differ quite dramatically,
+	however, as do their end goals. Carnap wishes to clear away the cruft of the
+	past few millennia in order to see rightly; fundamentally, he believed the
+	Western canon was on the right track. Heidegger, however, wants to destruct the
+	method and the worldview which evolved from Plato through Kant. Both do so in
+	order to found a worldview which is capable of overcoming the existential
+	conditions which underlie false metaphysical inquiry. These conditions are immediately
+	tied up in both material analysis and practical philosophy, in questions
+	concerning both empirical facts and lived meaning. In the next section we will
+	take a look at how they each went about this destruction.
 
 	%=========================================================================%
-	\section{Husserl and Neokantianism}
+	\section{Kant and Husserl}
 
-	Heidegger and Carnap were both educated in the Neokantian tradition. In
-	keeping with the post-Kantian idealists, the Neokantians rejected the Kantian distinction
-	between the realms of pure sensibility and understanding. Over spatio-temporal
-	intuition, they preferred a pure logical basis for the object of knowledge.
-	\autocite[28]{friedman2000} The tradition was divided between several schools,
-	most notably the Marburg school and the Southwest school. While there are many
-	differences between these camps, the primary distinction I will focus on is their
-	stance on the distinction between logic and values.
+	% Heidegger and Carnap were both educated in the Neokantian tradition. In keeping
+	% with the post-Kantian idealists, the Neokantians rejected Kant's distinction
+	% between the realms of pure sensibility and understanding. Over spatio-temporal
+	% intuition, they preferred a pure logical basis for the object of knowledge. \autocite[28]{friedman2000}
+	% The tradition was divided between several schools, most notably the Marburg
+	% school and the Southwest school. While there are many differences between these
+	% camps, the primary distinction I will focus on is their stance on the
+	% distinction between logic and values.
 
-	Logic, being a discursive science aimed at proper thinking, was considered \emph{normative.}
-	For Rickert, a key player of the Southwest school, this leads to the claim
-	that logic belongs to the realm of transcendental value. Pure logic is then to
-	be distinguished from psychological knowledge, which proceeds by empirical
-	means. This leaves us with the gap between \emph{logic} as value, and \emph{psychology}
-	as fact \autocite[34ff]{friedman2000}.
+	% Logic, being a discursive science aimed at proper thinking, was considered
+	% \emph{normative.} For Rickert, a key player of the Southwest school, this leads
+	% to the claim that logic belongs to the realm of transcendental value. Pure
+	% logic is then to be distinguished from psychological knowledge, which proceeds
+	% by empirical means. This leaves us with the gap between \emph{logic} as value,
+	% and \emph{psychology} as fact \autocite[34ff]{friedman2000}.
 
-	Cassirer of the Marburg school rejected this distinction. Instead of cleaving the
-	mind between transcendental psychology and pure logic, Cassirer claims that
-	these gaps are \emph{moments} of cognition. They are not essential features
-	which then are synthesized in to a single cognition, but a unitary relation which
-	has been artificially analyzed into parts. Value and fact are analogous to the
-	universal and the particular, but for Cassirer this is a difference in matter of
-	\emph{viewpoint,} between understanding a thing in its \enquote{thinghood} (as
-	it relates to universal/transcendental forms), and understanding a thing in
-	its \enquote{context} (as a being among beings). This separation between
-	viewpoints is \enquote{artificial,} only occurring after the initial unitary relation
-	between mind and object. The originary perception finds these two aspects in
-	unison \autocite[34ff]{friedman2000}.
+	% Cassirer of the Marburg school rejected this distinction. Instead of cleaving
+	% the mind between transcendental psychology and pure logic, Cassirer claims that
+	% these gaps are \emph{moments} of cognition. They are not essential features which
+	% then are synthesized in to a single cognition, but a unitary relation which
+	% has been artificially analyzed into parts. Value and fact are analogous to the
+	% universal and the particular, but for Cassirer this is a difference in matter
+	% of \emph{viewpoint,} between understanding a thing in its \enquote{thinghood}
+	% (as it relates to universal/transcendental forms), and understanding a thing in
+	% its \enquote{context} (as a being among beings). This separation between viewpoints
+	% is \enquote{artificial,} only occurring after the initial unitary relation
+	% between mind and object. The originary perception finds these two aspects in unison
+	% \autocite[34ff]{friedman2000}.
 
-	The parallels between Husserl and the Neokantian schools is fairly clear. Rickert
-	writes positively of the \textit{Logical Investigation's}\nocite{husserl2005}
-	polemic against psychologism, and there are clear parallels between the unitary
-	relation of cognition in Cassirer and Husserl's unitary field of phenomenological
-	consciousness (see \textit{Ideas} \S38)\nocite{husserl2012}. Akin to Rickert, Husserl
-	ends up proposing transcendental phenomenological ideas as the basis of his ontology,
-	but akin to Cassirer he proposes that value and fact are part of the same
-	conscious process.
+	% The parallels between Husserl and the Neokantian schools is fairly clear.
+	% Rickert writes positively of the \textit{Logical Investigation's}\nocite{husserl2005}
+	% polemic against psychologism, and there are clear parallels between the
+	% unitary relation of cognition in Cassirer and Husserl's unitary field of
+	% phenomenological consciousness (see \textit{Ideas} \S38)\nocite{husserl2012}. Akin
+	% to Rickert, Husserl ends up proposing transcendental phenomenological ideas as
+	% the basis of his ontology, but akin to Cassirer he proposes that value and fact
+	% are part of the same conscious process.
 
-	The phenomenon was proposed by Husserl as a way of bridging the gap between
-	the conscious being and the thing-in-itself. If the phenomenon is understood in
-	Kant's way as the empirical intuition of a thing, then it could be said that
-	Husserl's phenomenon is closer to the transcendental intuition itself, the conditions
-	for the possibility of experience in the first place. Reality shows itself
-	through these conditions and through phenomenal appearances. It is the work of
-	phenomenology to transcend the appearances and move \enquote{to the things themselves.}
+	% The phenomenon was proposed by Husserl as a way of bridging the gap between the
+	% conscious being and the thing-in-itself. If the phenomenon is understood in
+	% Kant's way as the empirical intuition of a thing, then it could be said that Husserl's
+	% phenomenon is closer to the transcendental intuition itself, the conditions
+	% for the possibility of experience in the first place. Reality shows itself through
+	% these conditions and through phenomenal appearances. It is the work of
 
-	Drawing inspiration from this tradition, but moving past it, there are a few shared
-	concerns for Carnap and Heidegger: (1) Scientific thought is formal in nature,
-	so it cannot capture values; (2) Language is key to thought; and, (3) The
-	manner in which we use language corresponds directly to our practical aims.
+	% Since at least Aristotle, metaphysics has been the study of the first
+	% principles that underlie the various sciences and their most generic objects. In
+	% addition to the special sciences, there is logic, which studies the analogous structures
+	% of each special science. And, above them all lies metaphysics, the science of
+	% first principles as such. Importantly, these first principles are accessible
+	% as objects of intelligible intuition. That is, although we cannot access them
+	% through our senses, we have access to them through our capacity to reason.
+
+	% Kant criticized the traditional metaphysical system for its inherent
+	% contradictions. Humans only have access to external objects through our sensible
+	% intuition (i.e. through our access to space and time), and to internal,
+	% psychological facts through our intellectual intuition. These sensible objects
+	% (phenomena) are representations of the underlying 'real' objects (noumena),
+	% which are purely intellectual. Although the phenomena are merely representations
+	% which occur to perceiving creatures like us, the fact of their being is
+	% reliant on the structure of our cognitive faculties. If the grounds of science
+	% lie in transcendental principles and causes, then what Kant wishes to say is
+	% that metaphysics ought to concern itself only with the way objects appear to
+	% us, and not as they are in themselves. To Kant, we do not have direct access to
+	% the thing-in-itself, the noumena as such. By making this distinction, Kant
+	% rescues the foundations of science while supposedly ridding it of its
+	% inherently contradictory character (where possible). However, his motivation
+	% for this is not just to save the sciences from falling into skepticism. His primary
+	% goal is to \enquote{limit reason in order to make room for faith.} This faith
+	% is the rational belief in God as the foundational basis of our capacity for
+	% freedom.
+
+	\autocite{stone2017} recognizes three core aspects of Kant's critique of
+	traditional metaphysics: (1) Kant acknowledges that metaphysics correctly identifies
+	the grounds of science in the transcendental causes and principles of reason.
+	(2) He denies any knowledge of the suprasensible subject-matter of metaphysics
+	(noumena). (3) His goal is to save practical philosophy by limiting our knowledge,
+	to \enquote{limit reason in order to make room for faith.} But Kant's critiques
+	left open two large concerns. First, the notion of noumena seems to be largely
+	without basis. Why believe in a realm of suprasensible things-in-themselves if
+	we are only given access to the phenomena which represent them? Second, the
+	rational faculties are based on spatiotemporal sensory intuition, but there is
+	concern about the primacy of these intuitions.
+
+	In order to overcome the limitations of Kant's system, Husserl proposes to
+	study link our perceptions and the noumena, thus grounding our faculties and overcoming
+	representationalism at once. Husserl's claim is that phenomena do not exist as
+	objects-in-themselves, independently of our own interpretation. Rather, phenomena
+	are those objects whose whole existence is dependent on our postulation through
+	an intentional (directed) interpretation of sense experience. This
+	transcendental process reveals to us the \textit{Urregion} of pure consciousness,
+	containing the necessary and absolute entities (phenomena as such) which
+	ground our human faculties. But here Husserl has solved the problems of noumena
+	and intuition by the creation of a realm of suprasensible entities! He has, in
+	effect, reinstated metaphysics. \autocite[4f]{stone2017}
+
+	What about practical philosophy? For Husserl, ethics would appear as an
+	objective science the same as any other. What is objectively good is what must
+	necessarily appear good. Analogously to the postulation of sensory phenomena, evaluative
+	phenomena are found in the \textit{Urregion} of consciousness insofar as they
+	are postulated on top of volitional or emotional data. Ethics, then, takes on the
+	shape of an objective science \autocite[5]{stone2017}.
+
+	In overcoming metaphysics, Heidegger and Carnap are proceeding from, but overcoming,
+	the phenomenological method which Husserl had laid out. Between them, there
+	are a few shared concerns. Although they both wish to overcome metaphysics, I
+	will focus on their stances on the nature of logic and value theory. In particular,
+	I will show how for each author: (1) Scientific thought is formal in nature and
+	cannot capture values; (2) Language is a key aspect of relating between the
+	mind and the world; (3) The manner in which we use language corresponds directly
+	to our practical, political, and ethical aims.
 
 	%-------------------------------------------------------------------------%
 	\section{Rational Construction}
 
-	The scientific worldview lends itself to the notion of a unified science. It
-	is Carnap's goal to place science on a unified ground, and in so doing to eliminate
-	the confusions which traditional philosophy (\enquote{metaphysics}) has
-	perpetuated. The goal of science is to \blockquote[{\citetitle[\S179]{carnap2003}}]{find and order the true statements about the objects of experience}.
+	For Carnap, the end of science is to \blockquote[{\citetitle[\S179]{carnap2003}}]{find and order the true statements about the objects of experience}.
 	This can be split into two further goals: to create a constructional system corresponding
 	to formal logic, and to investigate the relationships between objects of non-constructed
 	experience. We then have two foundational aspects of construction theory:
@@ -224,21 +287,22 @@ in the Early \nth{20} Century}
 		of philosophical arguments.
 	\end{displayquote}
 	%
-	Since logic is the ideal evaluative framework, but there are multiple valid
-	logical systems, it is up to us to find the ideal logical system to relate to our
-	practical aims, whatever they may be.
+	Since logistics is the ideal evaluative framework, but there are multiple
+	valid logistical systems, it is up to us to find the ideal system to relate to
+	our practical aims, whatever they may be.
 
-	Crucially, Carnap distinguishes between two modes of speech, the material and
-	the formal. The material mode is defined by a casual transposition of complicated
-	syntactical statements of the kind discussed in the \textit{Syntax} into
-	ordinary speech. The move from discussion of syntax to discussion of material properties
-	often leads to shorter and clearer explanations, but easily lends itself to
-	confusion. While Carnap claims that this mode of speech is perfectly acceptable,
-	and in fact unavoidable, he warns us that this translation leads us to speak of
-	spurious universals - i.e., metaphysical essences. Additionally, some material
-	sentences simply cannot be translated into formal syntax. Although these
-	statements are useful for expressing ourselves, they cannot be subject to claims
-	about truth and falsity, and so have no place in a scientific philosophy.
+	Analogous to the ontological and functional perception of gestalt phenomena, Carnap
+	distinguishes between two modes of speech, the material and the formal. The material
+	mode is defined by a casual transposition of complicated syntactical statements
+	of the kind discussed in the \textit{Syntax} into ordinary speech. The move from
+	discussion of syntax to discussion of material properties often leads to shorter
+	and clearer explanations, but easily lends itself to confusion. While Carnap claims
+	that this mode of speech is perfectly acceptable, and in fact unavoidable, he warns
+	us that this translation leads us to speak of spurious universals - i.e., metaphysical
+	essences. Additionally, some material sentences simply cannot be translated into
+	formal syntax. Although these statements are useful for expressing ourselves, they
+	cannot be subject to claims about truth and falsity, and so have no place in a
+	scientific philosophy.
 
 	\begin{displayquote}
 		[{\citetitle[\S81]{carnap2000}}] If a sentence of the material mode of speech
@@ -308,104 +372,180 @@ in the Early \nth{20} Century}
 	\section{Beyond Logic}
 
 	Heidegger, like Carnap, begins his analysis from phenomenological grounds. But
-	his idea of a phenomenon is quite different. His system is very intricate, and
-	we will only have the space to cover a small fraction of it here. We will
-	focus only on what is necessary to contrast his understanding of scientific
-	rationality from Carnap's.
+	his idea of a phenomenon is quite different. His system is very intricate, so we
+	will only have the space to cover a small fraction of it here, mainly as it
+	appears in \textit{Being and Time}.\footnote{References to Being and Time are
+	to the original page numbers, prefixed with an H. in the cited edition.} We will
+	focus only on what is necessary to contrast his understanding of scientific rationality
+	from Carnap's.
 
-	Heidegger's project is to understand the essence of Being in its most general
-	form. Already Carnap would stop us, claiming that the entire project is based
-	on a delusion: we are here beginning our investigation in the material mode of
-	speech. Further, Heidegger's goal to disclose fundamental ontology is directly
-	opposed to Carnap's functionalization of the object. Heidegger knows this, and
-	in fact this is his point. In \textit{Being and Time},\footnote{References to
-	Being and Time are to the original page numbers, prefixed with an H. in the
-	cited edition.} Heidegger engages in the form of a traditional philosophical-scientific
-	treatise, but later he will abandon this method in favor of a more poetic
-	style, essentially agreeing with Carnap that the scientific form is inappropriate
-	for \enquote{the task of thinking.} Nonetheless, let us continue outlining Heidegger's
-	fundamental ontology by examining his phenomenological method.
+	Heidegger's project is to study what it means for anything to be at all. This
+	is the question of Being. For Heidegger, the question of Being is the proper
+	aim of philosophy; it will take shape as a fundamental ontology. The goal of
+	ontology is to set the \textit{a priori} foundations for the study of beings in
+	general. In analogy with Carnap, Heidegger's approach is to analyze both the ontic,
+	object-oriented sciences and the ontological, functional structure of consciousness
+	in general. In doing so he and Carnap take on Husserl's goal of uniting the
+	phenomena and the grounds of our rational faculties. However, in contrast to
+	Carnap, Heidegger believes that in order to understand the object we must understand
+	it \emph{as} an object; we cannot functionalize it and consider this to be a full
+	explanation. We must consider the phenomena in its relation to our Being as a
+	\emph{whole}, picking apart its various equiprimordial roots. In doing so the ambiguity
+	of the material mode of speech will become essential. Simplicity and clarity
+	are quite famously of no concern for Heidegger, showing us from the start a clear
+	difference in the values which shape our thinkers' projects.
 
-	Though the term \enquote{phenomenology} implies a science through its suffix, the
-	form of \textit{l\'ogos} Heidegger has in mind is quite different from both
-	the traditional syllogistic logic and the new mathematical logistics. What Heidegger
-	means by \textit{l\'ogos} is closer to Hegel's dialectical logic, though he attains
-	his definition through an etymological analysis of the original Greek terms.
-	\textit{L\'ogos} is the manner in which a discussion allows the object of discourse
-	to be seen (in Aristotle, \textit{apopha\'inesthai}). In this way, truth (\textit{al\'ethia},
-	lit. \enquote{not to escape notice}) becomes a manner of \enquote{disclosing}
-	or \enquote{discovering} (\textit{pha\'inesthai}, lit. \enquote{letting-be-seen})
-	the phenomenon, with falsity being a manner of \enquote{covering up} (\textit{pse\'udesthai})
-	to hide the \enquote{true} nature of the being as the object of discourse. So
-	in this way, \textit{l\'ogos} as logistics cannot be the locus of truth. \blockquote[{\citetitle[33]{heidegger2008b}}]
+	In Heidegger's terminology, we must face up to the question of the Being of beings.
+	We do this through an existential analysis of our own Being. We humans are exceptional
+	in that our ontic existence is in fact ontological; that is, our Being is something
+	we recognize, and which forms a problematic for us. This recognition makes us by
+	nature capable of ontology. Because of this exceptional feature, it is through
+	an analysis of \emph{our} Being, what Heidegger calls Dasein (lit. \enquote{being-there})
+	that we can come to an understanding of Being in general. Further, this analytic
+	must occur as Dasein exists \enquote{proximally and for the most part,} in its
+	everydayness. In so doing we will not only found the sciences, but all other
+	meaningful orientation toward the world (\citetitle[Int. I]{heidegger2008b}).
+
+	The method of this analysis is phenomenology. Though the term \enquote{phenomenology}
+	implies a scientific approach, the form of \textit{l\'ogos} Heidegger has in mind
+	is quite different from both the traditional syllogistic logic and the new mathematical
+	logistics. What Heidegger means by \textit{l\'ogos} is closer to Hegel's dialectical
+	logic, though he attains his definition through an etymological analysis of
+	the original Greek terms. \textit{L\'ogos} is the manner in which a discussion
+	allows the object of discourse to be seen (in Aristotle, \textit{apopha\'inesthai}).
+	In this way, truth (\textit{al\'ethia}, lit. \enquote{not to escape notice})
+	becomes a manner of \enquote{disclosing} or \enquote{discovering} (\textit{pha\'inesthai},
+	lit. \enquote{letting-be-seen}) the phenomenon, with falsity being a manner of
+	\enquote{covering up} (\textit{pse\'udesthai}) to hide the \enquote{true}
+	nature of the being as the object of discourse. So in this way, \textit{l\'ogos}
+	as logistics cannot be the locus of truth. It is only in the phenomenon, or aesthetic
+	experience, in which we find truth. \blockquote[{\citetitle[33]{heidegger2008b}}]
 	{\textit{A\'isthesis}, %
 	the sheer sensory perception of something, is \enquote{true} in the Greek sense, and indeed %
 	more primordially than the \textit{l\'ogos} which we have been discussing}. \textit{A\'isthesis}
-	cannot cover up, as it displays itself as itself (as \textit{noe\^in}); at worst
-	it can be a kind of non-perceiving (\textit{agnoe\^in}). The object of \textit{a\'isthesis}
-	is the \textit{\'idia} as, and for example, color is the object of sight.
-	Though \textit{a\'isthesis} shows things as they are, covering-up occurs
-	through synthesis, the showing of something as or through something else.
-	\textit{A\'isthesis} does not occur through a faculty of cognition, but
-	directly, thus avoiding the Kantian dilemma of the interconnectedness of our faculties.
-	Rationality in the Kantian-scientific sense occurs only atop of apohpantic
-	logos. (\citetitle[Int. II.A, B]{heidegger2008b})
+	cannot cover up, as it displays itself as itself (as \textit{noe\^in}, cf
+	Husserl's \textit{noema}); at worst it can be a kind of non-perceiving (\textit{agnoe\^in}).
+	The object of \textit{a\'isthesis} is the \textit{\'idia} as, and for example,
+	color is the object of sight. Though \textit{a\'isthesis} shows things as they
+	are, covering-up occurs through synthesis, the showing of something as or through
+	something else. \textit{A\'isthesis} does not occur through a faculty of cognition,
+	but directly, thus avoiding the Kantian dilemma of the interconnectedness of our
+	faculties. Rationality in the Kantian-scientific sense occurs only atop of
+	apohpantic logos. (\citetitle[Int. II.A, B]{heidegger2008b})
 
-	So, the task of phenomenology is to (literally) discover the (Platonic) ideas of
-	aesthetic perception. In order to disclose the Being of beings as they are in
-	themselves, we must go through the intermediary character: our \textit{own} Being.
-	To be clear, phenomenology cannot proceed in the form of propositional assertions
-	as in Carnap. This form of logic separates the essential character of Being
-	from its onto-historical context. By analyzing it in the abstract, the essence
-	\enquote{gets understood in an empty way} and \enquote{loses its indigenous character}
-	(\citetitle[36]{heidegger2008b}). It is clear then that the \textit{manner} in
-	which things appear to us is of deep importance to Heidegger. Indeed, he will
-	characterize us as having been thrown into the world irrespective of our will,
-	perceiving the being-there of the world through the always-already-there character
-	of mood. In bad moods,
-	\begin{displayquote}
-		[{\citetitle[134]{heidegger2008b}}] Being has become manifest as a burden.
-		Why that should be, one does not \emph{know}. And Dasein cannot know anything
-		of the sort because the possibilities of disclosure which belong to cognition
-		reach far too short a way compared with the primordial disclosure belonging to
-		moods, in which Dasein is brought before its Being as \enquote{there.}
-	\end{displayquote}
+	So, the task of phenomenology is to (literally) discover the ideas (\textit{qua}
+	principles) of aesthetic perception. This takes on the character of an existential
+	hermeneutic which investigates Dasein as it appears to us in its everyday character.
+	So in contrast to Carnap, the \enquote{for-me-ness} is an essential aspect of
+	the phenomenon. It is clear then that the \textit{manner} in which things
+	appear to us is of deep importance to Heidegger, and that the manner in which we
+	express ourselves will be key to disclosing Being. Heidegger contends that our
+	language has developed in accordance with the ontic perception. In order to overcome
+	this, he requires us to rethink the grammar in which we speak. The manner in which
+	we relate to, understand, and discuss the world are all aspects of what Heidegger
+	calls our Being-in-the-world.
 
-	Heidegger's criticism of the scientific attitude can be most clearly seen in
-	his criticism of Descartes (\citetitle[{I.3 B, espc. \P21}]{heidegger2008b}). Here
-	he talks fairly explicitly about values. The critique of Descartes hinges on
-	his conception of being-in-the-world, as opposed to beings present-at-hand. He
-	claims that Descartes mischaracterizes the essential nature of beings as
-	Nature, that is, as founded on \enquote{an entity within-the-world which is proximally present-at-hand}
+	% To be clear, phenomenology cannot proceed in the form of propositional assertions
+	% as in Carnap. This form of logic separates the essential character of Being
+	% from its onto-historical context. By analyzing it in the abstract, the essence
+	% \enquote{gets understood in an empty way} and \enquote{loses its indigenous character}
+	% (\citetitle[36]{heidegger2008b}). In Carnap's system, we analyze basic
+	% experiences which takes its character as free from any onto-historical or
+	% personal identity. Any \enquote{for-me-ness} is analyzed \emph{into} basic experiences.
+	% For Heidegger, \enquote{for-me-ness} is essential to the very character of
+	% Dasein's Being. It is clear then that the \textit{manner} in which things
+	% appear to us is of deep importance to Heidegger, and that the manner in which we
+	% express ourselves will be key to disclosing Being.
+
+	Things in the world can show themselves to us in different ways. Two of the most
+	important orientations are readiness-to-hand and presence-to-hand. Ready-to-hand
+	entities are visible in their tool-use: they make themselves apparent to us in
+	their useful capacities toward some goal or another. But when the tool breaks,
+	we stop to consider the entity as it is in itself, as a material thing with
+	constitutive parts, etc. This viewpoint, when the entity is considered primarily
+	\emph{as} entity, is presence-at-hand.
+
+	Heidegger characterizes us as thrown into the world against our wills, made to
+	orient ourselves. We do so through our state-of-mind, manifested as mood. Our moods
+	turn us \emph{away} from ourselves and toward the world, thus revealing beings
+	to us in their factical nature. Entities only appear to us as present-at-hand
+	or otherwise because we are already predisposed by our moods to find them in
+	this way (\citetitle[I.5 \P29]{heidegger2008b}). Alongside mood, we find the
+	equally basic relation of understanding. The world discloses itself to us, and
+	thus we to ourselves, in our possibilities, that is, in all the potential utilities
+	which they may hold. Potentiality is always future-oriented as something not
+	yet actual, and never necessary. Understanding, then, as equiprimordial with
+	state-of-mind, is a future-oriented disclosure of our potentiality. This
+	aspect of understanding is called projection. Our moods, as a turning-away, close
+	off certain possibilities for us, thus restricting our sight. The manner in which
+	projection works out its restricted possibilities is called interpretation,
+	and the manner in which we then see something \emph{as} something is called articulation.
+	But this potential-utility of the ready-to-hand object manifests itself
+	through a \emph{totality} of involvements. Every potentiality of the ready-to-hand
+	is such an involvement, and the ready-to-hand is only understood as relating to
+	the entire mesh of these potential involvements. Since only what is understood
+	can be articulated, all predication always already has the structure of understanding.
+	But, since all understanding relates entities to Dasein and in so doing wraps up
+	their being within Dasein's world, any \emph{meaning} as such will be discovered
+	alongside the Being of Dasein. Meaning, then, is a matter of the \emph{utility}
+	of beings within-the-world. (\citetitle[\P31f]{heidegger2008b})
+
+	So, Heidegger characterizes meaningful entities as just those entities which are
+	understood in relation to our thrown projection, restricted in their
+	possibilities (for utilization) by our state-of-mind. This interpretive structure
+	is circular: we project meaningful possibility onto the ready-to-hand only
+	because we already have a network of possibility structures in place by which
+	to interpret them. Heidegger views this as a positive characteristic.
+	\blockquote[{\cite[153]{heidegger2008b}}]{What is decisive is not to get out of the circle but to come into it in the right way. This circle of understanding is not an orbit in which any random kind of knowledge may move; it is the expression of the existential \emph{fore-structure} of Dasein itself. \dots In the circle is hidden a positive possibility of the most primordial kind of knowing. \dots The \enquote{circle} in understanding belongs to the structure of meaning, and the latter phenomenon is rooted in the existential constitution of Dasein -- that is, in the understanding which interprets.}
+
+	% TODO: Langauge, discourse, and assertion as a matter of being-there.
+
+	% TODO: Fix this up. More about the scientific attitude, less about Nazism.
+
+	Heidegger's criticism of the scientific attitude can be most clearly seen in his
+	criticism of Descartes (\citetitle[{I.3 B, espc. \P21}]{heidegger2008b}). Here
+	he talks fairly explicitly about values. The critique of Descartes hinges on his
+	conception of being-in-the-world, as opposed to beings present-at-hand. He claims
+	that Descartes mischaracterizes the essential nature of beings as Nature, that
+	is, as founded on \enquote{an entity within-the-world which is proximally present-at-hand}
 	(\citetitle[95]{heidegger2008b}). As in the \enquote{Question Concerning Technology,}
-	\nocite{heidegger2008c} Heidegger claims that Descartes has essentially made
-	the world ready-to-hand, thus enclosing it and making all of Nature, including
-	man, into \enquote{standing reserve.} This view is somewhat ironic considering
-	Heidegger's perceived Nazi sympathies, though reading Heidegger as a clear-cut
-	Nazi hardliner is naive. In \enquote{Only a God can Save Us,} Heidegger explicitly
+	\nocite{heidegger2008c} Heidegger claims that Descartes has essentially made the
+	world ready-to-hand, thus enclosing it and making all of Nature, including man,
+	into \enquote{standing reserve.} This view is somewhat ironic considering Heidegger's
+	perceived Nazi sympathies, though reading Heidegger as a clear-cut Nazi
+	hardliner is naive. In \enquote{Only a God can Save Us,} Heidegger explicitly
 	denies any ties with the Nazi party, considering himself an \enquote{unpolitical}
 	person. In fact, he characterizes himself as \enquote{confronting the Nazi party}
-	in his Nietzsche lectures, and as the subject of scrutiny under Nazi rule.
-	Whether or not he was truly sympathetic to Nazi politics is a matter of debate,
-	but in any case he is explicitly opposed to socialism as \enquote{a form of planetary technicity}
+	in his Nietzsche lectures, and as the subject of scrutiny under Nazi rule. Whether
+	or not he was truly sympathetic to Nazi politics is a matter of debate, but in
+	any case he is explicitly opposed to socialism as \enquote{a form of planetary technicity}
 	\autocite[206]{heidegger1981}.
 
-	Carnap actually would agree with Heidegger that Descartes' project is insufficient,
-	but his critique would be quite different. Instead of offering an analysis of different
-	\enquote{modes of being} as a criticism of the Cartesian worldview, he would offer
-	the gestalt-theoretical experience as having nothing to do with an ego. This
-	has to be constructed from the aspects of the experience; \textit{res extensa}
-	is not the most fundamental
-
-	--
-
-	Heidegger prefers a holistic approach. The analytic of Dasein occurs piecemeal,
-	but each piece influences and is influenced by the whole. Carnap prefers a
-	constructivist approach, where the basic units of experience are assumed, and
-	the rest is built from there.
+	So, to conclude: (1) Science is formal in nature, relying on an orientation
+	which prefers ontic analysis over ontological. Values arise from existential considerations,
+	which can be explicated only in terms of an existential analysis of Dasein. (2)
+	[Language is essential to thinking.] (3) The scientific worldview and its
+	formal language lends itself to an ontic orientation which puts us at risk of
+	dehumanization. Socialism and global capitalism, as technocratic regimes, reduce
+	all Being into standing-reserve, potential for utilization toward an
+	unexamined end.
 
 	%=========================================================================%
 	\section{Conclusion}
+
+	The values which we hold can drastically impact the style and substance of our
+	analyses. If we are prone to clarity and simplicity, a form of mathematical rigor
+	can emerge. If we are prone to the ambiguous, a poetic form of speech more clearly
+	fits our needs. Irrespective of how and why we value what we value, it is a key
+	sociological finding that our social environments impact what we believe.
+	Whether or not we intend them to, our values will find themselves leaking through
+	to our philosophical discourse. If we are truly free to choose a logical
+	system to suit our needs, then that choice will reflect pre-theoretical considerations.
+	If we are to investigate what fuels those practical choices, it is essential to
+	understand psychologically and existentially why we value what we do. All
+	philosophy is, in some sense, autobiography.
+
+	\centerline{\ding{166}} \break
 
 	\printbibliography
 \end{document}
