@@ -15,6 +15,7 @@ const stylesheets = [
   "libertinus",
   "sty",
   "toc",
+  "Fonts",
 ];
 
 export default function HeadComponent() {

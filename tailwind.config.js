@@ -8,7 +8,13 @@ export default {
     container: {
       center: true,
     },
+    fontFamily: {
+      display: ["Chillax"],
+      body: ["Synonym"],
+      sans: ["Synonym"],
+      serif: ["Libertinus"],
+    },
   },
-  darkMode: "class",
+  darkMode: "selector",
   plugins: [],
 };

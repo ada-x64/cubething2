@@ -5,24 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("sty.css");
-@import url("libertinus.css");
-@import url("code.css");
-@import url("global.css");
-@import url("toc.css");
-@import url("katex.css");
-
-body {
-  font-family: "Libertinus Serif";
-}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-variant: small-caps;
   font-weight: normal;
+  font-family: "Chillax";
 }
 div.footnotes {
   font-style: normal;

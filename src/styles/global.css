@@ -26,12 +26,10 @@ html {
   scroll-behavior: smooth;
   background-color: var(--bg);
   color: var(--text);
-  transition: all linear 0.5s;
 }
 svg * {
   stroke-width: 3;
   stroke-linejoin: round;
-  transition: all linear 0.125s;
   fill: var(--bg);
   stroke: var(--text);
 }

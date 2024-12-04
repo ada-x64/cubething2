@@ -46,12 +46,8 @@ const staticRoot = path.join(root, "www/");
 // fastify.register(ArticlePlugin, { root: staticRoot, prod });
 fastify.register(Static, {
   root: staticRoot,
-  prefix: "/static",
-});
-fastify.register(Static, {
-  root: staticRoot,
   decorateReply: false,
-  prefix: "/list",
+  prefix: "/static",
   list: true,
   index: false,
 });

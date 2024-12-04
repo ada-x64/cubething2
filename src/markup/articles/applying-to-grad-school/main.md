@@ -12,9 +12,8 @@ step while working at Prospective, the company behind this visualization tool,
 so it is no surprise I used what I was familiar with). I ranked the data by
 mapping my areas of interest to a scale, with 1 as the highest ranking.
 Multiplying gave me a simple ranking. I replaced all null values with 1000 so I
-could order the columns in descending order. Here is my final ranking:
-
-[todo: picture]
+could order the columns in descending order. You can see the final notebook
+[on my github](https://github.com/ada-x64/phil-gourmet).
 
 Once I had manually gone over the results and ensured that they were what I
 wanted (right location, right faculty), I chose my top 6 schools. They are:

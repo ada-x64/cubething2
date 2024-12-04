@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Fira Code Nerd Font";
+  src:
+    url("/static/font/Fira-Code-Nerd-Font-Complete-Mono.ttf"),
+    url("/static/font/Fira-Code-Nerd-Font-Complete-Mono-Windows-Compatible.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/static/font/FiraCode-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chillax";
+  src: url("/static/font/Chillax-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Synonym";
+  src: url("/static/font/Synonym-Regular.otf") format("opentype");
+  font-display: swap;
+}
