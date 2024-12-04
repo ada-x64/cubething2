@@ -8,6 +8,7 @@ function say_and_do {
 
 say_and_do "bun bundle"
 say_and_do "bun scripts/render/render.ts"
+say_and_do "bun scripts/metadata.ts"
 say_and_do "bun sass"
 say_and_do "bun tailwind"
 say_and_do "cp -r src/static/* www/"

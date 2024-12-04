@@ -1,3 +1,5 @@
+<!----------------------------- cubething.dev -------------------------------->
+
 ---
 title: Applying to Graduate School
 snippet:

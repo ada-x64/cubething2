@@ -129,7 +129,12 @@ export const renderAll = (opts: Opts) => {
 };
 
 if (import.meta.main) {
-  program.argument("[string]").option("--clean").option("--force").parse();
+  program
+    .argument("[string]")
+    .option("--clean")
+    .option("--force")
+    .option("--metadata")
+    .parse();
   const inputFile = program.args[0];
   const clean = program.opts()["clean"];
   const force = program.opts()["force"];

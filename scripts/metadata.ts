@@ -1,9 +1,12 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 import * as fs from "fs";
 import * as path from "path";
 import mime from "mime";
 import { spawnSync } from "child_process";
 import { argv } from "process";
 import * as yaml from "yaml";
+import { globSync } from "glob";
 
 export class Metadata {
   url: string;
@@ -36,8 +39,7 @@ export default async function generateMeta(
   URL_BASE: string,
   DRY_RUN: boolean,
 ) {
-  for (const f of fs.readdirSync(basePath)) {
-    const thepath = path.join(basePath, f);
+  for (const thepath of globSync(path.join(basePath, "*"))) {
     const filename = path.basename(thepath);
     const relpath = path.dirname(thepath).replace(/.*\/markup/, "");
     const builddir = path.join("build", relpath);
@@ -49,7 +51,6 @@ export default async function generateMeta(
 
       const lastCommitDate = await getLastCommitDate(
         thepath,
-        builddir,
         DECODER,
         CHANGED_FILES,
       );
@@ -72,7 +73,7 @@ export default async function generateMeta(
         const webpFilename = path.basename(webpPath);
         try {
           fs.statSync(webpPath);
-        } catch (_e) {
+        } catch {
           if (!DRY_RUN) {
             const cmd = `convert ${thepath} -resize 256x192 ${webpPath}`;
             spawnSync("sh", ["-c", cmd.replaceAll("\n", "")], {
@@ -119,7 +120,6 @@ export default async function generateMeta(
 
 async function getLastCommitDate(
   file: string,
-  builddir: string,
   DECODER: TextDecoder,
   CHANGED_FILES: string[],
 ) {
@@ -127,9 +127,7 @@ async function getLastCommitDate(
     return new Date();
   } else {
     const cmd = `git --no-pager log --pretty=%aD -n 1 -- ${file}`;
-    const output = spawnSync("sh", ["-c", cmd.replaceAll("\n", "")], {
-      cwd: builddir,
-    });
+    const output = spawnSync("sh", ["-c", cmd.replaceAll("\n", "")]);
     const stderr = DECODER.decode(output.stderr);
     const stdout = DECODER.decode(output.stdout);
     if (stderr) {
@@ -153,7 +151,7 @@ if (import.meta.main) {
     spawnSync("sh", ["-c", `git --no-pager diff --name-only HEAD`]).stdout,
   )
     .split("\n")
-    .filter((s) => s.includes("cdn") && !s.endsWith(".meta"));
+    .filter((s) => s.includes("src"));
 
   const map = {};
   await generateMeta(CDN_PATH, map, DECODER, CHANGED_FILES, URL_BASE, DRY_RUN);
