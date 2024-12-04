@@ -1,3 +1,5 @@
+<!----------------------------- cubething.dev -------------------------------->
+
 So I'm applying to graduate school. Where to start?
 
 I began by scraping data from the
