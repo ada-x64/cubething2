@@ -1,4 +1,10 @@
-<!----------------------------- cubething.dev -------------------------------->
+---
+title: Applying to Graduate School
+snippet:
+  My process for choosing schools, and a graduate student survey. Includes an
+  interactive dataset scraped from the Philosophical Gourmet.
+publishedAt: 3 Dec 2024
+---
 
 So I'm applying to graduate school. Where to start?
 
@@ -15,7 +21,11 @@ so it is no surprise I used what I was familiar with). I ranked the data by
 mapping my areas of interest to a scale, with 1 as the highest ranking.
 Multiplying gave me a simple ranking. I replaced all null values with 1000 so I
 could order the columns in descending order. You can see the final notebook
-[on my github](https://github.com/ada-x64/phil-gourmet).
+[on my github](https://github.com/ada-x64/phil-gourmet). You can also interact
+with the full dataset directly
+[here](https://cdn.cubething.dev/phil_gourmet.html).
+
+[![Philosophical Gourmet Dataset with Perspective](https://cdn.cubething.dev/phil_gourmet.png)](https://cdn.cubething.dev/phil_gourmet.html)
 
 Once I had manually gone over the results and ensured that they were what I
 wanted (right location, right faculty), I chose my top 6 schools. They are:
@@ -41,4 +51,12 @@ to be shared and is solely for my benefit. (Gotta shoot your shot.)
 
 It remains to be seen whether anybody responds to the survey. I am hoping so. I
 will keep this blog updated with my application status and any further
-information on my nefarious scheme to get people to help me.
+information on my nefarious scheme to get people to help me. If you are one of
+the people I've emailed, thank you for being here :) And no, you're not getting
+phished, I promise.
+
+P.S. I am currently working on an updated version of this site which allows me
+to use LaTeX in addition to Markdown to format posts. This has been my primary
+workhorse for writing lately. As I've been focused on grad school applications
+and raising my daughter I've been a bit too busy to finish it up just yet, but
+it's nearly there.
