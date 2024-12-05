@@ -1,9 +1,6 @@
 *
 !scripts/
-!src/client
-!src/server
-!src/static
-!www/
+!src/
 !bun.lockb
 !package.json
 !tsconfig.json

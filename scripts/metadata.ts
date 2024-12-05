@@ -148,6 +148,7 @@ if (import.meta.main) {
   // Gets any cdn files that have been changed on HEAD.
   // This way you can use this as a pre-commit hook.
   // Always returns paths from git root.
+  // TODO: This shouldn't rely on git at all. Rendering should produce a ".published" file with the timestamp of the last render.
   const CHANGED_FILES = DECODER.decode(
     spawnSync("sh", ["-c", `git --no-pager diff --name-only HEAD`]).stdout,
   )
