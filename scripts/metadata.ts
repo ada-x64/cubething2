@@ -159,6 +159,11 @@ if (import.meta.main) {
   if (DRY_RUN) {
     console.log(JSON.stringify(map));
   } else {
+    try {
+      fs.mkdirSync("www/articles");
+    } catch {
+      //
+    }
     fs.writeFileSync("www/articles/meta.json", JSON.stringify(map));
   }
 }
