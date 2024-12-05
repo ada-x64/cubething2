@@ -13,6 +13,7 @@ export default {
       body: ["Synonym"],
       sans: ["Synonym"],
       serif: ["Libertinus"],
+      mono: ["Fira Code Nerd Font", "Fira Code"],
     },
   },
   darkMode: "selector",

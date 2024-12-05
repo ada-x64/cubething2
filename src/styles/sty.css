@@ -3,10 +3,6 @@
 /* FROM TEX4HT */
 
 /* start css.sty */
-.ec-lmtt-10 {
-  font-family: "libertinus mono", monospace;
-  font-size: smaller;
-}
 .ec-lmri-10 {
   font-style: italic;
 }
@@ -490,6 +486,7 @@ p.bibitem-p {
 }
 div.maketitle {
   text-align: center;
+  display: none;
 }
 h2.titleHead {
   text-align: center;

@@ -8,7 +8,7 @@ import { html } from "htm/preact/index.js";
 const description =
   "Personal home page of Ada Mandala. Posts about tech, art, philosophy. // Rust, Linux, WASM // Graphics, Games // Metaphysics, Aesthetics";
 const stylesheets = [
-  "code",
+  "highlighting",
   "global",
   "index",
   "katex",

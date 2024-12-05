@@ -17,11 +17,17 @@ export default function ArticleList() {
       if (main) {
         const metadata = (dir as MetadataMap)[main] as Metadata;
         if (metadata.frontmatter) {
-          return html`<${Card} metadata=${metadata} />`;
+          return { metadata, card: html`<${Card} metadata=${metadata} />` };
         }
       }
     })
-    .filter((x) => x !== undefined);
+    .filter((x) => x !== undefined)
+    .sort(
+      (a, b) =>
+        new Date(b.metadata.frontmatter.publishedAt).valueOf() -
+        new Date(a.metadata.frontmatter.publishedAt).valueOf(),
+    )
+    .map((x) => x.card);
 
   return html` ${list} `;
 }

@@ -21,13 +21,13 @@ div.footnotes {
 * {
   line-height: 1.2;
 }
-.ec-lmtt-10::before,
-.ec-lmtt-10::after {
-  content: "`";
-  font-family: "libertinus mono", monospace;
-}
 
 .footer {
   text-align: center;
   margin-top: 1em;
+}
+
+pre,
+code {
+  font-size: 0.75em;
 }

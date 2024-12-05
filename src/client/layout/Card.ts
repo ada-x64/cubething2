@@ -16,7 +16,6 @@ export default function PostCard(props: { metadata: Metadata }) {
     )
     .join(" ");
 
-  console.log(metadata);
   return html`
     <div class=${TwClass(["mt-4", "pt-4", "border-t", BorderColor])}>
       <a href=${metadata.url}>

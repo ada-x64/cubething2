@@ -8,14 +8,14 @@ export const mainNav = [
     name: "about",
     href: "/about",
   },
-  {
-    name: "gfx",
-    href: "/gfx",
-  },
-  {
-    name: "articles",
-    href: "/articles",
-  },
+  // {
+  //   name: "gfx",
+  //   href: "/gfx",
+  // },
+  // {
+  //   name: "articles",
+  //   href: "/articles",
+  // },
 ];
 
 export const articleNav = [

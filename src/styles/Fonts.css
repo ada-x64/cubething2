@@ -2,10 +2,8 @@
 
 @font-face {
   font-family: "Fira Code Nerd Font";
-  src:
-    url("/static/font/Fira-Code-Nerd-Font-Complete-Mono.ttf"),
-    url("/static/font/Fira-Code-Nerd-Font-Complete-Mono-Windows-Compatible.ttf")
-      format("truetype");
+  src: url("/static/font/Fira-Code-Regular-Nerd-Font-Complete-Mono.ttf"),
+    format("truetype");
   font-display: swap;
 }
 

@@ -24,6 +24,7 @@ import {
   type Metadata,
   findCurrentMetadata,
 } from "./utils/metadata";
+import About from "./pages/about";
 
 // load metadata asap
 const metadata = await fetch("/static/articles/meta.json").then(
@@ -102,6 +103,10 @@ function AppComponent() {
               <${Route}
                 path="/articles/:id"
                 component="${Article}"
+              />
+              <${Route}
+                path="/about"
+                component="${About}"
               />
               <${Route}
                 default
