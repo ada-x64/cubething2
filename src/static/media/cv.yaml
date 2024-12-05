@@ -6,8 +6,10 @@
         - title: Consultant Software Engineer
         - description:
             - Worked with Disney to bring ESPN+ to the Playstation 5.
-            - Designed and implemented business critical systems for commerce and analytics.
-            - Developed automation and process improvement, hosting the team scripts repository
+            - Designed and implemented business critical systems for commerce
+              and analytics.
+            - Developed automation and process improvement, hosting the team
+              scripts repository
             - Lead department training exercise within 5 months of employment.
     - AllofE Solutions:
         - date: Aug 2021 - Oct 2021
@@ -19,22 +21,26 @@
         - date: Oct 2019 - Aug 2021
         - title: Front-End Contractor
         - description:
-            - Brought static design documents to life for the Roll20 Virtual Desktop.
-            - Integrated interactive user experiences for the original game Burn Bryte.
+            - Brought static design documents to life for the Roll20 Virtual
+              Desktop.
+            - Integrated interactive user experiences for the original game Burn
+              Bryte.
             - Designed and developed local dev environment tool Mimic.
     - PriceSpider:
         - date: Mar 2019 - Oct 2019
         - title: Client Delivery and Maintanence Specialist
         - description:
-            - Starting as a maintanence specialist, I negotiated with management to build and
-              lead the first team of front-end engineers at the Kansas City location.
+            - Starting as a maintanence specialist, I negotiated with management
+              to build and lead the first team of front-end engineers at the
+              Kansas City location.
     - Freelance:
         - date: Jun 2018 - Jul 2022
         - title: Freelance Software Engineer
         - description:
-            - Designed, developed, and integrated full-stack solutions to meet client needs
-            - Worked with clients on various platforms and in various industries including web,
-              mobile, and desktop applications.
+            - Designed, developed, and integrated full-stack solutions to meet
+              client needs
+            - Worked with clients on various platforms and in various industries
+              including web, mobile, and desktop applications.
 
 - Projects:
     - cubething.dev:
@@ -56,7 +62,8 @@
     - mimic:
         - date: Oct 2020 - Dec 2020
         - description:
-            - Electron-based local development environment for the Roll20 Character Sheet creator.
+            - Electron-based local development environment for the Roll20
+              Character Sheet creator.
             - Scrapes and locally caches the Roll20 Compendium to populate data.
             - Full support for Roll20 API at time of publication.
 

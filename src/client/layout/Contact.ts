@@ -17,7 +17,7 @@ export default function Contact() {
       ])}
     >
       <a
-        href="static/about/resume.pdf"
+        href="static/media/resume.pdf"
         target="_blank"
         title="open resume in new tab"
         class=${TwClass([OutboundLink])}

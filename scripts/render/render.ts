@@ -70,29 +70,31 @@ const render = (filepath: string, opts: Opts) => {
     /* empty */
   }
   // NOTE: this intermediary is equivalent to a customizable version of the make4ht preprocess_input extension
-  const md = path.extname(filename) === ".md";
-  let intermediatePath = filepath;
-  if (md) {
-    intermediatePath = path.join(builddir, filename.replace("md", "tex"));
-    const cmd = `pandoc -s -f gfm -o '${intermediatePath}' -t latex ${filepath}`;
-    console.info(filepath, "->", intermediatePath);
-    const out = spawnSync("sh", ["-c", cmd]);
-    if (out.error) {
-      console.error(out.error);
-      throw { type: "error" };
-    }
-  }
+  // const md = path.extname(filename) === ".md";
+  // let intermediatePath = filepath;
+  // if (md) {
+  //   intermediatePath = path.join(builddir, filename.replace("md", "tex"));
+  //   const cmd = `pandoc -s -f gfm -o '${intermediatePath}' -t latex ${filepath}`;
+  //   console.info(filepath, "->", intermediatePath);
+  //   const out = spawnSync("sh", ["-c", cmd]);
+  //   if (out.error) {
+  //     console.error(out.error);
+  //     throw { type: "error" };
+  //   }
+  // }
+  const preprocess =
+    path.extname(filename) !== ".tex" ? "+preprocess_input" : "";
   const cmd = `
         make4ht
         -x
         -j index
         -d ${outdir}
-        -f html5+latexmk_build
+        -f html5+latexmk_build${preprocess}
         --config ${configpath}
-        ${path.resolve(intermediatePath)}
+        ${filepath}
         "fn-in,mathjax,-css"
       `;
-  console.info(intermediatePath, "->", outdir + "/index.html");
+  console.info(filepath, "->", outdir + "/index.html");
   const out = spawnSync("sh", ["-c", cmd.replaceAll("\n", "")], {
     cwd: builddir,
   });
