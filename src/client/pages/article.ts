@@ -7,9 +7,10 @@ import { useSignal, useSignalEffect } from "@preact/signals";
 const Article = () => {
   const route = useRoute();
   const id = route.params["id"];
+
   const signal = useSignal("loading...");
   useSignalEffect(() => {
-    fetch(`/static/articles/${id}`).then((resp) => {
+    fetch(`/static/articles/${id}/index.html`).then((resp) => {
       resp.text().then((text) => (signal.value = text));
     });
   });

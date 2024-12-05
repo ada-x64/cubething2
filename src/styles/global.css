@@ -53,3 +53,12 @@ html.dark svg * {
   transition: all linear 0.125s;
   stroke: var(--accent);
 }
+iframe {
+  width: 100%;
+  height: 30em;
+  border-radius: 0.5em;
+  outline: 1px solid var(--accent);
+}
+html.dark :is(iframe) {
+  outline: 1px solid var(--dark-accent);
+}

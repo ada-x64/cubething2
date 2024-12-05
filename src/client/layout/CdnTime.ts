@@ -21,9 +21,14 @@ export default function getTime({
   lastCommit,
 }: {
   inline: boolean;
-  publishedAt: Date;
-  lastCommit: Date;
+  publishedAt: string;
+  lastCommit: string;
 }) {
+  const publishedAtDate = new Date(publishedAt);
+  const publishedAtStr = formatTime(publishedAtDate);
+  const lastCommitDate = new Date(lastCommit);
+  const lastCommitStr = formatTime(lastCommitDate);
+
   let style = TwClass([TimeStyle]);
   if (inline) {
     style = TwClass([style, "text-sm"]);
@@ -32,9 +37,9 @@ export default function getTime({
   }
 
   let time;
-  if (publishedAt !== lastCommit) {
+  if (publishedAtDate !== lastCommitDate) {
     time = html`
-      First published ${formatTime(publishedAt)}
+      First published ${publishedAtStr}
       ${(() => {
         if (!inline) {
           return html`<br />`;
@@ -42,10 +47,10 @@ export default function getTime({
           return " | ";
         }
       })()}
-      Updated ${formatTime(lastCommit)}
+      Updated ${lastCommitStr}
     `;
   } else {
-    time = formatTime(publishedAt);
+    time = publishedAtStr;
   }
 
   return html`<time class=${style}>${time}</time>`;

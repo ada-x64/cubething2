@@ -26,7 +26,12 @@ const check = (write: boolean) => {
     globbySync(`./**/*${ext}`, {
       onlyFiles: true,
       ignoreFiles: ["**/.gitignore", "**/.prettierignore"],
-      ignore: ["README.md", "www/**/*/out", "www/**/*/index.*"],
+      ignore: [
+        "README.md",
+        "www/**/*/out",
+        "www/**/*/index.*",
+        "src/markup/articles/**/*",
+      ],
       globstar: true,
     }).forEach((filename) => {
       let content = fs.readFileSync(filename).toString();

@@ -1,5 +1,3 @@
-<!----------------------------- cubething.dev -------------------------------->
-
 ---
 title: Applying to Graduate School
 snippet:
@@ -27,7 +25,9 @@ could order the columns in descending order. You can see the final notebook
 with the full dataset directly
 [here](https://cdn.cubething.dev/phil_gourmet.html).
 
-[![Philosophical Gourmet Dataset with Perspective](https://cdn.cubething.dev/phil_gourmet.png)](https://cdn.cubething.dev/phil_gourmet.html)
+\iframe{https://cdn.cubething.dev/phil_gourmet.html}{250em}
+
+<!-- [![Philosophical Gourmet Dataset with Perspective](https://cdn.cubething.dev/phil_gourmet.png)](https://cdn.cubething.dev/phil_gourmet.html) -->
 
 Once I had manually gone over the results and ensured that they were what I
 wanted (right location, right faculty), I chose my top 6 schools. They are:

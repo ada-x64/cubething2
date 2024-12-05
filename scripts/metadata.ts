@@ -63,7 +63,7 @@ export default async function generateMeta(
         continue;
       }
       const metadata: Metadata = {
-        url: path.join(URL_BASE, relpath, filename),
+        url: relpath,
         lastCommitDate,
         contentType,
       };
@@ -88,8 +88,9 @@ export default async function generateMeta(
         }
       }
       if (contentType === "text/markdown") {
-        const mdContent = fs.readFileSync(thepath).toString();
-        const maybeFrontmatter = mdContent.split("---").at(1);
+        let content = fs.readFileSync(thepath).toString();
+        content = content.replace(/<!-.*->/, "");
+        const maybeFrontmatter = content.split("---").at(1);
         if (maybeFrontmatter) {
           metadata.frontmatter = yaml.parse(maybeFrontmatter);
         }

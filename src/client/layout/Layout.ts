@@ -1,14 +1,8 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
-// import { ComponentChildren } from "preact";
-// import HeadComponent from "@/components/layout/Head.tsx";
-// import { TwClass } from "@/deps/styles.ts";
-// import { Head } from "$fresh/src/runtime/head.ts";
-// import NavBtn from "@/islands/NavBtn.tsx";
-// import MainNav from "@/components/nav/MainNav.tsx";
-// import ArticleNav from "@/components/nav/ArticleNav.tsx";
 import { html } from "htm/preact/index.js";
 import { type ComponentChildren } from "preact";
+import { useContext } from "preact/hooks";
 import { TwClass } from "../styles";
 import HeadComponent from "./Head";
 import NavBtn from "./NavBtn";
@@ -17,15 +11,12 @@ import ArticleNav from "../nav/ArticleNav";
 import MainContent from "./MainContent";
 import Title from "./Title";
 import { useRoute } from "preact-iso";
+import { AppState } from "../app";
 
-export default function Layout({
-  title,
-  children,
-}: {
-  title: string;
-  children: ComponentChildren;
-}) {
+export default function Layout({ children }: { children: ComponentChildren }) {
   const route = useRoute().path;
+  const state = useContext(AppState);
+  const title = state.title.value;
   return html`
     <${HeadComponent} />
     <head>

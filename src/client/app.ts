@@ -3,8 +3,9 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 
 import { html } from "htm/preact/index.js";
+import "preact/debug";
 
-import { render } from "preact";
+import { createContext, render } from "preact";
 import { Router, Route, LocationProvider, ErrorBoundary } from "preact-iso";
 import Home from "./pages/home";
 import ArticleList from "./pages/articleList";
@@ -16,6 +17,30 @@ import Layout from "./layout/Layout";
 import "./scripts/onScroll";
 import "./scripts/onmousemove";
 import "./scripts/detectTheme";
+import { computed, signal } from "@preact/signals";
+import { useContext } from "preact/hooks";
+import {
+  type ParsedMetadata,
+  type Metadata,
+  findCurrentMetadata,
+} from "./utils/metadata";
+
+// load metadata asap
+const metadata = await fetch("/static/articles/meta.json").then(
+  async (data) => {
+    return (await data.json()) as ParsedMetadata;
+  },
+);
+const currentMetadata = signal(null as null | Partial<Metadata>);
+const defaultState = {
+  metadata,
+  currentMetadata,
+  title: computed(() => {
+    return currentMetadata.value?.frontmatter?.title ?? "cubething";
+  }),
+};
+
+export const AppState = createContext(defaultState);
 
 class App extends HTMLElement {
   connectedCallback() {
@@ -52,33 +77,37 @@ customElements.define("ct-app", App);
 // but i don't seem to be able to do that. I am getting obscure errors.
 // Until and unless I figure it out, I'm using signals instead.
 function AppComponent() {
+  const state = useContext(AppState);
   return html`
     <${LocationProvider}>
       <${ErrorBoundary}>
-        <!-- TODO: Get metadata for currently rendered file. -->
-        <${Layout} title="cubething">
-          <${Router}
-            onRouteChange=${(url: string) =>
-              console.log("Route changed to", url)}
-            onLoadStart=${(url: string) => console.log("Starting to load", url)}
-            onLoadEnd=${(url: string) => console.log("Finished loading", url)}
-          >
-            <${Route}
-              path="/"
-              component=${Home}
-            />
-            <${Route}
-              path="/articles"
-              component=${ArticleList}
-            />
-            <${Route}
-              path="/articles/:id"
-              component="${Article}"
-            />
-            <${Route}
-              default
-              component=${NotFound}
-            />
+        <${AppState.Provider} value=${defaultState}>
+          <${Layout}>
+            <${Router}
+              onRouteChange=${(url: string) => {
+                state.currentMetadata.value = findCurrentMetadata(
+                  state.metadata,
+                  url,
+                );
+              }}
+            >
+              <${Route}
+                path="/"
+                component=${Home}
+              />
+              <${Route}
+                path="/articles"
+                component=${ArticleList}
+              />
+              <${Route}
+                path="/articles/:id"
+                component="${Article}"
+              />
+              <${Route}
+                default
+                component=${NotFound}
+              />
+            <//>
           <//>
         <//>
       <//>
