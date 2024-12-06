@@ -27,11 +27,9 @@ import {
 import About from "./pages/about";
 
 // load metadata asap
-const metadata = await fetch("/static/articles/meta.json").then(
-  async (data) => {
-    return (await data.json()) as ParsedMetadata;
-  },
-);
+const metadata = await fetch("/static/meta.json").then(async (data) => {
+  return (await data.json()) as ParsedMetadata;
+});
 const currentMetadata = signal(null as null | Partial<Metadata>);
 const defaultState = {
   metadata,

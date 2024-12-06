@@ -10,18 +10,18 @@ import { globSync } from "glob";
 
 export class Metadata {
   url: string;
-  lastCommitDate: Date;
+  lastRender: Date;
   contentType: string;
   frontmatter?: { [x: string]: string };
 
   constructor(
     url: string,
-    lastCommitDate: Date,
+    lastRender: Date,
     contentType: string,
     frontmatter?: { [x: string]: string },
   ) {
     this.url = url;
-    this.lastCommitDate = lastCommitDate;
+    this.lastRender = lastRender;
     this.contentType = contentType;
     this.frontmatter = frontmatter;
   }
@@ -34,10 +34,9 @@ export type MetadataMap = {
 export default async function generateMeta(
   basePath: string,
   map: MetadataMap,
-  DECODER: TextDecoder,
-  CHANGED_FILES: string[],
   URL_BASE: string,
-  DRY_RUN: boolean,
+  DRY_RUN: boolean = false,
+  DECODER: TextDecoder = new TextDecoder(),
 ) {
   for (const thepath of globSync(path.join(basePath, "*"))) {
     const filename = path.basename(thepath);
@@ -49,11 +48,7 @@ export default async function generateMeta(
         continue;
       }
 
-      const lastCommitDate = await getLastCommitDate(
-        thepath,
-        DECODER,
-        CHANGED_FILES,
-      );
+      const lastRender = new Date();
       const extension = path.extname(thepath);
       const contentType = mime.getType(thepath);
       if (!contentType) {
@@ -64,7 +59,7 @@ export default async function generateMeta(
       }
       const metadata: Metadata = {
         url: relpath,
-        lastCommitDate,
+        lastRender,
         contentType,
       };
       if (contentType.startsWith("image")) {
@@ -82,7 +77,7 @@ export default async function generateMeta(
           }
           map[webpFilename] = {
             url: path.join(URL_BASE, webpPath.replace(/.*\/markup\//, "")),
-            lastCommitDate,
+            lastRender,
             contentType: "image/webp",
           };
         }
@@ -106,65 +101,28 @@ export default async function generateMeta(
       map[filename] = metadata;
     } else {
       const submap: MetadataMap = {};
-      await generateMeta(
-        thepath,
-        submap,
-        DECODER,
-        CHANGED_FILES,
-        URL_BASE,
-        DRY_RUN,
-      );
+      await generateMeta(thepath, submap, URL_BASE, DRY_RUN, DECODER);
       map[filename] = submap;
     }
   }
 }
 
-async function getLastCommitDate(
-  file: string,
-  DECODER: TextDecoder,
-  CHANGED_FILES: string[],
-) {
-  if (CHANGED_FILES.includes(file)) {
-    return new Date();
-  } else {
-    const cmd = `git --no-pager log --pretty=%aD -n 1 -- ${file}`;
-    const output = spawnSync("sh", ["-c", cmd.replaceAll("\n", "")]);
-    const stderr = DECODER.decode(output.stderr);
-    const stdout = DECODER.decode(output.stdout);
-    if (stderr) {
-      throw new Error(stderr);
-    }
-    return new Date(stdout);
-  }
-}
-
 if (import.meta.main) {
-  const CDN_PATH = "src/markup";
+  const CDN_PATH = "src/static";
   const URL_BASE = "/static/";
-
   const DRY_RUN = argv.includes("--dry-run");
 
-  const DECODER = new TextDecoder();
-  // Gets any cdn files that have been changed on HEAD.
-  // This way you can use this as a pre-commit hook.
-  // Always returns paths from git root.
-  // TODO: This shouldn't rely on git at all. Rendering should produce a ".published" file with the timestamp of the last render.
-  const CHANGED_FILES = DECODER.decode(
-    spawnSync("sh", ["-c", `git --no-pager diff --name-only HEAD`]).stdout,
-  )
-    .split("\n")
-    .filter((s) => s.includes("src"));
-
+  // load old metadata
   const map = {};
-  await generateMeta(CDN_PATH, map, DECODER, CHANGED_FILES, URL_BASE, DRY_RUN);
+  await generateMeta(CDN_PATH, map, URL_BASE, DRY_RUN);
   if (DRY_RUN) {
     console.log(JSON.stringify(map));
   } else {
     try {
-      fs.mkdirSync("www/articles");
+      fs.mkdirSync("www");
     } catch {
       //
     }
-    fs.writeFileSync("www/articles/meta.json", JSON.stringify(map));
+    fs.writeFileSync("www/meta.json", JSON.stringify(map));
   }
 }

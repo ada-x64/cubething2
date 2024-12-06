@@ -28,7 +28,6 @@ const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
   info(event, oldpath, newpath);
   if (oldpath?.includes("markup")) {
     await sayAndDo(`bun scripts/render/render.ts ${oldpath}`);
-    await sayAndDo(`bun scripts/metadata.ts`);
   } else if (oldpath?.includes("static")) {
     // TODO: This is kinda buggy.
     // Folder actions can get missed.

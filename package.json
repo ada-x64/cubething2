@@ -15,7 +15,8 @@
     "sass": "bunx sass --source-map --embed-source-map --quiet-deps -s compressed src/styles/:www/styles",
     "tailwind": "bunx tailwindcss -i ./src/styles/index.css -o ./www/styles/index.css",
     "dist": "./scripts/dist.sh",
-    "render": "bun ./scripts/render/render.ts"
+    "render": "bun ./scripts/render/render.ts",
+    "clean": "rm -rf build/ www/"
   },
   "keywords": [],
   "author": "",

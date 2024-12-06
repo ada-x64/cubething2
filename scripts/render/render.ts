@@ -14,7 +14,7 @@ type Opts = {
 };
 
 const acceptedFiletypes = ["tex", "md"];
-const configpath = path.join(process.cwd(), "src/markup/make4ht.cfg");
+const configpath = path.join(process.cwd(), "src/static/markup/make4ht.cfg");
 const outroot = path.join(process.cwd(), "www");
 // This assumes the file exists and is of the accepted filetypes.
 const render = (filepath: string, opts: Opts) => {
@@ -111,6 +111,10 @@ const render = (filepath: string, opts: Opts) => {
     const file = readFileSync(outpath).toString();
     const out = parseMath(file);
     writeFileSync(outpath, out);
+    writeFileSync(
+      filepath.replace(filename, ".published"),
+      new Date().toISOString(),
+    );
     return out;
   } catch (error) {
     console.error(error);
@@ -131,7 +135,7 @@ export const renderAll = (opts: Opts) => {
   for (const file of globSync(
     path.join(
       process.cwd(),
-      `src/markup/**/main.{${acceptedFiletypes.join(",")}}`,
+      `src/static/markup/**/main.{${acceptedFiletypes.join(",")}}`,
     ),
   )) {
     try {
