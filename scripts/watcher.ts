@@ -26,8 +26,13 @@ const sayAndDo = async (script: string) => {
 let refresh = () => {};
 const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
   info(event, oldpath, newpath);
-  if (oldpath?.includes("markup")) {
+  if (oldpath?.includes("static/markup")) {
     await sayAndDo(`bun scripts/render/render.ts ${oldpath}`);
+  } else if (oldpath?.includes("static/styles")) {
+    sayAndDo(`bun sass`);
+    sayAndDo(`bun tailwind`);
+  } else if (oldpath?.includes("client")) {
+    sayAndDo(`HOT=true bun bundle`);
   } else if (oldpath?.includes("static")) {
     // TODO: This is kinda buggy.
     // Folder actions can get missed.
@@ -48,11 +53,6 @@ const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
         await sayAndDo(`cp ${newpath ?? oldpath} ${wwwpath}`);
       }
     }
-  } else if (oldpath?.includes("styles")) {
-    sayAndDo(`bun sass`);
-    sayAndDo(`bun tailwind`);
-  } else if (oldpath?.includes("client")) {
-    sayAndDo(`HOT=true bun bundle`);
   }
   refresh();
 };

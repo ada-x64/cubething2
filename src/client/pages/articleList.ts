@@ -8,6 +8,7 @@ import type { Metadata, MetadataMap } from "../utils/metadata";
 
 export default function ArticleList() {
   const state = useContext(AppState);
+  console.log(state);
   const articles = state.metadata["articles"] as MetadataMap;
   const list = Object.values(articles)
     .map((dir) => {

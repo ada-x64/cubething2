@@ -40,7 +40,7 @@ export default async function generateMeta(
 ) {
   for (const thepath of globSync(path.join(basePath, "*"))) {
     const filename = path.basename(thepath);
-    const relpath = path.dirname(thepath).replace(/.*\/markup/, "");
+    const relpath = path.dirname(thepath).replace(/.*\/static/, "");
     const builddir = path.join("build", relpath);
     const stat = fs.statSync(thepath);
     if (stat.isFile()) {
@@ -62,7 +62,10 @@ export default async function generateMeta(
         lastRender,
         contentType,
       };
-      if (contentType.startsWith("image")) {
+      if (
+        contentType.startsWith("image") &&
+        ![".svg", ".ico"].includes(extension)
+      ) {
         // automatically make smaller webp preview if it doesn't exist
         const webpPath = thepath.replace(extension, ".webp");
         const webpFilename = path.basename(webpPath);
@@ -70,13 +73,15 @@ export default async function generateMeta(
           fs.statSync(webpPath);
         } catch {
           if (!DRY_RUN) {
-            const cmd = `convert ${thepath} -resize 256x192 ${webpPath}`;
-            spawnSync("sh", ["-c", cmd.replaceAll("\n", "")], {
-              cwd: builddir,
-            });
+            const resize = filename.startsWith("preview")
+              ? "-resie 256x192"
+              : "";
+            const cmd = `convert ${thepath} ${resize} ${webpPath}`;
+            console.log({ cmd, cwd: builddir });
+            spawnSync("sh", ["-c", cmd.replaceAll("\n", "")], {});
           }
           map[webpFilename] = {
-            url: path.join(URL_BASE, webpPath.replace(/.*\/markup\//, "")),
+            url: path.join(URL_BASE, webpPath.replace(/.*\/static\//, "")),
             lastRender,
             contentType: "image/webp",
           };

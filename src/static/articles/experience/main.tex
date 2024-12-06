@@ -1,39 +1,8 @@
 %preamble
 \documentclass[leqno]{article}
-
-%biblio
-\usepackage[authordate, backend=biber, natbib]{biblatex-chicago}
-\addbibresource{../../../library.bib}
-
-% formatting
-% the font of all time (no special math formatting tho)
-% \usepackage{CormorantGaramond}
-\usepackage{csquotes} % smart quotes
-\usepackage{enumerate} % enumeration tools
-\renewcommand{\thesection}{\S\arabic{section}} % fancy subsections
-
-% comments and review
-
-\@ifpackageloaded{tex4ht}{
-
-}{ \usepackage{xcolor} \usepackage[normalem]{ulem} \usepackage{easyReview} \usepackage[many]{tcolorbox} \usepackage{marginnote} \setlength{\marginparwidth}{4cm}
-
-\definecolor{deepyellow}{HTML}{FFA62F} \definecolor{paleyellow}{HTML}{FFC96F} \definecolor{pageyellow}{HTML}{FFE8C8} \definecolor{deepblue}{HTML}{5AB2FF} \definecolor{paleblue}{HTML}{A0DEFF} \definecolor{pageblue}{HTML}{CAF4FF}
-
-\newtcolorbox{notebox}{ colback = pageblue, colframe = deepblue, boxrule = 0pt, leftrule = 1pt % left rule weight
-} \newtcolorbox{commentbox}{ colback = pageyellow, colframe = deepyellow, boxrule = 0pt, leftrule = 1pt % left rule weight
-}
-
-\renewcommand{\comment}[2]{ \uwave{#1}%
-\marginpar{ \begin{commentbox}\raggedright{#2}\end{commentbox} } } \newcommand{\note}[1]{ $\dagger$%
-\marginpar{ \begin{notebox}\raggedright{#1}\end{notebox} } } }
-
-% Maths
+\usepackage{cubething}
 
 % american mathematical society
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsthm}
 \usepackage{mathtools} % extra symbols
 \usepackage{xparse}
 \newcounter{lemma}

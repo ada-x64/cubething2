@@ -14,13 +14,13 @@ type Opts = {
 };
 
 const acceptedFiletypes = ["tex", "md"];
-const configpath = path.join(process.cwd(), "src/static/markup/make4ht.cfg");
+const configpath = path.join(process.cwd(), "src/static/config/make4ht.cfg");
 const outroot = path.join(process.cwd(), "www");
 // This assumes the file exists and is of the accepted filetypes.
 const render = (filepath: string, opts: Opts) => {
   const dirname = path.dirname(filepath);
   const filename = path.basename(filepath);
-  const relpath = dirname.replace(/.*\/markup/, "").replace(/^\//, "");
+  const relpath = dirname.replace(/.*\/static/, "").replace(/^\//, "");
   const builddir = path.join("build", relpath);
   const outdir = path.join(outroot, relpath);
   const outpath = path.join(outdir, "index.html");
@@ -84,20 +84,22 @@ const render = (filepath: string, opts: Opts) => {
   // }
   const preprocess =
     path.extname(filename) !== ".tex" ? "+preprocess_input" : "";
+  // search for local packages and include the defaults
   const cmd = `
+        TEXINPUTS=.:src/static//:
         make4ht
         -x
         -j index
-        -d ${outdir}
         -f html5+latexmk_build${preprocess}
+        -B ${builddir}
         --config ${configpath}
         ${filepath}
-        "fn-in,mathjax,-css"
+        "fn-in,mathjax,-css";
+        mkdir -p ${outdir};
+        cp ${builddir}/index.html ${outdir}
       `;
-  console.info(filepath, "->", outdir + "/index.html");
-  const out = spawnSync("sh", ["-c", cmd.replaceAll("\n", "")], {
-    cwd: builddir,
-  });
+  console.info(cmd);
+  const out = spawnSync("sh", ["-c", cmd.replaceAll("\n", "")]);
   if (out.error) {
     console.error(out.stdout.toString(), out.stderr.toString());
     throw {
@@ -135,7 +137,7 @@ export const renderAll = (opts: Opts) => {
   for (const file of globSync(
     path.join(
       process.cwd(),
-      `src/static/markup/**/main.{${acceptedFiletypes.join(",")}}`,
+      `src/static/**/main.{${acceptedFiletypes.join(",")}}`,
     ),
   )) {
     try {
@@ -146,7 +148,7 @@ export const renderAll = (opts: Opts) => {
         renderedFiles.push(file);
       }
     } catch (error) {
-      const relpath = path.dirname(file).replace(/.*\/markup/, "");
+      const relpath = path.dirname(file).replace(/.*\/static/, "");
       const builddir = path.join("build", relpath);
       failedFiles.push(file);
       writeFileSync(

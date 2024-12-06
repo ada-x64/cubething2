@@ -14,6 +14,8 @@ on WSL2. It requires the following development tools:
   [TeXLive](https://tug.org/texlive/)
 - [latexmk](https://ctan.org/pkg/latexmk/)
 - [docker](https://docker.com)
+- [image magick](https://imagemagick.org/script/index.php)
+- [rsync](https://rsync.samba.org)
 
 ## quick start
 

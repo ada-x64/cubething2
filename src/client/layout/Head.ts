@@ -19,7 +19,6 @@ const stylesheets = [
 ];
 
 export default function HeadComponent() {
-  console.log({ component: "HeadComponent" });
   return html`
     <head>
       <link

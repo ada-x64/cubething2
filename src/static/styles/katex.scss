@@ -1,6 +1,6 @@
 /****************************** cubething.dev ********************************/
 
-@use "../../node_modules/katex/src/styles/katex.scss" with (
+@use "../../../node_modules/katex/src/styles/katex.scss" with (
   $font-folder: "/static/font/KaTeX",
   $use-woff2: true,
   $use-woff: true,

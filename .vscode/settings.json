@@ -8,12 +8,14 @@
         "-interaction=nonstopmode",
         "-file-line-error",
         "%DOC%"
-      ]
+      ],
+      "env": { "TEXINPUTS": ".:src/static//:" }
     },
     {
       "name": "biber",
       "command": "biber",
-      "args": ["%DOCFILE%"]
+      "args": ["%DOCFILE%"],
+      "env": { "TEXINPUTS": ".:src/static//:" }
     }
   ],
   "latex-workshop.latex.recipes": [

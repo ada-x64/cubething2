@@ -3,7 +3,7 @@
 import type { FastifyReply, FastifyRequest } from "fastify";
 import type { ParsedQs } from "qs";
 // This is not what you want to edit if you want to change the normal article layout.
-// Change markup/MyConfig.cfg
+// Change static/config/make4ht.cfg
 export const index = (content: string = "") => `
 <!doctype html>
 <html>
