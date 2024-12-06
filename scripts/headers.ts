@@ -2,6 +2,8 @@
 
 import fs from "fs";
 import { globbySync } from "globby";
+import { info, warn } from "./common";
+import { log } from "console";
 
 // 1. apply header
 const header = (c: string, prefix?: string, postfix?: string) =>
@@ -42,27 +44,28 @@ const check = (write: boolean) => {
         if (write) {
           content = theheader + content;
           fs.writeFile(filename, content, () => {
-            console.log(`Added missing header to ${filename}`);
+            info(`Added missing header to ${filename}`);
           });
         } else {
-          console.warn(`Missing header in ${filename}`);
+          warn(`Missing header in ${filename}`);
         }
       }
     });
   }
   if (!failed) {
-    console.log("No missing headers!");
+    log("No missing headers!");
     return true;
   } else if (!write && failed) {
-    console.log("Run with --write to fix.");
+    warn("Run with --write to fix.");
     return false;
   }
 };
 
 if (import.meta.filename === Bun.main) {
-  const write = process.argv.includes("--write");
+  const write =
+    process.argv.includes("--write") || process.argv.includes("--fix");
   const ok = check(write);
-  process.exit(Number(!ok));
+  process.exit(ok ? 0 : 1);
 }
 
 export default check;

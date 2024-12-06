@@ -3,10 +3,10 @@
 import * as fs from "fs";
 import * as path from "path";
 import mime from "mime";
-import { spawnSync } from "child_process";
 import { argv } from "process";
 import * as yaml from "yaml";
 import { globSync } from "glob";
+import { info, sayAndDo, warn } from "./common";
 
 export class Metadata {
   url: string;
@@ -41,7 +41,6 @@ export default async function generateMeta(
   for (const thepath of globSync(path.join(basePath, "*"))) {
     const filename = path.basename(thepath);
     const relpath = path.dirname(thepath).replace(/.*\/static/, "");
-    const builddir = path.join("build", relpath);
     const stat = fs.statSync(thepath);
     if (stat.isFile()) {
       if (thepath.includes("meta.json")) {
@@ -52,9 +51,7 @@ export default async function generateMeta(
       const extension = path.extname(thepath);
       const contentType = mime.getType(thepath);
       if (!contentType) {
-        console.warn(
-          `Unable to generate contentType for extension ${extension}`,
-        );
+        warn(`Unable to generate contentType for extension ${extension}`);
         continue;
       }
       const metadata: Metadata = {
@@ -77,8 +74,7 @@ export default async function generateMeta(
               ? "-resie 256x192"
               : "";
             const cmd = `convert ${thepath} ${resize} ${webpPath}`;
-            console.log({ cmd, cwd: builddir });
-            spawnSync("sh", ["-c", cmd.replaceAll("\n", "")], {});
+            sayAndDo(cmd);
           }
           map[webpFilename] = {
             url: path.join(URL_BASE, webpPath.replace(/.*\/static\//, "")),
@@ -121,7 +117,7 @@ if (import.meta.main) {
   const map = {};
   await generateMeta(CDN_PATH, map, URL_BASE, DRY_RUN);
   if (DRY_RUN) {
-    console.log(JSON.stringify(map));
+    info(JSON.stringify(map));
   } else {
     try {
       fs.mkdirSync("www");

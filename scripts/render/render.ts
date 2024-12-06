@@ -2,10 +2,10 @@
 
 import path from "path";
 import { lstatSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "fs";
-import { spawnSync } from "child_process";
 import parseMath from "./katex.js";
 import { globSync } from "glob";
 import { program } from "commander";
+import { info, warn, error, sayAndDo } from "scripts/common.js";
 
 type Opts = {
   clean: boolean;
@@ -17,7 +17,7 @@ const acceptedFiletypes = ["tex", "md"];
 const configpath = path.join(process.cwd(), "src/static/config/make4ht.cfg");
 const outroot = path.join(process.cwd(), "www");
 // This assumes the file exists and is of the accepted filetypes.
-const render = (filepath: string, opts: Opts) => {
+const render = async (filepath: string, opts: Opts) => {
   const dirname = path.dirname(filepath);
   const filename = path.basename(filepath);
   const relpath = dirname.replace(/.*\/static/, "").replace(/^\//, "");
@@ -26,16 +26,16 @@ const render = (filepath: string, opts: Opts) => {
   const outpath = path.join(outdir, "index.html");
   if (opts.clean) {
     try {
-      console.log("cleaning", builddir);
+      info("cleaning", builddir);
       rmSync(builddir, { recursive: true, force: true });
     } catch (e) {
-      console.warn(e);
+      warn(e);
     }
     try {
-      console.log("cleaning", outpath);
+      info("cleaning", outpath);
       rmSync(outpath);
     } catch (e) {
-      console.warn(e);
+      warn(e);
     }
   }
   // if there is a cached html file, prefer the html file
@@ -97,11 +97,10 @@ const render = (filepath: string, opts: Opts) => {
         "fn-in,mathjax,-css";
         mkdir -p ${outdir};
         cp ${builddir}/index.html ${outdir}
-      `;
-  console.info(cmd);
-  const out = spawnSync("sh", ["-c", cmd.replaceAll("\n", "")]);
+      `.replaceAll(/\n|\s/g, " ");
+  const out = await sayAndDo(cmd, { stdio: "pipe" });
   if (out.error) {
-    console.error(out.stdout.toString(), out.stderr.toString());
+    error(out.stdout.toString(), out.stderr.toString());
     throw {
       type: "error",
       command: cmd,
@@ -118,11 +117,11 @@ const render = (filepath: string, opts: Opts) => {
       new Date().toISOString(),
     );
     return out;
-  } catch (error) {
-    console.error(error);
+  } catch (e) {
+    error(e);
     throw {
       type: "error",
-      command: error,
+      command: e,
       stdout: out.stdout.toString(),
       stderr: out.stderr.toString(),
     };
@@ -130,7 +129,7 @@ const render = (filepath: string, opts: Opts) => {
 };
 export default render;
 
-export const renderAll = (opts: Opts) => {
+export const renderAll = async (opts: Opts) => {
   const failedFiles = [];
   const renderedFiles = [];
   const cachedFiles = [];
@@ -140,17 +139,18 @@ export const renderAll = (opts: Opts) => {
       `src/static/**/main.{${acceptedFiletypes.join(",")}}`,
     ),
   )) {
+    const friendlyName = path.basename(path.dirname(file));
     try {
-      const res = render(file, opts);
+      const res = await render(file, opts);
       if (res === true) {
-        cachedFiles.push(file);
+        cachedFiles.push(friendlyName);
       } else {
-        renderedFiles.push(file);
+        renderedFiles.push(friendlyName);
       }
     } catch (error) {
       const relpath = path.dirname(file).replace(/.*\/static/, "");
       const builddir = path.join("build", relpath);
-      failedFiles.push(file);
+      failedFiles.push(friendlyName);
       writeFileSync(
         path.join(builddir, "error.json"),
         JSON.stringify(error, null, 2),
@@ -160,7 +160,7 @@ export const renderAll = (opts: Opts) => {
       }
     }
   }
-  console.log({ failedFiles, renderedFiles, cachedFiles });
+  info({ failedFiles, renderedFiles, cachedFiles });
 };
 
 if (import.meta.main) {
@@ -178,23 +178,23 @@ if (import.meta.main) {
     try {
       const lstat = lstatSync(inputFile, { throwIfNoEntry: false });
       if (!lstat) {
-        console.error(`No such file or directory "${inputFile}"`);
+        error(`No such file or directory "${inputFile}"`);
         process.exit(1);
       } else if (lstat?.isDirectory()) {
-        console.error("Please specifiy a file, not a directory.");
+        error("Please specifiy a file, not a directory.");
         process.exit(1);
       }
 
-      const res = render(inputFile, { clean, force, closeOnError });
+      const res = await render(inputFile, { clean, force, closeOnError });
 
       if (res === true) {
-        console.log(`No changes in ${inputFile}`);
+        info(`No changes in ${inputFile}`);
       } else {
-        console.log(`(Re)rendered ${inputFile}`);
+        info(`(Re)rendered ${inputFile}`);
       }
       process.exit(0);
     } catch (e) {
-      console.error("Failed to render", inputFile, e);
+      error("Failed to render", inputFile, e);
       process.exit(1);
     }
   } else {

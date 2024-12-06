@@ -3,25 +3,8 @@
 import { globbySync } from "globby";
 import Watcher from "watcher";
 import { lstatSync } from "fs";
-import cp from "child_process";
 import path from "path";
-
-const log = (kind: "info" | "warn" | "error", ...args: unknown[]) => {
-  const color =
-    kind === "info" ? "\x1b[34m" : kind === "warn" ? "\x1b[93m" : "\x1b[91m";
-  console.log(`${color}\udb85\ude16 ${args.join(" ")}\x1b[0m`);
-};
-const info = (...args: unknown[]) => log("info", args);
-const error = (...args: unknown[]) => log("error", args);
-const warn = (...args: unknown[]) => log("warn", args);
-
-const sayAndDo = async (script: string) => {
-  info("> " + script);
-  return cp.spawnSync("sh", ["-c", script], {
-    cwd: process.cwd(),
-    stdio: "inherit",
-  });
-};
+import { error, info, sayAndDo, warn } from "./common";
 
 let refresh = () => {};
 const rerender = async (event?: string, oldpath?: string, newpath?: string) => {

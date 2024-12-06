@@ -24,6 +24,7 @@ ENV NODE_ENV=production
 
 COPY --from=install /temp/dev/node_modules node_modules
 COPY ./ ./
+RUN apt install -y imagemagick rsync
 RUN bun dist
 
 EXPOSE 3000/tcp
