@@ -6,6 +6,7 @@ on:
       - main
   workflow_dispatch:
 
+# TODO: Github should be running bun dist instead of the docker image. This way we can utilize caching.
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -32,8 +33,3 @@ jobs:
         run: |
           docker push ghcr.io/${{github.repository}}:latest
           docker push ghcr.io/${{github.repository}}:${{github.sha}}
-
-      - name: Deploy the app
-        uses: digitalocean/app_action/deploy@v2
-        with:
-          token: ${{ secrets.DO_ACCESS }}
