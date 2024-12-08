@@ -1,6 +1,6 @@
 # use the official Bun image
 # see all versions at https://hub.docker.com/r/oven/bun/tags
-FROM danteev/texlive:latest AS base
+FROM texlive/texlive:latest AS base
 
 # install dependencies into temp directory
 # this will cache them and speed up future builds
@@ -24,7 +24,8 @@ ENV NODE_ENV=production
 
 COPY --from=install /temp/dev/node_modules node_modules
 COPY ./ ./
-RUN apt install -y imagemagick rsync
+RUN apt update
+RUN apt install -y imagemagick rsync pandoc
 RUN bun dist
 
 EXPOSE 3000/tcp
