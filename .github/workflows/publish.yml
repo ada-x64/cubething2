@@ -15,27 +15,16 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: "${{secrets.GHCR_ACCESS}}"
-      - uses: oven-sh/setup-bun@v2
-      - uses: xu-cheng/texlive-action@v2
+      - name: Build and push Docker image
+        id: push
+        uses: docker/build-push-action@v6.5.0
         with:
-          scheme: full # kinda wasteful but it's fine
-      - name: dist
-        run: |
-          bun i --frozen-lockfile --production
-          bun dist
-      - name: "Login to GitHub Container Registry"
-        run: |
-          docker login \
-            --username ${{github.actor}} \
-            --password ${{secrets.GHCR_ACCESS}} \
-            ghcr.io;
-      - name: "Build Image"
-        run: |
-          docker build . \
-            --tag ghcr.io/${{github.repository}}:latest \
-            --tag ghcr.io/${{github.repository}}:${{github.sha}}\
-            --label "org.opencontainers.image.source=${{github.server_url}}/${{github.repository}}"
-      - name: "Push Image"
-        run: |
-          docker push ghcr.io/${{github.repository}}:latest
-          docker push ghcr.io/${{github.repository}}:${{github.sha}}
+          context: .
+          push: true
+          tags: ghcr.io/${{ github.repository }}:latest
+      - name: Deploy the app
+        uses: digitalocean/app_action/deploy@v2
+        env:
+          SAMPLE_DIGEST: ${{ steps.push.outputs.digest }}2
+        with:
+          token: ${{ secrets.DO_ACCESS }}
