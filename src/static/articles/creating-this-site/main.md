@@ -70,8 +70,9 @@ formula-heavy articles. Happily, though, this allows me to create custom
 commands, so I'm able to do things like embed videos and iframes
 ([see below](#devex)), which would not otherwise be possible.
 
-[^1]Actually, I learned make4ht _before_ learning about latexmk and xelatex, so
-this was especially painful.
+[^1]:
+    Actually, I learned make4ht _before_ learning about latexmk and xelatex, so
+    this was especially painful.
 
 Here's an example of $\KaTeX{}$ rendering some math:
 

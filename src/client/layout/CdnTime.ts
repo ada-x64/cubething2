@@ -28,8 +28,6 @@ export default function getTime({
   const publishedAtStr = formatTime(publishedAtDate);
   const lastCommitDate = new Date(lastRender);
   const lastCommitStr = formatTime(lastCommitDate);
-  console.log({ publishedAt, publishedAtDate, publishedAtStr });
-  console.log({ lastRender, lastCommitDate, lastCommitStr });
 
   let style = TwClass([TimeStyle]);
   if (inline) {
