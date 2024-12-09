@@ -6,12 +6,10 @@ import {
 } from "child_process";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const log = (kind: "info" | "warn" | "error", ...args: any) => {
+const log = (kind: "info" | "warn" | "error", args: any) => {
   const color =
     kind === "info" ? "\x1b[34m" : kind === "warn" ? "\x1b[93m" : "\x1b[91m";
-  console.log(
-    ...[`${color}\udb85\ude16 [${kind.toUpperCase()}]\x1b[0m`, ...args],
-  );
+  console.log(`${color}\udb85\ude16 [${kind.toUpperCase()}]\x1b[0m`, ...args);
 };
 export const info = (...args: unknown[]) => log("info", args);
 export const error = (...args: unknown[]) => log("error", args);

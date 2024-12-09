@@ -31,8 +31,8 @@ const check = (write: boolean) => {
         "README.md",
         "www/**/*/out",
         "www/**/*/index.*",
-        "src/static/articles/**/*",
-        "src/static/about/**/*",
+        "src/static/**/*",
+        "!src/static/styles/**/*",
       ],
       globstar: true,
     }).forEach((filename) => {

@@ -19,18 +19,14 @@ import "./scripts/onmousemove";
 import "./scripts/detectTheme";
 import { computed, signal } from "@preact/signals";
 import { useContext } from "preact/hooks";
-import {
-  type ParsedMetadata,
-  type Metadata,
-  findCurrentMetadata,
-} from "./utils/metadata";
+import { type ParsedMetadata, findCurrentMetadata } from "./utils/metadata";
 import About from "./pages/about";
 
 // load metadata asap
 const metadata = await fetch("/static/meta.json").then(async (data) => {
   return (await data.json()) as ParsedMetadata;
 });
-const currentMetadata = signal(null as null | Partial<Metadata>);
+const currentMetadata = signal(findCurrentMetadata(metadata));
 const defaultState = {
   metadata,
   currentMetadata,
@@ -83,10 +79,9 @@ function AppComponent() {
         <${AppState.Provider} value=${defaultState}>
           <${Layout}>
             <${Router}
-              onRouteChange=${(url: string) => {
+              onRouteChange=${() => {
                 state.currentMetadata.value = findCurrentMetadata(
                   state.metadata,
-                  url,
                 );
               }}
             >

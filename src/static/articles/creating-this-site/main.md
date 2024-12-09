@@ -5,13 +5,14 @@ publishedAt: 3 Dec 2024
 ---
 
 The [previous iteration](https://github.com/ada-x64/cubething.dev) of this
-website was created in a daze of experimental technology. Mostly I was trying to
-show off! Clearly this is not the best way to make a website. I have another
-year or two of development experience under my belt since then, so I'm rewriting
-it from scratch in an attempt to make it more feasible to edit in the long-term.
-I've also added a lot of new features - primarily, server-side rendering
-$\LaTeX{}$ documents. I hope this will serve me well going forward, as I intend
-on attending graduate school in the near future. It will be nice to publish
+website was created in a daze of experimental technology (see
+[the article](/articles/creating-this-site-v1)). Mostly I was trying to show
+off! Clearly this is not the best way to make a website. I have another year or
+two of development experience under my belt since then, so I'm rewriting it from
+scratch in an attempt to make it more feasible to edit in the long-term. I've
+also added a lot of new features - primarily, server-side rendering $\LaTeX{}$
+documents. I hope this will serve me well going forward, as I intend on
+attending graduate school in the near future. It will be nice to publish
 documents as both HTML and PDF 🙂
 
 ## Front-End - Simple SPA
@@ -26,7 +27,7 @@ ahead and copied the front-end code over. Instead of using JSX I decided to use
 as my framework of choice. Converting from JSX to htm was very easy. It was only
 a little annoying to switch from the Deno conventions to the Bun conventions.
 
-## Back-End - SSR with make4ht, aka Latex Hell
+## Back-End - SSR with make4ht
 
 On the backend I am using [fastify](https://fastify.dev) for the server, mainly
 because express.js is ancient and I want something efficient so I don't have to
@@ -45,22 +46,32 @@ vast ecosystem and many build systems. I had previously been using
 Windows to edit tex documents, so the build system was largely automated for me.
 Obviously this is not the case when you're building something manually!
 
-Currently I'm building everything locally. I manually installed
-[TeXLive](https://tug.org/texlive/) on Debian for WSL2. I'm using
-[XeLaTeX](https://tug.org/xetex/) for Unicode support, and I'm building with
+I began by building everything locally. I manually installed
+[TeXLive](https://tug.org/texlive/) on Debian for WSL2, using
+[XeLaTeX](https://tug.org/xetex/) for Unicode support, and building with
 [latexmk](https://ctan.org/pkg/latexmk/) for compatibility with the
 [LaTeX Workshop VSCode extension](https://github.com/James-Yu/LaTeX-Workshop).
-As previously mentioned, everything that can be rendered is rendered on _my_
-machine before deployment, then shipped as the completed HTML file.
+This is a very simple process, but learning all the layers of abstraction was
+difficult. Tex is the primary text layer, with LaTeX on top of it for layout.
+XeLaTeX comes in to support unicode (replacing LaTeX as the primary build tool),
+and latexmk is the toolchain. In the end, you just run latexmk, specifying your
+`TEXINPUTS` and `BIBINPUTS` to specify your style and bibliography files. Easy!
 
-By default make4ht will use MathJax, but I find this to be an unacceptably heavy
-(and ugly) solution. [$\KaTeX{}$](https://katex.org) is much lighter, easier to
-user, and prettier. I'm using it to render math server-side after make4ht
-converts the `tex`/`md` files to HTML. Unfortunataly, as of writing
+To build for the web, I discovered make4ht. It's not a particularly
+well-documented tool, and it doesn't seem to be in wide use, so learning this
+was especially difficult.[^1] By default, make4ht will use MathJax, but I find
+this to be an unacceptably heavy (and ugly) solution.
+[$\KaTeX{}$](https://katex.org) is much lighter, easier to user, and prettier.
+I'm using it to render math server-side after make4ht converts the `tex`/`md`
+files to HTML. Unfortunataly, as of writing
 [katex does not support `\eqref`](https://github.com/KaTeX/KaTeX/issues/2003),
-among others, so I've implemented a custom (regex-heavy 🥲) solution. Happily,
-though, this allows me to create custom commands, so I'm able to do things like
-embed videos ([see below](#devex)), which would not otherwise be possible.
+among others, so I've implemented a custom (regex-heavy 🥲) solution for my more
+formula-heavy articles. Happily, though, this allows me to create custom
+commands, so I'm able to do things like embed videos and iframes
+([see below](#devex)), which would not otherwise be possible.
+
+[^1]Actually, I learned make4ht _before_ learning about latexmk and xelatex, so
+this was especially painful.
 
 Here's an example of $\KaTeX{}$ rendering some math:
 
@@ -68,37 +79,17 @@ $$
 		\int_{-\infty}^{\infty}\hat{f}\lparen{}x \rparen{}i\,e^{2\pi{} i\xi{} x}d\xi{}
 $$
 
-I wanted to use
-[Garamond Math](https://github.com/YuanshengZhao/Garamond-Math/tree/master) to
-render the $\KaTeX{}$, but it doesn't seem to be compatible. In order to change
-fonts, $\KaTeX{}$ requires you to either build the library from scratch or
-include it with [SCSS](https://sass-lang.com), which I happen to be using.
-However, each font is specifically designed to be built out to a specific size
-and style. I ended up copying the font files to my static directory and
-overriding the files I wanted to use. Even more annoying than this, I am using
-[fastify-static](https://github.com/fastify/fastify-static) (which uses
-[glob](https://github.com/isaacs/node-glob) under the hood) to serve static
-files; it allows you to follow symlinked directories, but symlinked files aren't
-listed. This seems to be an issue with the glob library, and frankly I don't
-feel like manually building both these libraries (and going through the process
-of contributing it back) just so I can avoid a few kilobytes of redundant data.
-
--- In any case, I ended up using Libertinus instead, because it is far more
-readable on screens. I will continue to use EB Garamond and Garamond Math for
-the PDF versions of these papers though, so it's likely there will be some
-mismatching styles between the two.
-
 ## devex
 
 I am using [bun](https://bun.sh) to run the site and the bundle the
-front-end.[^1] I have a custom build script which watches for changes and a
+front-end.[^2] I have a custom build script which watches for changes and a
 websocket-based mechanism for hot reloading the site whenever the server or
 client is updated. This is pretty similar to what webpack does, but bun is
 _much_ faster. This way I can open up code in one window and my browser in the
 other, and get live reloads of my content without having to recompile. Overall
 this is a really nice experience for writing articles.
 
-[^1]:
+[^2]:
     I used Deno for the
     [previous iteration of this site](https://github.com/ada-x64/cubething.dev),
     but frankly the idea of replacing the entire NodeJS ecosystem is a little
@@ -107,7 +98,7 @@ this is a really nice experience for writing articles.
 
 Here's a video where I show off the build process:
 
-\video{640}{360}{/static/media/hot-reload.mp4}
+`\video{640}{360}{/static/media/hot-reload.mp4}`{=latex}
 
 I'm using [docker](https://docker.com) to containerize the application for
 distribution on
@@ -118,6 +109,11 @@ solution! The one thing I miss about using Deno is the
 [free hosting](https://deno.com/deploy) - but I'm happy to pay $12/mo to have a
 much better development experience.
 
-When I eventually get around to testing (lol), I'll do it with
-[node tap](https://node-tap.org) for server-side, and
-[playwright](https://playwright.dev) for client-side.
+## conclusion
+
+I'm far happier with this rendition of the website. I've got reproducible
+builds, and I have all my editor settings (e.g. for LaTeX Workshop) stored in
+the repository. Linting and styling are automated, and deployment is easy. There
+are still a few rough patches, and it's not feature-compatible with the old site
+quite yet (no syntax highlighting or tables of contents quite yet), but those
+will come with time.

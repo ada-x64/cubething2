@@ -5,7 +5,7 @@ free to use it.
 
 ## system requirements
 
-This software is build for POSIX compatible operating systems. I am using Debian
+This software is built for POSIX compatible operating systems. I am using Debian
 on WSL2. It requires the following development tools:
 
 - [bun](https://bun.sh)
@@ -14,7 +14,7 @@ on WSL2. It requires the following development tools:
   [TeXLive](https://tug.org/texlive/)
 - [latexmk](https://ctan.org/pkg/latexmk/)
 - [docker](https://docker.com)
-- [image magick](https://imagemagick.org/script/index.php)
+- [imagemagick](https://imagemagick.org/script/index.php)
 - [rsync](https://rsync.samba.org)
 
 ## quick start
@@ -32,20 +32,17 @@ bun dev
 ## structure
 
 Articles are rendered using a system-installed latex + pandoc instance. Articles
-should follow this structure: `src/articles/my-article/main.{tex,md}`. This
-would compile to `www/articles/my-article/index.html`, which would then be
+should follow this structure: `src/static/articles/my-article/main.{tex,md}`.
+This would compile to `www/articles/my-article/index.html`, which would then be
 served at the route `articles/my-article`. Essentially they're modules, which
 allows us to render more complex things like $\LaTeX{}$. Use the config file to
 configure make4ht to make use of custom commands and to customize the HTML
 output to your needs.
 
-Static files, when distributed, are bundled with the application. This is
-inconvenient for publishing - it would be preferable for the author to just
-publish to a separate cdn - but bundling allows us to do server-side rendering
-without relying on a second server. Overall, this solution is cheaper and faster
-than running two microservices - rebuilding the server and hosting the package
-is free with GitHub Actions, and hosting is less expensive for a single server
-than for two.
+Custom commands are defined in `src/static/config/make4ht.cfg`. They should
+"just work" for latex files, but you'll need to use the pandoc
+[raw_attribute syntax](https://pandoc.org/MANUAL.html#extension-raw_attribute)
+for markdown.
 
 ## deployment
 

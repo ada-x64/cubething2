@@ -18,16 +18,18 @@ export function formatTime(mtime: Date | null) {
 export default function getTime({
   inline,
   publishedAt,
-  lastCommit,
+  lastRender,
 }: {
   inline: boolean;
   publishedAt: string;
-  lastCommit: string;
+  lastRender: string;
 }) {
   const publishedAtDate = new Date(publishedAt);
   const publishedAtStr = formatTime(publishedAtDate);
-  const lastCommitDate = new Date(lastCommit);
+  const lastCommitDate = new Date(lastRender);
   const lastCommitStr = formatTime(lastCommitDate);
+  console.log({ publishedAt, publishedAtDate, publishedAtStr });
+  console.log({ lastRender, lastCommitDate, lastCommitStr });
 
   let style = TwClass([TimeStyle]);
   if (inline) {

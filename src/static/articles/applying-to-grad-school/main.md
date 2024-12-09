@@ -8,6 +8,8 @@ publishedAt: 3 Dec 2024
 
 So I'm applying to graduate school. Where to start?
 
+## philosophical gourmet data
+
 I began by scraping data from the
 [philosophical gourmet](https://www.philosophicalgourmet.com/summary-of-specialty-rankings/)
 using the table available under the header
@@ -25,12 +27,14 @@ could order the columns in descending order. You can see the final notebook
 with the full dataset directly
 [here](https://cdn.cubething.dev/phil_gourmet.html).
 
-\iframe{https://cdn.cubething.dev/phil_gourmet.html}
+`\iframe{/static/media/phil_gourmet.html}`{=latex}
 
 Once I had manually gone over the results and ensured that they were what I
 wanted (right location, right faculty), I chose my top 6 schools. They are:
 CUNY, Toronto, UBC, UCR, Columbia, and Yale. God help me. I figure that the
 scattershot approach is best for low-probability schools like this.
+
+## annoying 311 grad students
 
 Now, it is often suggested that people get in contact with graduate students at
 the universities they wish to attend. I'm shy (and statistically oriented), so I
