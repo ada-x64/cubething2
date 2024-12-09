@@ -9,13 +9,13 @@
         "-file-line-error",
         "%DOC%"
       ],
-      "env": { "TEXINPUTS": ".:src/static//:" }
+      "env": { "TEXINPUTS": ".//:%WORKSPACE_FOLDER%/src/static/config//::" }
     },
     {
       "name": "biber",
       "command": "biber",
       "args": ["%DOCFILE%"],
-      "env": { "TEXINPUTS": ".:src/static//:" }
+      "env": { "BIBINPUTS": ".//:%WORKSPACE_FOLDER%/src/static/config//::" }
     }
   ],
   "latex-workshop.latex.recipes": [

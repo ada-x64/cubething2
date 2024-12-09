@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 import {
   spawnSync,
   type SpawnSyncOptionsWithBufferEncoding,
