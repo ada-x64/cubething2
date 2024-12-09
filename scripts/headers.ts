@@ -3,7 +3,6 @@
 import fs from "fs";
 import { globbySync } from "globby";
 import { info, warn } from "./common";
-import { log } from "console";
 
 // 1. apply header
 const header = (c: string, prefix?: string, postfix?: string) =>
@@ -32,8 +31,8 @@ const check = (write: boolean) => {
         "README.md",
         "www/**/*/out",
         "www/**/*/index.*",
-        "src/static/articles/**/*",
-        "src/static/about/**/*",
+        "src/static/**/*",
+        "!src/static/styles/**/*",
       ],
       globstar: true,
     }).forEach((filename) => {
@@ -53,7 +52,7 @@ const check = (write: boolean) => {
     });
   }
   if (!failed) {
-    log("No missing headers!");
+    info("No missing headers!");
     return true;
   } else if (!write && failed) {
     warn("Run with --write to fix.");

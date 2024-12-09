@@ -3,7 +3,7 @@
 // From scripts/metadata.ts
 export type Metadata = {
   url: string;
-  lastCommitDate: Date;
+  lastRender: string;
   contentType: string;
   frontmatter: {
     title: string;
@@ -24,10 +24,8 @@ export type ParsedMetadata = {
   };
 } & MetadataMap;
 
-export function findCurrentMetadata(
-  metadata: ParsedMetadata,
-  url: string,
-): Metadata | null {
+export function findCurrentMetadata(metadata: ParsedMetadata): Metadata | null {
+  const url = window.location.pathname;
   // Helper function to recursively search through the metadata object
   function searchMetadata(obj: MetadataMap | Metadata): Metadata | null {
     // If the current object is a Metadata object (has 'url' property)

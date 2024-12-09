@@ -1,7 +1,7 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import path from "path";
-import { lstatSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "fs";
+import { lstatSync, mkdirSync, readFileSync, writeFileSync } from "fs";
 import parseMath from "./katex.js";
 import { globSync } from "glob";
 import { program } from "commander";
@@ -26,14 +26,12 @@ const render = async (filepath: string, opts: Opts) => {
   const outpath = path.join(outdir, "index.html");
   if (opts.clean) {
     try {
-      info("cleaning", builddir);
-      rmSync(builddir, { recursive: true, force: true });
+      await sayAndDo(`rm -rf ${builddir}`);
     } catch (e) {
       warn(e);
     }
     try {
-      info("cleaning", outpath);
-      rmSync(outpath);
+      await sayAndDo(`rm -rf ${outdir}`);
     } catch (e) {
       warn(e);
     }
@@ -69,41 +67,55 @@ const render = async (filepath: string, opts: Opts) => {
   } catch {
     /* empty */
   }
-  // NOTE: this intermediary is equivalent to a customizable version of the make4ht preprocess_input extension
-  // const md = path.extname(filename) === ".md";
-  // let intermediatePath = filepath;
-  // if (md) {
-  //   intermediatePath = path.join(builddir, filename.replace("md", "tex"));
-  //   const cmd = `pandoc -s -f gfm -o '${intermediatePath}' -t latex ${filepath}`;
-  //   console.info(filepath, "->", intermediatePath);
-  //   const out = spawnSync("sh", ["-c", cmd]);
-  //   if (out.error) {
-  //     console.error(out.error);
-  //     throw { type: "error" };
-  //   }
-  // }
-  const preprocess =
-    path.extname(filename) !== ".tex" ? "+preprocess_input" : "";
-  // search for local packages and include the defaults
+  let out;
+  let intermediateFile = filepath;
+
+  const preprocess = path.extname(filename) !== ".tex";
+  if (preprocess) {
+    // this intermediary is (almost) equivalent to
+    // the make4ht preprocess_input extension
+    const cmd = `pandoc -s -f markdown+raw_attribute -o '${builddir}/main.tex' -t latex ${filepath}`;
+    out = await sayAndDo(cmd);
+    intermediateFile = path.join(builddir, "main.tex");
+    if (out.error) {
+      error(out.stdout.toString(), out.stderr.toString());
+      throw {
+        type: "error",
+        stdout: out.stdout.toString(),
+        stderr: out.stderr.toString(),
+      };
+    }
+  }
+
   const cmd = `
         TEXINPUTS=.:src/static//:
         make4ht
         -x
         -j index
-        -f html5+latexmk_build${preprocess}
+        -f html5+latexmk_build
         -B ${builddir}
         --config ${configpath}
-        ${filepath}
-        "fn-in,mathjax,-css";
-        mkdir -p ${outdir};
-        cp ${builddir}/index.html ${outdir}
-      `.replaceAll(/\n|\s/g, " ");
-  const out = await sayAndDo(cmd, { stdio: "pipe" });
+        ${intermediateFile}
+        "fn-in,mathjax,-css"
+      `
+    .replaceAll(/ {2}/g, "")
+    .replaceAll(/\n/g, " ");
+  out = await sayAndDo(cmd, { stdio: "pipe" });
   if (out.error) {
     error(out.stdout.toString(), out.stderr.toString());
     throw {
       type: "error",
-      command: cmd,
+      stdout: out.stdout.toString(),
+      stderr: out.stderr.toString(),
+    };
+  }
+  out = await sayAndDo(
+    `mkdir -p ${outdir}; cp ${builddir}/index.html ${outpath}`,
+  );
+  if (out.error) {
+    error(out.stdout.toString(), out.stderr.toString());
+    throw {
+      type: "error",
       stdout: out.stdout.toString(),
       stderr: out.stderr.toString(),
     };

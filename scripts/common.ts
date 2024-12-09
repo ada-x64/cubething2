@@ -5,7 +5,8 @@ import {
   type SpawnSyncOptionsWithBufferEncoding,
 } from "child_process";
 
-const log = (kind: "info" | "warn" | "error", ...args: unknown[]) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const log = (kind: "info" | "warn" | "error", args: any) => {
   const color =
     kind === "info" ? "\x1b[34m" : kind === "warn" ? "\x1b[93m" : "\x1b[91m";
   console.log(`${color}\udb85\ude16 [${kind.toUpperCase()}]\x1b[0m`, ...args);

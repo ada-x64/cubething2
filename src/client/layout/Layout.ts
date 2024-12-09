@@ -12,6 +12,7 @@ import MainContent from "./MainContent";
 import Title from "./Title";
 import { useRoute } from "preact-iso";
 import { AppState } from "../app";
+import Footer from "./Footer";
 
 export default function Layout({ children }: { children: ComponentChildren }) {
   const route = useRoute().path;
@@ -42,6 +43,7 @@ export default function Layout({ children }: { children: ComponentChildren }) {
       >
         <${Title} title=${title} />
         ${children}
+        <${Footer} />
       <//>
     </main>
   `;

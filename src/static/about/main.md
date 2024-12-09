@@ -1,13 +1,19 @@
 <!----------------------------- cubething.dev -------------------------------->
 
-**ada mandala** is a web developer and a gamedev sleeper agent.
+**ada mandala** is a web developer, philosopher, and a gamedev sleeper agent.
 
 after earning a bachelor's with honors in philosophy and mathematics, they
 decided to pursue software development as a career. they have been creating web
 and desktop applications since 2016 and pursuing philosophy on the side.
 
+their philosophical interests include buddhist conceptions of mind, aesthetics,
+critical theory, logic/semantics/semiotics, and thought from the early 20th
+century.
+
 they enjoy building interfaces that are intuitive, tactile, and visually
 appealing.
+
+---
 
 ada has been a software engineer for 5+ years, working primarily in
 entertainment. they have worked with Roll20 to bring
@@ -28,7 +34,3 @@ PostgreSQL, MySQL).
 
 they have been praised as insightful and diligent by their peers. they are
 highly motivated to learn, and are constantly expanding their horizons.
-
-their philosophical interests include buddhist conceptions of mind, aesthetics,
-critical theory, logic/semantics/semiotics, and thought from the early 20th
-century.

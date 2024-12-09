@@ -28,10 +28,10 @@ export default function PostCard(props: { metadata: Metadata }) {
           </h3>
           <${CdnTime}
             inline=${true}
-            lastCommit=${metadata.lastCommitDate}
+            lastRender=${metadata.lastRender}
             publishedAt=${metadata.frontmatter.publishedAt}
           />
-          <div class="mt-4 font-normal">${metadata.frontmatter.snippet}</div>
+          <div class="mt-2 font-normal">${metadata.frontmatter.snippet}</div>
         </div>
       </a>
     </div>

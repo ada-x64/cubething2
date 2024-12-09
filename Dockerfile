@@ -22,14 +22,17 @@ FROM base as release
 RUN curl -fsSL https://bun.sh/install | BUN_INSTALL=/usr bash
 WORKDIR /usr/src/app
 ENV NODE_ENV=production
-
-# install apt deps
-RUN apt update
-RUN apt install -y imagemagick rsync pandoc
+RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
+    --mount=target=/var/cache/apt,type=cache,sharing=locked \
+    rm -f /etc/apt/apt.conf.d/docker-clean \
+    && apt-get update \
+    && apt-get -y --no-install-recommends install \
+        imagemagick pandoc rsync
 
 COPY --from=install /temp/dev/node_modules node_modules
 COPY ./ ./
-RUN bun dist
+
+RUN bun dist 2>&1 | tee dist.log
 
 EXPOSE 3000/tcp
 ENTRYPOINT [ "bun", "start" ]

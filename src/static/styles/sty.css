@@ -18,7 +18,6 @@
 p {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 1.25;
 }
 p.indent {
   text-indent: 0;
@@ -72,13 +71,6 @@ div.par-math-display,
 div.math-display {
   text-align: center;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  line-height: 1.2;
-}
 @media print {
   body {
     max-width: none;
@@ -87,22 +79,42 @@ h5 {
 .partHead,
 .likepartHead {
   font-size: 2em;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 .chapterHead,
 .likechapterHead {
-  font-size: 1.7411em;
+  font-size: 2em;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 .sectionHead,
 .likesectionHead {
-  font-size: 1.5157em;
+  font-size: 2em;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 .subsectionHead,
 .likesubsectionHead {
-  font-size: 1.3195em;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 .subsubsectionHead,
 .likesubsubsectionHead {
-  font-size: 1.1487em;
+  font-size: 1em;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 html.dark {
   img[src^="index"] {

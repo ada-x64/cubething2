@@ -9,7 +9,10 @@ import { error, info, sayAndDo, warn } from "./common";
 let refresh = () => {};
 const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
   info(event, oldpath, newpath);
-  if (oldpath?.includes("static/markup")) {
+  if (
+    oldpath &&
+    (path.extname(oldpath) === ".tex" || path.extname(oldpath) === ".md")
+  ) {
     await sayAndDo(`bun scripts/render/render.ts ${oldpath}`);
   } else if (oldpath?.includes("static/styles")) {
     sayAndDo(`bun sass`);

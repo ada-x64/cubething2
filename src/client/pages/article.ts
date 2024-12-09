@@ -3,21 +3,50 @@
 import { html } from "htm/preact/index.js";
 import { useRoute } from "preact-iso";
 import { useSignal, useSignalEffect } from "@preact/signals";
+import { InboundIndicator, OutboundIndicator } from "../styles";
+import CdnTime from "../layout/CdnTime";
+import { useContext } from "preact/hooks";
+import { AppState } from "../app";
 
 const Article = ({ routeOverride }: { routeOverride?: string }) => {
   const route = useRoute();
   const id = route.params["id"];
+  const state = useContext(AppState);
+  const metadata = state.currentMetadata.value;
+  const publishedAt = metadata?.frontmatter?.publishedAt;
+  const lastRender = metadata?.lastRender;
+  const timestamp =
+    publishedAt && lastRender
+      ? html`
+          <${CdnTime}
+            inline=${false}
+            publishedAt=${metadata?.frontmatter?.publishedAt}
+            lastRender=${metadata?.lastRender}
+          />
+        `
+      : "";
 
   const signal = useSignal("loading...");
   useSignalEffect(() => {
     fetch(routeOverride ?? `/static/articles/${id}/index.html`).then((resp) => {
-      resp.text().then((text) => (signal.value = text));
+      resp.text().then((text) => {
+        signal.value = text;
+        const target = document.querySelector("#target")!;
+        target.innerHTML = signal.value;
+        target
+          .querySelectorAll("a[href^='#']")
+          .forEach((item) => (item.className += InboundIndicator));
+        target
+          .querySelectorAll("a[href^='https://']")
+          .forEach((item) => (item.className += OutboundIndicator));
+      });
     });
   });
 
-  return html`<article
-    dangerouslySetInnerHTML=${{ __html: signal.value }}
-  ></article>`;
+  return html`
+    ${timestamp}
+    <div id="target">loading...</div>
+  `;
 };
 
 export default Article;
