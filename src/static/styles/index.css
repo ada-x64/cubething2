@@ -1,5 +1,13 @@
 /****************************** cubething.dev ********************************/
 
+@import url("./code.css");
+@import url("./Fonts.css");
+@import url("./global.css");
+@import url("./highlighting.css");
+@import url("./code.css");
+@import url("./sty.css");
+@import url("./toc.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

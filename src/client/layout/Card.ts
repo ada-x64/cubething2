@@ -1,7 +1,7 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import { html } from "htm/preact/index.js";
-import { BorderColor, OutboundLink, TwClass } from "../styles";
+import { Palette, OutboundLink, TwClass } from "../styles";
 import CdnTime from "./CdnTime";
 import type { Metadata } from "../utils/metadata";
 
@@ -17,7 +17,7 @@ export default function PostCard(props: { metadata: Metadata }) {
     .join(" ");
 
   return html`
-    <div class=${TwClass(["mt-4", "pt-4", "border-t", BorderColor])}>
+    <div class=${TwClass(["mt-4", "pt-4", "border-t", Palette.borderColor])}>
       <a href=${metadata.url}>
         <div
           class=${hoverStyle}
@@ -28,8 +28,7 @@ export default function PostCard(props: { metadata: Metadata }) {
           </h3>
           <${CdnTime}
             inline=${true}
-            lastRender=${metadata.lastRender}
-            publishedAt=${metadata.frontmatter.publishedAt}
+            frontmatter=${metadata.frontmatter}
           />
           <div class="mt-2 font-normal">${metadata.frontmatter.snippet}</div>
         </div>

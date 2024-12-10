@@ -69,14 +69,14 @@ const WrapperStyle = TwClass([
 const NavStyle = TwClass([
   "flex",
   "flex-col",
-  "bg-stone-100",
-  "dark:bg-zinc-900",
+  `bg-amber-100`,
+  `dark:bg-zinc-900`,
   "w-80",
   "min-h-1/2",
   "top-1/4",
   "border-2",
-  "border-stone-900",
-  "dark:border-zinc-100",
+  `border-amber-900`,
+  `dark:border-zinc-700`,
   "rounded-md",
 ]);
 

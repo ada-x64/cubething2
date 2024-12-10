@@ -7,6 +7,9 @@ import Article from "./article";
 export default function About() {
   return html`
     <${Contact} />
-    <${Article} routeOverride="/static/about/index.html" />
+    <${Article}
+      routeOverride="/static/about/index.html"
+      useTime=${false}
+    />
   `;
 }

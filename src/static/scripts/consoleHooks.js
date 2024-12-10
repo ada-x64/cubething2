@@ -12,9 +12,9 @@ const Level = Object.freeze({
   DEBUG: Symbol("debug"),
   INFO: Symbol("info"),
 });
-const log: Array<object> = [];
-const mklog = (console_fn: CallableFunction, level: symbol) => {
-  return (...args: unknown[]) => {
+const log = [];
+const mklog = (console_fn, level) => {
+  return (...args) => {
     log.push({
       timestamp: new Date().toLocaleString(),
       level: Symbol.keyFor(level),

@@ -19,27 +19,17 @@ export function TwClass(
 }
 
 export const Palette = {
-  text: "stone-900",
-  bg: "stone-100",
-  accent: "orange-500",
-  link: "stone-400",
-  border: "stone-400",
-
-  dark: {
-    text: "zinc-100",
-    bg: "zinc-900",
-    accent: "amber-500",
-    link: "zinc-400",
-    border: "zinc-700",
-  },
+  text: "text-amber-950 dark:text-zinc-100",
+  secondaryText: "text-amber-950 font-thin dark:text-zinc-100",
+  accentText: "text-amber-600 dark:text-amber-500",
+  accentTextHover: "hover:text-amber-600 hover:dark:text-amber-500",
+  accentTextFocus: "focus:text-amber-600 focus:dark:text-amber-500",
+  bg: "bg-amber-10 dark:bg-zinc-900",
+  borderColor: "border-amber-950 dark:border-zinc-500",
 };
 
-export const BorderColor = `border-${Palette.border} dark:border-${Palette.dark.border}`;
-export const AccentText = `text-${Palette.accent} dark:text-${Palette.dark.accent}`;
-
 export const Link = TwClass([
-  `text-${Palette.text}`,
-  `dark:text-${Palette.dark.text}`,
+  Palette.text,
   "font-bold",
   "transition",
   "ease-linear",
@@ -62,22 +52,17 @@ export const InboundIndicator = TwClass([
 export const OutboundLink = TwClass([
   Link,
   OutboundIndicator,
-  `hover:text-${Palette.accent}`,
-  `hover:dark:text-${Palette.dark.accent}`,
-  `focus:text-${Palette.accent}`,
-  `focus:dark:text-${Palette.dark.accent}`,
+  Palette.accentTextFocus,
+  Palette.accentTextHover,
 ]);
 
-export const LocalAction = TwClass([
-  Link,
-  `hover:text-${Palette.link}`,
-  `hover:dark:text-${Palette.dark.link}`,
-  `focus:text-${Palette.link}`,
-  `focus:dark:text-${Palette.dark.link}`,
-]);
+export const LocalAction = TwClass([Link]);
 export const InboundLink = TwClass([LocalAction, InboundIndicator]);
 
-export const ItemSelectedStyle = TwClass(["line-through", "text-zinc-400"]);
+export const ItemSelectedStyle = TwClass([
+  "line-through",
+  Palette.secondaryText,
+]);
 export const ItemStyle = TwClass([
   "px-2",
   "py-1",
@@ -96,13 +81,9 @@ export const ItemContainerStyle = TwClass([
   "items-center",
   "py-4",
   "border-b",
-  BorderColor,
+  Palette.borderColor,
   "w-full",
   "text-4xl",
 ]);
 
-export const TimeStyle = TwClass([
-  "text-stone-500",
-  "dark:text-zinc-500",
-  "dark:font-bold",
-]);
+export const TimeStyle = Palette.secondaryText;

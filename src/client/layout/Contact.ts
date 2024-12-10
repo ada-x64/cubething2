@@ -1,7 +1,7 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import { html } from "htm/preact/index.js";
-import { BorderColor, OutboundLink, TwClass } from "../styles";
+import { Palette, OutboundLink, TwClass } from "../styles";
 
 export default function Contact() {
   return html`
@@ -13,7 +13,7 @@ export default function Contact() {
         "border-b",
         "pb-4",
         "mb-4",
-        BorderColor,
+        Palette.borderColor,
       ])}
     >
       <a

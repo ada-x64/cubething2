@@ -14,13 +14,12 @@ import NotFound from "./pages/notFound";
 // import Template from "./pages/template";
 import Layout from "./layout/Layout";
 
-import "./scripts/onScroll";
-import "./scripts/onmousemove";
-import "./scripts/detectTheme";
 import { computed, signal } from "@preact/signals";
 import { useContext } from "preact/hooks";
 import { type ParsedMetadata, findCurrentMetadata } from "./utils/metadata";
 import About from "./pages/about";
+import onmousemove from "./utils/onmousemove";
+import onScroll from "./utils/onScroll";
 
 // load metadata asap
 const metadata = await fetch("/static/meta.json").then(async (data) => {
@@ -47,6 +46,10 @@ class App extends HTMLElement {
       html`<${AppComponent}></${AppComponent}>`,
       document.querySelector("ct-app")!,
     );
+    onmousemove();
+    onScroll();
+    document.querySelector("html")!.style.display = "block";
+    document.querySelector("html")!.style.removeProperty("background");
   }
 
   tryWebsocket = () => {

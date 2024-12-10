@@ -2,6 +2,7 @@
 title: Creating This Site (v2)
 snippet: How I made the website you're looking at :)
 publishedAt: 3 Dec 2024
+lastEdit: 9 Dec 2024
 ---
 
 The [previous iteration](https://github.com/ada-x64/cubething.dev) of this
@@ -70,8 +71,9 @@ formula-heavy articles. Happily, though, this allows me to create custom
 commands, so I'm able to do things like embed videos and iframes
 ([see below](#devex)), which would not otherwise be possible.
 
-[^1]Actually, I learned make4ht _before_ learning about latexmk and xelatex, so
-this was especially painful.
+[^1]:
+    Actually, I learned make4ht _before_ learning about latexmk and xelatex, so
+    this was especially painful.
 
 Here's an example of $\KaTeX{}$ rendering some math:
 

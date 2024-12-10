@@ -4,6 +4,7 @@ snippet:
   How I built this website using Deno, Fresh, and Tailwind CSS. Also includes
   server setup with Debian, OpenSSH, and Nginx.
 publishedAt: 5 Mar 2023
+lastEdit: 9 May 2023
 ---
 
 With the perpetual living death of social media, I've been looking for a place

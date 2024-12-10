@@ -1,7 +1,8 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import { html } from "htm/preact/index.js";
-import { TwClass, TimeStyle } from "../styles";
+import { TwClass, TimeStyle, Palette } from "../styles";
+import { type Frontmatter } from "../utils/metadata";
 
 export function formatTime(mtime: Date | null) {
   if (mtime !== null) {
@@ -17,43 +18,36 @@ export function formatTime(mtime: Date | null) {
 
 export default function getTime({
   inline,
-  publishedAt,
-  lastRender,
+  frontmatter,
 }: {
   inline: boolean;
-  publishedAt: string;
-  lastRender: string;
+  frontmatter: Frontmatter;
 }) {
-  const publishedAtDate = new Date(publishedAt);
-  const publishedAtStr = formatTime(publishedAtDate);
-  const lastCommitDate = new Date(lastRender);
-  const lastCommitStr = formatTime(lastCommitDate);
-  console.log({ publishedAt, publishedAtDate, publishedAtStr });
-  console.log({ lastRender, lastCommitDate, lastCommitStr });
+  const publishedAt = frontmatter.publishedAt;
+  const publishedAtStr = formatTime(new Date(publishedAt));
+  const lastEdit = frontmatter.lastEdit;
+  const lastEditStr = lastEdit ? formatTime(new Date(lastEdit)) : null;
 
   let style = TwClass([TimeStyle]);
   if (inline) {
     style = TwClass([style, "text-sm"]);
   } else {
-    style = TwClass([style, "text-center", "-mt-2", "mb-2"]);
+    style = TwClass([
+      style,
+      "text-center",
+      "-mt-2",
+      "mb-4",
+      "pb-2",
+      "border-b",
+      Palette.borderColor,
+    ]);
   }
 
-  let time;
-  if (publishedAtDate !== lastCommitDate) {
-    time = html`
-      First published ${publishedAtStr}
-      ${(() => {
-        if (!inline) {
-          return html`<br />`;
-        } else {
-          return " | ";
-        }
-      })()}
-      Updated ${lastCommitStr}
-    `;
-  } else {
-    time = publishedAtStr;
-  }
+  const separator = inline ? html`|` : html`<br />`;
+  const withEdit = lastEditStr
+    ? html`${separator} Updated ${lastEditStr}`
+    : null;
+  const time = html`First published ${publishedAtStr} ${withEdit}`;
 
   return html`<time class=${style}>${time}</time>`;
 }

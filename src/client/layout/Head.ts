@@ -7,16 +7,6 @@ import { html } from "htm/preact/index.js";
 
 const description =
   "Personal home page of Ada Mandala. Posts about tech, art, philosophy. // Rust, Linux, WASM // Graphics, Games // Metaphysics, Aesthetics";
-const stylesheets = [
-  "highlighting",
-  "global",
-  "index",
-  "katex",
-  "libertinus",
-  "sty",
-  "toc",
-  "Fonts",
-];
 
 export default function HeadComponent() {
   return html`
@@ -36,14 +26,6 @@ export default function HeadComponent() {
         rel="stylesheet"
         href="https://esm.sh/@wooorm/starry-night@2/style/dark.css"
       />
-      ${stylesheets.map((name) => {
-        return html`
-          <link
-            rel="stylesheet"
-            href="/static/styles/${name}.css"
-          />
-        `;
-      })}
 
       <!-- Primary Meta Tags -->
       <meta

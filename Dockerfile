@@ -16,6 +16,7 @@ RUN mkdir -p /temp/prod
 COPY package.json bun.lockb /temp/prod/
 RUN cd /temp/prod && bun install --frozen-lockfile --production
 
+
 # copy production dependencies and source code into final image
 FROM base as release
 RUN curl -fsSL https://bun.sh/install | BUN_INSTALL=/usr bash
