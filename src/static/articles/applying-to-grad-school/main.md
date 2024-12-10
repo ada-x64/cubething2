@@ -4,6 +4,7 @@ snippet:
   My process for choosing schools, and a graduate student survey. Includes an
   interactive dataset scraped from the Philosophical Gourmet.
 publishedAt: 3 Dec 2024
+lastEdit: 9 Dec 2024
 ---
 
 So I'm applying to graduate school. Where to start?

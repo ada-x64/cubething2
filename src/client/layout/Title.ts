@@ -1,7 +1,7 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import { html } from "htm/preact/index.js";
-import { AccentText, BorderColor, OutboundIndicator, TwClass } from "../styles";
+import { Palette, OutboundLink, TwClass } from "../styles";
 import { useLocation } from "preact-iso";
 
 export default function Title({ title }: { title: string }) {
@@ -28,10 +28,9 @@ export default function Title({ title }: { title: string }) {
           "font-header",
           "lowercase",
           "border-b",
-          BorderColor,
+          Palette.borderColor,
           "w-full",
-          AccentText,
-          OutboundIndicator,
+          OutboundLink,
         ])}
       >
         ${`< ${title} />`}

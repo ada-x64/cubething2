@@ -1,15 +1,16 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 // From scripts/metadata.ts
+export type Frontmatter = {
+  title: string;
+  snippet: string;
+  publishedAt: string;
+  lastEdit?: string;
+} & { [x: string]: string };
 export type Metadata = {
   url: string;
-  lastRender: string;
   contentType: string;
-  frontmatter: {
-    title: string;
-    snippet: string;
-    publishedAt: string;
-  } & { [x: string]: string };
+  frontmatter: Frontmatter;
 };
 
 export type MetadataMap = {
@@ -18,8 +19,8 @@ export type MetadataMap = {
 
 export type ParsedMetadata = {
   articles: {
-    [x: string]: {
-      [x: string]: Metadata;
+    [articleDir: string]: {
+      [articleFile: string]: Metadata;
     };
   };
 } & MetadataMap;

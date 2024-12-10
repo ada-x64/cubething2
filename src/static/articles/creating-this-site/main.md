@@ -2,6 +2,7 @@
 title: Creating This Site (v2)
 snippet: How I made the website you're looking at :)
 publishedAt: 3 Dec 2024
+lastEdit: 9 Dec 2024
 ---
 
 The [previous iteration](https://github.com/ada-x64/cubething.dev) of this

@@ -8,23 +8,26 @@ import CdnTime from "../layout/CdnTime";
 import { useContext } from "preact/hooks";
 import { AppState } from "../app";
 
-const Article = ({ routeOverride }: { routeOverride?: string }) => {
+const Article = ({
+  routeOverride,
+  useTime = true,
+}: {
+  routeOverride?: string;
+  useTime: boolean;
+}) => {
   const route = useRoute();
   const id = route.params["id"];
   const state = useContext(AppState);
   const metadata = state.currentMetadata.value;
-  const publishedAt = metadata?.frontmatter?.publishedAt;
-  const lastRender = metadata?.lastRender;
-  const timestamp =
-    publishedAt && lastRender
-      ? html`
-          <${CdnTime}
-            inline=${false}
-            publishedAt=${metadata?.frontmatter?.publishedAt}
-            lastRender=${metadata?.lastRender}
-          />
-        `
-      : "";
+  const frontmatter = metadata?.frontmatter;
+  const timestamp = frontmatter
+    ? html`
+        <${CdnTime}
+          inline=${false}
+          frontmatter=${frontmatter}
+        />
+      `
+    : "";
 
   const signal = useSignal("loading...");
   useSignalEffect(() => {
@@ -44,7 +47,7 @@ const Article = ({ routeOverride }: { routeOverride?: string }) => {
   });
 
   return html`
-    ${timestamp}
+    ${useTime ? timestamp : ""}
     <div id="target">loading...</div>
   `;
 };

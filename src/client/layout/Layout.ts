@@ -3,7 +3,7 @@
 import { html } from "htm/preact/index.js";
 import { type ComponentChildren } from "preact";
 import { useContext } from "preact/hooks";
-import { TwClass } from "../styles";
+import { Palette, TwClass } from "../styles";
 import HeadComponent from "./Head";
 import NavBtn from "./NavBtn";
 import MainNav from "../nav/MainNav";
@@ -39,6 +39,7 @@ export default function Layout({ children }: { children: ComponentChildren }) {
           "scroll-smooth",
           "w-full",
           "md:max-w-screen-md",
+          Palette.text,
         ])}
       >
         <${Title} title=${title} />

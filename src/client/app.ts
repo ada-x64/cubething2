@@ -49,6 +49,7 @@ class App extends HTMLElement {
     onmousemove();
     onScroll();
     document.querySelector("html")!.style.display = "block";
+    document.querySelector("html")!.style.removeProperty("background");
   }
 
   tryWebsocket = () => {

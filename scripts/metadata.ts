@@ -8,20 +8,19 @@ import * as yaml from "yaml";
 import { globSync } from "glob";
 import { info, sayAndDo, warn } from "./common";
 
+export type Frontmatter = {
+  publishedAt: string;
+  lastEdit?: string;
+  snippet: string;
+} & { [x: string]: string };
+
 export class Metadata {
   url: string;
-  lastRender: Date;
   contentType: string;
-  frontmatter?: { [x: string]: string };
+  frontmatter?: Frontmatter;
 
-  constructor(
-    url: string,
-    lastRender: Date,
-    contentType: string,
-    frontmatter?: { [x: string]: string },
-  ) {
+  constructor(url: string, contentType: string, frontmatter?: Frontmatter) {
     this.url = url;
-    this.lastRender = lastRender;
     this.contentType = contentType;
     this.frontmatter = frontmatter;
   }
@@ -47,7 +46,6 @@ export default async function generateMeta(
         continue;
       }
 
-      const lastRender = new Date();
       const extension = path.extname(thepath);
       const contentType = mime.getType(thepath);
       if (!contentType) {
@@ -56,7 +54,6 @@ export default async function generateMeta(
       }
       const metadata: Metadata = {
         url: relpath,
-        lastRender,
         contentType,
       };
       if (
@@ -78,7 +75,6 @@ export default async function generateMeta(
           }
           map[webpFilename] = {
             url: path.join(URL_BASE, webpPath.replace(/.*\/static\//, "")),
-            lastRender,
             contentType: "image/webp",
           };
         }

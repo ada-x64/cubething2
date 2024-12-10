@@ -124,10 +124,6 @@ const render = async (filepath: string, opts: Opts) => {
     const file = readFileSync(outpath).toString();
     const out = parseMath(file);
     writeFileSync(outpath, out);
-    writeFileSync(
-      filepath.replace(filename, ".published"),
-      new Date().toISOString(),
-    );
     return out;
   } catch (e) {
     error(e);

@@ -15,10 +15,10 @@ const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
   ) {
     await sayAndDo(`bun scripts/render/render.ts ${oldpath}`);
   } else if (oldpath?.includes("static/styles")) {
-    sayAndDo(`bun sass`);
     sayAndDo(`bun tailwind`);
   } else if (oldpath?.includes("client")) {
     sayAndDo(`HOT=true bun bundle`);
+    sayAndDo(`bun tailwind`);
   } else if (oldpath?.includes("static")) {
     // TODO: This is kinda buggy.
     // Folder actions can get missed.

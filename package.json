@@ -12,7 +12,7 @@
     "format": "bunx prettier -c .",
     "headers": "bun scripts/headers.ts",
     "prepare": "husky || true",
-    "sass": "bunx sass --source-map --embed-source-map --quiet-deps -s compressed src/static/styles/:www/styles",
+    "sass": "bunx sass --source-map --embed-source-map --quiet-deps -s compressed --quiet-deps src/static/styles/:www/styles",
     "tailwind": "bunx tailwindcss -i ./src/static/styles/index.css -o ./www/styles/index.css",
     "dist": "./scripts/dist.sh",
     "render": "bun ./scripts/render/render.ts",
@@ -61,6 +61,7 @@
     "preact": "^10.24.3",
     "preact-iso": "^2.7.0",
     "qs": "^6.13.0",
+    "sass": "^1.82.0",
     "three": "^0.167.1",
     "yaml": "^2.6.1"
   }

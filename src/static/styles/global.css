@@ -2,14 +2,14 @@
 
 :root {
   /*Light theme*/
-  /* stone-900 */
-  --text: #1c1917;
-  /* stone-400 */
-  --link: #a8a29e;
-  /* stone-50 */
-  --bg: #fafaf9;
-  /* orange-500 */
-  --accent: #f97316;
+  /* amber-950 */
+  --text: #451a03;
+  /* amber-800 */
+  --link: #92400e;
+  /* amber-10 */
+  --bg: #fef3c7;
+  /* amber-600 */
+  --accent: #ea580c;
 
   /*Dark Theme*/
   /* zinc-100 */
