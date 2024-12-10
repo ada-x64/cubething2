@@ -26,7 +26,7 @@ Multiplying gave me a simple ranking. I replaced all null values with 1000 so I
 could order the columns in descending order. You can see the final notebook
 [on my github](https://github.com/ada-x64/phil-gourmet). You can also interact
 with the full dataset directly
-[here](https://cdn.cubething.dev/phil_gourmet.html).
+[here](https://cubething.dev/static/media/phil_gourmet.html).
 
 `\iframe{/static/media/phil_gourmet.html}`{=latex}
 
