@@ -81,7 +81,6 @@ div.math-display {
   font-size: 2em;
   text-align: center;
   text-transform: lowercase;
-  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 .chapterHead,
@@ -89,7 +88,6 @@ div.math-display {
   font-size: 2em;
   text-align: center;
   text-transform: lowercase;
-  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 .sectionHead,
@@ -97,7 +95,6 @@ div.math-display {
   font-size: 2em;
   text-align: center;
   text-transform: lowercase;
-  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 .subsectionHead,
@@ -105,7 +102,6 @@ div.math-display {
   font-size: 1.5em;
   text-align: center;
   text-transform: lowercase;
-  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 .subsubsectionHead,
@@ -113,7 +109,6 @@ div.math-display {
   font-size: 1em;
   text-align: center;
   text-transform: lowercase;
-  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 html.dark {
