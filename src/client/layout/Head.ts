@@ -27,6 +27,12 @@ export default function HeadComponent() {
         href="https://esm.sh/@wooorm/starry-night@2/style/dark.css"
       />
 
+      <!-- tailwind -->
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+      />
+
       <!-- Primary Meta Tags -->
       <meta
         name="title"

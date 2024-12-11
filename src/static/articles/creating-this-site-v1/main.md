@@ -1,5 +1,5 @@
 ---
-title: Building This Site
+title: Creating This Site (v1)
 snippet:
   How I built this website using Deno, Fresh, and Tailwind CSS. Also includes
   server setup with Debian, OpenSSH, and Nginx.

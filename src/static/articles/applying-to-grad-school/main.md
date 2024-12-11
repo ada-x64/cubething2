@@ -7,50 +7,67 @@ publishedAt: 3 Dec 2024
 lastEdit: 10 Dec 2024
 ---
 
+_EDIT 12-10-24: I've updated the website, so the dataset should now be embedded.
+I also added an introductory section and touched up the rest._
+
 ## why go to grad school?
 
 When I went to college I initially was going to study economics and political
-science. I thought that by learning how people used money and power I learn how
-to make a more just society. But I was never very good at thinking like a
-capitalist or a politician, so I needed to change my major. The first course I
-took in university was Ethics - and I was immediately hooked. From there on I
-studied philosophy full-time, as well as mathematics. I liked math well enough
-and took a course or two every semester, enough to earn me a BA in the subject,
-but it was never my passion. Once I graduated, I was married, and my wife at the
-time got pregnant with our only child. I needed a career, so I switched to
-focusing on computer science. I had been encouraged to develop games, another
-hobby I'd had since middle school, and I was decent enough at programming to
-find a few good jobs, working my way from data entry to front-end to full-stack
-development.
+science. I thought that by learning how people used money and power I could
+learn how to make a more just society -- but I was never very good at thinking
+like a capitalist or a politician, so I needed to change my major. The first
+course I took in university was Ethics - and I was immediately hooked. From
+there on I studied philosophy full-time, as well as mathematics. I liked math
+well enough and took a course or two every semester, enough to earn me a BA in
+the subject, but it was never my passion. On the other hand, I received many
+accolades for my work in philosophy, and figured that this was going to be my
+path. Once I graduated, I was married, and my wife at the time got pregnant with
+our only child. I needed a way to make money fast, so I switched to focusing on
+software. I had been encouraged to develop games, another hobby I'd had since
+middle school, and I was decent enough at programming to find a few good jobs,
+working my way from data entry to front-end to full-stack development. This
+lasted for a number of years, and I quickly became another well-paid engineer at
+a million-dollar startup, working with low-level code most programmers would
+rack their brains to figure out. But I wasn't happy.
 
-Don't get me wrong. I love software, and I love mathematics. But they do not
+Don't get me wrong, I love software and I love mathematics, but they do not
 answer any fundamental questions. I find myself compelled by the limits of
-knowledge and puzzle of fundamentals. A long-term fascination of mine is the
-crisis in the foundations of mathematics in the early 20th century, and the
-solutions that philosophers and mathematicians used to solve it. These are
-epistemological, metalogical, and metaphysical questions. But above all what
-inspires me is metaethics - the foundational reasons we can believe in a correct
-way of being - that we have values at all.
+knowledge, with what can and cannot be rationally expressed, and I longed to
+find the answers to questions which I had been chewing on for half a decade. A
+long-term fascination of mine is the crisis in the foundations of mathematics in
+the early 20th century, and the questions that philosophers and mathematicians
+have come up with in an attempt to answer it. These are epistemological,
+metalogical, and metaphysical questions, questions about what can be known, what
+can be expressed rationally, and about what things there are or possibly could
+be. But above all what inspires me is metaethics - the study of the foundational
+reasons we are compelled toward a correct way of being, and the puzzle of
+valuation as such.
 
-I never got to study these questions in depth the way I wanted to, and it
-literally drove me crazy. I have had several suicide attempts since leaving
-college, and have been diagnosed with severe mental health issues relating to
-trauma and the feeling of being generally misplaced. While studying philosophy
-won't fix me psychologically, balancing who I believe myself to be and what I do
-with my time cannot do any harm.
+(_This paragraph discusses sensitive topics related to mental health crises._) I
+never got to study these questions in depth the way I wanted to, and it -
+alongside many other tragic events in my life - literally drove me crazy. I have
+had several suicide attempts since leaving college, and have been diagnosed with
+severe mental health issues relating to trauma and the feeling of being
+generally misplaced. While studying philosophy won't fix me psychologically,
+balancing who I believe myself to be and what I do with my time cannot do any
+harm.
 
-Philosophy is a notoriously difficult subject to get a career in. If you can
-manage to get into a highly-ranked university and graduate _summa cum laude_
-you're still not guaranteed a tenure-track job. If you study aesthetics or
-continental philosophy, then good luck getting a job at all. Additionally,
-philosophy still lags behind other humanities disciplines in their efforts
-toward further inclusivity, and it is not known as a safe place for minorities.
-Thankfully, the situation is beginning to change, though it still has a long
-ways to go. Nonetheless I feel compelled to apply. But where to start?
+As for practical concerns: philosophy is a notoriously difficult subject to get
+a career in. If you can manage to get into a highly-ranked university and
+graduate _summa cum laude_ you're still not guaranteed a tenure-track job. If
+you study aesthetics or continental philosophy, then good luck getting a job at
+all. Additionally, philosophy still lags behind other humanities disciplines in
+their efforts toward further inclusivity, and it is not known as a safe place
+for minorities. Thankfully, the situation is beginning to change, though it
+still has a long ways to go. Nonetheless, I feel compelled to apply, and I have
+a fruitful career in technology to return to if things fall by the wayside. So
+the decision is made: but where to start?
 
 ## philosophical gourmet data
 
-I began by scraping data from the
+If I'm going to go into a risky field, I'm going to do everything I can to
+ensure that I'm going to get everything out of it. I began by scraping data from
+the
 [philosophical gourmet](https://www.philosophicalgourmet.com/summary-of-specialty-rankings/)
 using the table available under the header
 ["summary of specialty rankings."](https://www.philosophicalgourmet.com/summary-of-specialty-rankings/)
@@ -102,11 +119,10 @@ information on my nefarious scheme to get people to help me. If you are one of
 the people I've emailed, thank you for being here :) And no, you're not getting
 phished, I promise.
 
+---
+
 P.S. I am currently working on an updated version of this site which allows me
 to use LaTeX in addition to Markdown to format posts. This has been my primary
 workhorse for writing lately. As I've been focused on grad school applications
 and raising my daughter I've been a bit too busy to finish it up just yet, but
 it's nearly there.
-
-EDIT 12-10-24: I've updated the website, so the dataset should now be embedded.
-I also added an introductory section and touched up the rest.
