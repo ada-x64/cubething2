@@ -26,31 +26,44 @@ our only child. I needed a way to make money fast, so I switched to focusing on
 software. I had been encouraged to develop games, another hobby I'd had since
 middle school, and I was decent enough at programming to find a few good jobs,
 working my way from data entry to front-end to full-stack development. This
-lasted for a number of years, and I quickly became another well-paid engineer at
-a million-dollar startup, working with low-level code most programmers would
-rack their brains to figure out. But I wasn't happy.
+lasted for a number of years, and I quickly became a well-paid engineer, working
+with low-level code in a language developers clamor for, writing code most
+programmers would rack their brains to figure out. But I wasn't happy.
 
-Don't get me wrong, I love software and I love mathematics, but they do not
-answer any fundamental questions. I find myself compelled by the limits of
-knowledge, with what can and cannot be rationally expressed, and I longed to
-find the answers to questions which I had been chewing on for half a decade. A
-long-term fascination of mine is the crisis in the foundations of mathematics in
-the early 20th century, and the questions that philosophers and mathematicians
-have come up with in an attempt to answer it. These are epistemological,
-metalogical, and metaphysical questions, questions about what can be known, what
-can be expressed rationally, and about what things there are or possibly could
-be. But above all what inspires me is metaethics - the study of the foundational
-reasons we are compelled toward a correct way of being, and the puzzle of
-valuation as such.
+Don't get me wrong, I love software and I love mathematics, but they do not, on
+their own, _mean_ anything. What meaning is there behind a mathematical
+expression, or a piece of code, extracted from its socio-historical context?
+And, for the software I am writing, who is using it, and to what end? Am I truly
+doing something worthwhile with my life by creating inauthentically, paid well
+to interpret the asinine demands of a corporate entity whose end-goal is only to
+accumulate capital? Creating software for entertainment conglomerates is a far
+cry from creating art authentically. I am not trying to disparage the people I
+worked with or the goals of the companies I was at, after all we are all trying
+to make a living. Many of the people I know from my career are intelligent,
+critical thinkers working within the system against the system. As for me, try
+as I might, I couldn't convince myself that what I was doing was worthwhile.
+This incoherence was killing me.[^1]
 
-(_This paragraph discusses sensitive topics related to mental health crises._) I
-never got to study these questions in depth the way I wanted to, and it -
-alongside many other tragic events in my life - literally drove me crazy. I have
-had several suicide attempts since leaving college, and have been diagnosed with
-severe mental health issues relating to trauma and the feeling of being
-generally misplaced. While studying philosophy won't fix me psychologically,
-balancing who I believe myself to be and what I do with my time cannot do any
-harm.
+[^1]:
+    (_This paragraph discusses sensitive topics related to mental health
+    crises._) I never got to study these questions in depth the way I wanted to,
+    and it - alongside many other tragic events in my life - literally drove me
+    crazy. I have had several suicide attempts since leaving college, and have
+    been diagnosed with severe mental health issues relating to trauma and the
+    feeling of being generally misplaced. While studying philosophy won't fix me
+    psychologically, balancing who I believe myself to be and what I do with my
+    time cannot do any harm.
+
+I find myself compelled by the limits of knowledge, with what can and cannot be
+rationally expressed, and I longed to find the answers to questions which I had
+been chewing on for half a decade. A long-term fascination of mine is the crisis
+in the foundations of mathematics in the early 20th century, and the questions
+that philosophers and mathematicians have come up with in an attempt to answer
+it. These are epistemological, metalogical, and metaphysical questions,
+questions about what can be known, what can be expressed rationally, and about
+what things there are or possibly could be. But above all what inspires me is
+metaethics - the study of the foundational reasons we are compelled toward a
+correct way of being, and the puzzle of valuation as such.
 
 As for practical concerns: philosophy is a notoriously difficult subject to get
 a career in. If you can manage to get into a highly-ranked university and
