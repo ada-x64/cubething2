@@ -14,7 +14,6 @@ export const index = (content: string = "") => `
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.15/dist/katex.min.css" integrity="sha384-Htz9HMhiwV8GuQ28Xr9pEs1B4qJiYu/nYLLwlDklR53QibDfmQzi7rYxXhMH/5/u" crossorigin="anonymous">
     <link rel="preload" href="/static/font/Chillax-Regular.otf" as="font" type="font/otf" crossorigin/>
     <link rel="preload" href="/static/font/Synonym-Regular.otf" as="font" type="font/otf" crossorigin/>
-    <link rel="preload" href="/static/font/Fira-Code-Regular-Nerd-Font-Complete-Mono.ttf" as="font" type="font/ttf" crossorigin/>
   </head>
 
   <body>
