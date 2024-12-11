@@ -1,6 +1,6 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
-import { LocalAction, TwClass } from "../styles";
+import { LocalAction, Palette, TwClass } from "../styles";
 import { ItemContainerStyle, ItemStyle } from "../styles";
 import DarkModeToggle from "./DarkModeToggle";
 import { MainNavItems } from "../nav/MainNavItems";
@@ -69,15 +69,13 @@ const WrapperStyle = TwClass([
 const NavStyle = TwClass([
   "flex",
   "flex-col",
-  `bg-amber-100`,
-  `dark:bg-zinc-900`,
   "w-80",
   "min-h-1/2",
   "top-1/4",
   "border-2",
-  `border-amber-900`,
-  `dark:border-zinc-700`,
   "rounded-md",
+  Palette.borderColor,
+  Palette.bg,
 ]);
 
 export default function MobileNav() {

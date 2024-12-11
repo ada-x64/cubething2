@@ -24,7 +24,7 @@ export const Palette = {
   accentText: "text-amber-600 dark:text-amber-500",
   accentTextHover: "hover:text-amber-600 hover:dark:text-amber-500",
   accentTextFocus: "focus:text-amber-600 focus:dark:text-amber-500",
-  bg: "bg-amber-10 dark:bg-zinc-900",
+  bg: "bg-amber-50 dark:bg-zinc-900",
   borderColor: "border-amber-950 dark:border-zinc-500",
 };
 
