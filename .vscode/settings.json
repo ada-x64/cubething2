@@ -23,5 +23,11 @@
       "name": "xelatex -> biber -> xelatex*2",
       "tools": ["xelatex", "biber", "xelatex", "xelatex"]
     }
+  ],
+  "latex-workshop.latex.bibDirs": [
+    ".//:%WORKSPACE_FOLDER%/src/static/config//::"
+  ],
+  "latex-workshop.latex.texDirs": [
+    ".//:%WORKSPACE_FOLDER%/src/static/config//::"
   ]
 }
