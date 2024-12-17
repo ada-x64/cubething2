@@ -31,13 +31,9 @@ const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
     } else if (event === "unlinkDir") {
       await sayAndDo(`rm -r ${wwwpath}`);
     } else {
-      const inpath = newpath ?? oldpath;
-      const isdir = lstatSync(inpath, { throwIfNoEntry: false })?.isDirectory();
-      if (isdir) {
-        await sayAndDo(`mkdir -p ${wwwpath}`);
-      } else {
-        await sayAndDo(`cp ${newpath ?? oldpath} ${wwwpath}`);
-      }
+      sayAndDo(
+        "rsync -av src/static/ www/ --exclude articles --exclude about --exclude styles",
+      );
     }
   }
   refresh();

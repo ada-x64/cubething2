@@ -1,0 +1,4231 @@
+{
+  "Arizona State University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 3,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Australian National University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1,
+      "Philosophy of Social Sciences": 2,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 3,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 3,
+      "Metaethics": 4,
+      "Moral Psychology": 3,
+      "Applied Ethics": 3,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 2,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Boston University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 3,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 4,
+      "19th Century Continental": 1,
+      "20th Century Continental": 2,
+      "History of Analytic": 1,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Brown University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 3,
+      "Metaethics": 2,
+      "Moral Psychology": 2,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 2,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 5,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 2,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Cambridge University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 2,
+      "Philosophy of Physics": 4,
+      "Philosophy of Biology": 1,
+      "Philosophy of Social Sciences": 2,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 3,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 2,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 2,
+      "Medieval Philosophy": 1,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 3,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Carnegie Mellon University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1,
+      "Philosophy of Mathematics": 2,
+      "Mathematical Logic": 2
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "City University of New York Graduate Center": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 3,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 3,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 3,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 3
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1,
+      "Chinese Philosophy": 4,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1
+    }
+  },
+  "Columbia University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 3,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 4,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 2,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 4,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 3,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 2,
+      "Philosophy of Race": 2
+    }
+  },
+  "Cornell University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 2,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 3,
+      "Metaethics": 4,
+      "Moral Psychology": 1,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 2,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 2,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 3,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Duke University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 2,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 2,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "Florida State University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 3,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Georgetown University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 4
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 2,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 3,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 2,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 4,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 2,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "Harvard University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 3,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 1,
+      "Mathematical Logic": 1
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 3,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 2,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 2
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 2,
+      "Early Modern: 18th Century": 3,
+      "Kant": 1000,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1
+    }
+  },
+  "Indiana University, Bloomington": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 3,
+      "Philosophy of Religion": 4
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Johns Hopkins University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 2,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 3,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 2,
+      "Applied Ethics": 3,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 3,
+      "Early Modern: 18th Century": 3,
+      "Kant": 2,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "King’s College, London": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 4,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 4,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 4,
+      "Medieval Philosophy": 2,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 4,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "London School of Economics": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 2,
+      "Philosophy of Physics": 3,
+      "Philosophy of Biology": 3,
+      "Philosophy of Social Sciences": 1,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 2,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 3,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "Massachusetts Institute of Technology": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 2,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 3,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 5,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 3,
+      "Moral Psychology": 2,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1
+    }
+  },
+  "McGill University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 3,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 3
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 4,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 4,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Monash University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 3
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "National University of Singapore": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 4,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 3,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 2,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "New York University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1,
+      "Philosophy of Mind": 1,
+      "Metaphysics": 1,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 1,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 2,
+      "Philosophy of Physics": 3,
+      "Philosophy of Biology": 3,
+      "Philosophy of Social Sciences": 2,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 2,
+      "Mathematical Logic": 4
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 2,
+      "Moral Psychology": 2,
+      "Applied Ethics": 2,
+      "Political Philosophy": 1,
+      "Philosophy of Law": 1,
+      "Philosophy of Art": 1
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 3,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 2,
+      "Early Modern: 18th Century": 1,
+      "Kant": 4,
+      "19th Century Continental": 1,
+      "20th Century Continental": 3,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1
+    }
+  },
+  "Northwestern University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 2
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 3,
+      "19th Century Continental": 2,
+      "20th Century Continental": 2,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "Ohio State University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 2,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 3,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 3,
+      "Kant": 4,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 3
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Oxford University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 2,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 2,
+      "Epistemology (incl. formal epistemology)": 1,
+      "Philosophical Logic": 1,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 3
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 2,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 2,
+      "Mathematical Logic": 3
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1,
+      "Metaethics": 2,
+      "Moral Psychology": 2,
+      "Applied Ethics": 1,
+      "Political Philosophy": 1,
+      "Philosophy of Law": 2,
+      "Philosophy of Art": 3
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1,
+      "Medieval Philosophy": 2,
+      "Early Modern: 17th Century": 3,
+      "Early Modern: 18th Century": 2,
+      "Kant": 4,
+      "19th Century Continental": 2,
+      "20th Century Continental": 1,
+      "History of Analytic": 1,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Princeton University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 2,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 2,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 3,
+      "Philosophy of Religion": 2
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 3,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 3,
+      "Philosophy of Mathematics": 2,
+      "Mathematical Logic": 4
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 2,
+      "Moral Psychology": 2,
+      "Applied Ethics": 4,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 2,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1,
+      "Early Modern: 18th Century": 3,
+      "Kant": 1,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Purdue University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 2
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 2,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 4,
+      "Kant": 4,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Queen’s University, Kingston": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 4,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "Rice University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 3,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Rutgers University, New Brunswick": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1,
+      "Philosophy of Mind": 2,
+      "Metaphysics": 1,
+      "Epistemology (incl. formal epistemology)": 1,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 3,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 3,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 2,
+      "Philosophy of Law": 3,
+      "Philosophy of Art": 3
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 2,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "Saint Louis University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 2
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Stanford University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 3,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 1,
+      "Philosophy of Action": 3,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 4,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 4
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 3,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 3
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 3,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 3,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Syracuse University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University at Buffalo": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University College London": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 3,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 3,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 3,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 3,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 5,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 2,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Alberta": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 2,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Arizona": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 2,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 4,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Auckland": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Birmingham": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Bristol": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 3,
+      "Philosophy of Biology": 2,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 3,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of British Columbia": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 2,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 2,
+      "Indian Philosophy": 2,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Calgary": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 2,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 3,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 3
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of California, Berkeley": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 2,
+      "Philosophy of Mind": 2,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 4,
+      "Philosophy of Mathematics": 2,
+      "Mathematical Logic": 4
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 3,
+      "Moral Psychology": 2,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 3
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 4,
+      "Kant": 2,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 4,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of California, Davis": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "University of California, Irvine": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1,
+      "Philosophy of Physics": 1,
+      "Philosophy of Biology": 1,
+      "Philosophy of Social Sciences": 1,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 2,
+      "Philosophy of Mathematics": 2,
+      "Mathematical Logic": 4
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of California, Los Angeles": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 2,
+      "Philosophy of Mind": 2,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 3,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 3,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 3,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1,
+      "Metaethics": 3,
+      "Moral Psychology": 1,
+      "Applied Ethics": 4,
+      "Political Philosophy": 2,
+      "Philosophy of Law": 1,
+      "Philosophy of Art": 2
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 5,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 4,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "University of California, Riverside": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 3,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "Hisotry of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 3,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "University of California, San Diego": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 2,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 2,
+      "Philosophy of Physics": 2,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 3,
+      "Metaethics": 4,
+      "Moral Psychology": 2,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 4,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 3,
+      "Kant": 1,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "University of California, Santa Barbara": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 5,
+      "Philosophy of Biology": 3,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of California, Santa Cruz": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Chicago": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 4,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 3,
+      "Metaethics": 4,
+      "Moral Psychology": 1,
+      "Applied Ethics": 4,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 2,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 3,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 4,
+      "19th Century Continental": 1,
+      "20th Century Continental": 3,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Colorado, Boulder": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 3,
+      "Metaethics": 4,
+      "Moral Psychology": 3,
+      "Applied Ethics": 2,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 5,
+      "Medieval Philosophy": 1,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Connecticut, Storrs": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 3,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "University of Durham": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 5,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Edinburgh": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 3,
+      "Metaethics": 3,
+      "Moral Psychology": 3,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 2
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 3,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "University of Glasgow": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Illinois, Chicago": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 4,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 3
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 3,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Illinois, Urbana-Champaign": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 3,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "University of Leeds": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 3,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 5,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 2
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Manchester": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Maryland, College Park": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 3,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Massachusetts, Amherst": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Melbourne": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 3,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Miami": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 2
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Michigan, Ann Arbor": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 2,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 3,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 2,
+      "Philosophy of Physics": 1,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 2,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 2,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 4,
+      "Moral Psychology": 2,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1,
+      "Philosophy of Law": 2,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 4,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 2,
+      "Early Modern: 18th Century": 3,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1
+    }
+  },
+  "University of Minnesota, Minneapolis-St. Paul": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 2,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 3,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 4,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of North Carolina, Chapel Hill": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 5,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 3,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 3,
+      "Moral Psychology": 3,
+      "Applied Ethics": 3,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 5,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 4,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Notre Dame": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 3,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 4,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 2,
+      "Mathematical Logic": 3
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 3
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 4,
+      "19th Century Continental": 3,
+      "20th Century Continental": 3,
+      "History of Analytic": 2,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Nottingham": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Pennsylvania": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 2,
+      "Philosophy of Social Sciences": 1,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 4,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 3,
+      "Applied Ethics": 3,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 3,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "University of Pittsburgh": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 3,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1,
+      "Philosophy of Physics": 1,
+      "Philosophy of Biology": 1,
+      "Philosophy of Social Sciences": 3,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 3,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 3,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 3,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1,
+      "American Pragmatism": 3
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Reading": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Rochester": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Sheffield": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Southern California": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 2,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 1,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 4,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 1,
+      "Moral Psychology": 2,
+      "Applied Ethics": 4,
+      "Political Philosophy": 2,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of St. Andrews/Stirling Joint Program": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 4,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 1,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 4
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 3,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 3,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Sydney": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 4,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 3
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Texas, Austin": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 2,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 2,
+      "Philosophy of Action": 3,
+      "Philosophy of Religion": 4
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 3,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 5,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 4,
+      "Moral Psychology": 3,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 3
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 4,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 4,
+      "Kant": 3,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 3,
+      "Indian Philosophy": 2,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Toronto": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 3,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 4,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 5,
+      "Philosophy of Biology": 3,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 4,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 3,
+      "Moral Psychology": 3,
+      "Applied Ethics": 3,
+      "Political Philosophy": 2,
+      "Philosophy of Law": 2,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 2,
+      "Medieval Philosophy": 1,
+      "Early Modern: 17th Century": 3,
+      "Early Modern: 18th Century": 2,
+      "Kant": 2,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1000,
+      "History of Analytic": 2,
+      "American Pragmatism": 1
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Utah": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 2,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1,
+      "Indian Philosophy": 1,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Virginia": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 3,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 4,
+      "Early Modern: 18th Century": 3,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Warwick": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 4,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 5
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 4,
+      "Philosophy of Art": 1
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 4,
+      "19th Century Continental": 2,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Western Ontario": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 3,
+      "Philosophy of Physics": 2,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 3,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 3,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 4,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of Wisconsin, Madison": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 3,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 3,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 4,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 3,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 5,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 3,
+      "Early Modern: 18th Century": 4,
+      "Kant": 4,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "University of York": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 4,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 3,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Vanderbilt University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 3,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Victoria University, Wellington": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 1000,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1000,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 1000,
+      "Metaethics": 4,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 1000,
+      "Political Philosophy": 1000,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 4
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Washington University, St. Louis": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 5,
+      "Epistemology (incl. formal epistemology)": 3,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 4,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 1000,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 4,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 2,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  },
+  "Yale University": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 2,
+      "Philosophy of Mind": 3,
+      "Metaphysics": 4,
+      "Epistemology (incl. formal epistemology)": 2,
+      "Philosophical Logic": 4,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 4
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 3,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 1,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 2,
+      "Metaethics": 4,
+      "Moral Psychology": 1,
+      "Applied Ethics": 4,
+      "Political Philosophy": 3,
+      "Philosophy of Law": 2,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 3,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1,
+      "Early Modern: 18th Century": 3,
+      "Kant": 4,
+      "19th Century Continental": 1,
+      "20th Century Continental": 3,
+      "History of Analytic": 1000,
+      "American Pragmatism": 1000
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 2
+    }
+  },
+  "York University, Toronto": {
+    "Metaphysics & Epistemology": {
+      "Philosophy of Language": 1000,
+      "Philosophy of Mind": 4,
+      "Metaphysics": 1000,
+      "Epistemology (incl. formal epistemology)": 1000,
+      "Philosophical Logic": 1000,
+      "Philosophy of Action": 1000,
+      "Philosophy of Religion": 1000
+    },
+    "Philosophy of the Sciences and Mathematics": {
+      "General Philosophy of Science": 1000,
+      "Philosophy of Physics": 1000,
+      "Philosophy of Biology": 1000,
+      "Philosophy of Social Sciences": 1000,
+      "Philosophy of the Psychological, Cognitive, & Brain Sciences": 2,
+      "Decision, Rational Choice, & Game Theory": 1000,
+      "Philosophy of Mathematics": 1000,
+      "Mathematical Logic": 1000
+    },
+    "Theory of Value": {
+      "Normative Ethics": 4,
+      "Metaethics": 1000,
+      "Moral Psychology": 1000,
+      "Applied Ethics": 4,
+      "Political Philosophy": 4,
+      "Philosophy of Law": 4,
+      "Philosophy of Art": 1000
+    },
+    "History of Philosophy": {
+      "Ancient Greek and Roman Philosophy": 1000,
+      "Medieval Philosophy": 1000,
+      "Early Modern: 17th Century": 1000,
+      "Early Modern: 18th Century": 1000,
+      "Kant": 1000,
+      "19th Century Continental": 1000,
+      "20th Century Continental": 1000,
+      "History of Analytic": 1000,
+      "American Pragmatism": 2
+    },
+    "Other Areas": {
+      "Feminist Philosophy": 1000,
+      "Chinese Philosophy": 1000,
+      "Indian Philosophy": 1000,
+      "Philosophy of Race": 1000
+    }
+  }
+}

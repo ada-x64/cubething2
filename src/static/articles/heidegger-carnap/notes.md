@@ -790,3 +790,25 @@ Theory becomes the enemy of proletariat revolution precisely when it takes this
 form: when it ceases to be practical. Theory should predate praxis, and should
 learn from its history. We are still stuck in the time of Marx - but history
 proves him wrong.
+
+## (x) against the decisionism critique
+
+Heidegger's practical philosophy hinges on the notion of identity - who am I, as
+Dasein? What is my identity in relation to others, and how can I best achieve my
+role as that identity? The later Heidegger characterizes this as a matter of
+aspiring to Godhood, that is, as an approach towards an unreachable ideal of
+personhood as exemplified by some prototypical person. In antiquity this godhead
+was literal, a mythical figure, but in modernity we replace these figures with
+figures of real-life heroes.
+
+Practical matters relating to identity, in ordinary practical judgement, fall
+back to norms associated with individual identity archetypes. For example, the
+teacher-identity provides norms for being a teacher. However, when
+incommensurable identity norms conflict, it is up to deep deliberation to guide
+us. There are two ways this can pan out. To the voluntarist we are required to
+take a leap of faith; no amount of deliberation can provide us a reason for
+choosing one identity over another. However, this position is largely considered
+untenable. If it is a matter of sheer willpower, and this willpower is
+considered external, i.e. outside of the realm of deliberation, then it is in an
+important respect "not up to me." In order for our decisions to truly be ours,
+they must be deliberative.

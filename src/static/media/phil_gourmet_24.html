@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script type="module">
+      const toHtml = (arr) => {
+        return arr.map((item) => `<option>${item}</option>`).join("\n");
+      };
+      const res = await fetch("./phil_gourmet_24.json");
+      const data = await res.json();
+      const institutions = Object.keys(data);
+      const areasHtml = Object.entries(data[institutions[0]]).map(
+        ([category, area]) => {
+          const opts = toHtml(Object.keys(area));
+          return `<optgroup label="${category}">${opts}</optgroup>`;
+        },
+      );
+      document.querySelector("#Institution").innerHTML = toHtml(institutions);
+      document.querySelector("#Area").innerHTML = areasHtml;
+    </script>
+  </head>
+  <body>
+    <div>
+      <label for="Institution">Institution</label>
+      <select
+        id="Institution"
+        multiple
+      ></select>
+    </div>
+    <div>
+      <label for="Area">Area</label>
+      <select
+        id="Area"
+        multiple
+      ></select>
+    </div>
+  </body>
+</html>
