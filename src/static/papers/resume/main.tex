@@ -20,7 +20,9 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[10pt]{
+	res
+} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
@@ -32,198 +34,229 @@
 \newsectionwidth{0pt} % Stops section indenting
 
 \begin{document}
-%----------------------------------------------------------------------------------------
-%	YOUR NAME AND ADDRESS(ES) SECTION
-%----------------------------------------------------------------------------------------
+	%----------------------------------------------------------------------------------------
+	%	YOUR NAME AND ADDRESS(ES) SECTION
+	%----------------------------------------------------------------------------------------
 
-\name{Phoenix Ada Rose Mandala\\ \hfill\textit{they/them}\hfill\\} % Your name at the top
+	\name{Phoenix Ada Rose Mandala\\ \hfill\textit{they/them}\hfill\\} % Your name at the top
 
-% If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
+	% If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
 
-\address{
-	{\bf Contact} \\
-	\href{https://linkedin.com/in/ada-mandala}{\faIcon{linkedin} LinkedIn} \\
+	\address{ {\bf Contact} \\ \href{https://linkedin.com/in/ada-mandala}{\faIcon{linkedin} LinkedIn} \\
 	%\href{https://cubething.dev/about}{\faIcon{globe} Personal Site} \\
-	\href{https://github.com/ada-x64}{\faIcon{github} Github} \\
-	\href{mailto:phoenix.mandala@pm.me}{\faIcon{envelope} phoenix.mandala@pm.me}
-} % Your address 1
-\address{
-	{\bf Address} \\
-	5800 Rock Chalk Drive, 15-104\\
-	Lawrence, KS 66049\\
-	\faIcon{phone} (785) 424-0182 \\
-}
-
-%----------------------------------------------------------------------------------------
-
-\begin{resume}
-	\setlength\topsep{0pt}
-	\setlength\parskip{0pt}
+	\href{https://github.com/ada-x64}{\faIcon{github} Github} \\ \href{mailto:phoenix.mandala@pm.me}{\faIcon{envelope} phoenix.mandala@pm.me} } % Your address 1
+	\address{ {\bf Address} \\ 5800 Rock Chalk Drive, 15-104\\ Lawrence, KS 66049\\ \faIcon{phone} (785) 424-0182 \\ }
 
 	%----------------------------------------------------------------------------------------
-	%	OBJECTIVE SECTION
-	%----------------------------------------------------------------------------------------
 
-	\section{\centerline{PROFESSIONAL SUMMARY}}
+	\begin{resume}
+		\setlength{\topsep}{0pt}
+		\setlength{\parskip}{0pt}
 
-	\vspace{8pt} % Gap between title and text
+		%----------------------------------------------------------------------------------------
+		%	OBJECTIVE SECTION
+		%----------------------------------------------------------------------------------------
 
-	\textbf{Experienced Full-Stack Developer} with a strong background in transforming static designs into dynamic user experiences.
-	My track record includes enhancing streaming services for Fortune 500 companies, developing game engines, and collaborating on a complex data visualization application.
-	Passionate about \textbf{Rust, TypeScript, WASM, and UNIX}, with expertise in creating forward-thinking solutions across diverse technology stacks.
-	Always looking to learn something new.
+		\section{\centerline{PROFESSIONAL SUMMARY}}
 
-	$$\circ$$
+		\vspace{8pt} % Gap between title and text
 
-	%----------------------------------------------------------------------------------------
-	%	PROFESSIONAL EXPERIENCE SECTION
-	%----------------------------------------------------------------------------------------
+		\textbf{Experienced Full-Stack Developer} with a strong background in transforming
+		static designs into dynamic user experiences. My track record includes
+		enhancing streaming services for Fortune 500 companies, developing game engines,
+		and collaborating on a complex data visualization application. Passionate about
+		\textbf{Rust, TypeScript, WASM, and UNIX}, with expertise in creating forward-thinking
+		solutions across diverse technology stacks. Always looking to learn
+		something new.
 
+		\[
+			\circ
+		\]
 
-	\section{\centerline{PROFESSIONAL EXPERIENCE}}
+		%----------------------------------------------------------------------------------------
+		%	PROFESSIONAL EXPERIENCE SECTION
+		%----------------------------------------------------------------------------------------
 
-	\vspace{8pt} % Gap between title and text
+		\section{\centerline{PROFESSIONAL EXPERIENCE}}
 
-	{\sl Prospective} \hfill June 2023 -- June 2024 \\
-	Rust, WASM, Typescript, CI/CD, Python
-	\begin{itemize}
-		\itemsep -2pt
-		\item Designed and developed the Prospective data visualization dashboard using the Perspective library, integrating with AWS, Azure, Google Cloud, and DigitalOcean.
-		\item Created the plugin API and enhanced visual features; collaborated on JupyterLab extension, C++ data engine rewrite, and integrations with Kafka and Kerberos.
-	\end{itemize}
+		\vspace{8pt} % Gap between title and text
 
-	\vspace{4pt}
-	{\sl Valorem Reply} \hfill June 2022 -- May 2023 \\
-	Rust, WASM, Python, Embedded Development
-	\begin{itemize}
-		\itemsep -2pt % Reduce space between items
-			\item Contracted with Valorem Reply to bring ESPN+ to PlayStation 5 using a custom Rust framework.
-			\item Developed infrastructure, implemented concurrent algorithms, and simplified analytics with a custom macro library; credited with \say{saving the project.}
-	\end{itemize}
+		{\sl Prospective} \hfill June 2023 -- June 2024 \\ Rust, WASM, Typescript, CI/CD,
+		Python
+		\begin{itemize}
+			\itemsep -2pt
 
-	\vspace{4pt}
-	{\sl Roll20} \hfill October 2019 - August 2021 \\
-	Javascript, SCSS, HTML5, NodeJS
-	\begin{itemize}
-		\itemsep -2pt % Reduce space between items
-		\item Developed front-end for user-driven IP BurnBryte, utilizing the Charactermancer feature and providing feedback to improve the API and developer experience.
-		\item Created a local development environment mimicking the Roll20 frontend, boosting team productivity.
-		\item Enhanced and extended the Starfinder character sheet code.
-	\end{itemize}
+			\item Designed and developed the Prospective data visualization dashboard using
+				the Perspective library, integrating with AWS, Azure, Google Cloud, and DigitalOcean.
 
-	\vspace{4pt}
-	{\sl Freelance} \hfill June 2018 - July 2022 \\
-	Javascript, PHP, C\#, Angular, React
-	\begin{itemize}
-		\itemsep -2pt % Reduce space between items
-		\item Designed, developed, and integrated full-stack solutions to meet client expectations.
-		\item Worked with clients on short-term contracts in various industries including game development, healthcare, and business applications.
-		\item Built green and brownfield projects on web, mobile, and desktop.
-	\end{itemize}
+			\item Created the plugin API and enhanced visual features; collaborated on
+				JupyterLab extension, C++ data engine rewrite, and integrations with
+				Kafka and Kerberos.
+		\end{itemize}
 
-	$$\circ$$
+		\vspace{4pt}
+		{\sl Valorem Reply} \hfill June 2022 -- May 2023 \\ Rust, WASM, Python, Embedded
+		Development
+		\begin{itemize}
+			\itemsep -2pt % Reduce space between items
 
+			\item Contracted with Valorem Reply to bring ESPN+ to PlayStation 5 using
+				a custom Rust framework.
 
-	%----------------------------------------------------------------------------------------
-	%	EDUCATION SECTION
-	%----------------------------------------------------------------------------------------
+			\item Developed infrastructure, implemented concurrent algorithms, and simplified
+				analytics with a custom macro library; credited with \say{saving the project.}
+		\end{itemize}
 
+		\vspace{4pt}
+		{\sl Roll20} \hfill October 2019 - August 2021 \\ Javascript, SCSS, HTML5, NodeJS
+		\begin{itemize}
+			\itemsep -2pt % Reduce space between items
 
-	\section{\centerline{EDUCATION}}
+			\item Developed front-end for user-driven IP BurnBryte, utilizing the
+				Charactermancer feature and providing feedback to improve the API and
+				developer experience.
 
-	\vspace{8pt} % Gap between title and text
+			\item Created a local development environment mimicking the Roll20 frontend,
+				boosting team productivity.
 
-	{\sl BA}, Philosophy and Mathematics \\ University of Kansas \hfill December
-	2014 \\ GPA 3.8
+			\item Enhanced and extended the Starfinder character sheet code.
+		\end{itemize}
 
-	$$\circ$$
+		\vspace{4pt}
+		{\sl Freelance} \hfill June 2018 - July 2022 \\ Javascript, PHP, C\#,
+		Angular, React
+		\begin{itemize}
+			\itemsep -2pt % Reduce space between items
 
-	%----------------------------------------------------------------------------------------
-	%	PROJECTS
-	%----------------------------------------------------------------------------------------
+			\item Designed, developed, and integrated full-stack solutions to meet client
+				expectations.
 
-	\section{\centerline{PERSONAL PROJECTS}}
-	\vspace{8pt}
-	{\sl Sundile - Game Engine} \hfill March 2022 - April 2023 \\
-	Rust, WASM, GPU
-	\begin{itemize}
-		\itemsep -2pt % Reduce space between items
-		\item Developed a Rust-based graphics engine with WGPU for local and browser rendering. Utilizes WASM.
-		\item Features include perspective cameras, .obj model rendering, and Blinn-Phong lighting.
-		\item Implemented a custom asset engine for dynamic asset loading; project built from scratch for learning purposes.
-	\end{itemize}
+			\item Worked with clients on short-term contracts in various industries including
+				game development, healthcare, and business applications.
 
-	\vspace{4pt}
-	{\sl cubething.dev - Personal Site} \hfill February 2023 - Present\\
-	Deno, Preact, Server Side Rendering, CI/CD, DigitalOcean
-	\begin{itemize}
-		\itemsep -2pt % Reduce space between items
-		\item Created a personal website utilizing Deno for the backend.
-		\item Utilizes Preact to server-side render markdown blog documents.
-		\item Continously deployed with Github Actions.
-	\end{itemize}
+			\item Built green and brownfield projects on web, mobile, and desktop.
+		\end{itemize}
 
-	$$\circ$$
+		\[
+			\circ
+		\]
 
+		%----------------------------------------------------------------------------------------
+		%	EDUCATION SECTION
+		%----------------------------------------------------------------------------------------
 
-	%----------------------------------------------------------------------------------------
-	%	SKILLS SECTION
-	%----------------------------------------------------------------------------------------
+		\section{\centerline{EDUCATION}}
 
+		\vspace{8pt} % Gap between title and text
 
-	\section{\centerline{SKILLS}}
+		{\sl BA}, Philosophy and Mathematics \\ University of Kansas \hfill December
+		2014 \\ GPA 3.8
 
-	\vspace{8pt} % Gap between title and text
+		\[
+			\circ
+		\]
 
-	{\sl Programming and Templating Languages}
-	\begin{itemize}
-		\itemsep -2pt
-		\item[] \textbf{Rust, Typescript, Javascript} (ECMAScript, Node, Bun, Deno), HTML5, CSS, SCSS, C, C++, C\#, PHP, LaTeX, CoQ, Lean, Markdown
-	\end{itemize}
+		%----------------------------------------------------------------------------------------
+		%	PROJECTS
+		%----------------------------------------------------------------------------------------
 
-	\vspace{4pt}
-	{\sl APIs and Stacks}
-	\begin{itemize}
-		\item[] \textbf{REST, MERN}, LAMP, Ruby on Rails, Flask, ASP.NET, Blazor
-	\end{itemize}
+		\section{\centerline{PERSONAL PROJECTS}}
+		\vspace{8pt}
+		{\sl Sundile - Game Engine} \hfill March 2022 - April 2023 \\ Rust, WASM, GPU
+		\begin{itemize}
+			\itemsep -2pt % Reduce space between items
 
-	\vspace{4pt}
-	{\sl Front-End / Client-Side }
-	\begin{itemize}
-		\item[] 	\textbf{WASM (Rust/C++), React, Browser APIs}, Preact, Yew, Lit, Backbone, Underscore, Web Components, LiveKit, Svelte
-	\end{itemize}
+			\item Developed a Rust-based graphics engine with WGPU for local and browser
+				rendering. Utilizes WASM.
 
-	\vspace{4pt}
-	{\sl Back-End / Server Side}
-	\begin{itemize}
-		\item[] \textbf{Fastify, Express.js, PostgreSQL, Nginx, Server-Side Rendering}, MySQL, Tower HTTP, SQLx, Axum
-	\end{itemize}
+			\item Features include perspective cameras, .obj model rendering, and
+				Blinn-Phong lighting.
 
-	\vspace{4pt}
-	{\sl Dev Tooling}
-	\begin{itemize}
-		\item[] 	\textbf{prettier, eslint, esbuild, git}, webpack, wasm-pack
-	\end{itemize}
+			\item Implemented a custom asset engine for dynamic asset loading; project
+				built from scratch for learning purposes.
+		\end{itemize}
 
-	\vspace{4pt}
-	{\sl System Administration, Build Engineering, CI/CD}
-	\begin{itemize}
-		\item[] 	\textbf{Github Actions, Docker, NodeJS, Bun, zsh, bash, pwsh}, UNIX, Linux, MacOS, WSL2, Deno, pandoc, ripgrep, bat, sed, awk, Kafka
-	\end{itemize}
+		\vspace{4pt}
+		{\sl cubething.dev - Personal Site} \hfill February 2023 - Present\\ Deno,
+		Preact, Server Side Rendering, CI/CD, DigitalOcean
+		\begin{itemize}
+			\itemsep -2pt % Reduce space between items
 
-	\vspace{4pt}
-	{\sl Cloud Technologies}
-	\begin{itemize}
-		\item[] 	\textbf{Digital Ocean, PaaS, Serverless}, Microsoft Azure, AWS, Google Cloud
-	\end{itemize}
+			\item Created a personal website utilizing Deno for the backend.
 
-	\vspace{4pt}
-	{\sl GPU}
-	\begin{itemize}
-		\item[] 	\textbf{WebGPU, OpenGL, GLSL, HLSL}, Vulkan, three.js
-	\end{itemize}
+			\item Utilizes Preact to server-side render markdown blog documents.
 
-	$$\bullet$$
+			\item Continously deployed with Github Actions.
+		\end{itemize}
 
-\end{resume}
+		\[
+			\circ
+		\]
+
+		%----------------------------------------------------------------------------------------
+		%	SKILLS SECTION
+		%----------------------------------------------------------------------------------------
+
+		\section{\centerline{SKILLS}}
+
+		\vspace{8pt} % Gap between title and text
+
+		{\sl Programming and Templating Languages}
+		\begin{itemize}
+			\itemsep -2pt
+
+			\item[] \textbf{Rust, Typescript, Javascript} (ECMAScript, Node, Bun, Deno),
+				HTML5, CSS, SCSS, C, C++, C\#, PHP, LaTeX, CoQ, Lean, Markdown
+		\end{itemize}
+
+		\vspace{4pt}
+		{\sl APIs and Stacks}
+		\begin{itemize}
+			\item[] \textbf{REST, MERN}, LAMP, Ruby on Rails, Flask, ASP.NET, Blazor
+		\end{itemize}
+
+		\vspace{4pt}
+		{\sl Front-End / Client-Side }
+		\begin{itemize}
+			\item[] \textbf{WASM (Rust/C++), React, Browser APIs}, Preact, Yew, Lit,
+				Backbone, Underscore, Web Components, LiveKit, Svelte
+		\end{itemize}
+
+		\vspace{4pt}
+		{\sl Back-End / Server Side}
+		\begin{itemize}
+			\item[] \textbf{Fastify, Express.js, PostgreSQL, Nginx, Server-Side
+				Rendering}, MySQL, Tower HTTP, SQLx, Axum
+		\end{itemize}
+
+		\vspace{4pt}
+		{\sl Dev Tooling}
+		\begin{itemize}
+			\item[] \textbf{prettier, eslint, esbuild, git}, webpack, wasm-pack
+		\end{itemize}
+
+		\vspace{4pt}
+		{\sl System Administration, Build Engineering, CI/CD}
+		\begin{itemize}
+			\item[] \textbf{Github Actions, Docker, NodeJS, Bun, zsh, bash, pwsh}, UNIX,
+				Linux, MacOS, WSL2, Deno, pandoc, ripgrep, bat, sed, awk, Kafka
+		\end{itemize}
+
+		\vspace{4pt}
+		{\sl Cloud Technologies}
+		\begin{itemize}
+			\item[] \textbf{Digital Ocean, PaaS, Serverless}, Microsoft Azure, AWS, Google
+				Cloud
+		\end{itemize}
+
+		\vspace{4pt}
+		{\sl GPU}
+		\begin{itemize}
+			\item[] \textbf{WebGPU, OpenGL, GLSL, HLSL}, Vulkan, three.js
+		\end{itemize}
+
+		\[
+			\bullet
+		\]
+	\end{resume}
 \end{document}
