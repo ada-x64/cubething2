@@ -19,6 +19,7 @@
 }
 
 \newcommand{\temporaleval}[2]{ I_{\mathcal{M}#1}(#2) }
+\newcommand{\note}{}
 
 \newenvironment{subproof}[1][\proofname]{%
 \renewcommand{\qedsymbol}{$\blacksquare$}%
@@ -133,126 +134,125 @@ Explorations} }
 	\end{lemmalist}%
 	%
 	As James puts it, experiences do not \enquote{dangle about freely,} they are
-	always attached to a subject \comment{\autocite{james1983}}{TODO: Page numbers}.
+	always attached to a subject \autocite{james1983}.
 
-	Let $W_{s}\coloneq \{ o \mid Xso \}$ be the subject's \emph{object-world}.
-	This set arises naturally from the definition of an experience: it is simply the
-	set of all the objects which $s$ experiences. Note that this does not place
-	any restrictions on the quantity of objects and subjects in a given universe. The
+	Let $W_{s}\coloneq \{ o \mid Xso \}$ be the subject's \emph{object-world}. This
+	set arises naturally from the definition of an experience: it is simply the
+	set of all the objects which $s$ experiences. Note that this does not place any
+	restrictions on the quantity of objects and subjects in a given universe. The
 	most common-sense interpretation would hold the existence of multiple subjects
-	and objects; solipsists would claim only a single subject; theories which expound
-	a unified field of experience could state that there is only one object per subject;
-	and theories which deny conscious experience would claim that
+	and objects; solipsists would claim only a single subject; theories which
+	expound a unified field of experience could state that there is only one
+	object per subject; and theories which deny conscious experience would claim that
 	$W_{s}= \emptyset$.
 
-	The manner in which the object-world presents to us is largely dependent on
-	modality. Mood and intention color the objects we perceive. The notion of a
-	set of experience-objects should not be misconstrued as a way of presenting
-	the world as present-at-hand entities, distinct from the subject's sense of self
-	and thus viewed from a purely scientific lens, though it can accommodate this.
-	The object-world and its contents, for the purposes of our discussion, are neutral
-	on the question of presentation and should be construed in a way that accommodates
-	any activity, whether working with tools, deep meditation, or dreamless sleep.
+	The manner in which the object-world presents to us is largely dependent on modality.
+	Mood and intention color the objects we perceive. The notion of a set of experience-objects
+	should not be misconstrued as a way of presenting the world as present-at-hand
+	entities, distinct from the subject's sense of self and thus viewed from a
+	purely scientific lens, though it can accommodate this. The object-world and
+	its contents, for the purposes of our discussion, are neutral on the question
+	of presentation and should be construed in a way that accommodates any
+	activity, whether working with tools, deep meditation, or dreamless sleep.
 	Again, we are not considering any properties of objects outside of their place
 	within the logical system to be outlined.
 
-	The propositions given so far derive from an examination of the consequences
-	of the existence of an object, but what we can say given the existence of a subject?
-	Does the existence of a subject entail the existence of experience-objects? If
-	so, this opens the possibility that a subject is merely a set of experience
-	objects, a sort of bundle theory of subjective experience. Let's call this
-	\emph{strong objective entailment} (SOE). If we wish to deny SOE, we will need
-	to propose an alternative - but how can we express this in the same terms?
-	\emph{Weak objective entailment} (WOE) proposes that the structure of the formal
-	world in which we are examining our subject-object relation must be organized in
-	such a way that the existence of a subject entails the \emph{logical
-	possibility} ($\mathrm{P}$) of experience, even if that possibility does not obtain.
-	I wish to keep the precise semantics of $\mathrm{P}$ vague at this point so
-	that we can discover its nature without undue influence from an existing
-	logical system, whether modal, temporal, probabilistic or otherwise. Expressed
-	in this way, we can write the following:
+	The propositions given so far derive from an examination of the consequences of
+	the existence of an object, but what we can say given the existence of a
+	subject? Does the existence of a subject entail the existence of experience-objects?
+	If so, this opens the possibility that a subject is merely a set of experience
+	objects, a sort of bundle theory of subjective experience. Let's call this \emph{strong
+	objective entailment} (SOE). If we wish to deny SOE, we will need to propose
+	an alternative - but how can we express this in the same terms? \emph{Weak
+	objective entailment} (WOE) proposes that the structure of the formal world in
+	which we are examining our subject-object relation must be organized in such a
+	way that the existence of a subject entails the \emph{logical possibility} ($\mathrm{P}$)
+	of experience, even if that possibility does not obtain. I wish to keep the precise
+	semantics of $\mathrm{P}$ vague at this point so that we can discover its nature
+	without undue influence from an existing logical system, whether modal, temporal,
+	probabilistic or otherwise. Expressed in this way, we can write the following:
 	\begin{align}
 		\label{def:soe}\tag{SOE}\exists s (Ss) & \rightarrow \exists o (Xso)            \\
 		\label{def:woe}\tag{WOE}\exists s (Ss) & \rightarrow \mathrm{P}(\exists o(Xso))
 	\end{align}
 
 	First, let's look at some consequences for SOE. Recall the lemma \eqref{lemma:object-dependence}.
-	Under SOE, this quickly resolves into a biconditional. Further, because the
-	existence of subjects and objects are tightly coupled, we can claim that that the
-	cardinality of any experience-world is non-zero. These two statements can
-	easily be proved equivalent.
+	Under SOE, this quickly resolves into a biconditional. Further, because the existence
+	of subjects and objects are tightly coupled, we can claim that that the
+	cardinality of any experience-world is non-zero. These two statements can easily
+	be proved equivalent.
 	\newcounter{soe}
 	\begin{lemmalist}
 		[SOE.][soe] \label{lemma:soe1} \exists s(Ss) \leftrightarrow \exists o(Oo) \\
 		\label{lemma:soe2} \forall s (|W_s| \not= 0)
 	\end{lemmalist}
 
-	Turning to WOE, it's clear that our formulation is in need of a concrete implementation.
-	What we wish to express is the possibility of a phenomenal experience of \emph{nothing}.
-	We can express this in two ways, outlined below. The first tells us that a
-	subject can exist without entailing the existence of an object. The second expresses
-	this in terms of the object-world - a concrete expression, although a flatly
-	unsatisfying one.
+	Turning to WOE, it's clear that our formulation is in need of a concrete
+	implementation. What we wish to express is the possibility of a phenomenal experience
+	of \emph{nothing}. We can express this in two ways, outlined below. The first tells
+	us that a subject can exist without entailing the existence of an object. The
+	second expresses this in terms of the object-world - a concrete expression, although
+	a flatly unsatisfying one.
 	\newcounter{woe}
 	\begin{lemmalist}
 		[WOE.][woe] \label{lemma:woe1} \mathrm{P}(\exists s(Ss \land \neg \exists o(Xso)))
 		\\ \label{lemma:woe2} \forall s(|W_s| \geq 0)
 	\end{lemmalist}
 
-	Although we can conceive of a subject experiencing no object, it is hard to imagine.
-	The best metaphor I can use is the (non-)experience of anesthesia or deep
-	sleep, where all objective subjectivity breaks down, and we are left with an
-	objectless void. In the state of anesthesia, there is no conception of space
-	or time. Yet, upon arising from anesthesia, we are aware of the fact that we were
-	just in an anesthetic state: it is as if a chunk of our diachronic experience-world
-	had been emptied of content. There is an awareness that time has passed; we
-	are unsure how much time, and we are unsure of our location, but we are aware
-	of the gap in our experience.
+	Although we can conceive of a subject experiencing no object, it is hard to
+	imagine. The best metaphor I can use is the (non-)experience of anesthesia or deep
+	sleep, where all objective subjectivity breaks down, and we are left with an objectless
+	void. In the state of anesthesia, there is no conception of space or time. Yet,
+	upon arising from anesthesia, we are aware of the fact that we were just in an
+	anesthetic state: it is as if a chunk of our diachronic experience-world had been
+	emptied of content. There is an awareness that time has passed; we are unsure how
+	much time, and we are unsure of our location, but we are aware of the gap in our
+	experience.
 
 	Gappy experience has some interesting consequences for the SOE theorist. Under
-	SOE, deep sleep extinguishes the subject. But this does not seem to be an issue
-	for the SOE theorist, who can claim that the nature of a subject qua
-	metaphysical object is not particularly relevant to memory or a continued
-	sense of self. Locke writes in such a manner, and Galen Strawson has recently
-	defended a similar view \autocite[ch. 12]{strawson2017}.
+	SOE, deep sleep extinguishes the subject. But this does not seem to be an
+	issue for the SOE theorist, who can claim that the nature of a subject qua metaphysical
+	object is not particularly relevant to memory or a continued sense of self.
+	Locke writes in such a manner, and Galen Strawson has recently defended a similar
+	view \autocite[ch. 12]{strawson2017}.
 
 	\blockquote[{\cite[2.27.10]{locke2000}}]{ For it is by the consciousness [that the self] has of its present Thoughts and Actions, that it is \emph{self} to it \emph{self} now, and so will be the same \emph{self} as far as the same consciousness can extend to Actions past or to come; and would be by distance of Time, or change of Substance, no more two \emph{Persons} than a Man be two Men, by wearing other Cloaths to Day than he did Yesterday, with a long or short sleep between: The same consciousness uniting those distant Actions into the same \emph{Person}, whatever Substances contributed to their Production. }
 
-	\note{Prediction: WOE will be equivalent to the notion of a self under SOE.} Naturally
-	during our talk about experience we reach for memory; we chunk our experiences
-	into instants and moments; there is a pervasive sense of the passage of time.
-	In order to understand what being a subject entails at all, we must consider a
-	subject over time. If the SOE theorist does not wish for the subject to
-	extinguish itself over time, and if the WOE theorist is going to have a coherent
-	view at all, we need to quantify over time.
+	\note{Prediction: WOE will be equivalent to the notion of a self under SOE.}
+	Naturally during our talk about experience we reach for memory; we chunk our experiences
+	into instants and moments; there is a pervasive sense of the passage of time. In
+	order to understand what being a subject entails at all, we must consider a
+	subject over time. If the SOE theorist does not wish for the subject to extinguish
+	itself over time, and if the WOE theorist is going to have a coherent view at
+	all, we need to quantify over time.
 
 	\subsection{Time}
 
-	Let $\mathcal{M}$ be a semantic model with a time set $T$ and evaluation function
-	$\temporaleval{t}{\phi}$ which determines the truth-value of the model at time
-	$t\in T$. From here on, consider any unqualified proposition to be occurent. I
-	will be adopting Prior's model, in which the time relations $G$, $H$, $F$, and
-	$P$ will hold. Whenever I write a time $t$, it is to be considered as a moment
-	in $T$.
+	Let $\mathcal{M}$ be a semantic model with a time set $T$ and evaluation
+	function $\temporaleval{t}{\phi}$ which determines the truth-value of the
+	model at time $t\in T$. From here on, consider any unqualified proposition to
+	be occurent. I will be adopting Prior's model, in which the time relations $G$,
+	$H$, $F$, and $P$ will hold. Whenever I write a time $t$, it is to be considered
+	as a moment in $T$.
 
-	What character does time hold in this system? Should instants in $T$ map to the
-	interval of physical time, however short or long, which constitute the perceived
-	present moment? Should they map to physical time? Since we are not currently committed
-	to the notion of our minimal experiencing subject \emph{perceiving} time one
-	way or another, the question has yet to be decided. When considering ourselves
-	or other animals on our plant as subjects, it seems clear that times should map
-	to what James calls the \enquote{specious present,} but when considering an
+	What character does time hold in this system? Should instants in $T$ map to
+	the interval of physical time, however short or long, which constitute the
+	perceived present moment? Should they map to physical time? Since we are not
+	currently committed to the notion of our minimal experiencing subject \emph{perceiving}
+	time one way or another, the question has yet to be decided. When considering ourselves
+	or other animals on our plant as subjects, it seems clear that times should
+	map to what James calls the \enquote{specious present,} but when considering an
 	elementary experiencing thing - say, a Russellian monad - it is not clear that
-	time is perceived at all. For now, let's set the question aside, and proceed
-	with our usual focus on structure.
+	time is perceived at all. For now, let's set the question aside, and proceed with
+	our usual focus on structure.
 
-	Let's define $W_{s,t}$ and $X_{t}so$ to extend our definitions over time $t$. Where
-	the $t$ is omitted, the experience is to be considered occurrent. With this we
-	can define our restriction. First, let $\phi_{st}\coloneq Ss \rightarrow \exists
-	o(X_{t}so)$. This condition states that, for some subject $s$ and $t$, $s$ has
-	an experience at time $t$. When evaluating $\phi$, I will omit the $t$. That is,
-	$\phi_{st}$ will be evaluated as $\temporaleval{t}{\phi_s}$ Now, for all subjects
-	$s$,
+	Let's define $W_{s,t}$ and $X_{t}so$ to extend our definitions over time $t$.
+	Where the $t$ is omitted, the experience is to be considered occurrent. With
+	this we can define our restriction. First, let
+	$\phi_{st}\coloneq Ss \rightarrow \exists o(X_{t}so)$. This condition states that,
+	for some subject $s$ and $t$, $s$ has an experience at time $t$. When
+	evaluating $\phi$, I will omit the $t$. That is, $\phi_{st}$ will be evaluated
+	as $\temporaleval{t}{\phi_s}$ Now, for all subjects $s$,
 	\newcounter{d}
 	\begin{lemmalist}
 		[WOE.][woe] \label{woe:t1} (\exists t \in T)(\temporaleval{t}{\phi_{s}} = 1)
@@ -261,16 +261,17 @@ Explorations} }
 	\begin{lemmalist}
 		[WOE.][woe] \label{woe:t2} \phi_{st} \lor F\phi_{st} \lor P\phi_{st}
 	\end{lemmalist}
-	Translating this to evaluation statements, let $t$ represent the current
-	moment, and let $p, f \in T (p \prec t \prec f)$.
+	Translating this to evaluation statements, let $t$ represent the current moment,
+	and let $p, f \in T (p \prec t \prec f)$.
 	\begin{lemmalist}
 		[WOE.][woe] \label{woe:t3} \temporaleval{t}{\phi_s} = 1 \lor \temporaleval{f}{\phi_s}
 		= 1 \lor \temporaleval{p}{\phi_s} = 1
 	\end{lemmalist}
 	\noindent
 	This reads, \enquote{Either $s$ is currently experiencing something, or $s$ will experience something, or $s$ has already experienced something.}
-	These two statements can be proven equivalent. First, assume linearity: $(\forall
-	x, y \in T)(x = y \lor x \prec y \lor y \prec x)$. A reductio follows quickly.
+	These two statements can be proven equivalent. First, assume linearity:
+	$(\forall x, y \in T)(x = y \lor x \prec y \lor y \prec x)$. A reductio follows
+	quickly.
 	\begin{proof}
 		\item \eqref{woe:t1} $\rightarrow$ \eqref{woe:t2}
 		\newcounter{p}
@@ -308,8 +309,9 @@ Explorations} }
 	\subsection{Multiple subjects}
 
 	Our definitions so far do not rule out the possibility that two subjects could
-	have the same experience. This is intuitively impossible; try as we might we cannot
-	get into our friend's heads. Let's write a statement which follows this claim. %
+	have the same experience. This is intuitively impossible; try as we might we
+	cannot get into our friend's heads. Let's write a statement which follows this
+	claim. %
 	%
 	\begin{align}
 		\label{prop:subject-identity}                                    %
@@ -325,47 +327,60 @@ Explorations} }
 		x \not= y &\rightarrow \neg(Xxo \land Xyo)
 	\end{lemmalist}%
 	%
-	Note again that these propositions take no stance on whether the objects
-	experienced by any two subjects are representations of the same underlying
-	reality, whatever shape that may take. These propositions do not affirm nor
-	deny the existence of any subject-independent reality, and so do not say anything
-	about objectivity or intersubjectivity.
+	Note again that these propositions take no stance on whether the objects experienced
+	by any two subjects are representations of the same underlying reality,
+	whatever shape that may take. These propositions do not affirm nor deny the existence
+	of any subject-independent reality, and so do not say anything about
+	objectivity or intersubjectivity.
 
 	Still, caution should be exercised here.\note{Should we discuss parapsychism, i.e. ant colonies as superorganisms?}Believers
-	in shared experiences may argue that the peyote trip they had with their
-	partner resulted in a deep, although brief, unification of their
-	consciousnesses. In such an experience, awareness of the body drops away
-	entirely while a psychedelic experience occurs. On recollection, the partners
-	realize that they shared a hallucination to an exacting degree. I use psychedelics
-	to ease the point, but is not logically absurd to consider such a scenario in
-	sober minds. Consider a shared experience between subjects A and B. In order
-	for an experience to be shared, it must either have the same objective contents
-	or occur for the same subject. When subjects A and B share a hallucination, there
-	may be a subject C to which the experience is actually directed. Suppose that
-	at time $t$, A and B can recall the experiences of C which occurred at time $t-
-	1$. In order to explore this question we will need to lay down some rules
-	about how subjects extend over time.
+	in shared experiences may argue that the peyote trip they had with their partner
+	resulted in a deep, although brief, unification of their consciousnesses. In
+	such an experience, awareness of the body drops away entirely while a psychedelic
+	experience occurs. On recollection, the partners realize that they shared a hallucination
+	to an exacting degree. I use psychedelics to ease the point, but is not logically
+	absurd to consider such a scenario in sober minds. Consider a shared
+	experience between subjects A and B. In order for an experience to be shared,
+	it must either have the same objective contents or occur for the same subject.
+	When subjects A and B share a hallucination, there may be a subject C to which
+	the experience is actually directed. Suppose that at time $t$, A and B can
+	recall the experiences of C which occurred at time $t- 1$. In order to explore
+	this question we will need to lay down some rules about how subjects extend over
+	time.
 
 	\section{Consciousness}
 
 	So far we have discussed an expression of the synchronic and diachronic nature
-	of subjective experience. Now we need to talk about what this theory
-	represents. So far I have avoided discussion of topics such as consciousness and
-	the self. Let us first turn our attention to consciousness before detailing
-	consequences for common conceptions of the self.
+	of subjective experience. Now we need to talk about what this theory represents.
+	So far I have avoided discussion of topics such as consciousness and the self.
+	Let us first turn our attention to consciousness before detailing consequences
+	for common conceptions of the self.
 
-	As we have been explaining subjective experience, I want to make clear that what
-	we have been discussion may not necessarily be \emph{conscious} experience. Any
-	theory of conscious subjectivity will need to account for subconscious and unconscious
-	experiences.
+	As we have been explaining subjective experience, I want to make clear that
+	what we have been discussion may not necessarily be \emph{conscious} experience.
+	Any theory of conscious subjectivity will need to account for subconscious and
+	unconscious experiences.
 
-	Earlier we dog-eared a discussion, whether or not its possible for a subject
-	to itself be an object. There is a classic argument from Bretano which argues this
-	is impossible. On this view, if a subject were to objectify itself it would collapse
-	the subject/object distinction, resulting in an infinite regress of
-	objectification of the subject. \comment{[...]}{Kriegel on intransitive self-consciousness, expansion of this argument to talk about occurent mental states etc.}
+	Earlier we dog-eared a discussion, whether or not its possible for a subject to
+	itself be an object. There is a classic argument from Bretano which argues
+	this is impossible. On this view, if a subject were to objectify itself it
+	would collapse the subject/object distinction, resulting in an infinite regress
+	of objectification of the subject.
+	% Kriegel on intransitive self-consciousness, expansion of this argument to talk about occurent mental states etc.
 
-	\comment{Kriegel argues that self-awareness is essential to consciousness (his construal: consciousness is essentially self-illuminating) \autocite{kriegel2003}. Albahari argues that witness-consciousness is a pre-reflective, mode-neutral sort of awareness which occurs prior to self-awareness \autocite{albahari2009}. Higher-order monitoring theories propose that self-awareness occurs through non-conscious mental states, though Kriegel argues for the absurdity of this position by the nature of experience: we are inherently aware of the fact that we are aware of our experiences; unconscious mental states are essentially things we are \emph{not} aware of. For the sake of this paper, I will be making as few assumptions about the nature of the self as possible. The focus of this paper is on the bare structural nature of subjective experience, and will proceed on as few assumptions about the self as possible.}{Expand, rewrite}
+	% TODO: Expand, rewrite.
+	Kriegel argues that self-awareness is essential to consciousness (his
+	construal: consciousness is essentially self-illuminating) \autocite{kriegel2003}.
+	Albahari argues that witness-consciousness is a pre-reflective, mode-neutral sort
+	of awareness which occurs prior to self-awareness \autocite{albahari2009}. Higher-order
+	monitoring theories propose that self-awareness occurs through non-conscious mental
+	states, though Kriegel argues for the absurdity of this position by the nature
+	of experience: we are inherently aware of the fact that we are aware of our experiences;
+	unconscious mental states are essentially things we are \emph{not} aware of.
+	For the sake of this paper, I will be making as few assumptions about the nature
+	of the self as possible. The focus of this paper is on the bare structural
+	nature of subjective experience, and will proceed on as few assumptions about the
+	self as possible.
 
 	\remove{ It is certainly possible to objectify the field of experience – everything we are experiencing - but it does not seem possible to objectify in any meaningful way the very act of awareness which makes objectification possible. Trying to turn our focus to our own perceptive abilities results in a slippery sort of evasion, like an eye trying to see itself. What would it mean for a subject to experience its own condition? However,}\note{This needs to be replaced. Instead guide the reader into questioning how occurent mental states can fit into the picture so painted. Define mental states as bundles of objects, and occurance as a property of these sets, defined as a matter of awareness of these mental states. How to define awareness? }
 	there is definitely a sense in which we are aware of our subjective capacities.
