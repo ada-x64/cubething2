@@ -6,7 +6,7 @@ import { useSignal, useSignalEffect } from "@preact/signals";
 import { InboundIndicator, OutboundIndicator } from "../styles";
 import CdnTime from "../layout/CdnTime";
 import { useContext } from "preact/hooks";
-import { AppState } from "../app";
+import { AppState } from "..";
 
 const Article = ({
   routeOverride,

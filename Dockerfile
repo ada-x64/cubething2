@@ -22,6 +22,7 @@ FROM base as release
 RUN curl -fsSL https://bun.sh/install | BUN_INSTALL=/usr bash
 WORKDIR /usr/src/app
 ENV NODE_ENV=production
+ENV HOT=false
 RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
     --mount=target=/var/cache/apt,type=cache,sharing=locked \
     rm -f /etc/apt/apt.conf.d/docker-clean \

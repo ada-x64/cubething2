@@ -11,7 +11,6 @@ import Home from "./pages/home";
 import ArticleList from "./pages/articleList";
 import Article from "./pages/article";
 import NotFound from "./pages/notFound";
-// import Template from "./pages/template";
 import Layout from "./layout/Layout";
 
 import { computed, signal } from "@preact/signals";
@@ -38,8 +37,8 @@ export const AppState = createContext(defaultState);
 
 class App extends HTMLElement {
   connectedCallback() {
-    //@ts-expect-error Defined at bundle time
-    if (BUILD_INFO.HOT) {
+    // @ts-expect-error from bun env
+    if (process?.env?.HOT === "true") {
       this.tryWebsocket();
     }
     render(

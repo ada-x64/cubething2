@@ -7,7 +7,7 @@
   "scripts": {
     "start": "bun ./src/server/index.ts",
     "dev": "./scripts/dev.sh",
-    "bundle": "./scripts/bundle.sh",
+    "bundle": "bun ./scripts/bundle.ts",
     "lint": "bunx eslint .; bunx tsc --noEmit",
     "format": "bunx prettier -c .",
     "headers": "bun scripts/headers.ts",
