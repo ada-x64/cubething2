@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 import { readFileSync } from "fs";
 import { globbySync } from "globby";
 import { program } from "commander";
