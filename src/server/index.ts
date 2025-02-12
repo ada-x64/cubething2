@@ -9,6 +9,7 @@ import { fileURLToPath } from "url";
 import qs from "qs";
 import { sendServerError } from "./views/error";
 import { send } from "./views";
+import { info } from "scripts/common";
 
 const PORT = Number(process.env["PORT"] ?? 3000);
 const prod = process.env["PROD"] === "true";
@@ -60,6 +61,7 @@ fastify.get("*", (req, reply) => {
 
 // Run the server!
 try {
+  info(`Serving at http://0.0.0.0:${PORT}`);
   await fastify.listen({ host: "0.0.0.0", port: PORT });
 } catch (err) {
   fastify.log.error(err);

@@ -1,6 +1,9 @@
 {
-  "entrypoints": ["index.ts"],
-  "outdir": "www/js",
-  "sourcemap": "inline",
-  "minify": true
+  "build": {
+    "entrypoints": ["index.ts"],
+    "sourcemap": "inline",
+    "minify": true
+  },
+  "public": true,
+  "root": "/blog"
 }

@@ -2,7 +2,7 @@
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/client/**/*.ts"],
+  content: ["./src/apps/**/*.ts"],
   theme: {
     extend: {},
     container: {
