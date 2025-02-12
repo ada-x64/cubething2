@@ -4,7 +4,7 @@
     "sourcemap": "inline",
     "minify": true
   },
-  "public": true,
-  "root": "/blog",
-  "title": "blog"
+  "public": false,
+  "root": "/",
+  "title": "root"
 }

@@ -4,11 +4,11 @@ import { globbySync } from "globby";
 import Watcher from "watcher";
 import { lstatSync } from "fs";
 import path from "path";
-import { error, info, sayAndDo, warn } from "./common";
+import { debug, error, info, sayAndDo, warn } from "./common";
 
 let refresh = () => {};
 const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
-  info(event, oldpath, newpath);
+  debug(event, oldpath, newpath);
   if (
     oldpath &&
     (path.extname(oldpath) === ".tex" || path.extname(oldpath) === ".md")
@@ -16,7 +16,7 @@ const rerender = async (event?: string, oldpath?: string, newpath?: string) => {
     await sayAndDo(`bun scripts/render/render.ts ${oldpath}`);
   } else if (oldpath?.includes("static/styles")) {
     sayAndDo(`bun tailwind`);
-  } else if (oldpath?.includes("client")) {
+  } else if (oldpath?.includes("apps")) {
     sayAndDo(`HOT=true bun bundle`);
     sayAndDo(`bun tailwind`);
   } else if (oldpath?.includes("static")) {
@@ -54,7 +54,7 @@ Bun.serve({
   },
   websocket: {
     message: (_socket, msg) => {
-      info("\udb85\ude16 Got msg", msg);
+      debug("\udb85\ude16 Got msg", msg);
     },
     open: (socket) => {
       info("\udb85\ude16 Websocket opened");

@@ -11,7 +11,7 @@ import ArticleNav from "../nav/ArticleNav";
 import MainContent from "./MainContent";
 import Title from "./Title";
 import { useRoute } from "preact-iso";
-import { AppState } from "..";
+import { AppState } from "../app";
 import Footer from "./Footer";
 
 export default function Layout({ children }: { children: ComponentChildren }) {

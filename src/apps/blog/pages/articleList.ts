@@ -3,7 +3,7 @@
 import { html } from "htm/preact/index.js";
 import { useContext } from "preact/hooks";
 import Card from "../layout/Card";
-import { AppState } from "..";
+import { AppState } from "../app";
 import type { Metadata, MetadataMap } from "../utils/metadata";
 
 export default function ArticleList() {

@@ -55,6 +55,11 @@ fastify.register(Static, {
 fastify.setErrorHandler((err, req, reply) => {
   sendServerError(req, reply, err);
 });
+
+fastify.get("/favicon.ico", (req, reply) => {
+  reply.redirect("/static/favicon.ico");
+});
+
 fastify.get("*", (req, reply) => {
   send(req, reply, "", 200);
 });

@@ -3,18 +3,19 @@
 import { html } from "htm/preact/index.js";
 import { Palette, OutboundLink, TwClass } from "../styles";
 import { useLocation } from "preact-iso";
+import { routePrefix } from "../nav";
 
 export default function Title({ title }: { title: string }) {
   const location = useLocation();
   const anchorTitle =
-    location.path === "/"
+    location.path === routePrefix
       ? "home page"
       : location.path.includes("article")
         ? `article: ${title} - click to go home`
         : `${title} - click to go home`;
   return html`
     <a
-      href="/"
+      href="${routePrefix}"
       title=${anchorTitle}
     >
       <h1

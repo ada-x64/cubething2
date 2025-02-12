@@ -2,11 +2,15 @@
 
 export type tNav = { name: string; href: string }[];
 
+// @ts-expect-error from bun .env
+export const routePrefix = process.env.BLOG_PREFIX ?? "/";
+
 export const mainNav = [
-  { name: "home", href: "/" },
+  { name: "home", href: `/` },
+  { name: "blog", href: `${routePrefix}` },
   {
     name: "about",
-    href: "/about",
+    href: `${routePrefix}/about`,
   },
   // {
   //   name: "gfx",
