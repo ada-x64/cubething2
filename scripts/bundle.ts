@@ -100,9 +100,9 @@ if (import.meta.main) {
   });
   const opts = Object.fromEntries(optEntries) as Opts;
   if (opts.verbose) {
-    process.env["LOG_LEVEL"] = "trace";
+    process.env.LOG_LEVEL = "trace";
   } else if (opts.quiet) {
-    process.env["LOG_LEVEL"] = "error";
+    process.env.LOG_LEVEL = "error";
   }
   await main(opts);
 }

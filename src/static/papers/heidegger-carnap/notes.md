@@ -348,9 +348,9 @@ accessible through intelligible intuition. That is, although we cannot access
 them through our sense (i.e. they are suprasensible), we have access to them
 through our capacity to reason.
 
-Kant criticized this system for its inherent contradictions. [todo:
-kantian dialectics]. Humans only have access to external objects through our
-sensible intuition (i.e. through our access to space and time), and to internal,
+Kant criticized this system for its inherent contradictions. [todo: kantian
+dialectics]. Humans only have access to external objects through our sensible
+intuition (i.e. through our access to space and time), and to internal,
 psychological facts through our intellectual intuition. These sensible objects
 (phenomena) are representations of the underlying 'real' objects (noumena),
 which are purely intellectual. Although the phenomena are merely representations

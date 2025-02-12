@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 // Bootstrap
 import { bootstrap } from "./app";

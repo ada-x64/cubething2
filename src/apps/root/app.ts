@@ -1,3 +1,5 @@
+/////////////////////////////// cubething.dev /////////////////////////////////
+
 import type { AppConfig } from "scripts/bundle";
 
 let metadata = (await (
@@ -6,7 +8,6 @@ let metadata = (await (
 
 export default class Root extends HTMLElement {
   connectedCallback() {
-    //@ts-expect-error from bun .env
     if (process.env.SHOW_PRIVATE_APPS !== "true") {
       metadata = metadata.filter((appcfg) => appcfg.public);
     }

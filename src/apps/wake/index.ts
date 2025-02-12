@@ -1,1 +1,3 @@
-document.body.innerHTML = `hi from wake`;
+/////////////////////////////// cubething.dev /////////////////////////////////
+
+console.log(process.env.WAKE_PW);

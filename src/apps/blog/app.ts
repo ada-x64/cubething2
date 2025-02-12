@@ -38,7 +38,6 @@ export const AppState = createContext(defaultState);
 
 class App extends HTMLElement {
   connectedCallback() {
-    // @ts-expect-error from bun env
     if (process.env.HOT === "true") {
       this.tryWebsocket();
     }
