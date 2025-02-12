@@ -7,6 +7,7 @@
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
+        "-output-directory=%OUTDIR%",
         "%DOC%"
       ],
       "env": { "TEXINPUTS": ".//:%WORKSPACE_FOLDER%/src/static/config//::" }
@@ -14,7 +15,7 @@
     {
       "name": "biber",
       "command": "biber",
-      "args": ["%DOCFILE%"],
+      "args": ["--output-directory=%OUTDIR%", "%DOCFILE%"],
       "env": { "BIBINPUTS": ".//:%WORKSPACE_FOLDER%/src/static/config//::" }
     }
   ],
@@ -33,5 +34,6 @@
   ],
   "latex-workshop.latex.texDirs": [
     ".//:%WORKSPACE_FOLDER%/src/static/config//::"
-  ]
+  ],
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build/latex-studio/%RELATIVE_DIR%"
 }
