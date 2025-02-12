@@ -5,5 +5,5 @@ bash -e <<EOF
     bun run lint
     bun run format
     bun run headers
-    shellcheck scripts/**/*.sh
+    bunx shellcheck scripts/**/*.sh
 EOF
