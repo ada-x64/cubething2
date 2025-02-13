@@ -11,6 +11,9 @@ export const index = (app: string) => `
   <head>
     <script src="/static/scripts/detectTheme.js"></script>
     <script src="/static/js/${app}/index.js" type="module" defer></script>
+    <link rel="stylesheet" href="/static/styles/index.css" />
+    <link rel="preload" href="/static/font/Chillax-Regular.otf" as="font" type="font/otf" crossorigin/>
+    <link rel="preload" href="/static/font/Synonym-Regular.otf" as="font" type="font/otf" crossorigin/>
   </head>
   <body></body>
 </html>

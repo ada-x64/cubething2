@@ -9,5 +9,7 @@ declare module "bun" {
     WAKE_PW: string;
     WAKE_REMOTE_PORT: string;
     WAKE_REMOTE_IP: string;
+    WAKE_MC_SERVER_PORT: string;
+    WAKE_MC_SERVER_IP: string;
   }
 }

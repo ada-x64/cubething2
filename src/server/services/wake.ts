@@ -48,7 +48,7 @@ export default async function (fastify: FastifyInstance) {
   fastify.get(`/status`, async (_req: PwReq, reply) => {
     // query server for status
     return reply.redirect(
-      `https://api.mcsrvstat.us/bedrock/3/${process.env.WAKE_REMOTE_IP}:${process.env.WAKE_REMOTE_PORT}`,
+      `https://api.mcsrvstat.us/bedrock/3/${process.env.WAKE_MC_SERVER_IP}:${process.env.WAKE_MC_SERVER_PORT}`,
     );
   });
 
