@@ -7,5 +7,7 @@ declare module "bun" {
     SHOW_PRIVATE_APPS: string;
     LOG_LEVEL: string;
     WAKE_PW: string;
+    WAKE_REMOTE_PORT: string;
+    WAKE_REMOTE_IP: string;
   }
 }

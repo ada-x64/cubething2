@@ -5,7 +5,7 @@ import { lstatSync, mkdirSync, readFileSync, writeFileSync } from "fs";
 import parseMath from "./katex.js";
 import { globSync } from "glob";
 import { program } from "commander";
-import { info, warn, error, sayAndDo } from "scripts/common.js";
+import { info, warn, error, sayAndDo, debug } from "scripts/common.js";
 
 type Opts = {
   clean: boolean;
@@ -168,7 +168,15 @@ export const renderAll = async (opts: Opts) => {
       }
     }
   }
-  info({ failedFiles, renderedFiles, cachedFiles });
+  if (failedFiles.length) {
+    warn({ failedFiles });
+  }
+  if (renderedFiles.length) {
+    info({ renderedFiles });
+  }
+  if (cachedFiles.length) {
+    debug({ cachedFiles });
+  }
 };
 
 if (import.meta.main) {

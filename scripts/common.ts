@@ -31,7 +31,8 @@ export const DEFAULT_LOG_LEVEL = LogLevel.info;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const log = (level: LogLevel, args: any) => {
-  if (Number(process.env["LOG_LEVEL"] ?? 2) < level) {
+  const envLog = (process.env.LOG_LEVEL ?? "info") as keyof typeof LogLevel;
+  if (LogLevel[envLog] < level) {
     return;
   }
   console.log(
