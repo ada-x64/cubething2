@@ -23,7 +23,7 @@ export default async function (fastify: FastifyInstance) {
   fastify.get(`/send`, async (req: PwReq, reply) => {
     try {
       return reply.redirect(
-        `http://${process.env.WAKE_REMOTE_IP}:${process.env.WAKE_REMOTE_PORT}/?pw=${req.query.pw}`,
+        `https://${process.env.WAKE_REMOTE_SERVER}/?pw=${req.query.pw}`,
       );
     } catch (e) {
       return reply.status(500).send(e);

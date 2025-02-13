@@ -9,8 +9,7 @@ declare module "bun" {
     LOG_LEVEL: string;
     // run-time encrypted env vars
     WAKE_PW: string;
-    WAKE_REMOTE_PORT: string;
-    WAKE_REMOTE_IP: string;
+    WAKE_REMOTE_SERVER: string;
     WAKE_MC_SERVER_PORT: string;
     WAKE_MC_SERVER_IP: string;
   }
