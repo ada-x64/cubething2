@@ -45,11 +45,15 @@ const resultDiv = document.getElementById("result")! as HTMLDivElement;
 const getStatus = () => {
   statusEl.innerText = "polling...";
   statusImg.src = "/static/media/wait.gif";
-  fetch(`/wake/status?pw=${pw}`, { redirect: "follow" })
+  fetch(`/wake/status?pw=${pw}`, { redirect: "follow", cache: "no-cache" })
     .then(async (res) => {
       const json = await res.json();
+      if (json.online) {
+        statusImg.src = "/static/media/wake/awake.gif";
+      } else {
+        statusImg.src = "/static/media/wake/asleep.gif";
+      }
       statusEl.innerText = JSON.stringify(json, undefined, 2);
-      statusImg.src = "/static/media/success.gif";
     })
     .catch((e) => {
       statusEl.innerText = e;
