@@ -19,7 +19,7 @@ import { type ParsedMetadata, findCurrentMetadata } from "./utils/metadata";
 import About from "./pages/about";
 import onmousemove from "./utils/onmousemove";
 import onScroll from "./utils/onScroll";
-import { routePrefix } from "./nav";
+import { mkHref, routePrefix } from "./nav";
 
 // load metadata asap
 const metadata = await fetch("/static/meta.json").then(async (data) => {
@@ -74,7 +74,7 @@ class App extends HTMLElement {
 function AppComponent() {
   const state = useContext(AppState);
   return html`
-    <${LocationProvider} scope="/blog">
+    <${LocationProvider} scope="/${routePrefix}">
       <${ErrorBoundary}>
         <${AppState.Provider} value=${defaultState}>
           <${Layout}>
@@ -86,19 +86,19 @@ function AppComponent() {
               }}
             >
               <${Route}
-                path="${routePrefix}/"
+                path="${mkHref("/")}"
                 component=${Home}
               />
               <${Route}
-                path="${routePrefix}/articles"
+                path="${mkHref("/articles")}"
                 component=${ArticleList}
               />
               <${Route}
-                path="${routePrefix}/articles/:id"
+                path="${mkHref("/articles/:id")}"
                 component="${Article}"
               />
               <${Route}
-                path="${routePrefix}/about"
+                path="${mkHref("/about")}"
                 component="${About}"
               />
               <${Route}

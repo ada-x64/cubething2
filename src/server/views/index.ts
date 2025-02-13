@@ -1,6 +1,7 @@
 /////////////////////////////// cubething.dev /////////////////////////////////
 
 import type { FastifyReply, FastifyRequest } from "fastify";
+import { readdirSync } from "fs";
 import type { ParsedQs } from "qs";
 import { debug } from "scripts/common";
 // This is not what you want to edit if you want to change the normal article layout.
@@ -19,6 +20,10 @@ export const index = (app: string) => `
 </html>
 `;
 
+const apps = readdirSync("www/js/", { withFileTypes: true })
+  .filter((dirent) => dirent.isDirectory())
+  .map((dirent) => dirent.name);
+
 export const send = (
   req: FastifyRequest,
   reply: FastifyReply,
@@ -26,7 +31,9 @@ export const send = (
   code?: number,
 ) => {
   let app = req.url.split("/")[1];
-  app = app ? app : "root";
+  if (!apps.includes(app)) {
+    app = process.env.DEFAULT_APP;
+  }
   debug("URL:", req.url);
   debug("Rendering app", app);
   const query = req.query as ParsedQs | undefined;

@@ -11,7 +11,7 @@
     "lint": "bunx eslint .; bunx tsc --noEmit",
     "format": "bunx prettier -c .",
     "headers": "bun scripts/headers.ts",
-    "prepare": "husky",
+    "prepare": "husky || true",
     "sass": "bunx sass --source-map --embed-source-map --quiet-deps -s compressed --quiet-deps src/static/styles/:www/styles",
     "tailwind": "bunx tailwindcss -i ./src/static/styles/index.css -o ./www/styles/index.css",
     "dist": "./scripts/dist.sh",

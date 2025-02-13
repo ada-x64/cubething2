@@ -5,6 +5,6 @@
     "minify": true
   },
   "public": true,
-  "root": "/blog",
+  "root": "/",
   "title": "blog"
 }

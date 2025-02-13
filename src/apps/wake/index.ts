@@ -44,7 +44,7 @@ const resultDiv = document.getElementById("result")! as HTMLDivElement;
 
 const getStatus = () => {
   statusEl.innerText = "polling...";
-  statusImg.src = "/static/media/wait.gif";
+  statusImg.src = "/static/media/wake/wait.gif";
   fetch(`/wake/status?pw=${pw}`, { redirect: "follow", cache: "no-cache" })
     .then(async (res) => {
       const json = await res.json();
@@ -57,12 +57,12 @@ const getStatus = () => {
     })
     .catch((e) => {
       statusEl.innerText = e;
-      statusImg.src = "/static/media/failure.gif";
+      statusImg.src = "/static/media/wake/failure.gif";
     });
 };
 
 wakeBtn.onclick = () => {
-  fetch(`/wake/send?pw=${pw}`)
+  fetch(`/wake/send?pw=${pw}`, { redirect: "follow" })
     .then(async (res) => {
       resultDiv.innerText = await res.text();
       getStatus();
