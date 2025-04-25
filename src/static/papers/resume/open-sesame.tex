@@ -1,0 +1,203 @@
+% FROM https://www.overleaf.com/latex/templates/rendercv-sb2nov-theme/gdspgtsnfncm
+
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+	ignoreheadfoot, % set margins without considering header and footer
+	top=2 cm, % seperation between body and page edge from the top
+	bottom=2 cm, % seperation between body and page edge from the bottom
+	left=2 cm, % seperation between body and page edge from the left
+	right=2 cm, % seperation between body and page edge from the right
+	footskip=1.0 cm, % seperation between body and footer
+	% showframe % for debugging
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+	pdftitle={Phoenix Mandala Resume},
+	pdfauthor={Phoenix Mandala},
+	pdfcreator={LaTeX with RenderCV},
+	colorlinks=true,
+	urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+\usepackage{dirtytalk}
+\usepackage{datetime}
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+\input{glyphtounicode}
+\pdfgentounicode=1
+% \usepackage[T1]{fontenc} % this breaks sb2nov
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\fi
+
+% Some settings:
+% \AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+% \setlength{\parindent}{0pt} % no indentation
+% \setlength{\topskip}{0pt} % no top skip
+% \setlength{\columnsep}{0cm} % set column seperation
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{\thepage}{ \color{gray}\textit{\small Phoenix Mandala - Page \thepage{} of \pageref*{LastPage}} }{}{} % replace number by desired string
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[
+\vspace{1pt}
+\titlerule]
+
+\titlespacing{\section}{
+% left space:
+-1pt }{
+% top space:
+0.3 cm }{
+% bottom space:
+0.2 cm } % section title spacing
+
+\renewcommand{\labelitemi}{$\circ$} % custom bullet points
+\newenvironment{highlights}{ \begin{itemize}[ topsep=0.10 cm, parsep=0.10 cm, partopsep=0pt,
+itemsep=0pt, leftmargin=0.4 cm + 10pt ] }{ \end{itemize} } % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{ \begin{itemize}[ topsep=0.10 cm,
+parsep=0.10 cm, partopsep=0pt, itemsep=0pt, leftmargin=10pt ] }{ \end{itemize} } % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{ \begin{adjustwidth}{ 0.2 cm + 0.00001 cm }{ 0.2 cm + 0.00001 cm }
+}{ \end{adjustwidth}} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{ \onecolentry \def\secondColumn{#2} \setcolumnwidth{\fill, 10 cm}
+\begin{paracol}{2} }{ \switchcolumn \raggedleft \secondColumn \end{paracol}
+\endonecolentry } % new environment for two column entries
+
+\newenvironment{header}{
+\setlength{\topsep}{0pt}
+\par\kern\topsep
+\centering
+\linespread{1.5} }{ \par\kern\topsep } % new environment for the header
+
+\newdateformat{monthyeardate}{%
+\monthname[\THEMONTH], \THEYEAR}
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+\AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+\put( \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm}, \LenToUnit{\paperheight-1.0 cm} ){\vtop{{\null}\makebox[0pt][c]{ \small\color{gray}\textit{\monthyeardate\today}\hspace{\widthof{Last updated in \monthyeardate\today}} }}}%
+}%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+\usepackage{setspace}
+
+\begin{document}
+	\newcommand{\AND}{\unskip \cleaders\copy\ANDbox\hskip\wd\ANDbox \ignorespaces }
+	\newsavebox{\ANDbox}
+	\sbox{\ANDbox}{}
+
+	\placelastupdatedtext
+	\begin{header}
+		\textbf{\fontsize{24 pt}{24 pt}\selectfont Phoenix Ada Rose Mandala}
+
+		\vspace{0.3 cm}
+
+		\normalsize
+		\mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Lawrence, KS}%
+		\kern 0.25 cm%
+		\AND%
+		\kern 0.25 cm%
+		\mbox{\hrefWithoutArrow{mailto:ada.mandala@pm.me}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}ada.mandala@pm.me}}%
+		\kern 0.25 cm%
+		\AND%
+		\kern 0.25 cm%
+		\mbox{\hrefWithoutArrow{https://cubething.dev/}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}cubething.dev}}%
+		\kern 0.25 cm%
+		\AND%
+		\kern 0.25 cm%
+		\mbox{\hrefWithoutArrow{https://linkedin.com/in/ada-mandala}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}ada-mandala}}%
+		\kern 0.25 cm%
+		\AND%
+		\kern 0.25 cm%
+		\mbox{\hrefWithoutArrow{https://github.com/ada-x64}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}ada-x64}}%
+	\end{header}
+
+	\begin{doublespace}
+		\noindent
+		\textbf{Opensesame Hiring Manger,}
+
+		\begin{adjustwidth}
+			{0.3cm}{0.3cm}
+
+			I am excited to inform of you of my application to the Senior Software Engineer
+			role at OpenSesame. I hope this letter finds you well.
+
+			In February of this year, I completed an A.Team solo contract with Laura Combs,
+			Engineering Manager at OpenSesame, where I built out the TestyMcTestFace browser
+			test suite SCORM course for your platform. This work required mocking out
+			a system similar to the OpenSesame production environment, in addition to working
+			with the backend team to distribute my code. The open-source version of
+			the project is available
+			\href{https://github.com/ada-x64/testy}{on my github.} This prior work
+			gives me an insight into the SCORM development process and an
+			understanding of the culture and needs of your team.
+
+			My five years of full-stack software engineering expertise across varied
+			technology stacks positions me well to contribute to your team's goals of
+			moving from Drupal 7 and Angular to Node.js and React. In 2020, I worked
+			for AllofE, an edtech company, where I helped modernize a pure PHP stack
+			to Laravel (PHP) and Angular. This gives me direct experience with the type
+			of technology transition your team is currently undertaking. Outside this,
+			my primary experience is in front-end development with React and HTML5/CSS,
+			back-end work with TypeScript and Node.js, and database management with PostgreSQL.
+
+			I thrive in collaborative environments that practice shared ownership and which
+			engage in challenging software work. At Prospective, I was a part of a small
+			team of professionals building out an enterprise solution for an open-source
+			data visualization library. While there, I shared responsibilities across all
+			aspects of the tech stack, from front-end in React and full-stack Rust to
+			DevOps with AWS, Docker, Kafka, and Kerberos. We collaborated on all
+			aspects of the business, including designing and developing our client platform,
+			and utilizing Agile best practices such as Kanban task tracking, twice-daily
+			stand-ups, and daily code pair sessions. At Prospective as well as in my freelancing
+			career I have been on many client-facing calls. Finally, I am strong in test-driven
+			development with Playwright, Jest, and CI workflows. I am confident in my
+			ability to use XP best practices and develop in an evolutionary style
+			through my extensive Agile and TDD experience.
+
+			My background in philosophy and mathematics has equipped me with strong
+			analytical skills, a knack for tutoring, and a first-principles mindset
+			that helps me navigate and explain complex technical challenges. This foundation,
+			combined with my self-taught engineering journey, demonstrates my commitment
+			to continuous learning and growth — qualities I would proudly bring to OpenSesame's
+			engineering culture.
+
+			Thank you for taking the time to review my application materials. I hope
+			to hear from you soon!
+		\end{adjustwidth}
+
+		\noindent
+		\textbf{All the best,}
+
+		\noindent
+		\textit{- Phoenix Mandala}
+	\end{doublespace}
+\end{document}

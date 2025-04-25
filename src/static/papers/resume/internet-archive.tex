@@ -1,0 +1,188 @@
+% FROM https://www.overleaf.com/latex/templates/rendercv-sb2nov-theme/gdspgtsnfncm
+
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+	ignoreheadfoot, % set margins without considering header and footer
+	top=2 cm, % seperation between body and page edge from the top
+	bottom=2 cm, % seperation between body and page edge from the bottom
+	left=2 cm, % seperation between body and page edge from the left
+	right=2 cm, % seperation between body and page edge from the right
+	footskip=1.0 cm, % seperation between body and footer
+	% showframe % for debugging
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 79, 144} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+	pdftitle={Phoenix Mandala Resume},
+	pdfauthor={Phoenix Mandala},
+	pdfcreator={LaTeX with RenderCV},
+	colorlinks=true,
+	urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+\usepackage{dirtytalk}
+\usepackage{datetime}
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+\input{glyphtounicode}
+\pdfgentounicode=1
+% \usepackage[T1]{fontenc} % this breaks sb2nov
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\fi
+
+% Some settings:
+% \AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+% \setlength{\parindent}{0pt} % no indentation
+% \setlength{\topskip}{0pt} % no top skip
+% \setlength{\columnsep}{0cm} % set column seperation
+\makeatletter
+\let\ps@customFooterStyle\ps@plain % Copy the plain style to customFooterStyle
+\patchcmd{\ps@customFooterStyle}{\thepage}{ \color{gray}\textit{\small Phoenix Mandala - Page \thepage{} of \pageref*{LastPage}} }{}{} % replace number by desired string
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[
+\vspace{1pt}
+\titlerule]
+
+\titlespacing{\section}{
+% left space:
+-1pt }{
+% top space:
+0.3 cm }{
+% bottom space:
+0.2 cm } % section title spacing
+
+\renewcommand{\labelitemi}{$\circ$} % custom bullet points
+\newenvironment{highlights}{ \begin{itemize}[ topsep=0.10 cm, parsep=0.10 cm, partopsep=0pt,
+itemsep=0pt, leftmargin=0.4 cm + 10pt ] }{ \end{itemize} } % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{ \begin{itemize}[ topsep=0.10 cm,
+parsep=0.10 cm, partopsep=0pt, itemsep=0pt, leftmargin=10pt ] }{ \end{itemize} } % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{ \begin{adjustwidth}{ 0.2 cm + 0.00001 cm }{ 0.2 cm + 0.00001 cm }
+}{ \end{adjustwidth}} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{ \onecolentry \def\secondColumn{#2} \setcolumnwidth{\fill, 10 cm}
+\begin{paracol}{2} }{ \switchcolumn \raggedleft \secondColumn \end{paracol}
+\endonecolentry } % new environment for two column entries
+
+\newenvironment{header}{
+\setlength{\topsep}{0pt}
+\par\kern\topsep
+\centering
+\linespread{1.5} }{ \par\kern\topsep } % new environment for the header
+
+\newdateformat{monthyeardate}{%
+\monthname[\THEMONTH], \THEYEAR}
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+\AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+\put( \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm}, \LenToUnit{\paperheight-1.0 cm} ){\vtop{{\null}\makebox[0pt][c]{ \small\color{gray}\textit{Last updated in \monthyeardate\today}\hspace{\widthof{Last updated in \monthyeardate\today}} }}}%
+}%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+\usepackage{setspace}
+
+\begin{document}
+	\newcommand{\AND}{\unskip \cleaders\copy\ANDbox\hskip\wd\ANDbox \ignorespaces }
+	\newsavebox{\ANDbox}
+	\sbox{\ANDbox}{}
+
+	\placelastupdatedtext
+	\begin{header}
+		\textbf{\fontsize{24 pt}{24 pt}\selectfont Phoenix Ada Rose Mandala}
+
+		\vspace{0.3 cm}
+
+		\normalsize
+		\mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Lawrence, KS}%
+		\kern 0.25 cm%
+		\AND%
+		\kern 0.25 cm%
+		\mbox{\hrefWithoutArrow{mailto:ada.mandala@pm.me}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}ada.mandala@pm.me}}%
+		\kern 0.25 cm%
+		\AND%
+		\kern 0.25 cm%
+		\mbox{\hrefWithoutArrow{https://cubething.dev/}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}cubething.dev}}%
+		\kern 0.25 cm%
+		\AND%
+		\kern 0.25 cm%
+		\mbox{\hrefWithoutArrow{https://linkedin.com/in/ada-mandala}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}ada-mandala}}%
+		\kern 0.25 cm%
+		\AND%
+		\kern 0.25 cm%
+		\mbox{\hrefWithoutArrow{https://github.com/ada-x64}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}ada-x64}}%
+	\end{header}
+
+	\begin{doublespace}
+		\noindent
+		\textbf{Internet Archive Hiring Manager,}
+
+		I am writing to inform you of my application to the Software Engineer role at
+		your company. I hope this letter finds you well in these uncertain times.
+
+		As a full-stack software engineer for over 5 years, I have experience ranging
+		over many technology stacks and complex codebases. Operating from a first-principles
+		mindset, I have worked in Windows and Linux software engineering (C, C++,
+		Rust, primarily on Debian-based distros), back-end engineering (PHP, JavaScript,
+		Typescript, Python, MySQL, PostgreSQL, Nginx), front-end engineering (React,
+		Svelte, Rust-based frameworks), data analysis (JupyterLab, NumPy, Pandas, Polars),
+		and graphics engineering (canvas API, SVG, C++/OpenGL, Rust/WGPU). Further,
+		I am experienced with devops (Microsoft Azure), CI/CD pipelines, and testing
+		(GitHub, Playwright, TAP, PyTest). Leadership positions and high-pressure
+		environments are no problem through my as shown through my startup and
+		contracting experience. In prior roles I have lead or overtaken the development
+		of complex and live codebases with thousands of users. At Prospective I
+		helped develop various aspects of the front-end, C++/WASM data engine, and
+		enterprise cloud solutions for our open-source library, which as of writing has
+		>9k stars on GitHub and is in active use throughout New York's financial
+		sector. Although my primary experience is with Typescript and Rust, I am
+		able and willing to apply my skills to any programming language and
+		architectural style, especially if it is for a good use.
+
+		The Internet Archive is an incredibly valuable resource. In a prior life, I was
+		a philosophy student. I still study from time to time and make extensive use
+		of the Archive to find scans of texts, websites, games, and other media which
+		otherwise would be lost. I believe very strongly archival, in the free distribution
+		and safeguarding of information, and in the mission of the company. I would be
+		greatly obliged to be a part of its team.
+
+		I currently live in Lawrence, KS, so I operate in Central time. The majority
+		of my career has been working remote due to my location, so I am accustomed to
+		the time gap. I am also willing and able to move if desired.
+
+		Thank you for taking the time to review my application materials.
+
+		\noindent
+		\textbf{All the best,}
+
+		\noindent
+		\textit{- Phoenix Mandala (they/them)}
+	\end{doublespace}
+\end{document}
